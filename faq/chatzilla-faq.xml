@@ -230,11 +230,10 @@
 </question>
 
 <answer>
-  ChatZilla does not support DCC.  This is a limitation of
-  Mozilla itself.  See bugs
-  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=73257">73275</a> and
-  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=92928">92928</a> for
-  more information.
+  ChatZilla does not support DCC at the moment.  This was a limitation of
+  Mozilla itself, but the nessessary code is now there.  See bug
+  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=73257">73275</a>
+  for the current progress in implementing DCC in ChatZilla.
 </answer>
 </entry>
 
@@ -497,6 +496,67 @@
   use this method to autojoin if this concerns.
 </answer>
 </entry>
+
+<entry id="colors">
+<question>
+  How do I use color/bold/underline in my text?
+</question>
+
+<answer>
+  First of all, you must enable the function - this is to help mark sure 
+  you really want colors and aren't just out to annoy people (overly 
+  colorful text is a big annoyance to many people). It's usually worth 
+  making sure the channel(s) you want to use colors with don't mind, 
+  as some channels will kick and possibly ban people who use colors.
+  <p/>
+  <code>/pref outgoing.colorCodes true</code>
+  <p/>
+  This setting is saved, so you will only need to do it once. To actually 
+  insert colors, bold or underline, you need to enter <tt>%</tt> into the
+  input box, then you will get a little popup window reminding you what to
+  do. Here is a summary:
+  <div class="floating-figure">
+    <div class="figure-contents">
+      <table>
+        <tbody>
+          <tr>
+            <td bgcolor="#000000" class="fg-white">00</td>
+            <td bgcolor="#c8c8c8" class="fg-black">01</td>
+            <td bgcolor="#0000c8" class="fg-white">02</td>
+            <td bgcolor="#00c800" class="fg-white">03</td>
+            <td bgcolor="#c80000" class="fg-white">04</td>
+            <td bgcolor="#c8c800" class="fg-black">05</td>
+            <td bgcolor="#c800c8" class="fg-black">06</td>
+            <td bgcolor="#ffb000" class="fg-black">07</td>
+          </tr><tr>
+            <td bgcolor="#ffff00" class="fg-black">08</td>
+            <td bgcolor="#00ff00" class="fg-black">09</td>
+            <td bgcolor="#00c8c8" class="fg-black">10</td>
+            <td bgcolor="#00ffff" class="fg-black">11</td>
+            <td bgcolor="#0000ff" class="fg-white">12</td>
+            <td bgcolor="#ff00ff" class="fg-white">13</td>
+            <td bgcolor="#808080" class="fg-white">14</td>
+            <td bgcolor="#989898" class="fg-white">15</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    Color Chart
+  </div>
+  <ul>
+    <li><b>%U</b> - toggle underline</li>
+    <li><b>%B</b> - toggle bold</li>
+    <li><b>%R</b> - swaps foreground and background colors</li>
+    <li><b>%O</b> - reverts colors to defaults</li>
+    <li><b>%C</b> - sets the text color</li>
+    <li><b>%%</b> - putting two percent characters before <b>U</b>,
+      <b>B</b>, <b>R</b>, <b>O</b> or <b>C</b> stops ChatZilla doing
+      anything special with it, so you can still say "%C" by 
+      typing <b>%%C</b>.</li>
+  </ul>
+</answer>
+</entry>
+
 </section>
 
 <section id="customizing">
