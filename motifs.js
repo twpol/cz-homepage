@@ -52,7 +52,8 @@ var motifs = {
     "output-redmoz": "Red and orange, mozilla star in background.",
     "output-silver": "Variation on light motif.",
     "output-silver-gecko": "Variation on light motif, with gecko background image.",
-    "output-sunshine": "A yellow motif made to match the new emoticons in ChatZilla, by Robin M."
+    "output-sunshine": "A yellow motif made to match the new emoticons in ChatZilla, by Robin M.",
+    "output-bug-triage": "A theme to put you in the mood for bugday, by Robin M."
 }
 
 function writeMotifs()
