@@ -1,5 +1,13 @@
 var revs =
 [
+  {id: "0.9.54c", date: "12/25/2003", condition: Y,
+   bugs: [227402, 115680, 176506, 218070, 112089, 128304, 218421],
+   desc: "fixes the initial userlist size, some strict JS warnings, and a " +
+    "couple of half-op fixes. It adds the following: Copy Link Location on " +
+    "all links, auto-rejoin when you're kicked, and timestamps in the " +
+    "channel window! It also sports a completely new preferences window, " +
+    "which works in Mozilla Firebird as well as the Mozilla Suite (please " +
+    "test this lots, so we can iron out any remaining bugs in it soon)."},
   {id: "0.9.54b", date: "12/12/2003", condition: Y,
    bugs: [109814, 116803, 123664],
    desc: "fixes notify, and adds a network-pref for saving the list. There " +
