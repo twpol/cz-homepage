@@ -1,5 +1,20 @@
 var revs =
 [
+  {id: "0.9.64f", date: "2004-08-10", condition: Y,
+   bugs: [234465, 240992, 253501, 253032, 185729, 180577, 108087, 235650, 
+          232809, 226223],
+   desc: "adds SSL (secure connection) support (<tt>/sslserver</tt>), " +
+    "visible away status in the userlist, and encoded nicknames (thanks " +
+    "to JustinArthur and Toast of #chatzilla for the first two, " +
+    "respectively). DCC has got a set of improvements, including tabs " +
+    "created for file transfers with progress bars, and a much easier way " +
+    "to accept/decline DCC offers (you'll have to try it to see). Long lines " +
+    "of text (over about 400 characters) are split automatically now, so " +
+    "long messages will get through without any loss. Tab-complection no " +
+    "longer forces your text into lower-case when it only partically " +
+    "matches, instead it uses the case of the first partial-match and, " +
+    "finally, the 'query start' sound is no longer played when you do " +
+    "<tt>/query</tt>."},
   {id: "0.9.64e", date: "2004-07-10", condition: Y,
    bugs: [250406, 221825],
    desc: "fixes the 'sync-headers' message coming up when you disconnect, " +
@@ -150,7 +165,7 @@ var revs =
   {id: "0.9.54", date: "2004-01-03", condition: G,
    bugs: [227139, 217474, 194383, 223693, 161597, 116541, 108533, 217269, 
           133184, 109814, 116803, 123664, 227402, 115680, 176506, 112089, 
-          128304, 218421, 227144],
+          128304, 218421, 227144, 226410],
    desc: "covers all the fixes made during 0.9.54a - 0.9.54f, except for " +
     "the new preference window."},
   {id: "0.9.54f", date: "2003-12-27", condition: Y,
