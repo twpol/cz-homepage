@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.61", date: "03/10/2004", condition: G,
+   bugs: [229072, 235260, 235261, 210222, 235648, 226408],
+   desc: "fixes the current preferences panel, some strict JavaScript " +
+    "warnings, and unknown commands now work properly in 'autoperform'. It " +
+    "also replaces the four charset commands with two for simplicity."},
   {id: "0.9.60dp", date: "03/02/2004", condition: Y,
    bugs: [],
    desc: "is a special version containing both the <b>0.9.60p</b> and " +
