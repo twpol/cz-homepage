@@ -1,5 +1,12 @@
 var revs =
 [
+  {id: "0.9.61dp", date: "03/11/2004", condition: Y,
+   bugs: [],
+   desc: "is <b>0.9.61</b> plus the Firefox-compatible preference window, " +
+    "and the test DCC Chat code. Improvements on the DCC Chat since 0.9.60d " +
+    "include the ability to get your IP from the server (pref " +
+    "dcc.useServerIP), and limit which ports to listen on (pref " +
+    "dcc.listenPorts). It should also work on pre-1.7 Mozilla builds."},
   {id: "0.9.61", date: "03/10/2004", condition: G,
    bugs: [229072, 235260, 235261, 210222, 235648, 226408, 165332, 226223,
           236639, 211461, 190749],
