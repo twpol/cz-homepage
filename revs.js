@@ -1,6 +1,6 @@
 var revs =
 [
-  {id: "0.9.49", date: "12/02/2003", condition: Y,
+  {id: "0.9.49", date: "12/03/2003", condition: G,
    bugs: [226377, 217287, 227139, 197781],
    desc: "fixes the /name command, inbound mIRC color codes, and adds a few " +
     "behind-the-scenes fixes."},

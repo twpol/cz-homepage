@@ -33,7 +33,7 @@ var G = 0;
 var Y = 1;
 var R = 2;
 
-var ONE_DAY = 172800000;
+var ONE_DAY = 86400000;
 var ONE_WEEK = 7 * ONE_DAY;
 
 var conditions =
@@ -70,6 +70,7 @@ function writeByDate(maxDelta)
 {
     var today = new Date();
     var count = 0;
+    var wroteGreen = false;
     
     for (var i in revs)
     {
@@ -78,10 +79,12 @@ function writeByDate(maxDelta)
         {
             writeRev(revs[i]);
             ++count;
+            if (revs[i].condition == G)
+                wroteGreen = true;
         }
         else
         {            
-            if (!count)
+            if (!count || !wroteGreen)
             {
                 /* Rather than show nothing when there is nothing new, we
                  * write out everything up to (and including) the first green
