@@ -1,8 +1,21 @@
 var revs =
 [
+  {id: "0.9.67", date: "coming soon", condition: G,
+   bugs: [107245, 117851, 150140, 161205, 172094, 232801, 240114, 241442, 
+          243181, 255494, 256854, 257026, 261711, 262037, 263468, 265414, 
+          265863, 266151, 266541, 267477, 267478, 268260, 268901, 269633, 
+          274076, 274161, 274199, 276478],
+   desc: ""},
   {id: "0.9.66e", date: "2004-11-12", condition: Y,
    bugs: [161205, 256854, 263468, 243181, 267477, 268260, 268901],
-   desc: "fixes some startup errors for various OSes where users didn't have write access to Firefox's install location, adds sorting to the channel join dialog, disabling all sound now works, log file links are now all URLs, and the <tt>/plugin-pref</tt> command has been added. The <tt>/away</tt> command now works from the client view, and away status is persisted between connects and sessions. A list of backup nicknames has been added, and nickname reclamation is now supported. Provisional XULrunner support has been added as well."},
+   desc: "fixes some startup errors for various OSes where users didn't have " +
+    "write access to Firefox's install location, adds sorting to the channel " +
+    "join dialog, disabling all sound now works, log file links are now all " +
+    "URLs, and the <tt>/plugin-pref</tt> command has been added. The " +
+    "<tt>/away</tt> command now works from the client view, and away status " +
+    "is persisted between connects and sessions. A list of backup nicknames " +
+    "has been added, and nickname reclamation is now supported. Provisional " +
+    "XULrunner support has been added as well."},
   {id: "0.9.66d", date: "2004-10-31", condition: Y,
    bugs: [117851, 267478],
    desc: "finally sorts out <tt>/join</tt>, and adds double-clicking to " +
