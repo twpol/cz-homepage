@@ -73,6 +73,8 @@ var pages =
         }
     };
 
+pages["faq/chatzilla-faq.html"] = pages["faq/index.html"];
+
 var fileName = getCurrentFileName();
 
 var header =
