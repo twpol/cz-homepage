@@ -1,5 +1,14 @@
 var revs =
 [
+  {id: "0.9.64c", date: "2004-07-02", condition: Y,
+   bugs: [81978],
+   desc: "adds a 15 second delay to reconnecting, and speeds up joining many " +
+    "channels. Support for CLIENTINFO has been improved, now including " +
+    "individual command information. The tabs now act more like the " +
+    "tab-browser, by stretching and squashing to fit. Also, malformed " +
+    "aliases no longer break startup, and the helpful popup in the " +
+    "preferences window doesn't block input. A bug with channel-links in " +
+    "DCC Chat views is also fixed."},
   {id: "0.9.64b", date: "2004-06-17", condition: Y,
    bugs: [246424, 245783, 246558, 246717],
    desc: "fixes the 'Copy Link Location' regression in the previous " +
