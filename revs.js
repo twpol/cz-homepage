@@ -133,7 +133,7 @@ var revs =
    "<a href='http://www.irc.org/tech_docs/005.html'>RPL_ISUPPORT</a> " +
    "support, halfop mode support, and properly masks key and password " +
    "dialogs."},
-  {id: "0.9.47", date: "2003-11-8", condition: G,
+  {id: "0.9.47", date: "2003-11-08", condition: G,
    bugs: [220700, 224959],
    desc: "makes sure the input box has focus after switching tabs, and fixes " +
    "the meaning of ctrl-pgup/ctrl-pgdn."},
@@ -449,7 +449,7 @@ var revs =
   desc: "makes ChatZilla remember the state of multi-line mode and " +
   "window maximization between invocations, fixes a problem with " +
   "the /names command, and a number of other minor fixes."},
-  {id: "0.8.24", date: "2003-03-7", condition: Y,
+  {id: "0.8.24", date: "2003-03-07", condition: Y,
   bugs: [194287, 194184, 160295],
   desc: "fixes the problem with the userlist in channels with users " +
   "with accented characters in their nicknames.  It also " +
@@ -532,12 +532,12 @@ var revs =
   "network, and optionally only display channels that match a " +
   "user supplied pattern.  This revision also fixes the /hide " +
   "command, and nick list sorting on newer versions of Mozilla."},
-  {id: "0.8.10", date: "2002-09-4", condition: G,
+  {id: "0.8.10", date: "2002-09-04", condition: G,
   bugs: [165901, 165875, 165868, 137892],
   desc: "adds CLIENTINFO and TIME CTCP handlers, fixes a " +
   "regression introduced by post 1.1 builds, and fixes " +
   "some problems saving preferences."},
-  {id: "0.8.9", date: "2002-08-8", condition: G, bugs: [133472, 131498],
+  {id: "0.8.9", date: "2002-08-08", condition: G, bugs: [133472, 131498],
   desc: "makes tab switching faster, and fixes issues with encoded " +
   "channel names.  It also fixes a problem resolving irc urls " +
   "for networks that are added via a startup script."},
@@ -561,7 +561,7 @@ var revs =
   desc: "adds localizable strings.  Bidi will still be a problem in " +
   "some cases, but if you've been itching to translate chatzilla " +
   "into your favorite left-to-right language, now is the time."},
-  {id: "0.8.2", date: "2001-06-6", bugs: [79311, 75226], condition: G,
+  {id: "0.8.2", date: "2001-06-06", bugs: [79311, 75226], condition: G,
   desc: "clears up connection troubles described in bug 79311, and has " +
   "updated XUL to work with 0.9.0 and higher.  Won't work on " +
   "most pre-0.9.0 builds."},
