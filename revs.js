@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.51", date: "12/05/2003", condition: G,
+   bugs: [207949],
+   desc: "adds a button to Firebird's customizable toolbar to start " +
+    "Chatzilla."},
   {id: "0.9.50", date: "12/04/2003", condition: G,
    bugs: [207949],
    desc: "stops the irc: URL handler trying to handle requests when " + 
