@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.60", date: "03/02/2004", condition: G,
+   bugs: [236157, 235712],
+   desc: "fixes CTCP version messages to certain other clients, makes " +
+    "delete-view and hide-view work correctly when viewing the last tab, " +
+    "and adds half-ops to the channel header box."},
   {id: "0.9.59p", date: "02/09/2004", condition: Y,
    bugs: [],
    desc: "is a special release for Firefox (formerly Firebird) users. This " +
