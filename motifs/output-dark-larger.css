@@ -1,0 +1,5 @@
+@import url(chrome://chatzilla/skin/output-dark.css);
+
+.msg {
+  font-size: larger !important;
+}

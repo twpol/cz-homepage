@@ -1,0 +1,629 @@
+@import url(output-dark.css);
+
+.msg-user                                          { border: 1px blue solid; text-align: center; vertical-align: middle; }
+.msg-user[msg-user$="ME!"]                         { border: 1px green solid; }
+.msg-data[msg-type="PRIVMSG"][dest-type="IRCUser"] { border-color: #591efc !important; background: #060016 !important; }
+
+.msg-user[msg-user^="akk"]:after,
+.msg-user[msg-user^="andrews"]:after,
+.msg-user[msg-user^="andreww"]:after,
+.msg-user[msg-user^="asa"]:after,
+.msg-user[msg-user^="bbaetz"]:after,
+.msg-user[msg-user^="bc"]:after,
+.msg-user[msg-user^="benb"]:after,
+.msg-user[msg-user^="bengoodger"]:after,
+.msg-user[msg-user^="bernd"]:after,
+.msg-user[msg-user^="biesi"]:after,
+.msg-user[msg-user^="blake"]:after,
+.msg-user[msg-user^="blizzard"]:after,
+.msg-user[msg-user^="bmania_"]:after,
+.msg-user[msg-user^="botbot"]:after,
+.msg-user[msg-user^="brantgurga"]:after,
+.msg-user[msg-user^="brendan"]:after,
+.msg-user[msg-user^="bryner"]:after,
+.msg-user[msg-user^="buffy"]:after,
+.msg-user[msg-user^="bz"]:after,
+.msg-user[msg-user^="bzbot"]:after,
+.msg-user[msg-user^="cbegle"]:after,
+.msg-user[msg-user^="choess"]:after,
+.msg-user[msg-user^="coldacid"]:after,
+.msg-user[msg-user^="corbius"]:after,
+.msg-user[msg-user^="dbaron"]:after,
+.msg-user[msg-user^="dcran"]:after,
+.msg-user[msg-user^="dean"]:after,
+.msg-user[msg-user^="dkl"]:after,
+.msg-user[msg-user^="dmose"]:after,
+.msg-user[msg-user^="docbot"]:after,
+.msg-user[msg-user^="doron"]:after,
+.msg-user[msg-user^="dougt"]:after,
+.msg-user[msg-user^="drbrain"]:after,
+.msg-user[msg-user^="dveditz"]:after,
+.msg-user[msg-user^="emeyer"]:after,
+.msg-user[msg-user^="emose"]:after,
+.msg-user[msg-user^="fabian"]:after,
+.msg-user[msg-user^="fish"]:after,
+.msg-user[msg-user^="flashbang"]:after,
+.msg-user[msg-user^="frb"]:after,
+.msg-user[msg-user^="gemal"]:after,
+.msg-user[msg-user^="gerv"]:after,
+.msg-user[msg-user^="glazou"]:after,
+.msg-user[msg-user^="hendikins"]:after,
+.msg-user[msg-user^="hewitt"]:after,
+.msg-user[msg-user^="hixie"]:after,
+.msg-user[msg-user^="hyatt"]:after,
+.msg-user[msg-user^="imajes"]:after,
+.msg-user[msg-user^="ircmonkey"]:after,
+.msg-user[msg-user^="jag"]:after,
+.msg-user[msg-user^="jake"]:after,
+.msg-user[msg-user^="jan"]:after,
+.msg-user[msg-user^="janeri"]:after,
+.msg-user[msg-user^="jband"]:after,
+.msg-user[msg-user^="jelwell"]:after,
+.msg-user[msg-user^="jesus_x"]:after,
+.msg-user[msg-user^="jkeiser"]:after,
+.msg-user[msg-user^="joki"]:after,
+.msg-user[msg-user^="jp2"]:after,
+.msg-user[msg-user^="justdave"]:after,
+.msg-user[msg-user^="kaie"]:after,
+.msg-user[msg-user^="kairc"]:after,
+.msg-user[msg-user^="kairo"]:after,
+.msg-user[msg-user^="kerz"]:after,
+.msg-user[msg-user^="kiko"]:after,
+.msg-user[msg-user^="killer"]:after,
+.msg-user[msg-user^="kovu"]:after,
+.msg-user[msg-user^="kurros"]:after,
+.msg-user[msg-user^="leaf"]:after,
+.msg-user[msg-user^="lissyx"]:after,
+.msg-user[msg-user^="mang"]:after,
+.msg-user[msg-user^="matti"]:after,
+.msg-user[msg-user^="michaell"]:after,
+.msg-user[msg-user^="mightymu"]:after,
+.msg-user[msg-user^="mikep"]:after,
+.msg-user[msg-user^="mkaply"]:after,
+.msg-user[msg-user^="mnyromyr"]:after,
+.msg-user[msg-user^="mozbot"]:after,
+.msg-user[msg-user^="mpt"]:after,
+.msg-user[msg-user^="mrmazda"]:after,
+.msg-user[msg-user^="myk"]:after,
+.msg-user[msg-user^="neil"]:after,
+.msg-user[msg-user^="nemo"]:after,
+.msg-user[msg-user^="netdemon"]:after,
+.msg-user[msg-user^="nnooiissee"]:after,
+.msg-user[msg-user^="nsobject"]:after,
+.msg-user[msg-user^="os2mac"]:after,
+.msg-user[msg-user^="pchen"]:after,
+.msg-user[msg-user^="percy"]:after,
+.msg-user[msg-user^="peterv"]:after,
+.msg-user[msg-user^="phroggy"]:after,
+.msg-user[msg-user^="pike"]:after,
+.msg-user[msg-user^="pinkerton"]:after,
+.msg-user[msg-user^="redfive"]:after,
+.msg-user[msg-user^="rginda"]:after,
+.msg-user[msg-user^="rkaa"]:after,
+.msg-user[msg-user^="saari"]:after,
+.msg-user[msg-user^="scc"]:after,
+.msg-user[msg-user^="shaver"]:after,
+.msg-user[msg-user^="sicking"]:after,
+.msg-user[msg-user^="sleestack"]:after,
+.msg-user[msg-user^="smfr"]:after,
+.msg-user[msg-user^="smontagu"]:after,
+.msg-user[msg-user^="sodapop3k"]:after,
+.msg-user[msg-user^="ssdbot"]:after,
+.msg-user[msg-user^="ssieb"]:after,
+.msg-user[msg-user^="sspitzer"]:after,
+.msg-user[msg-user^="stephend"]:after,
+.msg-user[msg-user^="stuart"]:after,
+.msg-user[msg-user^="suresh"]:after,
+.msg-user[msg-user^="suzilla"]:after,
+.msg-user[msg-user^="syd"]:after,
+.msg-user[msg-user^="thebot"]:after,
+.msg-user[msg-user^="timeless"]:after,
+.msg-user[msg-user^="tingley"]:after,
+.msg-user[msg-user^="tristan"]:after,
+.msg-user[msg-user^="ukdavidw"]:after,
+.msg-user[msg-user^="waterson"]:after,
+.msg-user[msg-user^="wd"]:after,
+.msg-user[msg-user^="weirdal"]:after,
+.msg-user[msg-user^="wolruf"]:after,
+.msg-user[msg-user^="word"]:after,
+.msg-user[msg-user^="zach"]:after,
+XXX { content: "" !important; }
+
+.msg-user[msg-user^="akk"],
+.msg-user[msg-user^="andrews"],
+.msg-user[msg-user^="andreww"],
+.msg-user[msg-user^="asa"],
+.msg-user[msg-user^="bbaetz"],
+.msg-user[msg-user^="bc"],
+.msg-user[msg-user^="benb"],
+.msg-user[msg-user^="bengoodger"],
+.msg-user[msg-user^="bernd"],
+.msg-user[msg-user^="biesi"],
+.msg-user[msg-user^="blake"],
+.msg-user[msg-user^="blizzard"],
+.msg-user[msg-user^="bmania_"],
+.msg-user[msg-user^="botbot"],
+.msg-user[msg-user^="brantgurga"],
+.msg-user[msg-user^="brendan"],
+.msg-user[msg-user^="bryner"],
+.msg-user[msg-user^="buffy"],
+.msg-user[msg-user^="bz"],
+.msg-user[msg-user^="bzbot"],
+.msg-user[msg-user^="cbegle"],
+.msg-user[msg-user^="choess"],
+.msg-user[msg-user^="coldacid"],
+.msg-user[msg-user^="corbius"],
+.msg-user[msg-user^="dbaron"],
+.msg-user[msg-user^="dcran"],
+.msg-user[msg-user^="dean"],
+.msg-user[msg-user^="dkl"],
+.msg-user[msg-user^="dmose"],
+.msg-user[msg-user^="docbot"],
+.msg-user[msg-user^="doron"],
+.msg-user[msg-user^="dougt"],
+.msg-user[msg-user^="drbrain"],
+.msg-user[msg-user^="dveditz"],
+.msg-user[msg-user^="emeyer"],
+.msg-user[msg-user^="emose"],
+.msg-user[msg-user^="fabian"],
+.msg-user[msg-user^="fish"],
+.msg-user[msg-user^="flashbang"],
+.msg-user[msg-user^="frb"],
+.msg-user[msg-user^="gemal"],
+.msg-user[msg-user^="gerv"],
+.msg-user[msg-user^="glazou"],
+.msg-user[msg-user^="hendikins"],
+.msg-user[msg-user^="hewitt"],
+.msg-user[msg-user^="hixie"],
+.msg-user[msg-user^="hyatt"],
+.msg-user[msg-user^="imajes"],
+.msg-user[msg-user^="ircmonkey"],
+.msg-user[msg-user^="jag"],
+.msg-user[msg-user^="jake"],
+.msg-user[msg-user^="jan"],
+.msg-user[msg-user^="janeri"],
+.msg-user[msg-user^="jband"],
+.msg-user[msg-user^="jelwell"],
+.msg-user[msg-user^="jesus_x"],
+.msg-user[msg-user^="jkeiser"],
+.msg-user[msg-user^="joki"],
+.msg-user[msg-user^="jp2"],
+.msg-user[msg-user^="justdave"],
+.msg-user[msg-user^="kaie"],
+.msg-user[msg-user^="kairc"],
+.msg-user[msg-user^="kairo"],
+.msg-user[msg-user^="kerz"],
+.msg-user[msg-user^="kiko"],
+.msg-user[msg-user^="killer"],
+.msg-user[msg-user^="kovu"],
+.msg-user[msg-user^="kurros"],
+.msg-user[msg-user^="leaf"],
+.msg-user[msg-user^="lissyx"],
+.msg-user[msg-user^="mang"],
+.msg-user[msg-user^="matti"],
+.msg-user[msg-user^="michaell"],
+.msg-user[msg-user^="mightymu"],
+.msg-user[msg-user^="mikep"],
+.msg-user[msg-user^="mkaply"],
+.msg-user[msg-user^="mnyromyr"],
+.msg-user[msg-user^="mozbot"],
+.msg-user[msg-user^="mpt"],
+.msg-user[msg-user^="mrmazda"],
+.msg-user[msg-user^="myk"],
+.msg-user[msg-user^="neil"],
+.msg-user[msg-user^="nemo"],
+.msg-user[msg-user^="netdemon"],
+.msg-user[msg-user^="nnooiissee"],
+.msg-user[msg-user^="nsobject"],
+.msg-user[msg-user^="os2mac"],
+.msg-user[msg-user^="pchen"],
+.msg-user[msg-user^="percy"],
+.msg-user[msg-user^="peterv"],
+.msg-user[msg-user^="phroggy"],
+.msg-user[msg-user^="pike"],
+.msg-user[msg-user^="pinkerton"],
+.msg-user[msg-user^="redfive"],
+.msg-user[msg-user^="rginda"],
+.msg-user[msg-user^="rkaa"],
+.msg-user[msg-user^="saari"],
+.msg-user[msg-user^="scc"],
+.msg-user[msg-user^="shaver"],
+.msg-user[msg-user^="sicking"],
+.msg-user[msg-user^="sleestack"],
+.msg-user[msg-user^="smfr"],
+.msg-user[msg-user^="smontagu"],
+.msg-user[msg-user^="sodapop3k"],
+.msg-user[msg-user^="ssdbot"],
+.msg-user[msg-user^="ssieb"],
+.msg-user[msg-user^="sspitzer"],
+.msg-user[msg-user^="stephend"],
+.msg-user[msg-user^="stuart"],
+.msg-user[msg-user^="suresh"],
+.msg-user[msg-user^="suzilla"],
+.msg-user[msg-user^="syd"],
+.msg-user[msg-user^="thebot"],
+.msg-user[msg-user^="timeless"],
+.msg-user[msg-user^="tingley"],
+.msg-user[msg-user^="tristan"],
+.msg-user[msg-user^="ukdavidw"],
+.msg-user[msg-user^="waterson"],
+.msg-user[msg-user^="wd"],
+.msg-user[msg-user^="weirdal"],
+.msg-user[msg-user^="wolruf"],
+.msg-user[msg-user^="word"],
+.msg-user[msg-user^="zach"],
+XXX { text-align: center !important; }
+
+.msg-data[msg-user^="akk"],
+.msg-data[msg-user^="andrews"],
+.msg-data[msg-user^="andreww"],
+.msg-data[msg-user^="asa"],
+.msg-data[msg-user^="bbaetz"],
+.msg-data[msg-user^="bc"],
+.msg-data[msg-user^="benb"],
+.msg-data[msg-user^="bengoodger"],
+.msg-data[msg-user^="bernd"],
+.msg-data[msg-user^="biesi"],
+.msg-data[msg-user^="blake"],
+.msg-data[msg-user^="blizzard"],
+.msg-data[msg-user^="bmania_"],
+.msg-data[msg-user^="botbot"],
+.msg-data[msg-user^="brantgurga"],
+.msg-data[msg-user^="brendan"],
+.msg-data[msg-user^="bryner"],
+.msg-data[msg-user^="buffy"],
+.msg-data[msg-user^="bz"],
+.msg-data[msg-user^="bzbot"],
+.msg-data[msg-user^="cbegle"],
+.msg-data[msg-user^="choess"],
+.msg-data[msg-user^="coldacid"],
+.msg-data[msg-user^="corbius"],
+.msg-data[msg-user^="dbaron"],
+.msg-data[msg-user^="dcran"],
+.msg-data[msg-user^="dean"],
+.msg-data[msg-user^="dkl"],
+.msg-data[msg-user^="dmose"],
+.msg-data[msg-user^="docbot"],
+.msg-data[msg-user^="doron"],
+.msg-data[msg-user^="dougt"],
+.msg-data[msg-user^="drbrain"],
+.msg-data[msg-user^="dveditz"],
+.msg-data[msg-user^="emeyer"],
+.msg-data[msg-user^="emose"],
+.msg-data[msg-user^="fabian"],
+.msg-data[msg-user^="fish"],
+.msg-data[msg-user^="flashbang"],
+.msg-data[msg-user^="frb"],
+.msg-data[msg-user^="gemal"],
+.msg-data[msg-user^="gerv"],
+.msg-data[msg-user^="glazou"],
+.msg-data[msg-user^="hendikins"],
+.msg-data[msg-user^="hewitt"],
+.msg-data[msg-user^="hixie"],
+.msg-data[msg-user^="hyatt"],
+.msg-data[msg-user^="imajes"],
+.msg-data[msg-user^="ircmonkey"],
+.msg-data[msg-user^="jag"],
+.msg-data[msg-user^="jake"],
+.msg-data[msg-user^="jan"],
+.msg-data[msg-user^="janeri"],
+.msg-data[msg-user^="jband"],
+.msg-data[msg-user^="jelwell"],
+.msg-data[msg-user^="jesus_x"],
+.msg-data[msg-user^="jkeiser"],
+.msg-data[msg-user^="joki"],
+.msg-data[msg-user^="jp2"],
+.msg-data[msg-user^="justdave"],
+.msg-data[msg-user^="kaie"],
+.msg-data[msg-user^="kairc"],
+.msg-data[msg-user^="kairo"],
+.msg-data[msg-user^="kerz"],
+.msg-data[msg-user^="kiko"],
+.msg-data[msg-user^="killer"],
+.msg-data[msg-user^="kovu"],
+.msg-data[msg-user^="kurros"],
+.msg-data[msg-user^="leaf"],
+.msg-data[msg-user^="lissyx"],
+.msg-data[msg-user^="mang"],
+.msg-data[msg-user^="matti"],
+.msg-data[msg-user^="michaell"],
+.msg-data[msg-user^="mightymu"],
+.msg-data[msg-user^="mikep"],
+.msg-data[msg-user^="mkaply"],
+.msg-data[msg-user^="mnyromyr"],
+.msg-data[msg-user^="mozbot"],
+.msg-data[msg-user^="mpt"],
+.msg-data[msg-user^="mrmazda"],
+.msg-data[msg-user^="myk"],
+.msg-data[msg-user^="neil"],
+.msg-data[msg-user^="nemo"],
+.msg-data[msg-user^="netdemon"],
+.msg-data[msg-user^="nnooiissee"],
+.msg-data[msg-user^="nsobject"],
+.msg-data[msg-user^="os2mac"],
+.msg-data[msg-user^="pchen"],
+.msg-data[msg-user^="percy"],
+.msg-data[msg-user^="peterv"],
+.msg-data[msg-user^="phroggy"],
+.msg-data[msg-user^="pike"],
+.msg-data[msg-user^="pinkerton"],
+.msg-data[msg-user^="redfive"],
+.msg-data[msg-user^="rginda"],
+.msg-data[msg-user^="rkaa"],
+.msg-data[msg-user^="saari"],
+.msg-data[msg-user^="scc"],
+.msg-data[msg-user^="shaver"],
+.msg-data[msg-user^="sicking"],
+.msg-data[msg-user^="sleestack"],
+.msg-data[msg-user^="smfr"],
+.msg-data[msg-user^="smontagu"],
+.msg-data[msg-user^="sodapop3k"],
+.msg-data[msg-user^="ssdbot"],
+.msg-data[msg-user^="ssieb"],
+.msg-data[msg-user^="sspitzer"],
+.msg-data[msg-user^="stephend"],
+.msg-data[msg-user^="stuart"],
+.msg-data[msg-user^="suresh"],
+.msg-data[msg-user^="suzilla"],
+.msg-data[msg-user^="syd"],
+.msg-data[msg-user^="thebot"],
+.msg-data[msg-user^="timeless"],
+.msg-data[msg-user^="tingley"],
+.msg-data[msg-user^="tristan"],
+.msg-data[msg-user^="ukdavidw"],
+.msg-data[msg-user^="waterson"],
+.msg-data[msg-user^="wd"],
+.msg-data[msg-user^="weirdal"],
+.msg-data[msg-user^="wolruf"],
+.msg-data[msg-user^="word"],
+.msg-data[msg-user^="zach"],
+XXX { border: 1px #444444 solid; vertical-align: middle !important; -moz-border-radius: 0px 10px 10px 0px; background: #111111; }
+
+.msg-data[msg-user^="akk"][msg-type="ACTION"],
+.msg-data[msg-user^="andrews"][msg-type="ACTION"],
+.msg-data[msg-user^="andreww"][msg-type="ACTION"],
+.msg-data[msg-user^="asa"][msg-type="ACTION"],
+.msg-data[msg-user^="bbaetz"][msg-type="ACTION"],
+.msg-data[msg-user^="bc"][msg-type="ACTION"],
+.msg-data[msg-user^="benb"][msg-type="ACTION"],
+.msg-data[msg-user^="bengoodger"][msg-type="ACTION"],
+.msg-data[msg-user^="bernd"][msg-type="ACTION"],
+.msg-data[msg-user^="biesi"][msg-type="ACTION"],
+.msg-data[msg-user^="blake"][msg-type="ACTION"],
+.msg-data[msg-user^="blizzard"][msg-type="ACTION"],
+.msg-data[msg-user^="bmania_"][msg-type="ACTION"],
+.msg-data[msg-user^="botbot"][msg-type="ACTION"],
+.msg-data[msg-user^="brantgurga"][msg-type="ACTION"],
+.msg-data[msg-user^="brendan"][msg-type="ACTION"],
+.msg-data[msg-user^="bryner"][msg-type="ACTION"],
+.msg-data[msg-user^="buffy"][msg-type="ACTION"],
+.msg-data[msg-user^="bz"][msg-type="ACTION"],
+.msg-data[msg-user^="bzbot"][msg-type="ACTION"],
+.msg-data[msg-user^="cbegle"][msg-type="ACTION"],
+.msg-data[msg-user^="choess"][msg-type="ACTION"],
+.msg-data[msg-user^="coldacid"][msg-type="ACTION"],
+.msg-data[msg-user^="corbius"][msg-type="ACTION"],
+.msg-data[msg-user^="dbaron"][msg-type="ACTION"],
+.msg-data[msg-user^="dcran"][msg-type="ACTION"],
+.msg-data[msg-user^="dean"][msg-type="ACTION"],
+.msg-data[msg-user^="dkl"][msg-type="ACTION"],
+.msg-data[msg-user^="dmose"][msg-type="ACTION"],
+.msg-data[msg-user^="docbot"][msg-type="ACTION"],
+.msg-data[msg-user^="doron"][msg-type="ACTION"],
+.msg-data[msg-user^="dougt"][msg-type="ACTION"],
+.msg-data[msg-user^="drbrain"][msg-type="ACTION"],
+.msg-data[msg-user^="dveditz"][msg-type="ACTION"],
+.msg-data[msg-user^="emeyer"][msg-type="ACTION"],
+.msg-data[msg-user^="emose"][msg-type="ACTION"],
+.msg-data[msg-user^="fabian"][msg-type="ACTION"],
+.msg-data[msg-user^="fish"][msg-type="ACTION"],
+.msg-data[msg-user^="flashbang"][msg-type="ACTION"],
+.msg-data[msg-user^="frb"][msg-type="ACTION"],
+.msg-data[msg-user^="gemal"][msg-type="ACTION"],
+.msg-data[msg-user^="gerv"][msg-type="ACTION"],
+.msg-data[msg-user^="glazou"][msg-type="ACTION"],
+.msg-data[msg-user^="hendikins"][msg-type="ACTION"],
+.msg-data[msg-user^="hewitt"][msg-type="ACTION"],
+.msg-data[msg-user^="hixie"][msg-type="ACTION"],
+.msg-data[msg-user^="hyatt"][msg-type="ACTION"],
+.msg-data[msg-user^="imajes"][msg-type="ACTION"],
+.msg-data[msg-user^="ircmonkey"][msg-type="ACTION"],
+.msg-data[msg-user^="jag"][msg-type="ACTION"],
+.msg-data[msg-user^="jake"][msg-type="ACTION"],
+.msg-data[msg-user^="jan"][msg-type="ACTION"],
+.msg-data[msg-user^="janeri"][msg-type="ACTION"],
+.msg-data[msg-user^="jband"][msg-type="ACTION"],
+.msg-data[msg-user^="jelwell"][msg-type="ACTION"],
+.msg-data[msg-user^="jesus_x"][msg-type="ACTION"],
+.msg-data[msg-user^="jkeiser"][msg-type="ACTION"],
+.msg-data[msg-user^="joki"][msg-type="ACTION"],
+.msg-data[msg-user^="jp2"][msg-type="ACTION"],
+.msg-data[msg-user^="justdave"][msg-type="ACTION"],
+.msg-data[msg-user^="kaie"][msg-type="ACTION"],
+.msg-data[msg-user^="kairc"][msg-type="ACTION"],
+.msg-data[msg-user^="kairo"][msg-type="ACTION"],
+.msg-data[msg-user^="kerz"][msg-type="ACTION"],
+.msg-data[msg-user^="kiko"][msg-type="ACTION"],
+.msg-data[msg-user^="killer"][msg-type="ACTION"],
+.msg-data[msg-user^="kovu"][msg-type="ACTION"],
+.msg-data[msg-user^="kurros"][msg-type="ACTION"],
+.msg-data[msg-user^="leaf"][msg-type="ACTION"],
+.msg-data[msg-user^="lissyx"][msg-type="ACTION"],
+.msg-data[msg-user^="mang"][msg-type="ACTION"],
+.msg-data[msg-user^="matti"][msg-type="ACTION"],
+.msg-data[msg-user^="michaell"][msg-type="ACTION"],
+.msg-data[msg-user^="mightymu"][msg-type="ACTION"],
+.msg-data[msg-user^="mikep"][msg-type="ACTION"],
+.msg-data[msg-user^="mkaply"][msg-type="ACTION"],
+.msg-data[msg-user^="mnyromyr"][msg-type="ACTION"],
+.msg-data[msg-user^="mozbot"][msg-type="ACTION"],
+.msg-data[msg-user^="mpt"][msg-type="ACTION"],
+.msg-data[msg-user^="mrmazda"][msg-type="ACTION"],
+.msg-data[msg-user^="myk"][msg-type="ACTION"],
+.msg-data[msg-user^="neil"][msg-type="ACTION"],
+.msg-data[msg-user^="nemo"][msg-type="ACTION"],
+.msg-data[msg-user^="netdemon"][msg-type="ACTION"],
+.msg-data[msg-user^="nnooiissee"][msg-type="ACTION"],
+.msg-data[msg-user^="nsobject"][msg-type="ACTION"],
+.msg-data[msg-user^="os2mac"][msg-type="ACTION"],
+.msg-data[msg-user^="pchen"][msg-type="ACTION"],
+.msg-data[msg-user^="percy"][msg-type="ACTION"],
+.msg-data[msg-user^="peterv"][msg-type="ACTION"],
+.msg-data[msg-user^="phroggy"][msg-type="ACTION"],
+.msg-data[msg-user^="pike"][msg-type="ACTION"],
+.msg-data[msg-user^="pinkerton"][msg-type="ACTION"],
+.msg-data[msg-user^="redfive"][msg-type="ACTION"],
+.msg-data[msg-user^="rginda"][msg-type="ACTION"],
+.msg-data[msg-user^="rkaa"][msg-type="ACTION"],
+.msg-data[msg-user^="saari"][msg-type="ACTION"],
+.msg-data[msg-user^="scc"][msg-type="ACTION"],
+.msg-data[msg-user^="shaver"][msg-type="ACTION"],
+.msg-data[msg-user^="sicking"][msg-type="ACTION"],
+.msg-data[msg-user^="sleestack"][msg-type="ACTION"],
+.msg-data[msg-user^="smfr"][msg-type="ACTION"],
+.msg-data[msg-user^="smontagu"][msg-type="ACTION"],
+.msg-data[msg-user^="sodapop3k"][msg-type="ACTION"],
+.msg-data[msg-user^="ssdbot"][msg-type="ACTION"],
+.msg-data[msg-user^="ssieb"][msg-type="ACTION"],
+.msg-data[msg-user^="sspitzer"][msg-type="ACTION"],
+.msg-data[msg-user^="stephend"][msg-type="ACTION"],
+.msg-data[msg-user^="stuart"][msg-type="ACTION"],
+.msg-data[msg-user^="suresh"][msg-type="ACTION"],
+.msg-data[msg-user^="suzilla"][msg-type="ACTION"],
+.msg-data[msg-user^="syd"][msg-type="ACTION"],
+.msg-data[msg-user^="thebot"][msg-type="ACTION"],
+.msg-data[msg-user^="timeless"][msg-type="ACTION"],
+.msg-data[msg-user^="tingley"][msg-type="ACTION"],
+.msg-data[msg-user^="tristan"][msg-type="ACTION"],
+.msg-data[msg-user^="ukdavidw"][msg-type="ACTION"],
+.msg-data[msg-user^="waterson"][msg-type="ACTION"],
+.msg-data[msg-user^="wd"][msg-type="ACTION"],
+.msg-data[msg-user^="weirdal"][msg-type="ACTION"],
+.msg-data[msg-user^="wolruf"][msg-type="ACTION"],
+.msg-data[msg-user^="word"][msg-type="ACTION"],
+.msg-data[msg-user^="zach"][msg-type="ACTION"],
+XXX { border: 1px #427e93 solid; -moz-border-radius: 10px 10px 10px 10px; background: #111111; }
+
+.msg-user[msg-user^="akk"]:before { display: block; content: url(faces/akk.png) !important; }
+.msg-user[msg-user^="andrews"]:before { display: block; content: url(faces/andrews.png) !important; }
+.msg-user[msg-user^="andreww"]:before { display: block; content: url(faces/andreww.png) !important; }
+.msg-user[msg-user^="asa"]:before { display: block; content: url(faces/asa.png) !important; }
+.msg-user[msg-user^="bbaetz"]:before { display: block; content: url(faces/bbaetz.png) !important; }
+.msg-user[msg-user^="bc"]:before { display: block; content: url(faces/bc.png) !important; }
+.msg-user[msg-user^="benb"]:before { display: block; content: url(faces/benb.png) !important; }
+.msg-user[msg-user^="bengoodger"]:before { display: block; content: url(faces/bengoodger.png) !important; }
+.msg-user[msg-user^="bernd"]:before { display: block; content: url(faces/bernd.png) !important; }
+.msg-user[msg-user^="biesi"]:before { display: block; content: url(faces/biesi.png) !important; }
+.msg-user[msg-user^="blake"]:before { display: block; content: url(faces/blake.png) !important; }
+.msg-user[msg-user^="blizzard"]:before { display: block; content: url(faces/blizzard.png) !important; }
+.msg-user[msg-user^="bmania_"]:before { display: block; content: url(faces/bmania_.png) !important; }
+.msg-user[msg-user^="botbot"]:before { display: block; content: url(faces/botbot.png) !important; }
+.msg-user[msg-user^="brantgurga"]:before { display: block; content: url(faces/brantgurga.png) !important; }
+.msg-user[msg-user^="brendan"]:before { display: block; content: url(faces/brendan.png) !important; }
+.msg-user[msg-user^="bryner"]:before { display: block; content: url(faces/bryner.png) !important; }
+.msg-user[msg-user^="buffy"]:before { display: block; content: url(faces/buffy.png) !important; }
+.msg-user[msg-user^="bz"]:before { display: block; content: url(faces/bz.png) !important; }
+.msg-user[msg-user^="bzbot"]:before { display: block; content: url(faces/bzbot.png) !important; }
+.msg-user[msg-user^="cbegle"]:before { display: block; content: url(faces/cbegle.png) !important; }
+.msg-user[msg-user^="choess"]:before { display: block; content: url(faces/choess.png) !important; }
+.msg-user[msg-user^="coldacid"]:before { display: block; content: url(faces/coldacid.png) !important; }
+.msg-user[msg-user^="corbius"]:before { display: block; content: url(faces/corbius.png) !important; }
+.msg-user[msg-user^="dbaron"]:before { display: block; content: url(faces/dbaron.png) !important; }
+.msg-user[msg-user^="dcran"]:before { display: block; content: url(faces/dcran.png) !important; }
+.msg-user[msg-user^="dean"]:before { display: block; content: url(faces/dean.png) !important; }
+.msg-user[msg-user^="dkl"]:before { display: block; content: url(faces/dkl.png) !important; }
+.msg-user[msg-user^="dmose"]:before { display: block; content: url(faces/dmose.png) !important; }
+.msg-user[msg-user^="docbot"]:before { display: block; content: url(faces/docbot.png) !important; }
+.msg-user[msg-user^="doron"]:before { display: block; content: url(faces/doron.png) !important; }
+.msg-user[msg-user^="dougt"]:before { display: block; content: url(faces/dougt.png) !important; }
+.msg-user[msg-user^="drbrain"]:before { display: block; content: url(faces/drbrain.png) !important; }
+.msg-user[msg-user^="dveditz"]:before { display: block; content: url(faces/dveditz.png) !important; }
+.msg-user[msg-user^="emeyer"]:before { display: block; content: url(faces/emeyer.png) !important; }
+.msg-user[msg-user^="emose"]:before { display: block; content: url(faces/emose.png) !important; }
+.msg-user[msg-user^="fabian"]:before { display: block; content: url(faces/fabian.png) !important; }
+.msg-user[msg-user^="fish"]:before { display: block; content: url(faces/fish.png) !important; }
+.msg-user[msg-user^="flashbang"]:before { display: block; content: url(faces/flashbang.png) !important; }
+.msg-user[msg-user^="frb"]:before { display: block; content: url(faces/frb.png) !important; }
+.msg-user[msg-user^="gemal"]:before { display: block; content: url(faces/gemal.png) !important; }
+.msg-user[msg-user^="gerv"]:before { display: block; content: url(faces/gerv.png) !important; }
+.msg-user[msg-user^="glazou"]:before { display: block; content: url(faces/glazou.png) !important; }
+.msg-user[msg-user^="hendikins"]:before { display: block; content: url(faces/hendikins.png) !important; }
+.msg-user[msg-user^="hewitt"]:before { display: block; content: url(faces/hewitt.png) !important; }
+.msg-user[msg-user^="hixie"]:before { display: block; content: url(faces/hixie.png) !important; }
+.msg-user[msg-user^="hyatt"]:before { display: block; content: url(faces/hyatt.png) !important; }
+.msg-user[msg-user^="imajes"]:before { display: block; content: url(faces/imajes.png) !important; }
+.msg-user[msg-user^="ircmonkey"]:before { display: block; content: url(faces/ircmonkey.png) !important; }
+.msg-user[msg-user^="jag"]:before { display: block; content: url(faces/jag.png) !important; }
+.msg-user[msg-user^="jake"]:before { display: block; content: url(faces/jake.png) !important; }
+.msg-user[msg-user^="jan"]:before { display: block; content: url(faces/jan.png) !important; }
+.msg-user[msg-user^="janeri"]:before { display: block; content: url(faces/janeri.png) !important; }
+.msg-user[msg-user^="jband"]:before { display: block; content: url(faces/jband.png) !important; }
+.msg-user[msg-user^="jelwell"]:before { display: block; content: url(faces/jelwell.png) !important; }
+.msg-user[msg-user^="jesus_x"]:before { display: block; content: url(faces/jesus_x.png) !important; }
+.msg-user[msg-user^="jkeiser"]:before { display: block; content: url(faces/jkeiser.png) !important; }
+.msg-user[msg-user^="joki"]:before { display: block; content: url(faces/joki.png) !important; }
+.msg-user[msg-user^="jp2"]:before { display: block; content: url(faces/jp2.png) !important; }
+.msg-user[msg-user^="justdave"]:before { display: block; content: url(faces/justdave.png) !important; }
+.msg-user[msg-user^="kaie"]:before { display: block; content: url(faces/kaie.png) !important; }
+.msg-user[msg-user^="kairc"]:before { display: block; content: url(faces/kairc.png) !important; }
+.msg-user[msg-user^="kairo"]:before { display: block; content: url(faces/kairo.png) !important; }
+.msg-user[msg-user^="kerz"]:before { display: block; content: url(faces/kerz.png) !important; }
+.msg-user[msg-user^="kiko"]:before { display: block; content: url(faces/kiko.png) !important; }
+.msg-user[msg-user^="killer"]:before { display: block; content: url(faces/killer.png) !important; }
+.msg-user[msg-user^="kovu"]:before { display: block; content: url(faces/kovu.png) !important; }
+.msg-user[msg-user^="kurros"]:before { display: block; content: url(faces/kurros.png) !important; }
+.msg-user[msg-user^="leaf"]:before { display: block; content: url(faces/leaf.png) !important; }
+.msg-user[msg-user^="lissyx"]:before { display: block; content: url(faces/lissyx.png) !important; }
+.msg-user[msg-user^="mang"]:before { display: block; content: url(faces/mang.png) !important; }
+.msg-user[msg-user^="matti"]:before { display: block; content: url(faces/matti.png) !important; }
+.msg-user[msg-user^="michaell"]:before { display: block; content: url(faces/michaell.png) !important; }
+.msg-user[msg-user^="mightymu"]:before { display: block; content: url(faces/mightymu.png) !important; }
+.msg-user[msg-user^="mikep"]:before { display: block; content: url(faces/mikep.png) !important; }
+.msg-user[msg-user^="mkaply"]:before { display: block; content: url(faces/mkaply.png) !important; }
+.msg-user[msg-user^="mnyromyr"]:before { display: block; content: url(faces/mnyromyr.png) !important; }
+.msg-user[msg-user^="mozbot"]:before { display: block; content: url(faces/mozbot.png) !important; }
+.msg-user[msg-user^="mpt"]:before { display: block; content: url(faces/mpt.png) !important; }
+.msg-user[msg-user^="mrmazda"]:before { display: block; content: url(faces/mrmazda.png) !important; }
+.msg-user[msg-user^="myk"]:before { display: block; content: url(faces/myk.png) !important; }
+.msg-user[msg-user^="neil"]:before { display: block; content: url(faces/neil.png) !important; }
+.msg-user[msg-user^="nemo"]:before { display: block; content: url(faces/nemo.png) !important; }
+.msg-user[msg-user^="netdemon"]:before { display: block; content: url(faces/netdemon.png) !important; }
+.msg-user[msg-user^="nnooiissee"]:before { display: block; content: url(faces/nnooiissee.png) !important; }
+.msg-user[msg-user^="nsobject"]:before { display: block; content: url(faces/nsobject.png) !important; }
+.msg-user[msg-user^="os2mac"]:before { display: block; content: url(faces/os2mac.png) !important; }
+.msg-user[msg-user^="pchen"]:before { display: block; content: url(faces/pchen.png) !important; }
+.msg-user[msg-user^="percy"]:before { display: block; content: url(faces/percy.png) !important; }
+.msg-user[msg-user^="peterv"]:before { display: block; content: url(faces/peterv.png) !important; }
+.msg-user[msg-user^="phroggy"]:before { display: block; content: url(faces/phroggy.png) !important; }
+.msg-user[msg-user^="pike"]:before { display: block; content: url(faces/pike.png) !important; }
+.msg-user[msg-user^="pinkerton"]:before { display: block; content: url(faces/pinkerton.png) !important; }
+.msg-user[msg-user^="redfive"]:before { display: block; content: url(faces/redfive.png) !important; }
+.msg-user[msg-user^="rginda"]:before { display: block; content: url(faces/rginda.png) !important; }
+.msg-user[msg-user^="rkaa"]:before { display: block; content: url(faces/rkaa.png) !important; }
+.msg-user[msg-user^="saari"]:before { display: block; content: url(faces/saari.png) !important; }
+.msg-user[msg-user^="scc"]:before { display: block; content: url(faces/scc.png) !important; }
+.msg-user[msg-user^="shaver"]:before { display: block; content: url(faces/shaver.png) !important; }
+.msg-user[msg-user^="sicking"]:before { display: block; content: url(faces/sicking.png) !important; }
+.msg-user[msg-user^="sleestack"]:before { display: block; content: url(faces/sleestack.png) !important; }
+.msg-user[msg-user^="smfr"]:before { display: block; content: url(faces/smfr.png) !important; }
+.msg-user[msg-user^="smontagu"]:before { display: block; content: url(faces/smontagu.png) !important; }
+.msg-user[msg-user^="sodapop3k"]:before { display: block; content: url(faces/sodapop3k.png) !important; }
+.msg-user[msg-user^="ssdbot"]:before { display: block; content: url(faces/ssdbot.png) !important; }
+.msg-user[msg-user^="ssieb"]:before { display: block; content: url(faces/ssieb.png) !important; }
+.msg-user[msg-user^="sspitzer"]:before { display: block; content: url(faces/sspitzer.png) !important; }
+.msg-user[msg-user^="stephend"]:before { display: block; content: url(faces/stephend.png) !important; }
+.msg-user[msg-user^="stuart"]:before { display: block; content: url(faces/stuart.png) !important; }
+.msg-user[msg-user^="suresh"]:before { display: block; content: url(faces/suresh.png) !important; }
+.msg-user[msg-user^="suzilla"]:before { display: block; content: url(faces/suzilla.png) !important; }
+.msg-user[msg-user^="syd"]:before { display: block; content: url(faces/syd.png) !important; }
+.msg-user[msg-user^="thebot"]:before { display: block; content: url(faces/thebot.png) !important; }
+.msg-user[msg-user^="timeless"]:before { display: block; content: url(faces/timeless.png) !important; }
+.msg-user[msg-user^="tingley"]:before { display: block; content: url(faces/tingley.png) !important; }
+.msg-user[msg-user^="tristan"]:before { display: block; content: url(faces/tristan.png) !important; }
+.msg-user[msg-user^="ukdavidw"]:before { display: block; content: url(faces/ukdavidw.png) !important; }
+.msg-user[msg-user^="waterson"]:before { display: block; content: url(faces/waterson.png) !important; }
+.msg-user[msg-user^="wd"]:before { display: block; content: url(faces/wd.png) !important; }
+.msg-user[msg-user^="weirdal"]:before { display: block; content: url(faces/weirdal.png) !important; }
+.msg-user[msg-user^="wolruf"]:before { display: block; content: url(faces/wolruf.png) !important; }
+.msg-user[msg-user^="word"]:before { display: block; content: url(faces/word.png) !important; }
+.msg-user[msg-user^="zach"]:before { display: block; content: url(faces/zach.png) !important; }

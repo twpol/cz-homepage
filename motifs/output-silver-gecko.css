@@ -1,0 +1,121 @@
+/* -*- Mode: Text; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+ * The contents of this file are subject to the Mozilla Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Chatzilla.
+ *
+ * The Initial Developer of the Original Code is Robert Tolliver
+ * Portions created by Robert Tolliver are
+ * Copyright (C) 2003 Robert Tolliver. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *  Robert Tolliver <RobbTiger@softhome.net>
+ * 
+ * Styles for output window
+ *
+ * The gecko image is a modified version of the one created by Lee Chee Ann <cheeann@phoenity.com>
+ *
+ */
+
+@import url("chrome://chatzilla/content/output-base.css");
+
+body.chatzilla-body{
+    background: #ccc fixed center no-repeat url("gecko.png");
+
+}
+
+.msg-table {
+    background: inherit;
+    font-size: 10pt;
+    height: 100%;
+}
+.msg-type {
+    vertical-align: middle;
+}
+.msg-user {
+    text-align: center;
+    vertical-align: middle;
+    border: thin #f74 solid;
+    -moz-border-radius: 5px;
+    background-color: white;
+    /*this seems to make the users name disappear, so I'm disabling it for now..*/
+    /* background: white fixed center no-repeat url("gecko.png"); */
+    padding: .5ex .5em;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.msg-user:before,
+.msg-user:after{
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+.msg-data {
+    text-align: left;
+    vertical-align: middle;
+    border: thin #44f solid;
+    background: white fixed center no-repeat url("gecko.png");
+    -moz-border-radius: 5px;
+    padding: .5ex 1em;
+}
+
+.msg-data[important="true"],
+.msg-user[important="true"] {
+border-width: 2px;
+font-weight: bold;
+}
+
+.msg-data[msg-type="JOIN"],
+.msg-data[msg-type="QUIT"],
+.msg-data[msg-type="PART"] {
+    background: #f74 fixed center no-repeat url("gecko.png");
+
+    color: black;
+    -moz-border-radius: 5px;
+}
+
+.msg-data[msg-type="372"],
+.msg-data[msg-type="EVAL-IN"],
+.msg-data[msg-type="EVAL-OUT"],
+.msg-data[msg-type="HELLO"],
+.msg-data[msg-type="ERROR"],
+.msg-data[msg-type="USAGE"],
+.msg-data[msg-type="NICK"],
+.msg-data[msg-type="NOTICE"],
+.msg-data[msg-type="MODE"],
+.msg-data[msg-type="KICK"],
+.msg-data[msg-type="INFO"],
+.msg-data[msg-type="HELP"] ,
+.msg-data[msg-type="STATUS"] {
+    border: 0px;
+    background: inherit;
+}
+
+
+.msg-user[msg-type="ACTION"]:before {
+    content: "*"
+}
+
+.msg-data[msg-type="ACTION"] {
+    font-style: italic;
+}
+
+.msg-user[dest-type="IRCUser"]:before,
+.msg-user[dest-type="IRCUser"]:after {
+    content: "<<";
+    font-weight: bold;
+}
+.msg-user[msg-dest$="ME!"]:before,
+.msg-user[msg-dest$="ME!"]:after {
+    content: ">>";
+    font-weight: bold;
+}

@@ -1,0 +1,82 @@
+/* -*- Mode: Text; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+ * The contents of this file are subject to the Mozilla Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Chatzilla.
+ *
+ * The Initial Developer of the Original Code is New Dimensions Consulting,
+ * Inc. Portions created by New Dimensions Consulting, Inc. are
+ * Copyright (C) 1999 New Dimenstions Consulting, Inc. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *  Robert Ginda, rginda@ndcico.com, original author
+ * 
+ * Styles for output window
+ *
+ */
+
+/* 
+ *  a version of the output window that uses only your default foreground and
+ *  backgrond colors.  Message types are distinguished by font changes.
+ *  see output-base.css for details. 
+ */
+
+@import url(chrome://chatzilla/content/output-base.css);
+
+.header-outer {
+    background-color: white;
+}
+
+.msg-data[msg-type="ACTION"] {
+    font-style: italic;
+}
+
+.msg-type[msg-type="JOIN"],
+.msg-type[msg-type="PART"],
+.msg-type[msg-type="QUIT"] {
+    font-weight: bold;
+}
+
+.msg-data[msg-type="QUIT"] {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.msg-data[msg-type="JOIN"],
+.msg-data[msg-type="PART"] {
+    font-variant: small-caps;
+}
+
+.msg-data[msg-type="HELLO"],
+.msg-type[msg-type="NICK"],
+.msg-data[msg-type="NOTICE"] {
+    font-weight: bold;
+}
+
+.msg-data[msg-type="NICK"] {
+    font: 10pt courier;
+}
+
+/* :before and :after pseudoclasses form the decorations around nicknames.     */
+.msg-user:before,
+.msg-user:after {
+    font: 10pt courier;
+    font-weight: bolder;
+}
+
+.msg-user[dest-type="IRCUser"],
+.msg-user[dest-type="IRCUser"][msg-dest$="ME!"] {
+    font-style: italic;
+}
+
+.msg-user[msg-user$="ME!"] {
+    font-weight: bold;
+}

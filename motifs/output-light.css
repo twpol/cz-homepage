@@ -1,0 +1,224 @@
+/* -*- Mode: Text; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+ * The contents of this file are subject to the Mozilla Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Chatzilla.
+ *
+ * The Initial Developer of the Original Code is New Dimensions Consulting,
+ * Inc. Portions created by New Dimensions Consulting, Inc. are
+ * Copyright (C) 1999 New Dimenstions Consulting, Inc. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *  Robert Ginda, rginda@ndcico.com, original author
+ * 
+ * Styles for output window
+ *
+ */
+
+/* 
+ *  a light background/dark text version of the output window.
+ *  see output-base.css for details. 
+ */
+
+@import url(chrome://chatzilla/content/output-base.css);
+
+body.chatzilla-body {               /* The topmost container in the ChatZilla */
+    background: white;              /* output window.                         */
+    color: #222222;    
+}
+
+a.chatzilla-link {
+    color: #333023;
+}
+
+.header {
+    color: darkslategrey;
+    background-color: #EEEEEE;
+/*    -moz-opacity: 0.9;*/
+    border: 1px #777499 solid;
+    -moz-border-radius: 7px;
+}
+
+#splash {
+    color: #DDDDDD;
+}
+
+#usr-descnodes,
+#ch-topicnodes {
+    color: black;
+}
+
+[condition] {
+    font-weight: bold;
+}
+
+[condition="red"] {
+    color: red;
+}
+
+[condition="yellow"] {
+    color: orange;
+}
+
+[condition="green"] {
+    color: #2ec908;
+}
+
+.msg-data[msg-type="PRIVMSG"],
+.msg-data[msg-type="ACTION"] {
+    background-color: #F0F0F0;
+}
+
+.msg-data[msg-type="HELLO"] a.chatzilla-link {
+    color: #ffe8b5;
+}
+
+.msg-data[msg-type="JOIN"] a.chatzilla-link,
+.msg-data[msg-type="PART"] a.chatzilla-link {
+    font-weight: bold;
+    color: #11c411;
+}
+
+.msg-data[msg-type="ERROR"] a.chatzilla-link {
+    font-weight: bold;
+    color: white;
+}
+
+.msg-data[msg-type="KICK"]  a.chatzilla-link {
+    color: #aa0d08;
+}
+
+.msg-data[msg-type="NOTICE"]  a.chatzilla-link {
+    color: #451ccc;
+}
+
+.msg-data[msg-type="QUIT"]  a.chatzilla-link {
+    color: #c46907;
+}
+
+.chatzilla-rheet {
+    color: #e25e00 !important;
+}
+
+.chatzilla-highlight[name="Slate"] {
+    color: black;
+    background: #b8c4e0;
+}
+
+.chatzilla-highlight[name="Plum"] {
+    color: black;
+    background: #ddb8d0;
+}
+
+.chatzilla-highlight[name="Brown"] {
+    color: black;
+    background: #ffbf77;
+}
+
+.msg-type {                                 /* .msg-type = message type       */
+    color: #686699;                         /* indicator                      */
+    font-weight: bold;
+}
+
+.msg-user a.chatzilla-link,
+.msg-user {                                 /* msg-user = nickname portion of */
+    color: black !important;                /* a message (channel and query   */
+    font-weight: bold;                      /* views)                         */
+}                     
+ 
+.msg-data[mark="even"] {                    /* use even/odd marks to create a */
+    color: #555555;                         /* subtle brightness change when  */
+}                                           /* the speaker changes.           */
+
+.msg-data[msg-type="JOIN"],
+.msg-data[msg-type="PART"] {
+    color: #0e9e0e;
+    background-color: #c3f7c3; 
+    font-weight: bold;
+    -moz-border-radius: 5px 5px 5px 5px;
+    /*border: thin darkblue solid;*/
+}
+
+.msg-data[msg-type="QUIT"] {
+    background: #fff196;
+    color: #ff8d02;
+    font-weight: bold;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg-data[msg-type="HELLO"] {
+    background: #ff7020;
+    color: white;
+    -moz-border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+.msg-data[msg-type="ERROR"] {
+    -moz-border-radius: 5px 5px 5px 5px;
+    background: #a8221e;
+    color: white;
+}
+
+.msg-data[msg-type="USAGE"] {
+    color: black;
+}
+
+.msg-data[msg-type="ACTION"] {
+    color: black;
+    font-style: italic;
+}
+
+.msg-data[msg-type="NICK"] {
+    color: #4e8387;
+    background-color: #d5e9ea;
+    font-weight: bold;
+}
+
+.msg-data[msg-type="NOTICE"] {
+    color: #6331ed;
+    font-weight: bold;
+}
+
+.msg-data[msg-type="MODE"] {
+    color: #2709ed;
+    font-weight: bold;
+}
+
+.msg-data[msg-type="KICK"] {
+    color: #ff1a0a;
+    background: #ffdbcc;
+    font-weight: bold;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+/* important="true" means that the message has text from your /stalk list in
+ * it, has your nickname in it, or was spoken by someone in your /stalk list.
+ */
+.msg-user[important="true"] {
+    background: #d4d8d4;
+    -moz-border-radius: 5px 0px 0px 5px;
+}
+
+.msg-data[important="true"] {
+    background: #eaefeb;
+}
+
+
+/* :before and :after pseudoclasses form the decorations around nicknames.     */
+.msg-user:before,
+.msg-user:after {
+    color: #777499;
+}
+
+.msg-user[msg-user$="ME!"]:before,               /* the decoration around MY   */
+.msg-user[msg-user$="ME!"]:after {               /* nick                       */
+    color: #843c6c;
+}
