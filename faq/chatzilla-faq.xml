@@ -60,7 +60,7 @@
 
 <answer>
   If you are using the Mozilla Suite, you will need to use the uninstall
-  procedure outlined above. If you are using Mozilla Firebird, use the 
+  procedure outlined above. If you are using Mozilla Firefox, use the 
   following steps (you will need at least version 0.9.50):
   <ol>
   	<li>Open the Options dialog from the Tools menu.
@@ -90,7 +90,7 @@
   <ol>
     <li>You can start ChatZilla from the <b><u>W</u>indow-&gt;IRC Chat</b> 
       menu in the Mozilla Suite, and with the <b>IRC Chat</b> button you can
-      place on Mozilla Firebird's toolbar.
+      place on Mozilla Firefox's toolbar.
     </li>
     <li>You can also start the browser with the <tt>-chat</tt> command line
       option.  This will launch ChatZilla instead of a browser front end.
@@ -105,14 +105,14 @@
 
 <entry id="start-fb">
 <question>
-  How do I start ChatZilla in Mozilla Firebird?
+  How do I start ChatZilla in Mozilla Firefox?
 </question>
 
 <answer>
   If you have ChatZilla 0.9.51 or newer, you can place an <b>IRC Chat</b> 
   button on your toolbar, which will start ChatZilla.
   <p/>
-  The only way to start older ChatZilla versions in Mozilla Firebird is via an 
+  The only way to start older ChatZilla versions in Mozilla Firefox is via an 
   <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>.
   Type "irc:" in the url bar to launch ChatZilla and connect to your default
   channels.  You may want to file a bookmark in your personal toolbar to
@@ -692,7 +692,7 @@ body.chatzilla-body .msg {
   <p/>
   If it's not a DPI thing, you can adjust your font size with a special
   rule in <b>userContent.css</b>.  In the <tt>chrome/</tt> subdirectory of your
-  <a href="http://www.google.com/search?q=(mozilla%20OR%20firebird)%20profile%20directory">profile directory</a>,
+  <a href="http://www.google.com/search?q=(mozilla%20OR%20Firefox)%20profile%20directory">profile directory</a>,
   create a file called <b>userContent.css</b>, and add the text shown at the right.
 </answer>
 </entry>
