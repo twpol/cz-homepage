@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.64b", date: "2004-06-17", condition: Y,
+   bugs: [246424, 245783, 246558, 246717],
+   desc: "fixes the 'Copy Link Location' regression in the previous " +
+    "release, and includes more Firefox 0.9 compatibility updates."},
   {id: "0.9.64a", date: "2004-06-10", condition: Y,
    bugs: [245783],
    desc: "fixes problems with recent Firefox nightly builds, including " +
