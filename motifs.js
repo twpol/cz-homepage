@@ -48,11 +48,11 @@ var motifs = {
 
     "output-lz": "A bright white, orange and blue themed motif, by Fergus Kelley.",
     "output-mullusko": "Light background, makes it slightly easier to see " +
-    "who is saying what.",
+                       "who is saying what.",
     "output-redmoz": "Red and orange, mozilla star in background.",
     "output-silver": "Variation on light motif.",
     "output-silver-gecko": "Variation on light motif, with gecko background image.",
-    "output-sunshine": "A yellow theme maded to match the new emoticons"
+    "output-sunshine": "A yellow motif made to match the new emoticons in ChatZilla, by Robin M."
 }
 
 function writeMotifs()
