@@ -1,7 +1,7 @@
 var revs =
 [
   {id: "0.9.64e", date: "2004-07-10", condition: Y,
-   bugs: [250406],
+   bugs: [250406, 221825],
    desc: "fixes the 'sync-headers' message coming up when you disconnect, " +
     "adds more emoticon matching, fixes it so it no longer thinks 'BD' " +
     "and '80' are emoticons, reduced the console spew a bit, improved the " +
