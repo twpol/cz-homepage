@@ -29,14 +29,14 @@
  *
  */
 
-var FAQ = ["faq/chatzilla-faq.html", "FAQ"];
-var DOCS = ["faq/chatzilla-faq.html#moredocs", "Documentation"];
-var SHOTS = ["screenshots/?M=D", "Screenshots"];
-var MOTIFS = ["motifs.html", "Motifs"];
-var IRC = ["faq/chatzilla-faq.html#irc", "IRC Channel"];
-var DONATE = ["donate.html", "Donate"];
-var RELEASES = ["revs.html", "Revision History"];
-var HOME = ["index.html", "ChatZilla Home"];
+var FAQ =      ["faq/",             "FAQ"];
+var DOCS =     ["faq/#moredocs",    "Documentation"];
+var SHOTS =    ["screenshots/?M=D", "Screenshots"];
+var MOTIFS =   ["motifs.html",      "Motifs"];
+var IRC =      ["faq/#irc",         "IRC Channel"];
+var DONATE =   ["donate.html",      "Donate"];
+var RELEASES = ["revs.html",        "Revision History"];
+var HOME =     ["index.html",       "ChatZilla Home"];
 
 var defaultMenu = [HOME, SHOTS, MOTIFS, RELEASES, FAQ, DOCS, IRC, DONATE];
 
@@ -67,7 +67,7 @@ var pages =
             toplevel: ""
         },
 
-        "chatzilla-faq.html": {
+        "faq/index.html": {
             title: "ChatZilla Frequently Asked Questions",
             toplevel: "../"
         }
@@ -105,12 +105,26 @@ var footer =
 
 function getCurrentFileName()
 {
-    var pos = document.location.pathname.lastIndexOf("/");
-    var filename = document.location.pathname.substr(pos + 1);
-    if (!filename)
-        return "index.html";
+    var longest = "";
+    var path = document.location.pathname;
     
-    return filename;
+    if (!path.substr(path.lastIndexOf("/") + 1))
+        path += "index.html";
+    
+    for (var n in pages)
+    {
+        if (path.substring(path.length - n.length) == n)
+        {
+            if (n.length > longest.length)
+                longest = n;
+        }
+    }
+    return longest;
+}
+
+function generateFileNamesForMenu(menu) {
+    for (var i = 0; i < menu.length; ++i)
+        menu[i][2] = menu[i][0].replace(/\/(\?|#|$)/, "\/index.html$1");
 }
 
 function writeHeader()
@@ -131,12 +145,13 @@ function writeFooter()
 function getMenu(page)
 {
     var menu = ("menu" in page) ? page.menu : defaultMenu;
+    generateFileNamesForMenu(menu);
     var str = "<div id='menu'>[ ";
     for (var i = 0; i < menu.length; ++i)
     {
         var url = page.toplevel + menu[i][0];
         var desc = menu[i][1];
-        if (url != fileName)
+        if (menu[i][2] != fileName)
             str += "<a href='" + url + "'>" + desc + "</a>";
         else
             str += "<span class='currentpage'>" + desc + "</span>";
