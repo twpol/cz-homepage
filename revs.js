@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.50", date: "12/04/2003", condition: G,
+   bugs: [207949],
+   desc: "stops the irc: URL handler trying to handle requests when " + 
+    "Chatzilla is disabled in Firebird."},
   {id: "0.9.49", date: "12/03/2003", condition: G,
    bugs: [226377, 217287, 227139, 197781],
    desc: "fixes the /name command, inbound mIRC color codes, and adds a few " +
