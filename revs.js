@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.63a", date: "2004-04-23", condition: R,
+   bugs: [],
+   desc: "fixes a backwards-incompatible change that was accidentaly let " +
+    "into the codebase. irc: URL links now work in all Mozilla versions."},
   {id: "0.9.63", date: "2004-04-22", condition: R,
    bugs: [230328, 127662, 185729, 226223, 226410, 231150, 235650, 238551, 
           238716, 73257, 226408, 238612, 108087, 180577, 211461, 218070],
