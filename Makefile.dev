@@ -1,20 +1,4 @@
-FAQ_FILES = faq/chatzilla-faq.xml \
-			faq/chatzilla-faq.html \
-			faq/defaultstyle.css \
-			faq/faqs.xsl
-
-rev:
-	echo $(VERSION)
-	touch index.html
-	rsync -essh index.html revs.js chatzilla*.xpi hru:~/chatzilla
-
-#	scp index.html revs.js $(FAQ_FILES) hru:~/chatzilla
-#	rsync -vzessh --exclude "*~" --exclude "#*" * faq/* hru:~/
-
-xslt: 
+xslt:: 
 	xsltproc faq/chatzilla-faq.xml > faq/chatzilla-faq.html;
-
-cp-xslt: xslt
-	scp $(FAQ_FILES) hru:~/chatzilla/faq
 
 
