@@ -1,8 +1,8 @@
 var revs =
 [
   {id: "0.9.61", date: "03/10/2004", condition: G,
-   bugs: [229072, 235260, 235261, 210222, 235648, 226408, 165332, 165223,
-          226223, 236639, 211461, 190749],
+   bugs: [229072, 235260, 235261, 210222, 235648, 226408, 165332, 226223,
+          236639, 211461, 190749],
    desc: "fixes the current preferences panel, some strict JavaScript " +
     "warnings, and unknown commands now work properly in 'autoperform'. It " +
     "also replaces the four charset commands with two for simplicity, shows " +
