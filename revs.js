@@ -1,5 +1,12 @@
 var revs =
 [
+  {id: "0.9.62dp", date: "2004-03-18", condition: Y,
+   bugs: [226223],
+   desc: "is <b>0.9.61dp</b> plus the logging bug fix found in " +
+    "<b>0.9.62</b>."},
+  {id: "0.9.62", date: "2004-03-18", condition: Y,
+   bugs: [226223],
+   desc: "fixes the logging code that escaped the filename too much."},
   {id: "0.9.61dp", date: "2004-03-11", condition: Y,
    bugs: [],
    desc: "is <b>0.9.61</b> plus the Firefox-compatible preference window, " +
