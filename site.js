@@ -47,6 +47,11 @@ var pages =
             toplevel: ""
         },
         
+        "oldnews.html": {
+            title: "Older News",
+            toplevel: ""
+        },
+        
         "revs.html": {
             title: "Revision History",
             toplevel: ""
