@@ -177,12 +177,6 @@ a.chatzilla-link {
 
 
 
-.msg[msg-user$="ME!"] .msg-user:before,          /* the decoration around MY   */
-.msg[msg-user$="ME!"] .msg-user:after {          /* nick                       */
-    visibility: hidden;
-
-}
-
 .msg[msg-user$="ME!"] .msg-user {
 	-moz-border-radius: 0px 5px 5px 0px;
     border-bottom: 1px black solid;
@@ -218,6 +212,10 @@ a.chatzilla-link {
 
 .msg-user:before,               
 .msg-user:after {               
-    visibility: hidden;
+    display: none;
+}
 
+.msg-user {
+    padding-left: 1em;
+    padding-right: 1em;
 }
