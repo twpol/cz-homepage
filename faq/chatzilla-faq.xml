@@ -1271,7 +1271,7 @@ You may separate multiple commands with the semicolon (';') character, as
         <a href="http://bugzilla.mozilla.org/query.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">search</a> for a particular bug on the list.
     </li>
     <li>If you can't find a duplicate, then please
-      <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Browser&amp;version=other&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
+      <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Browser&amp;version=Trunk&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
     </li>
   </ol>
 </answer>
