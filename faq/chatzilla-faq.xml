@@ -88,17 +88,16 @@
 
 <answer>
   <ol>
-    <li>You can start ChatZilla from the
-       <b><u>W</u>indow-&gt;IRC Chat</b> menu.
+    <li>You can start ChatZilla from the <b><u>W</u>indow-&gt;IRC Chat</b> 
+      menu in the Mozilla Suite, and with the <b>IRC Chat</b> button you can
+      place on Mozilla Firebird's toolbar.
     </li>
     <li>You can also start the browser with the <tt>-chat</tt> command line
       option.  This will launch ChatZilla instead of a browser front end.
     </li>
     <li>You can type an <tt>irc</tt> in the URL bar. Type just <tt>irc:</tt>
-      to launch ChatZilla and connect to default channels.  Currently, this
-      is the recommended way to launch ChatZilla from within Mozilla Firebird or
-      Phoenix.  Note that you can bookmark this URL, and file it wherever it
-      to make sense to you.
+      to launch ChatZilla and connect to default channels.  Note that you 
+      can bookmark this URL, and file it wherever it to make sense to you.
     </li>
   </ol>
 </answer>
@@ -110,7 +109,10 @@
 </question>
 
 <answer>
-  The only way to start ChatZilla in Mozilla Firebird is via an 
+  If you have ChatZilla 0.9.51 or newer, you can place an <b>IRC Chat</b> 
+  button on your toolbar, which will start ChatZilla.
+  <p/>
+  The only way to start older ChatZilla versions in Mozilla Firebird is via an 
   <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>.
   Type "irc:" in the url bar to launch ChatZilla and connect to your default
   channels.  You may want to file a bookmark in your personal toolbar to
@@ -437,9 +439,13 @@
 </question>
   
 <answer>
-  Timestamps appear in the statusbar when you mouse over messages.  There
-  isn't yet an option to display them in the message, but it's a popular
-  request and will likely be implemented sooner or later.
+  If you have ChatZilla 0.9.54c or newer, you can have timestamps in the main
+  chat view. If you have turned them off, you can turn them on by setting the 
+  <tt>timestamps</tt> preferences to <tt>true</tt>. See the entry on 
+  <a href="#prefs">tweaking the preferences</a> for how to do this globally, 
+  or per network, channel or even query view.
+  <p/>
+  Timestamps also appear in the statusbar when you mouse over messages.
 </answer>
 </entry>
 
@@ -584,6 +590,23 @@ You may separate multiple commands with the semicolon (';') character, as
 </answer>
 </entry>
 
+<entry id="rejoin">
+<question>
+  How do I make ChatZilla auto-rejoin a channel when I'm kicked?
+</question>
+
+<answer>
+  By default, ChatZilla will no try to rejoin a channel if you are kicked 
+  from it. You can turn this on globally using <tt>/pref autoRejoin true</tt>,
+  or <tt>/channel-pref autoRejoin true</tt> to turn it on only for the 
+  current channel (see <a href="#prefs">tweaking the preferecnes</a> for more
+  details).
+  <p/>
+  You may want to be careful on which channels you enable this, as some bots
+  and channel operators will ban people who auto-rejoin when kicked.
+</answer>
+</entry>
+
 <entry id="font-size">
 <question>
   How do I set the font size?
@@ -651,6 +674,36 @@ body.chatzilla-body .msg {
   how to use this motif at the
   <a href="http://www.hacksrus.com/~ginda/chatzilla/faces.pl">moznet faces</a>
   page on hacksrus.
+</answer>
+</entry>
+
+<entry id="timestamp-format">
+<question>
+  How do I change the timestamp format?
+</question>
+
+<answer>
+	The timestamp format is controlled by the <tt>timestampFormat</tt> 
+  preference, which you can set globally, per network, or even individually 
+  on channels and query views (see <a href="#prefs">tweaking the 
+  preferences</a>).
+  <p/>
+  The format string is displayed literally, except for the following 6 
+  substrings, which get replaced as follows:
+  <ul>
+  	<li><b>%y</b> - 4 digit year.
+  	</li>
+  	<li><b>%m</b> - month number (1 - 12).
+  	</li>
+  	<li><b>%d</b> - day of the month.
+  	</li>
+  	<li><b>%h</b> - hour, in 24-hour format.
+  	</li>
+  	<li><b>%n</b> - minutes.
+  	</li>
+  	<li><b>%s</b> - seconds.
+  	</li>
+ </ul>
 </answer>
 </entry>
 
