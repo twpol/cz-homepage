@@ -1,5 +1,12 @@
 var revs =
 [
+  {id: "0.9.66a", date: "2004-10-30", condition: Y,
+   bugs: [265414, 255494, 261711, 262037],
+   desc: "fixes the new whois code to treat the 330 code the same as the " +
+    "other lines, and stops a bogus 'Unable to disable plugin " +
+    "&lt;unknown&gt;' message when loading plugins with <tt>/load</tt>. A " +
+    "workaround for the Mac/FreeBSD crash when opening the preferences " +
+    "window and the brand new channel list dialog are also included."},
   {id: "0.9.66", date: "2004-10-20", condition: G,
    bugs: [260633, 259197, 204942, 219896, 248746, 261270, 261696, 261711, 
           263226, 263760, 233973, 262037],
