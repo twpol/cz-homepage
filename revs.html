@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Revision History</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script src="writerevs.js"></script>
+    <script src="revs.js"></script>
+    <script src="site.js"></script>
+  </head>
+
+  <body>
+    <script>writeHeader();</script>
+
+      <div id="legend">
+        <b>Ratings...</b>
+        <table id="legend-table">
+          <tr>
+            <td align="center">
+              <img src="green.png"><br>
+                  Highly likely to work well, checked in too.
+            </td>
+            <td align="center">
+              <img src="yellow.png"><br>
+                  Probably going to work, probably not checked in.
+            </td>
+            <td align="center">
+              <img src="red.png"><br>
+                  Big changes, big problems.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p>
+        Note that these installs need to write to your Mozilla install
+        directory,
+        which means <b>you</b> need to have <b>write access</b> to this
+        directory. If you are on a unixish system and installed your browser
+        via your package management system, you'll need to be <b>root</b>, on
+        Windows&trade; systems, you might need to be <b>Administrator</b>.
+
+      <center>
+        <b><script>writeMostRecent();</script></b><br><br>
+      </center>
+      
+      <table class="rev-table" clear="true">
+        <tr>
+          <th>revision</th>
+          <th>description</th>
+          <th>install</th>
+        </tr>
+        
+        <script>writeRevs();</script>
+        <noscript>
+          <tr><th colspan="6">Sorry, JavaScript is required to view the
+              revision table</th></tr>
+        </noscript>
+      </table>
+
+
+      <script>writeFooter();</script>
+  </body>
+</html>

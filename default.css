@@ -1,0 +1,280 @@
+body {
+    XXXbackground-color: #e8e5e3;
+    background-color: #edeef2;
+    color: black;
+    margin: 0px;
+}
+
+#page {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+#header {
+    background-color: #7e7ddb;
+    color: white;
+}
+
+#title {
+    padding-top: 0.75em;
+    text-align: center;
+    border-bottom: none;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#menu {
+    background-color: #454396;
+    color: #c0b8ef;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#body {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-top: 1px #777191 solid;
+    padding: 5px;
+    margin-left: 3em;
+    margin-right: 1em;
+}
+
+#footer {
+    background-color: #e8e5e3;
+    color: #grey;
+    padding: 3px;
+    border-top: 1px grey solid;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#footer td {
+    padding: 3px;
+    border-top: 1px #d69a2a solid;
+}
+
+#footer a {
+    color: #b27c18;
+    font-weight: bold;
+}
+
+.currentpage {
+    color: #cccccc;
+}
+
+#menu a {
+    font-weight: bold;
+    color: #e6e5e8;
+}
+
+#menu a:hover {
+    color: white;
+}
+
+.bodytext {
+    margin-left: 1em;
+}
+
+#body a {
+    text-decoration: none;
+    XXXcolor: #454396;
+    font-weight: bold;
+    color: #1a1aef;
+}
+
+#body a:hover {
+    text-decoration: underline;
+}
+
+#body a:visited {
+    color: #8514aa;
+}
+
+#motif-container a {
+    font-weight: bold;
+    color: #040e7a;
+}
+
+#motif-container a:visited {
+    color: #4752cc;
+}
+
+.motif-desc {
+    display: block;
+    margin-left: 0.5em;
+}
+
+#chatshot {
+    border: 1px #e8e5e3 solid;
+}
+
+#chatshot:hover {
+    border: 1px #a59dc9 solid;
+}
+
+#shotarea {
+    float: right;
+    padding: 5px;
+}
+
+#donate {
+    margin-top: -20px;
+    margin-left: 245px;
+    border: 1px #e8e5e3 solid;
+}
+
+#donate-options {
+    width: 90%;
+}
+
+#donate-options b {
+    display: block;
+    width: 100%;
+    color: white;
+    background: #578253;
+    text-align: center;
+    border: 1px black solid;
+}
+
+#donate-options td {
+    vertical-align: top;
+    padding: 5px;
+    width: 50%;
+}
+
+#donate:hover {
+    border: 1px #a59dc9 solid;
+}
+
+th {
+    color: white;
+    background: #578253;
+}
+      
+.bugs {
+    text-align: right;
+}
+
+.desc:first-letter {
+    padding-left: 1em;
+    font-size: larger;
+    font-weight: bold;
+}
+
+[clear="true"] {
+    clear: both;
+}
+
+.rev-table {
+    width: 100%;
+}
+
+.rev:first-line {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.rev,
+.dnld {
+    text-align: center;
+}
+
+.desc {
+    border: 1px black solid;
+    background: #cbd1ca;
+    padding: 5px;
+}
+
+#legend {
+    border: 1px black solid;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+    float: right;
+    width: 275px;
+}
+
+.motif {
+    display: block;
+    padding: 3px;
+    border-bottom: 1px black solid;
+    background-color: white;
+}
+
+.motif[even="true"] {
+    background-color: #e1e2f2;
+}
+
+.motif-name {
+    font-weight: bold;
+    color: grey;
+}
+
+#motif-list {
+    overflow: auto;
+    height: 290px;
+    border: 1px black solid;
+}
+
+.motif-links {
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.figure { 
+    background: #578253;
+    color: white;
+    padding: 2px 1px 5px 1px;
+    border: 1px black solid;
+    margin: 5px;
+    text-align: center; 
+    font-size: small;
+    font-weight: bold;
+}
+
+.figure-contents { 
+    background-color: white;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    margin-bottom: 3px;
+    padding: 3px;
+}
+
+.floating-figure[direction="left"] {
+    float: left;
+}
+
+.floating-figure {
+    float: right;
+    background: #578253;
+    color: white;
+    padding: 2px 1px 5px 1px;
+    border: 1px black solid;
+    margin: 5px;
+    text-align: center; 
+    font-size: small;
+    font-weight: bold;
+}
+
+.faq-section {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #ba3236;
+    color: white;
+    font-size: xx-large;
+}
+
+.question {
+    margin-bottom: 1em;
+}
+
+.answer {
+    font-weight: normal;
+    margin-right: 3em;
+    text-align: justify;
+}

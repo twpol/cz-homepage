@@ -1,0 +1,1032 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="faqs.xsl" type="text/xml"?>
+
+<faq xml:lang="en">
+
+<section id="install">
+<title>Installing ChatZilla</title>
+<entry id="install">
+<question>
+  How do I install ChatZilla?
+</question>
+
+<answer>
+  ChatZilla is currently distributed with Mozilla.
+  Download the
+  <a href="http://www.mozilla.org/releases/">latest Mozilla release</a>,
+  and select <b>Full</b> or <b>Custom</b> when installing.
+  <p/>
+  If you're running Netscape 7.x, or already have Mozilla installed and simply
+  want to add or upgrade ChatZilla, visit the
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development Page</a>.
+  <p/>
+  <p>
+  On all platforms, you will need to restart your browser after installing.
+  On all versions of Windows, you will need to exit the quick launch icon on
+  your taskbar as well, and on <b>some</b> versions of Windows, you may need to
+  restart the operating system.
+  </p>
+</answer>
+</entry>
+
+<entry id="uninstall">
+<question>
+  How do I uninstall ChatZilla?
+</question>
+
+<answer>
+  Mozilla does not have an uninstall feature for XPIs <i>yet</i>.  The following
+  manual uninstall procedure is provided with no warranty whatsoever:
+  <ol>
+    <li>Shut down Mozilla
+    </li>
+    <li>Rename the files <tt>components/chatzilla-service.js</tt>
+        and <tt>chrome/chatzilla.jar</tt> to something else.
+    </li>
+    <li>Run <tt>regchrome</tt>
+    </li>
+    <li>If Mozilla starts up fine, everything worked, otherwise, unrename
+        everything and give up, or delete the installation and start from
+        scratch.
+    </li>
+  </ol>
+</answer> 
+</entry>
+
+<entry id="default-ircurls">
+<question>
+  How do I make irc: urls work with my default IRC client instead of ChatZilla?
+</question>
+
+<answer>
+  Uninstall ChatZilla as described above, or reinstall Mozilla without
+  ChatZilla.
+</answer>
+</entry>
+
+</section>
+
+<section id="start">
+<title>Getting Started</title>
+
+<entry id="start-moz">
+<question>
+  How do I start ChatZilla?
+</question>
+
+<answer>
+  <ol>
+    <li>You can start ChatZilla from the
+       <b><u>W</u>indow-&gt;IRC Chat</b> menu.
+    </li>
+    <li>You can also start the browser with the <tt>-chat</tt> command line
+      option.  This will launch ChatZilla instead of a browser front end.
+    </li>
+    <li>You can type an <tt>irc</tt> in the URL bar. Type just <tt>irc:</tt>
+      to launch ChatZilla and connect to default channels.  Currently, this
+      is the recommended way to launch ChatZilla from within Mozilla Firebird or
+      Phoenix.  Note that you can bookmark this URL, and file it wherever it
+      to make sense to you.
+    </li>
+  </ol>
+</answer>
+</entry>
+
+<entry id="start-fb">
+<question>
+  How do I start ChatZilla in Mozilla Firebird?
+</question>
+
+<answer>
+  The only way to start ChatZilla in Mozilla Firebird is via an 
+  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>.
+  Type "irc:" in the url bar to launch ChatZilla and connect to your default
+  channels.  You may want to file a bookmark in your personal toolbar to
+  make this easier.
+</answer>
+</entry>
+
+<entry id="connect">
+<question>
+  How do I connect to a server?
+</question>
+
+<answer>
+  Type <tt>/server irc.servername.com</tt>.  You may also pass a port and
+  server password to the /server command.  See <tt>/help server</tt> for
+  more information.
+  <p/>
+  ChatZilla allows you to be connected to multiple servers, so unlike some
+  other clients, <tt>/server</tt> will not disconnect you from your current
+  server.  You can manually do that with the <tt>/disconnect</tt> command.
+  <p/>
+  ChatZilla comes preset with a few popular irc networks.  Use the
+  <tt>/networks</tt> command to list the available networks.  You may click
+  on a network name or use the <tt>/attach</tt> command to connect to a network
+  by name.
+  <p/>
+  <a name="attach"></a>
+  The <tt>/attach</tt> command accepts an
+  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>
+  as a parameter.  You may omit the <tt>irc://</tt> prefix, however.  This
+  can be used to connect to a network and channel with a single command,
+  such as <tt>/attach moznet/chatzilla</tt>, or
+  <tt>/attach moznet/killer,isnick</tt>.
+</answer>
+</entry>
+
+<entry id="join">
+<question>
+  How do I join a channel?
+</question>
+
+<answer>
+  Once you have connected to a server, you can join a channel by typing
+  <tt>/join</tt>, follwed by the channel name.  For example, if you want to
+  join <tt>#worldchat</tt> on <tt>undernet</tt>, you would first connect
+  to undernet with the <a href="#server">server</a> or
+  <a href="#attach">attach</a> command, then type <tt>/join #worldchat</tt>.
+  <p/>
+  If you omit the channel prefix, ChatZilla will prepend a "#" automaticaly.
+  <p/>
+  The command <tt>/j</tt> comes predefined as an alias for <tt>/join</tt>.
+</answer>
+</entry>
+
+<entry id="list">
+<question>
+  How can I list the available channels on a server?
+</question>
+
+<answer>
+  The <code>/list</code> command can be used to fetch a list of all channels on
+  the current network.  On large networks, however, this may take a very long
+  time.  On some networks, you'll be kicked off with a message like ``Excess
+  Flood'' for doing this.  Adding to the confusion, some networks recognize
+  extended <code>/list</code> options for filtering based on number of
+  users in a channel, etc.
+  <p/>
+  ChatZilla also offers an <code>/rlist</code> command, which can be used to
+  filter the result list based on the channel name, regardless of the
+  server software.  Type <code>/help rlist</code> for more information.
+</answer>
+</entry>
+
+<!-- 
+
+<entry id="lights">
+<question>
+  What do the lights mean in the user list?
+</question>
+
+<answer>
+  
+</answer>
+</entry>
+
+-->
+
+<entry id="disconnect">
+<question>
+  How do I disconnect from a server?
+</question>
+
+<answer>
+  To disconnect from a single server without exiting ChatZilla, select any
+  tab associated with the network in question and type <tt>/disconnect</tt>.
+</answer>
+</entry>
+
+<entry id="hide-ip">
+<question>
+  How can I hide my IP address from other users?
+</question>
+
+<answer>
+  You can't.  The way IRC works, your IP address is distributed to every
+  user you communicate with.  Depending on where you hang out, and who your
+  enemies are, this may or may not be a problem.  In practice, it's not a
+  problem for most normal users.
+</answer>
+</entry>
+
+<entry id="dcc">
+<question>
+  How do use I DCC to transfer files with ChatZilla?
+</question>
+
+<answer>
+  ChatZilla does not support DCC.  This is a limitation of
+  Mozilla itself.  See bugs
+  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=73257">73275</a> and
+  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=92928">92928</a> for
+  more information.
+</answer>
+</entry>
+
+<entry id="charset">
+<question>
+  How do I select a character set?
+</question>
+
+<answer>
+  ChatZilla allows you to select character sets at multiple levels.  The default
+  character set used by ChatZilla is UTF-8, and it is recommended that you leave
+  this setting wherever possible.  Mixed character sets can not work together
+  seamlessly on the same irc network, although they will for the most part work
+  in ChatZilla.  By standardizing on UTF-8, we avoid a number of unsolvable
+  problems, such as how to know what encoding has been used for particular 
+  channel names without proir knowledge.
+
+  <p/>
+  The table below lists the charset commands available in ChatZilla.
+  Each of these commands takes a case-insensitive character set name as a
+  parameter.  If a character set is not provided, these commands will display
+  the current setting.  If you pass a dash ("-") as the character set name,
+  the setting will revert to the default character set.
+
+  <div class="figure">
+    <table class="figure-contents" cellpadding="2px">
+      <tr>
+        <td valign="top"><code>/charset</code></td>
+        <td>
+          Selects the default character set for all networks, channels, and
+          users.  This charset is used when no
+          other more specific charset preference has been set.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/network-charset</code></td>
+        <td>
+          Selects the character set for the current network, including any
+          channel or query view on that network.  This charset is used when no
+          other channel or user specific charset preference has been set.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/channel-charset</code></td>
+        <td>
+          Selects the character set for the current channel.  You may specify
+          this before joining a channel by using the <code>/join-charset</code>
+          command.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/user-charset</code></td>
+        <td>
+          Selects the character set for the current query view.  
+        </td>
+      </tr>
+    </table>
+      Character set commands.
+  </div>
+</answer>
+</entry>
+
+<entry id="log">
+<question>
+  How do I enable logging?
+</question>
+
+<answer>
+  ChatZilla logging can be enabled at a number of levels.  The most
+  straightforward way to turn on logging for a specific view is to
+  type <tt>/log on</tt> from the view in question.
+  
+  <div class="figure">
+    <div class="figure-contents">
+      <ul>
+        <li>To log the current view, type
+            <tt>/log on</tt>, type <tt>/log off</tt> to stop logging.
+        </li>
+        <li>To log all channel views by default, type
+            <tt>/pref channelLog true</tt>.
+        </li>
+        <li>To log all network views by default, type
+            <tt>/pref networkLog true</tt>.
+        </li>
+        <li>To log all query views by default, type
+            <tt>/pref userLog true</tt>.
+        </li>
+      </ul>
+    </div>
+    Logging related preferences
+  </div>
+
+  Note that you may override any of the defaults by using the <tt>/log</tt>
+  command on the view in question.
+  <p/>
+  By default, ChatZilla stores logs in the <tt>logs/</tt> subdirectory of your
+  ChatZilla profile path.  Type <tt>/pref logFileName</tt> to see where this
+  is.  You may modify the logFileName pref, but it will not copy over your old
+  logs.
+</answer>
+</entry>
+
+</section>
+
+<section id="basic-usage">
+<title>Basic Usage</title>
+
+<entry>
+<question id="nick-complete">
+  Does ChatZilla have nickname completion?
+</question>
+
+<answer>
+  Yes.  Type enough of a person's nickname to make it unique and press the
+  <b>tab</b> key.
+  <p/>
+  If the name is not unique, ChatZilla will append any characters that it
+  has in common with other matching nicknames.
+  <p/>
+  If you press <b>tab</b> twice, quickly, then ChatZilla will display all
+  matching nicknames.
+  <p/>
+  From network and query views, you can tab complete on any nickname in
+  any channel on the same network.  From channel views, only users in the
+  same channel will be included in the tab complete operation.
+  <p/>
+  In addition to nicknames, you can tab complete any channel you are on
+  (or have been on) on the same network.  If you attempt to tab complete
+  only the character "#", ChatZilla will assume you meant the current
+  channel.
+  <p/>
+  There is a default tab completion for channel tabs.  If you press
+  <b>tab</b> on an empty line, ChatZilla will match the last person to
+  trigger your <a href="#stalk">stalk</a> function.
+  
+  <div class="figure">
+    <div class="figure-contents">
+
+  Assuming that <i>rginda_home</i> and <i>rginda_work</i> are members
+  of the current channel:
+
+  <ol>
+    <li>Type <tt>rg</tt> and press <b>tab</b>.  ChatZilla responds by
+        completing <tt>rginda_</tt>.  ChatZilla stops completing here, because
+        there are two nicknames that start with these characters.
+    </li>
+    <li>Press <b>tab</b> twice, quickly.  ChatZilla responds by displaying the
+        message ``2 matches for &#8220;rginda_&#8221;:
+        [rginda_home, rginda_work]''.
+    </li>
+    <li>Add an <tt>h</tt>, and <b>tab</b>.  If this is the first word in
+        the textbox, ChatZilla responds by completing
+        ``<tt>rginda_home, </tt>''.  If this is <b>not</b> the first word,
+        ChatZilla will leave out the comma.
+    </li>
+   </ol>
+
+   </div>
+    Nickname completion<br/>
+  </div>
+</answer>
+</entry>
+
+<entry>
+<question id="cmd-complete">
+  Does ChatZilla have command completion?
+</question>
+
+<answer>
+  Yes.  It works just like nickname completion.  If the cursor is in the
+  first word of the text, and the first character is a forward slash ("/"),
+  then ChatZilla will automatically match against commands, instead of
+  users or channels.
+  <p/>
+  You don't actually need to type the entire command name, however.  ChatZilla
+  will allow you to shorten the command just enough to make the name
+  unique.
+</answer>
+</entry>
+
+<entry>
+<question id="copy">
+  Why do some messages appear in the network tab?
+</question>
+
+<answer>
+  Those messages have been copied there because they matched your 
+  <a href="#stalk">stalk</a> list.  The reasoning here is that, if you're
+  away from the computer for a long time, important messages might have
+  scrolled off the view by the time you get back.  Copying the
+  message to the network tab makes sure you don't miss anything important.  It's
+  also a quick way to catch up after being away for a while.
+  <p/>
+  The <b>View</b>-&gt;<b>Copy Important Messages</b> menu item can be used to
+  disable this feature.
+</answer>
+</entry>
+
+<entry>
+<question id="timestamp">
+  Where are the timestamps?
+</question>
+  
+<answer>
+  Timestamps appear in the statusbar when you mouse over messages.  There
+  isn't yet an option to display them in the message, but it's a popular
+  request and will likely be implemented sooner or later.
+</answer>
+</entry>
+
+<entry>
+<question id="stalk">
+  What is a stalk list?
+</question>
+
+<answer>
+  A stalk list is a list of words or nicknames that you want ChatZilla to
+  consider important.  Important messages are treated differently than
+  normal messages.  For example:
+  <ul>
+    <li>The message will likely be styled differently in the message window.
+    </li>
+    <li>If you have ``Copy Important Messages'' enabled, the message will be
+        copied to its associated network view.
+    </li>
+    <li>The channel's tab label will turn red, if it's not already the
+        current tab.  
+    </li>
+    <li>ChatZilla may beep, or play a .wav file.  You can adjust this setting
+        through the <tt>stalkBeep</tt> preference.  
+    </li>
+    <li>The ChatZilla window may try to get your attention.  On some platforms
+        this is done by flashing an application icon, on others the window
+        may come to the front.  You can adjust this setting with the
+        <tt>notify.aggressive</tt> pref.
+    </li>
+  </ul>
+  By default, your nickname is the only entry in your stalk list.
+</answer>
+</entry>
+
+<entry id="channel-key">
+<question>
+  How can I join a channel that requires a key, at startup?
+</question>
+
+<answer>
+  From the ChatZilla preferences dialog, select the <b>Startup</b> group, add
+  a new channel to join at startup, and specify the channel name as
+  <tt>channelname?key=keyvalue</tt>.  So, if you wanted to join <tt>#cia</tt>
+  with the key <tt>tenet</tt> at startup, you would specify the channel name as
+  <tt>cia?key=tenent</tt>.
+  <p/>
+  <b>Warning</b>: This information is stored as plain text in your preferences
+  file.  Anyone with access to your machine will be able to read it.  Do not
+  use this method to autojoin if this concerns.
+</answer>
+</entry>
+</section>
+
+<section id="customizing">
+<title>Customizing ChatZilla</title>
+<entry>
+<question id="nick">
+  How do I set my nickname?
+</question>
+
+<answer>
+  When you first connect to a server with ChatZilla, you are prompted to enter
+  a nickname.  If you would like to change it later, use the <tt>/nick</tt>
+  command.  ChatZilla automatically remembers your last nickname for
+  each network you connect to.
+</answer>
+</entry>
+
+<entry id="desc">
+<question>
+  How do I set my description?
+</question>
+
+<answer>
+  Your description is a single line of text that other users will see when
+  they request information about you.  Many people use it for their full name
+  or web site.  Use the <tt>/desc</tt> command to change your description.  The
+  description is sent during the login process, so you must reconnect to the
+  server for it to take effect.
+</answer>
+</entry>
+
+<entry id="autoperform">
+<question>
+  How do I ``autoperform'' some commands when I connect to a network?
+</question>
+
+<answer>
+  Each network has an ``autoperform'' preference which consists of a list
+  of standard ChatZilla commands.  You can modify this preference with
+  the <tt>/network-pref</tt> command, see the example below.  Be aware
+  that if you're using this to automatically ``auth'' yourself with a bot or
+  service, that your password will be stored in <b>plain text</b> in your
+  preferences file.
+  <p/>
+  Autoperform commands are executed when ChatZilla successfully logs in to
+  a network, regardless of how the connection was initiated.  The commands are
+  executed before attempting to join any ``Open at Startup'' channels, and
+  before attempting to re-join any existing tabs associated with that network.
+  <p/>
+  <b>This preference was introduced in
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla 0.9.41</a>.
+  It will not work on older versions.</b>
+  <p/>
+  <div class="figure">
+    <div class="figure-contents">
+To send a message to a user whenever you connect to EFNet, first select any
+tab associated with EFNet, then type:<br/>
+<br/>
+<tt class="indent">/network-pref autoperform msg WiZ here I am again</tt><br/>
+<br/>
+You may separate multiple commands with the semicolon (';') character, as
+ in:<br/>
+<br/>
+<tt class="indent">/network-pref autoperform msg WiZ yo; msg mozbot trees</tt>
+<br/>
+<br/>
+    </div>
+    Setting up autoperform commands
+  </div>
+  <p/>
+</answer>
+</entry>
+
+<entry id="reconnect">
+<question>
+  How do I prevent ChatZilla from auto-reconnecting to a network?
+</question>
+
+<answer>
+  By default, ChatZilla will reconnect to a network if you are forcibly
+  disconnected.  On networks with idle time limits, this can earn you a
+  temporary ban.
+  <p/>
+  If you would like to turn this off by default, type
+  <tt>/pref reconnect false</tt>.  If you would like to turn it off only
+  for a particular network, type <tt>/network-pref reconnect false</tt> from
+  any tab associated with the network in question.
+  <p/>
+  Note that if you change the default to <tt>false</tt>, you can still
+  override specific networks with the <tt>/network-pref</tt> command.
+</answer>
+</entry>
+
+<entry id="font-size">
+<question>
+  How do I set the font size?
+</question>
+
+<answer>
+  <div class="floating-figure">
+    <div class="figure-contents">
+    <pre>/* specifies a 12 point font for 
+ * all ChatZilla messages. */
+
+body.chatzilla-body .msg {
+  font-size: 12pt !important;
+}</pre>
+    </div>
+   userContent.css rule for 12pt font
+  </div>
+  If your fonts are way too large or way too small, it is likely a problem with
+  your DPI setting.  Check your display preferences.  If you're set to use
+  "System Setting", try one of the pre-defined DPI settings instead.  In
+  practice, it seems that "System Setting" is almost always wrong.  Fixing this
+  will likely help out with web pages that specify font sizes in points, too.
+  <p/>
+  If it's not a DPI thing, you can adjust your font size with a special
+  rule in <b>userContent.css</b>.  In the <tt>chrome/</tt> subdirectory of your
+  <a href="http://www.google.com/search?q=(mozilla%20OR%20firebird)%20profile%20directory">profile directory</a>,
+  create a file called <b>userContent.css</b>, and add the text shown at the right.
+</answer>
+</entry>
+
+<entry id="set-motif">
+<question>
+  How do I change the color scheme of the message window?
+</question>
+<answer>
+  From the <b>View</b> menu, open the <b>Color Scheme</b> submenu.  ChatZilla
+  comes
+  with three color schemes, known as "motifs".  <b>Default Motif</b> uses your
+  default fore and background colors, and specifies no colors of its own.
+  <b>Dark Motif</b> is a back background on white text, with some appropriate
+  colors
+  for various message types.  <b>Light Motif</b> is the opposite, using
+  white as the background color, and black for message text.
+  <p/>
+  The <tt>/motif</tt> command can be used to select a CSS file by means of an
+  ordinary http: or file: URL.  For example, the command
+  <tt>/motif http://example.host.com/cool-color-scheme.css</tt> would be used
+  to select the "cool-color-scheme.css" motif from "example.host.com".
+  <p/>
+  You may also use <tt>/network-motif</tt>, <tt>/channel-motif</tt>, and
+  <tt>/user-motif</tt> commands to set a motif for a particular tab, or
+  group of tabs.  See the <a href="#multiple-motifs">multiple motifs
+  question</a> for more information.
+</answer>
+</entry>
+
+<entry id="faces-motif">
+<question>
+  How do I show faces in ChatZilla?
+</question>
+
+<answer>
+  There is a motif available that displays pictures next to the nicknames
+  of many of the moznet people.  You can find information on
+  how to use this motif at the
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/faces.pl">moznet faces</a>
+  page on hacksrus.
+</answer>
+</entry>
+
+<entry id="multiple-motifs">
+<question>
+  Can I use different motifs for different channels?
+</question>
+
+<answer>
+  Yes.  The <tt>/network-motif</tt>, <tt>/channel-motif</tt>, and
+  <tt>/user-motif</tt> commands can be used to choose a motif for a
+  particular tab or group of tabs.  For example, you might use a
+  <a href="#faces-mofit">faces motif</a> on the moznet network, but a "plain"
+  motif for dalnet.
+  <p/>
+  If you've got some web space (no CGI required) you can publish a
+  <a href="#make-motif">CSS file</a> specially tailored to your channel.
+  This could be as easy as picking a custom background image and a
+  matching color scheme.  (You will also need to host any images.)
+  Users can try out your motif by typing one of the <tt>/*-motif</tt>
+  commands listed above, followed by the URL to the CSS file on your web site.
+  Users may also drag a link to a CSS file into the ChatZilla message area, to
+  use that file as the <b>default</b> motif.
+</answer>
+</entry>
+
+<entry id="make-motif">
+<question>
+  How do I make my own color scheme?
+</question>
+
+<answer>
+  The ChatZilla output window is styled with standard CSS.  Messages in the
+  output window are nothing more than elements in an HTML table.  Those elements
+  have attributes on them which identify who sent the message and what type of
+  message it is.  You can then style specific messages using
+  <a href="http://academ.hvcc.edu/~kantopet/css/index.php?page=css+attr+selectors&amp;parent=css+syntax">CSS attribute selectors</a>.
+  <p/>
+  Read the comment at the top of
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-base.css">output-base.css</a>
+  for more information.  Once you've got a handle on that, check out the source
+  for the
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-dark.css">Dark</a>
+  and 
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-light.css">Light</a>
+  motifs (pay particular attention to the way they import the base motif.)
+   The
+  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/style.html">Stylin' ChatZilla</a>
+   document is a bit dated, but might offer some insight as well.
+</answer>
+</entry>
+
+<entry id="make-faces">
+<question>
+  How do I make a faces motif for my channel/network?
+</question>
+
+<answer>
+  If you have a bit of cgi-enabled server space and some spare bandwith, you
+  might try using the scripts located in
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/facesrv/">chatzilla/facesrv/</a>
+  on hacksrus.  In that tarball, you'll find three scripts:
+  <ul>
+    <li><tt>makefaces.pl</tt> creates three faces motifs
+      (<tt>output-default-faces.css</tt>,
+       <tt>output-dark-faces.css</tt>, and <tt>output-light-faces.css</tt>),
+      based on images in a particular directory.
+    </li>
+    <li><tt>addface.pl</tt> is a CGI that accepts an image file via the web,
+      and scales it to an appropriate size, converts it to a png, and then
+      runs <tt>makefaces.pl</tt>.
+    </li>
+    <li><tt>faces.pl</tt> is a CGI that can be used to display all of the
+      faces on a single web page.
+    </li>
+  </ul>
+</answer>
+</entry>
+
+<entry id="output-window">
+<question>
+  Can I make my own HTML file for the output window?
+</question>
+
+<answer>
+  Yes.  By replacing the HTML file
+  ChatZilla displays messages in, you can make an unlimited number of
+  customizations for the output window.
+  Because the output window has access to all
+  of Mozilla, including XPCOM, it can do anything ChatZilla can.  This includes
+  redisplaying information scraped from the web, state stored in a bot
+  of some sort, or just about anything else.
+  For security reasons these replacement ``output windows''
+  cannot be remotely located, and must instead be
+  <a href="#install-scripts">installed</a> by users.
+  <p/>
+  The ``outputWindowURL'' pref is used to select the output window file
+  to use for a particular network, channel, or user.  See the
+  default
+  <a href="view-source:http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.html">output-window.html</a>
+  and
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.js">output-window.js</a>
+  for more clues.
+  <p/>
+  This hasn't gotten much use as of yet, but the basic idea is to make your
+  own <b>output-window.html</b>, but use the stock <b>output-window.js</b>.
+  JavaScript
+  customizations should go in a new .js file, included in a &lt;script&gt;
+  tag in your custom output-window.html.
+</answer>
+</entry>
+
+<entry id="scripts">
+<question>
+  How do I script ChatZilla?
+</question>
+<answer>
+  With JavaScript!  ChatZilla is written entirely in JavaScript, and has
+  provisions for loading (and unloading) plugins written in same.  Because
+  ChatZilla itself is written in JavaScript, plugins are not much more than
+  additional ChatZilla code, and can therefore do anything ChatZilla can do.
+  <p/>
+  There are a number of convenience functions for adding new commands, new
+  menus, or just hooking existing events.  While these techniques have yet
+  to be well documented, there are a number of samples available.  The
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/scripts/sample/init.js">sample plugin</a>
+  shows the basics of how to define new commands and place them in menus.
+  <p/>
+  The application framework that ChatZilla is built on was originally developed
+  for <a href="http://www.mozilla.org/projects/venkman/">Venkman</a>.  I gave
+  a techtalk during that time that described how to use the framework to extend
+  Venkman.  The
+  <a href="http://www.hacksrus.com/~ginda/venkman/techtalk/">notes</a> are
+  online, and may prove useful.
+  <p/>
+  The source of ChatZilla itself provides a number of examples of how to use
+  the framework:
+  <ul>
+    <li>
+      For a list of default menus in ChatZilla, see
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/menus.js">menus.js</a>.
+    </li>
+    <li>
+      For examples of the default commands, see
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/commands.js">commands.js</a>.
+    </li>
+    <li>
+      Default preferences are defined in
+      <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/prefs.js">prefs.js</a>.
+    </li>
+    <li>
+      Internationalizable command strings, such as help text, UI labels, and
+      parameter lists are stored in 
+      <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/locale/en-US/chatzilla.properties">chatzilla.properties</a>.
+    </li>
+  </ul>
+</answer>
+</entry>
+
+<entry id="install-script">
+<question>
+  How do I install a third party script in ChatZilla?
+</question>
+<answer>
+  ChatZilla searches all subdirectories in your
+  <tt>&lt;profile-path&gt;/chatzilla/scripts</tt> directory for files named
+  <tt>init.js</tt>.  Any files found there are loaded at startup.  To install
+  a script that someone else wrote, just copy it into a file called
+  <tt>init.js</tt> in a new subdirectory of <tt>chatzilla/scripts</tt>.  To
+  find out where <tt>&lt;profile-path&gt;</tt> is on your system, type
+  <tt>/pref profilePath</tt>.
+  <p/>
+  ChatZilla will also load <tt>chatzilla/scripts/init.js</tt> at startup, if
+  it exists.  It is recommended that you use this for one-off, personal 
+  scripts, or for any script that might need to make sure it is the first one
+  loaded.
+</answer>
+</entry>
+
+<entry id="prefs">
+<question>
+  How do I tweak the rest of the preferences?
+</question>
+
+<answer>
+  There are two ways.  The first, and easiest, is to use the prefs dialog.
+  Select <b>Edit</b>-&gt;<b>Preferences</b>, ChatZilla preferences will be displayed
+  under the ChatZilla group.  Unfortunately, there are a few bugs in the pref
+  panel.  Some settings, like the text transformation prefs, do not take
+  effect until ChatZilla has been restarted.
+  <p/>
+  If you want more control, want access to "hidden" prefs, or want to set
+  network, channel, or user specific preferences, use the <tt>/pref</tt>
+  command, or
+  one of the variants.  Type <tt>/pref</tt> to list all of the global
+  preferences.
+  You may provide a pref name, or just the first few letters of a pref name, to
+  see the current value of matching preferences.  To change a preference, type
+  <tt>/pref pref-name new-value</tt>.  To edit a preference for a specific
+  network, channel, or user, use <tt>/network-pref</tt>, <tt>/channel-pref</tt>,
+  or <tt>/user-pref</tt>.  There are network, channel, and user specific
+  variants of the <tt>/charset</tt> and <tt>/motif</tt> commands as well.
+</answer>
+</entry>
+
+</section>
+
+<section id="docs">
+<title>Documentation and Resources</title>
+
+<entry id="how-faces">
+<question>
+  How do the faces motifs work?
+</question>
+
+<answer>
+  The
+   <a href="http://www.hacksrus.com/~ginda/chatzilla/faces.pl">faces motifs</a>
+  are nothing more than css files.  They work just like any other
+  <a href="#make-motif">motif</a>, except they insert images before certain
+  nicknames.  Those images are located on a web server, along with the CSS
+  files.  If your CSS-fu is strong, you may want to take a look at the
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-default-faces.css">source</a>.  
+</answer>
+</entry>
+
+<entry id="moredocs">
+<question>
+  Where is the rest of the documentation?
+</question>
+
+<answer>
+  <ul>
+    <li>
+      The
+      <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/">ChatZilla Home Page</a>
+      is the hub of all things ChatZilla.
+    </li>
+    <li>
+      The
+      <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development Page</a>
+      contains installable development versions of ChatZilla, and provides
+      up-to-the-minute information about ChatZilla development.
+    </li>
+    <li>
+      The
+      <a href="http://www.hacksrus.com/~ginda/chatzilla/faq/chatzilla-faq.html">Official ChatZilla FAQ</a>
+      is what you're reading right now.  You can also get it in
+      <a href="http://www.hacksrus.com/~ginda/chatzilla/faq/chatzilla-faq.xml">XML format</a>
+    </li>
+    <li>
+      Moztips maintains an
+      <a href="http://www.moztips.com/index.php?id=7">Unofficial ChatZilla FAQ</a>.
+      It's a bit dated, but still has some useful information.
+    </li>
+  </ul>
+</answer>
+</entry>
+
+<entry id="ng">
+<question>
+  Is there a newsgroup or mailing alias for ChatZilla?
+</question>
+
+<answer>
+  Yes.  The newsgroup is <b>netscape.public.mozilla.rt-messaging</b> and can be found on
+  the public news server <b>news.mozilla.org</b>.  It is mirrored on the mailing alias
+  mozilla-rt-messaging@mozilla.org.  To subscribe, send an email to
+  <a href="mailto:mozilla-rt-messaging-request@mozilla.org?subject=subscribe">mozilla-rt-messaging-request@mozilla.org</a>
+  with the subject "subscribe".  To unsubscribe, send a mail to the request
+  address with the subject
+  <a href="mailto:mozilla-rt-messaging-request@mozilla.org?subject=unsubscribe">unsubscribe</a>
+</answer>
+</entry>
+
+<entry id="irc">
+<question>
+  Is there an IRC channel for ChatZilla?
+</question>
+
+<answer>
+  Of course there is!  The channel is
+  <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> on
+  <a href="irc://irc.mozilla.org">irc.mozilla.org</a>.
+  <p/>
+    If you are running
+    Mozilla and already have
+    <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/">ChatZilla</a>
+    installed, you can join the channel by clicking on the <b>#chatzilla</b> link
+    above.
+  <p/>
+    If you are new to IRC, please read over
+    <a href="http://www.irchelp.org">irchelp.org</a>.
+  <p/>
+    Please be patient if you join <b>#chatzilla</b> looking to ask a question.
+    I'm pretty much always logged
+    on to IRC, but that doesn't mean I'm actually looking at the window, or
+    even sitting in front of the computer.  If I see your question before you
+    leave the channel, chances are I'll answer it.  If you include the word
+    ``chatzilla'' in your question, it'll ring a bell on my machine which may
+    make me respond sooner.  Please don't abuse that :)  Often times there will
+    be other ChatZilla developers and/or users on #chatzilla who may be
+    able to answer your question just as well.    
+</answer>
+</entry>
+
+<entry id="more-motifs">
+<question>
+  Where can I find more motifs?
+</question>
+
+<answer>
+  The
+  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/">motifs directory on hacksrus.com</a>
+  has a number of alternate motifs, in addition to the stock motifs.  You can 
+  use these motifs by dragging the <code>.css</code> file onto ChatZilla's
+  message window,
+  or by using the <code>/motif</code> command.
+  <p/>
+  If you
+  have <a href="#make-motif">made your own motif</a>, and would like me to
+  serve it here, please say so.
+  <p/>
+  If you're not sure what a motif is, <a href="#make-motif">go here</a>.
+</answer>
+</entry>
+
+<entry id="screenshots">
+<question>
+  Are there any screenshots of ChatZilla doing stuff?
+</question>
+
+<answer>
+  Yes, &lt;<a href="http://www.hacksrus.com/~ginda/chatzilla/screenshots/?M=D">http://www.hacksrus.com/~ginda/chatzilla/screenshots/</a>&gt;
+</answer>
+</entry>
+
+<entry id="add-question">
+<question>
+  How do I suggest a question for the FAQ?
+</question>
+
+<answer>
+  Please mention it on the <b>netscape.public.mozilla.rt-messaging</b>
+  <a href="#ng">newsgroup</a>, or in the <a href="#irc">irc channel</a>.
+</answer>
+</entry>
+
+</section>
+
+<section id="build">
+<title>Source Questions</title>
+
+<entry id="source">
+<question>
+  Where is the ChatZilla source code located?
+</question>
+
+<answer>
+  ChatZilla is written
+  entirely in <b>JavaScript</b> and <b>XUL</b> and lives in
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc">mozilla/extensions/irc/</a>.
+  Most of the actual front-end code is in the
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content">xul/content/</a>
+  subdirectory, and you'll find the supporting libaries in
+  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/js/lib/">js/lib/</a>
+  subdirectory.
+</answer>
+</entry>
+
+<entry id="report-bug">
+<question>
+  What do I do if I find a bug in ChatZilla?
+</question>
+
+<answer>
+  <ol>
+    <li>Search for duplicates.  You can scan the
+      <a href="http://bugzilla.mozilla.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">entire ChatZilla bug list</a>
+        or
+        <a href="http://bugzilla.mozilla.org/query.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">search</a> for a particular bug on the list.
+    </li>
+    <li>If you can't find a duplicate, then please
+      <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Browser&amp;version=other&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
+    </li>
+  </ol>
+</answer>
+</entry>
+</section>
+
+</faq>

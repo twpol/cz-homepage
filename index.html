@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ChatZilla!</title>
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <script src="writerevs.js"></script>
+    <script src="revs.js"></script>
+    <script src="site.js"></script>
+  </head>
+
+  <body>
+    <script>writeHeader();</script>
+
+    <span id="shotarea">
+      <a href="screenshots/?M=D"><img id="chatshot" src="new-chatshot.png"></a>
+    </span>
+
+    <h2>Welcome</h2>
+    <div class="bodytext">
+      <p>
+      ChatZilla is a cross platform messaging client that combines 
+      Internet Relay Chat (IRC) with existing web standards like JavaScript,
+      HTML, and CSS.  If you don't know any of this stuff don't worry, you
+      don't have to.  ChatZilla is easy to use.  For more information, please
+      read the <a href="faq/chatzilla-faq.html">FAQ</a>.
+    </div>
+
+    <h2>News</h2>
+
+    <div class="newsitem">
+      <b>November 17, 2003</b>
+    <ul>
+      <li>
+        <b>ChatZilla has a new web page</b>.  "You're soaking in it."&trade;  Check out
+        the new <a href="motifs.html">motifs</a> page when you have a minute.
+        Returning visitors will notice that only recent revisions are shown
+        in the table below.  You can still access the complete list on
+        the <a href="revs.html">Revision History</a> page.  I've also added
+        a way to <a href="donate.html">donate</a> via PayPal, in case you want
+        to contribute to the cause.
+      <li>
+        <b>James Ross gets CVS access</b>.  James is the creator the
+        ChatZilla pref panels,
+        <a href="http://www.irc.org/tech_docs/005.html">RPL_ISUPPORT</a>
+        support, and halfop mode support.  He also contributes regurlarly in
+        Bugzilla and on <a href="faq/chatzilla-faq.html#irc">#chatzilla</a>,
+        as <i>Silver</i>.
+      <li>
+        <b>Server sockets are in!</b> Darin Fisher has
+        added server sockets to Necko in the latest nightlies.  This makes
+        it possible to add <b>DCC</b> support to ChatZilla.
+        See bugs
+        <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=92928">92928</a>
+        and 
+        <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=73257">73257</a>
+        for more information.
+    </ul>
+    </div>
+
+    <h2>Download</h2>
+      Click on one of the the "install" links below to install or upgrade
+      ChatZilla.  Please note:
+    <ul>
+      <li>
+        ChatZilla does not work on "native" Mozilla embeddings such as
+      <a href="http://galeon.sourceforge.net/">Galeon</a> and
+      <a href="http://kmeleon.sourceforge.net/">K-Meleon</a>.  Same goes for
+      <a href="http://www.google.com/search?num=50&hl=en&lr=&ie=ISO-8859-1&q=%22blue+screen+of+death%22&btnG=Google+Search">Internet Explorer</a>.
+      <li>Depending on how you installed Mozilla, you may need to log in as
+        <tt>root</tt> or <tt>Administrator</tt>.      
+      <li>
+        ChatZilla is also available in 
+        <a href="http://lissyx.skreel.org/moz-fr/">French</a> and
+        <a href="http://nave.escomposlinux.org/productos/chatzilla/">Spanish</a>
+        localizations.
+    </ul>
+    
+    <p style="clear: both;">
+    <table class="rev-table">
+      <tr>
+        <th>revision</th>
+        <th>description</th>
+        <th>install</th>
+      </tr>
+      
+      <script>writeByDate(ONE_WEEK);</script>
+      <noscript>
+        <tr><th colspan="6">Sorry, JavaScript is required to view the
+            revision table</th></tr>
+      </noscript>
+    </table>
+
+    <script>writeFooter();</script>
+
+  </body>
+</html>
