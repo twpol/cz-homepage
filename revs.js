@@ -1,8 +1,22 @@
 var revs =
 [
+  {id: "0.9.65", date: "2004-09-16", condition: G,
+   bugs: [234465, 255137, 235650, 246424, 249686, 240992, 174087, 246275, 
+          180577, 240254, 216778, 256534, 255449, 246717, 250406, 115186, 
+          253032, 246558, 221825, 226223,  81978, 245783, 108087, 249616, 
+          249187, 257725, 253501, 232809, 256766, 185729, 247963],
+   desc: "contains all the fixes from <b>0.9.64a</b> through <b>0.9.64g</b>, " +
+    "and represents the version found in new Mozilla builds."},
   {id: "0.9.64g", date: "2004-09-05", condition: Y,
    bugs: [255449,255137,240254],
-   desc: "fixes regressions found in <b>0.9.64f</b>, such as <tt>/kick</tt> not working, and the userlist context menu. The excessive memory usage experience by some people has also been fixed. Various smaller fixes have also been made, including CTCP TIME replies being encoded properly, /who and /cancel work properly, and other internal error handling improvements. This version adds the <tt>/links</tt>, <tt>/motd</tt> and <tt>/raw</tt> commands, and displays unknown channel user modes in the userlist (and sorts it correctly for these modes)."},
+   desc: "fixes regressions found in <b>0.9.64f</b>, such as <tt>/kick</tt> " +
+    "not working, and the userlist context menu. The excessive memory usage " +
+    "experience by some people has also been fixed. Various smaller fixes " +
+    "have also been made, including CTCP TIME replies being encoded " +
+    "properly, /who and /cancel work properly, and other internal error " +
+    "handling improvements. This version adds the <tt>/links</tt>, " +
+    "<tt>/motd</tt> and <tt>/raw</tt> commands, and displays unknown channel " +
+    "user modes in the userlist (and sorts it correctly for these modes)."},
   {id: "0.9.64f", date: "2004-08-10", condition: Y,
    bugs: [234465, 240992, 253501, 253032, 185729, 180577, 108087, 235650, 
           232809, 226223, 174087],
