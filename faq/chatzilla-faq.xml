@@ -239,20 +239,29 @@
 
 <entry id="charset">
 <question>
-  How do I select a character set?
+  How do I select a character set? (and why can't other user's read my text?)
 </question>
 
 <answer>
   ChatZilla allows you to select character sets at multiple levels.  The default
   character set used by ChatZilla is UTF-8, and it is recommended that you leave
-  this setting wherever possible.  Mixed character sets can not work together
-  seamlessly on the same irc network, although they will for the most part work
-  in ChatZilla.  By standardizing on UTF-8, we avoid a number of unsolvable
+  this setting wherever possible.  This default avoids a number of unsolvable 
   problems, such as how to know what encoding has been used for particular 
   channel names without proir knowledge.
-
+  
   <p/>
-  The table below lists the charset commands available in ChatZilla.
+  An unfortunate problem with the way IRC works is that international (and 
+  most non-US-ASCII) characters cannot be sent without encoding them.  The 
+  problem is that there are many, many different character encodings 
+  available, and different systems and programs use different ones.  To help 
+  alleviate this problem, ChatZilla supports many different character 
+  encodings, and lets you select the right one for each channel and server.
+  
+  <p/>
+  If text is showing up with a lot of question-marks (?) or completely 
+  unexpected characters (for example, Japanese characters in a Danish channel)
+  then it is likely that ChatZilla is not using the same charset as the other
+  client.  The table below lists the charset commands available in ChatZilla.
   Each of these commands takes a case-insensitive character set name as a
   parameter.  If a character set is not provided, these commands will display
   the current setting.  If you pass a dash ("-") as the character set name,
@@ -693,7 +702,7 @@ body.chatzilla-body .msg {
   comes
   with three color schemes, known as "motifs".  <b>Default Motif</b> uses your
   default fore and background colors, and specifies no colors of its own.
-  <b>Dark Motif</b> is a back background on white text, with some appropriate
+  <b>Dark Motif</b> is a dark background on white text, with some appropriate
   colors
   for various message types.  <b>Light Motif</b> is the opposite, using
   white as the background color, and black for message text.
