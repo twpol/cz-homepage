@@ -5,7 +5,17 @@ var revs =
           241442, 243181, 255494, 256854, 257026, 261711, 262037, 262325, 
           263468, 265414, 265863, 266151, 266541, 267477, 267478, 268260, 
           268901, 269633, 274076, 274161, 274199, 276478],
-   desc: "fixes many bugs, including the Mac crash when opening Tools > Options, the not-so-good URL linkifier, not persisting away status between connects, and some emoticon issues. New in this stable release is the Join Channel dialog, a new plugin API, the ability to open links in your OS's default browser, and adds parameters to aliases. Also new is the ability to set preferences for individual plugins (they must be using the new API), <tt>/whois</tt> has had some bugs fixed and a friend added, <tt>/wii</tt> (shortcut for doing <tt>/whois nick nick</tt>), as well as the ability to print the current channel view (how well this works depends very much on your Mozilla/Firefox version), and a few more surprises..."},
+   desc: "fixes many bugs, including the Mac crash when opening Tools > " +
+    "Options, the not-so-good URL linkifier, not persisting away status " +
+    "between connects, and some emoticon issues. New in this stable " +
+    "release is the Join Channel dialog, a new plugin API, the ability to " +
+    "open links in your OS's default browser, and adds parameters to " +
+    "aliases. Also new is the ability to set preferences for individual " +
+    "plugins (they must be using the new API), <tt>/whois</tt> has had some " +
+    "bugs fixed and a friend added, <tt>/wii</tt> (shortcut for doing " +
+    "<tt>/whois nick nick</tt>), as well as the ability to print the " +
+    "current channel view (how well this works depends very much on your " +
+    "Mozilla/Firefox version), and a few more surprises..."},
   {id: "0.9.66e", date: "2004-11-12", condition: Y,
    bugs: [161205, 256854, 263468, 243181, 267477, 268260, 268901],
    desc: "fixes some startup errors for various OSes where users didn't have " +
