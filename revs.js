@@ -1,5 +1,16 @@
 var revs =
 [
+  {id: "0.9.63", date: "2004-04-22", condition: R,
+   bugs: [230328, 127662, 185729, 226223, 226410, 231150, 235650, 238551, 
+          238716, 73257, 226408, 238612, 108087, 180577, 211461, 218070],
+   desc: "is a huge release of new and updated code. Some of the new and " +
+    "improved features are: DCC CHAT and FILE functions, better ban handling, "+
+    "fixed topic 'retention' when rejoining a channel, much-improved " +
+    "preferences window (<i>works in Firefox</i>), minor plugin tweak, " +
+    "startup error reporting (yay!), new sound/event system (including " +
+    "blocking the same sound from occuring repeatedly), improved auto-" +
+    "rejoin, better connection error reporting, updated menus including " +
+    "neater 'op commands' menu and fixed userlist context menu bug."},
   {id: "0.9.62dp", date: "2004-03-18", condition: Y,
    bugs: [226223],
    desc: "is <b>0.9.61dp</b> plus the logging bug fix found in " +
