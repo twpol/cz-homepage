@@ -32,22 +32,25 @@
 var motifs = {
     "output-bluemoz": "Basic dark motif, plus mozilla background image.",
     "output-default": "Browser default colors.",
+    "output-default-faces": "Browser default colors, moznet faces.",
+    "output-default-larger": "Browser default colors, larger fonts.",
+    "output-default-monospace": "Browser default colors, monospace fonts.",
 
-    "output-dark": "Dark background, light text",
-    "output-dark-faces": "Dark background, light text, moznet faces",
-    "output-dark-larger": "Dark background, light text, larger fonts",
-    "output-dark-monospace": "Dark background, light text, monospace fonts",
+    "output-dark": "Dark background, light text.",
+    "output-dark-faces": "Dark background, light text, moznet faces.",
+    "output-dark-larger": "Dark background, light text, larger fonts.",
+    "output-dark-monospace": "Dark background, light text, monospace fonts.",
 
-    "output-light": "Light background, dark text",
-    "output-light-faces": "Light background, dark text, moznet faces",
-    "output-light-larger": "Light background, dark text, larger fonts",
-    "output-light-monospace": "Light background, dark text, monospace fonts",
+    "output-light": "Light background, dark text.",
+    "output-light-faces": "Light background, dark text, moznet faces.",
+    "output-light-larger": "Light background, dark text, larger fonts.",
+    "output-light-monospace": "Light background, dark text, monospace fonts.",
 
     "output-mullusko": "Light background, makes it slightly easier to see " +
     "who is saying what.",
     "output-redmoz": "Red and orange, mozilla star in background.",
     "output-silver": "Variation on light motif.",
-    "output-silver-gecko": "Variation on light motif, with gecko background image"
+    "output-silver-gecko": "Variation on light motif, with gecko background image."
 }
 
 function writeMotifs()
