@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.60dp", date: "03/02/2004", condition: Y,
+   bugs: [],
+   desc: "is a special version containing both the <b>0.9.60p</b> and " +
+    "<b>0.9.60d</b> changes."},
   {id: "0.9.60d", date: "03/02/2004", condition: Y,
    bugs: [],
    desc: "is a <i>DCC Chat test version</i>, based on <b>0.9.60</b>. It " +
