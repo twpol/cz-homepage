@@ -1,5 +1,8 @@
 var revs =
 [
+  {id: "0.9.64d", date: "2004-07-06", condition: Y,
+   bugs: [249616, 249686],
+   desc: "fixes a major Pref Manager regression in <b>0.9.64c</b> which caused a whole number of issues, like preferences not taking effect until restart, and a completely broken multiline-mode. Middle-clicking a tab now hides it, and a minor bug has been fixed so half-ops get a '%' by their nickname next to the input box. The tabs no longer stretch to fill the available space, but still compress to fit them all in - using a (hopefully) better algorithm. Finally, a completely new set of emoticons have been included, thanks to Lim Chee Aun of phoenity.com."},
   {id: "0.9.64c", date: "2004-07-02", condition: Y,
    bugs: [81978],
    desc: "adds a 15 second delay to reconnecting, and speeds up joining many " +
