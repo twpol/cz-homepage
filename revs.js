@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.54f", date: "12/27/2003", condition: Y,
+   bugs: [],
+   desc: "really fixes the pref bug, adds editing of colorful topics " +
+    "in-line (displays %-codes when editing), and changes the %-escaping to " +
+    "collapse '%%' to '%' always."},
   {id: "0.9.54e", date: "12/26/2003", condition: Y,
    bugs: [],
    desc: "fixes a typo, and a problem with preferences that inherit (e.g. " +
