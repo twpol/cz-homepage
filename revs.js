@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.55", date: "01/07/2004", condition: Y,
+   bugs: [218070],
+   desc: "adds the 2nd revision of the new preferences window, fixes " +
+    "/list from channel views, removing an alias now works correctly, " +
+    "aliases can now contain '=', /kick and /kick-ban exceptions fixed, and " +
+    "fixed a JS exception for NOTICEs when looking at the *client* view."},
   {id: "0.9.54", date: "01/03/2004", condition: G,
    bugs: [227139, 217474, 194383, 223693, 161597, 116541, 108533, 217269, 
           133184, 109814, 116803, 123664, 227402, 115680, 176506, 112089, 
