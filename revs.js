@@ -2,7 +2,7 @@ var revs =
 [
   {id: "0.9.60p", date: "03/02/2004", condition: Y,
    bugs: [],
-   desc: "is <b>0.9.60</b> for FireFox users (contains the new preference " +
+   desc: "is <b>0.9.60</b> for Firefox users (contains the new preference " +
     "window)."},
   {id: "0.9.60", date: "03/02/2004", condition: G,
    bugs: [236157, 235712],
