@@ -1,7 +1,7 @@
 var revs =
 [
   {id: "0.9.63b", date: "2004-05-03", condition: Y,
-   bugs: [242381],
+   bugs: [242381, 147452],
    desc: "fixes starting ChatZilla from a bookmark group, /dcc-abort " +
     "correctly closes connections now, DCC file transfers should work with " +
     "international filenames better, CTCP messages are encoded/decoded " +
