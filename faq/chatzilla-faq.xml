@@ -156,7 +156,7 @@
 
 <answer>
   Once you have connected to a server, you can join a channel by typing
-  <tt>/join</tt>, follwed by the channel name.  For example, if you want to
+  <tt>/join</tt>, followed by the channel name.  For example, if you want to
   join <tt>#worldchat</tt> on <tt>undernet</tt>, you would first connect
   to undernet with the <a href="#server">server</a> or
   <a href="#attach">attach</a> command, then type <tt>/join #worldchat</tt>.
