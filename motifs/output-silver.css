@@ -62,53 +62,53 @@ body.chatzilla-body{
     padding: .5ex 1em;
 }
 
-.msg-data[important="true"],
-.msg-user[important="true"] {
+.msg[important="true"] .msg-data,
+.msg[important="true"] .msg-user {
 border-width: 2px;
 font-weight: bold;
 }
 
-.msg-data[msg-type="JOIN"],
-.msg-data[msg-type="QUIT"],
-.msg-data[msg-type="PART"] {
+.msg[msg-type="JOIN"] .msg-data,
+.msg[msg-type="QUIT"] .msg-data,
+.msg[msg-type="PART"] .msg-data {
     background-color: #f74;
     color: black;
     -moz-border-radius: 5px;
 }
 
-.msg-data[msg-type="372"],
-.msg-data[msg-type="EVAL-IN"],
-.msg-data[msg-type="EVAL-OUT"],
-.msg-data[msg-type="HELLO"],
-.msg-data[msg-type="ERROR"],
-.msg-data[msg-type="USAGE"],
-.msg-data[msg-type="NICK"],
-.msg-data[msg-type="NOTICE"],
-.msg-data[msg-type="MODE"],
-.msg-data[msg-type="KICK"],
-.msg-data[msg-type="INFO"],
-.msg-data[msg-type="HELP"] ,
-.msg-data[msg-type="STATUS"] {
+.msg[msg-type="372"] .msg-data,
+.msg[msg-type="EVAL-IN"] .msg-data,
+.msg[msg-type="EVAL-OUT"] .msg-data,
+.msg[msg-type="HELLO"] .msg-data,
+.msg[msg-type="ERROR"] .msg-data,
+.msg[msg-type="USAGE"] .msg-data,
+.msg[msg-type="NICK"] .msg-data,
+.msg[msg-type="NOTICE"] .msg-data,
+.msg[msg-type="MODE"] .msg-data,
+.msg[msg-type="KICK"] .msg-data,
+.msg[msg-type="INFO"] .msg-data,
+.msg[msg-type="HELP"] .msg-data,
+.msg[msg-type="STATUS"] .msg-data {
     border: 0px;
     background: inherit;
 }
 
 
-.msg-user[msg-type="ACTION"]:before {
+.msg[msg-type="ACTION"] .msg-user:before {
     content: "*"
 }
 
-.msg-data[msg-type="ACTION"] {
+.msg[msg-type="ACTION"] .msg-data {
     font-style: italic;
 }
 
-.msg-user[dest-type="IRCUser"]:before,
-.msg-user[dest-type="IRCUser"]:after {
+.msg[dest-type="IRCUser"] .msg-user:before,
+.msg[dest-type="IRCUser"] .msg-user:after {
     content: "<<";
     font-weight: bold;
 }
-.msg-user[msg-dest$="ME!"]:before,
-.msg-user[msg-dest$="ME!"]:after {
+.msg[msg-dest$="ME!"] .msg-user:before,
+.msg[msg-dest$="ME!"] .msg-user:after {
     content: ">>";
     font-weight: bold;
 }

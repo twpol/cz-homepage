@@ -49,22 +49,22 @@ a.chatzilla-link:hover {
     color: lightblue;
 }
 
-.msg-data[mark="even"] {                    /* use even/odd marks to create a */
+.msg[mark="even"] .msg-data {               /* use even/odd marks to create a */
     color: darkslategrey;                   /* subtle brightness change when  */
 }                                           /* the speaker changes.           */
 
-.msg-data[msg-type="JOIN"],
-.msg-data[msg-type="PART"],
-.msg-data[msg-type="QUIT"] {
+.msg[msg-type="JOIN"] .msg-data,
+.msg[msg-type="PART"] .msg-data,
+.msg[msg-type="QUIT"] .msg-data {
     background-image: url(clear-red.png);
     color: white;
     font-weight: bold;
     -moz-border-radius: 3px 3px 3px 3px;
 }
 
-.msg-data[msg-type="JOIN"] a.chatzilla-link,
-.msg-data[msg-type="PART"] a.chatzilla-link,
-.msg-data[msg-type="QUIT"] a.chatzilla-link {
+.msg[msg-type="JOIN"] .msg-data a.chatzilla-link,
+.msg[msg-type="PART"] .msg-data a.chatzilla-link,
+.msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
     color: #333333;
 }
 
@@ -94,35 +94,35 @@ a.chatzilla-link:hover {
     color: black;                           /* a message (channel and query   */
 }                                           /* views)                         */
  
-.msg-data[msg-type="HELLO"] {
+.msg[msg-type="HELLO"] .msg-data {
     color: yellow;
 }
 
-.msg-data[msg-type="ERROR"] {
+.msg[msg-type="ERROR"] .msg-data {
     background: red;
     color: white;
 }
 
-.msg-data[msg-type="USAGE"] {
+.msg[msg-type="USAGE"] .msg-data {
     color: white;
 }
 
-.msg-data[msg-type="ACTION"] {
+.msg[msg-type="ACTION"] .msg-data {
     font-style: oblique;
 }
 
-.msg-data[msg-type="NICK"] {
+.msg[msg-type="NICK"] .msg-data {
     font-weight: bold;
     color: blue;
 }
 
-.msg-data[msg-type="NOTICE"],
-.msg-data[msg-type="MODE"] {
+.msg[msg-type="NOTICE"] .msg-data,
+.msg[msg-type="MODE"] .msg-data {
     font-weight: bold;
     color: darkslategrey;
 }
 
-.msg-data[msg-type="KICK"] {
+.msg[msg-type="KICK"] .msg-data {
     font-weight: bold;
     color: red;
 }
@@ -140,34 +140,34 @@ a.chatzilla-link:hover {
     color: blue;
 }
 
-.msg-user[msg-type="ACTION"]:before {
+.msg[msg-type="ACTION"] .msg-user:before {
     font-weight: bold;
     font-size: larger;
 }
 
-.msg-user[msg-user="ME!"]:before,
-.msg-user[msg-user="ME!"]:after {
+.msg[msg-user="ME!"] .msg-user:before,
+.msg[msg-user="ME!"] .msg-user:after {
     color: red;
 }
 
 /* private messages *not* in a query window */
-.msg-user[dest-type="IRCUser"]:before,
-.msg-user[dest-type="IRCUser"]:after {
+.msg[dest-type="IRCUser"] .msg-user:before,
+.msg[dest-type="IRCUser"] .msg-user:after {
     color: darkgrey;
 }
 
-.msg-user[msg-dest="ME!"]:before,
-.msg-user[msg-dest="ME!"]:after {
+.msg[msg-dest="ME!"] .msg-user:before,
+.msg[msg-dest="ME!"] .msg-user:after {
     color: darkgrey;
 }
 
 /* private messages in a query window */
-.msg-user[view-type="IRCUser"]:before,
-.msg-user[view-type="IRCUser"]:after {
+.msg[view-type="IRCUser"] .msg-user:before,
+.msg[view-type="IRCUser"] .msg-user:after {
     color: red;
 }
 
-.msg-user[view-type="IRCUser"][msg-user="ME!"]:before,
-.msg-user[view-type="IRCUser"][msg-user="ME!"]:after {
+.msg[view-type="IRCUser"][msg-user="ME!"] .msg-user:before,
+.msg[view-type="IRCUser"][msg-user="ME!"] .msg-user:after {
     color: blue;
 }

@@ -53,9 +53,9 @@ a.chatzilla-link:hover {
     color: #ffb200;
 }
 
-.msg-data[msg-type="JOIN"],
-.msg-data[msg-type="PART"]
-.msg-data[msg-type="QUIT"] {
+.msg[msg-type="JOIN"] .msg-data,
+.msg[msg-type="PART"] .msg-data
+.msg[msg-type="QUIT"] .msg-data {
     background: #7a0c00;
     color: #f7b183;
     font-weight: bold;
@@ -88,39 +88,39 @@ a.chatzilla-link:hover {
     color: white;                           /* a message (channel and query   */
 }                                           /* views)                         */
  
-.msg-data[mark="even"] {                    /* use even/odd marks to create a */
+.msg[mark="even"] .msg-data {               /* use even/odd marks to create a */
     color: white;                           /* subtle brightness change when  */
 }                                           /* the speaker changes.           */
 
-.msg-data[msg-type="HELLO"] {
+.msg[msg-type="HELLO"] .msg-data {
     color: yellow;
 }
 
-.msg-data[msg-type="ERROR"] {
+.msg[msg-type="ERROR"] .msg-data {
     background: red;
     color: white;
 }
 
-.msg-data[msg-type="USAGE"] {
+.msg[msg-type="USAGE"] .msg-data {
     color: white;
 }
 
-.msg-data[msg-type="ACTION"] {
+.msg[msg-type="ACTION"] .msg-data {
     font-style: oblique;
     color: orange;
 }
 
-.msg-data[msg-type="NICK"] {
+.msg[msg-type="NICK"] .msg-data {
     color: yellow;
 }
 
-.msg-data[msg-type="NOTICE"],
-.msg-data[msg-type="MODE"] {
+.msg[msg-type="NOTICE"] .msg-data,
+.msg[msg-type="MODE"] .msg-data {
     font-weight: bold;
     color: orange;
 }
 
-.msg-data[msg-type="KICK"] {
+.msg[msg-type="KICK"] .msg-data {
     font-weight: bold;
     color: #d85d24;
 }
@@ -138,35 +138,35 @@ a.chatzilla-link:hover {
     color: orange;
 }
 
-.msg-user[msg-type="ACTION"]:before {
+.msg[msg-type="ACTION"] .msg-user:before {
     content: "~* ";
     font-weight: bold;
     font-size: larger;
 }
 
-.msg-user[msg-user="ME!"]:before,
-.msg-user[msg-user="ME!"]:after {
+.msg[msg-user="ME!"] .msg-user:before,
+.msg[msg-user="ME!"] .msg-user:after {
     color: yellow;
 }
 
 /* private messages *not* in a query window */
-.msg-user[dest-type="IRCUser"]:before,
-.msg-user[dest-type="IRCUser"]:after {
+.msg[dest-type="IRCUser"] .msg-user:before,
+.msg[dest-type="IRCUser"] .msg-user:after {
     color: #ef7b00;
 }
 
-.msg-user[msg-dest="ME!"]:before,
-.msg-user[msg-dest="ME!"]:after {
+.msg[msg-dest="ME!"] .msg-user:before,
+.msg[msg-dest="ME!"] .msg-user:after {
     color: orange;
 }
 
 /* private messages in a query window */
-.msg-user[view-type="IRCUser"]:before,
-.msg-user[view-type="IRCUser"]:after {
+.msg[view-type="IRCUser"] .msg-user:before,
+.msg[view-type="IRCUser"] .msg-user:after {
     color: white;
 }
 
-.msg-user[view-type="IRCUser"][msg-user="ME!"]:before,
-.msg-user[view-type="IRCUser"][msg-user="ME!"]:after {
+.msg[view-type="IRCUser"][msg-user="ME!"] .msg-user:before,
+.msg[view-type="IRCUser"][msg-user="ME!"] .msg-user:after {
     color: yellow;
 }
