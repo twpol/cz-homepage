@@ -1,5 +1,20 @@
 var revs =
 [
+  {id: "0.9.63b", date: "2004-05-03", condition: Y,
+   bugs: [242381],
+   desc: "fixes starting ChatZilla from a bookmark group, /dcc-abort " +
+    "correctly closes connections now, DCC file transfers should work with " +
+    "international filenames better, CTCP messages are encoded/decoded " +
+    "properly, deleting a view closes the log file, log files now use " +
+    "Windows line-ends on Windows, CTCP actions (/me) now open query views " +
+    "just like normal messages, the /pref command displays errors instead of " +
+    "throwing exceptions, stalk sound plays even on active tab, stalk sound " +
+    "doesn't keep playing even for normal activity on non-active tabs, the " +
+    "font controls should work on older Mozilla versions now, /ignore " +
+    "displays the correct message if you're already ignoring the nickname, " +
+    "some internal values have been tweaked to hopefully make the client " +
+    "more responsive and finally two new commands have been added: " +
+    "<tt>/say message</tt> and <tt>/describe target message</tt>."},
   {id: "0.9.63a", date: "2004-04-23", condition: R,
    bugs: [],
    desc: "fixes a backwards-incompatible change that was accidentaly let " +
