@@ -261,33 +261,20 @@
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
       <tr>
-        <td valign="top"><code>/charset</code></td>
+        <td valign="top"><code>/default-charset</code></td>
         <td>
           Selects the default character set for all networks, channels, and
-          users.  This charset is used when no
-          other more specific charset preference has been set.
+          users.  This charset is used when no other more specific charset 
+          preference has been set.
         </td>
       </tr>
       <tr>
-        <td valign="top"><code>/network-charset</code></td>
+        <td valign="top"><code>/charset</code></td>
         <td>
-          Selects the character set for the current network, including any
-          channel or query view on that network.  This charset is used when no
-          other channel or user specific charset preference has been set.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top"><code>/channel-charset</code></td>
-        <td>
-          Selects the character set for the current channel.  You may specify
-          this before joining a channel by using the <code>/join-charset</code>
-          command.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top"><code>/user-charset</code></td>
-        <td>
-          Selects the character set for the current query view.  
+          Selects the character set for the current view, and works from all 
+          views.  When changing the network charset all channels and query
+          views will inherit the value unless it is set on the specific
+          channel or query views.
         </td>
       </tr>
     </table>
@@ -965,7 +952,7 @@ body.chatzilla-body .msg {
   <tt>/pref pref-name new-value</tt>.  To edit a preference for a specific
   network, channel, or user, use <tt>/network-pref</tt>, <tt>/channel-pref</tt>,
   or <tt>/user-pref</tt>.  There are network, channel, and user specific
-  variants of the <tt>/charset</tt> and <tt>/motif</tt> commands as well.
+  variants of the <tt>/motif</tt> command as well.
 </answer>
 </entry>
 
