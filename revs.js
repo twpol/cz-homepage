@@ -1,5 +1,8 @@
 var revs =
 [
+  {id: "0.9.58p", date: "01/24/2004", condition: Y,
+   bugs: [112435, 218070],
+   desc: "add the new preferences window, and some font options, for testing."},
   {id: "0.9.58", date: "01/24/2004", condition: G,
    bugs: [111475],
    desc: "adds ignore support with the /ignore and /unignore commands."},
