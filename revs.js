@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.59p", date: "02/09/2004", condition: Y,
+   bugs: [],
+   desc: "is a special release for Firefox (formerly Firebird) users. This " +
+    "is <b>0.9.59</b> plus the new preference window (which is a " +
+    "work-in-progress feature)."},
   {id: "0.9.59", date: "01/30/2004", condition: G,
    bugs: [112435, 218070],
    desc: "adds the font options properly."},
