@@ -167,6 +167,11 @@ function calculateCumulativeBugs(revs)
     
     for (var i = revs.length - 1; i >= 0; i--)
     {
+        if (!("bugs" in revs[i]))
+            revs[i].bugs = [];
+        if (!("condition" in revs[i]))
+            revs[i].condition = G;
+        revs[i].bugsCumulative = null;
         if (revs[i].condition == G)
         {
             cumulative = new Object();
