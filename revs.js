@@ -11,7 +11,7 @@ var revs =
     "to accept/decline DCC offers (you'll have to try it to see). Long lines " +
     "of text (over about 400 characters) are split automatically now, so " +
     "long messages will get through without any loss. Tab-complection no " +
-    "longer forces your text into lower-case when it only partically " +
+    "longer forces your text into lower-case when it only partially " +
     "matches, instead it uses the case of the first partial-match and, " +
     "finally, the 'query start' sound is no longer played when you do " +
     "<tt>/query</tt>."},
