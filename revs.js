@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.54d", date: "12/25/2003", condition: Y,
+   bugs: [227144],
+   desc: "fixes using %%C as an escape for sending %C, and adds all the " +
+    "munger preferences to the new preference window (emoticons, etc.)."},
   {id: "0.9.54c", date: "12/25/2003", condition: Y,
    bugs: [227402, 115680, 176506, 218070, 112089, 128304, 218421],
    desc: "fixes the initial userlist size, some strict JS warnings, and a " +
