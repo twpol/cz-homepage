@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.54e", date: "12/26/2003", condition: Y,
+   bugs: [],
+   desc: "fixes a typo, and a problem with preferences that inherit (e.g. " +
+    "the timestamp format)."},
   {id: "0.9.54d", date: "12/25/2003", condition: Y,
    bugs: [227144],
    desc: "fixes using %%C as an escape for sending %C, and adds all the " +
