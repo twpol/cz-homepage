@@ -46,6 +46,7 @@ var motifs = {
     "output-light-larger": "Light background, dark text, larger fonts.",
     "output-light-monospace": "Light background, dark text, monospace fonts.",
 
+    "output-lz": "A bright white, orange and blue themed motif, by Fergus Kelley.",
     "output-mullusko": "Light background, makes it slightly easier to see " +
     "who is saying what.",
     "output-redmoz": "Red and orange, mozilla star in background.",

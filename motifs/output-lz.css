@@ -1,0 +1,199 @@
+/* Chatzilla Motif - http://arco.nillahood.net/pub/files/cz/
+   By LittleZephyr ( littlezephyr.nillahood.net )                            */
+/*---------------------------------------------------------------------------*/
+/* Body */
+body.chatzilla-body { 
+  margin: 0px;
+  font-size: 10pt;
+  background-color: white;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url(lz-background.png); }
+/*---------------------------------------------------------------------------*/
+/* Links */
+a.chatzilla-link { text-decoration: none; color: #27408b; }
+a.chatzilla-link:visited ( color: #40708b; )
+a.chatzilla-link:hover { text-decoration: underline; }
+/*---------------------------------------------------------------------------*/
+/* Basic Styles */
+.chatzilla-highlight[name="Large"] { font-size: 12pt; }
+.chatzilla-highlight[name="Small"] { font-size: 8pt; }
+.chatzilla-highlight[name="Bold text"],
+.chatzilla-bold { font-weight: bold; }
+.chatzilla-italic { font-style: italic; }
+.chatzilla-underline {  text-decoration: underline; }
+.chatzilla-strikethrough { text-decoration: line-through; }
+.chatzilla-teletype { font-family: monospace; }
+.chatzilla-rheet { font-weight: bold; } /* WTF? */
+/*---------------------------------------------------------------------------*/
+/* Mirc Colors */
+.chatzilla-fg00 { color: #000000; }
+.chatzilla-fg01 { color: #c8c8c8; }
+.chatzilla-fg02 { color: #0000c8; }
+.chatzilla-fg03 { color: #00c800; }
+.chatzilla-fg04 { color: #c80000; }
+.chatzilla-fg05 { color: #c8c800; }
+.chatzilla-fg06 { color: #c800c8; }
+.chatzilla-fg07 { color: #ffb000; }
+.chatzilla-fg08 { color: #ffff00; }
+.chatzilla-fg09 { color: #00ff00; }
+.chatzilla-fg10 { color: #00c8c8; }
+.chatzilla-fg11 { color: #00ffff; }
+.chatzilla-fg12 { color: #0000ff; }
+.chatzilla-fg13 { color: #ff00ff; }
+.chatzilla-fg14 { color: #808080; }
+.chatzilla-fg15 { color: #989898; }
+.chatzilla-bg00 { background: #000000; }
+.chatzilla-bg01 { background: #c8c8c8; }
+.chatzilla-bg02 { background: #0000c8; }
+.chatzilla-bg03 { background: #00c800; }
+.chatzilla-bg04 { background: #c80000; }
+.chatzilla-bg05 { background: #c8c800; }
+.chatzilla-bg06 { background: #c800c8; }
+.chatzilla-bg07 { background: #ffb000; }
+.chatzilla-bg08 { background: #ffff00; }
+.chatzilla-bg09 { background: #00ff00; }
+.chatzilla-bg10 { background: #00c8c8; }
+.chatzilla-bg11 { background: #00ffff; }
+.chatzilla-bg12 { background: #0000ff; }
+.chatzilla-bg13 { background: #ff00ff; }
+.chatzilla-bg14 { background: #808080; }
+.chatzilla-bg15 { background: #989898; }
+/*---------------------------------------------------------------------------*/
+/* Emoticons */
+.chatzilla-emote-txt { display: none; }
+.chatzilla-emote:after {
+  margin-left: 3px;
+  margin-right: 3px;
+  content: url(chrome://chatzilla/skin/images/face-dunno.gif); }
+.chatzilla-emote[type="face-angry"]:after {
+  content: url(chrome://chatzilla/skin/images/face-angry.gif); }
+.chatzilla-emote[type="face-cry"]:after {
+  content: url(chrome://chatzilla/skin/images/face-cry.gif); }
+.chatzilla-emote[type="face-frown"]:after {
+  content: url(chrome://chatzilla/skin/images/face-frown.gif); }
+.chatzilla-emote[type="face-screw"]:after {
+  content: url(chrome://chatzilla/skin/images/face-screw.gif); }
+.chatzilla-emote[type="face-smile"]:after {
+  content: url(chrome://chatzilla/skin/images/face-smile.gif); }
+.chatzilla-emote[type="face-surprise"]:after {
+  content: url(chrome://chatzilla/skin/images/face-surprise.gif); }
+.chatzilla-emote[type="face-tongue"]:after {
+  content: url(chrome://chatzilla/skin/images/face-tongue.gif); }
+.chatzilla-emote[type="face-wink"]:after {
+  content: url(chrome://chatzilla/skin/images/face-wink.gif); }
+/*---------------------------------------------------------------------------*/
+/* Message Bases */
+.msg-table { width: 100%; }
+.msg-nested-table { 
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  border-spacing: 0px;
+  padding: 0px; }
+.msg { width: 100%; font-size: 8pt; }
+.msg-timestamp {
+  font-size: 8pt;
+  text-align: right;
+  vertical-align: top; }
+.msg-type {
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap; }
+.msg-user {
+  font-size: 10pt;
+  text-align: right;
+  vertical-align: top; }
+.msg-data {
+  font-size: 10pt;
+  padding: 1px 1px 1px 3px;
+  width: 100%;
+  white-space: -moz-pre-wrap; }
+/*---------------------------------------------------------------------------*/
+/* Message Specifics */
+.msg[msg-user="|"] .msg-data,
+.msg[msg-user="||"] .msg-data,
+.msg[msg-user="|||"] .msg-data,
+.msg[msg-user="]"] .msg-data,
+.msg[msg-user="["] .msg-data,
+.msg[msg-type="372"] .msg-data,
+.msg[msg-type="EVAL-IN"] .msg-data,
+.msg[msg-type="EVAL-OUT"] .msg-data { font-size: 9pt; font-family: monospace; }
+.msg[msg-type="USAGE"] .msg-data { font-style: italic; }
+.msg[msg-type="HELP"] .msg-data { font-weight: normal; }
+.msg[mark="even"] .msg-data { border-left: 2px #ff8000 solid; }
+.msg[mark="odd"] .msg-data { border-left: 2px #0080ff solid; }
+.msg[important="true"] .msg-data {
+  border-left: 2px #ff8000 solid; 
+  border-top: 2px #ff0000 solid; }
+.msg[msg-type="ACTION"] .msg-user { 
+  font-style: italic; 
+  border-left: 0px !important; }
+.msg[msg-type="ACTION"] .msg-data { font-style: italic; }
+.msg[msg-type="ACTION"] .msg-user:before { content: "*"; }
+  /* Ok, so it doesn't edit the message, but it needs to be put here... */
+.msg[msg-type="ACTION"] .msg-data:after { content: "*"; }
+/*---------------------------------------------------------------------------*/
+/* Nick Name Decorations */
+.msg[msg-type="NOTICE"] .msg-user:before { content: "["; }
+.msg[msg-type="NOTICE"] .msg-user:after { content: "]"; }
+.msg[dest-type="IRCUser"] .msg-user { font-weight: bold; }
+.msg[msg-dest$="ME!"] .msg-user { font-weight: bold; }
+.msg[dest-type="IRCUser"] .msg-user:before { content: "to("; }
+.msg[msg-dest$="ME!"] .msg-user:before { content: "from("; font-weight: bold; }
+.msg[dest-type="IRCUser"] .msg-user:after { content: ")"; }
+.msg[view-type="IRCUser"] .msg-user:before { content: ""; }
+.msg[view-type="IRCUser"] .msg-user:after { content: ""; }
+.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:before { content: ""; }
+.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:after { content: ""; }
+/*---------------------------------------------------------------------------*/
+/* Header and Splash */
+.header {
+  color: black;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #555555;
+  font-size: 8pt;
+  margin: 0px;
+  padding: 3px; }
+.value { color: black; }
+#splash {
+  color: black;
+  font: 5em verdana bold; }
+/*---------------------------------------------------------------------------*/
+/* Random Weird Character Shtuff */
+.chatzilla-control-char:before { content: "[\\"; }
+.chatzilla-control-char:after { content: "]"; }
+/*---------------------------------------------------------------------------*/
+/* User Lines */
+/* Ok, this requires some description. You may of seen "Faces" motifs that
+   put little pictures next to everyone that frequents moznet, while I like
+   the idea of distinguishing different user's messages, I find having
+   pictures next to everyones face distracting and kinda wasting space. To
+   solve this, I put different coloured lines to the left of certain people's
+   messages. !ME is black, everyone else has their own colours. The format is
+   this:
+
+   .msg-user[msg-user^="xxxxxx"] { border-left: 2px yyyyyy solid; }
+
+   Where xxxxxx is the user's name, and yyyyyy is the colour (Hex, RGB, or 
+   name) of the line. Enjoy! */
+
+.msg[msg-user$="ME!"] .msg-user { border-left: 2px black solid; !important }
+.msg[msg-user^="LittleZephyr"] .msg-user { border-left: 2px #dbaee3 solid; }
+.msg[msg-user^="kitten"] .msg-user { border-left: 2px #e8bed3 solid; }
+.msg[msg-user^="bt"] .msg-user { border-left: 2px #bccde5 solid; }
+.msg[msg-user^="rusty"] .msg-user { border-left: 2px #8c777a solid; }
+.msg[msg-user^="ubernostrum"] .msg-user { border-left: 2px #73b23c solid; }
+.msg[msg-user^="aphrael"] .msg-user { border-left: 2px #6d2446 solid; }
+.msg[msg-user^="manobes"] .msg-user { border-left: 2px #396184 solid; }
+.msg[msg-user^="MostlyHarmless"] .msg-user { border-left: 2px #59442a solid; }
+.msg[msg-user^="peter"] .msg-user { border-left: 2px #738411 solid; }
+.msg[msg-user^="pw"] .msg-user { border-left: 2px #738411 solid; }
+.msg[msg-user^="Silver"] .msg-user { border-left: 2px #999 solid; }
+.msg[msg-user^="rginda"] .msg-user { border-left: 2px #c8b61f solid; }
+.msg[msg-user^="Toast"] .msg-user { border-left: 2px #647c9b solid; }
+.msg[msg-user^="ORenyRen"] .msg-user { border-left: 2px #c2ff73 solid; }
