@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.52", date: "12/07/2003", condition: G,
+   bugs: [207949],
+   desc: "fixes the button added in 0.9.51 for those that use 'Icons and " +
+    "Text' or 'Text' for the toolbar."},
   {id: "0.9.51", date: "12/05/2003", condition: G,
    bugs: [207949],
    desc: "adds a button to Firebird's customizable toolbar to start " +
