@@ -2,7 +2,7 @@ var revs =
 [
   {id: "0.9.66d", date: "2004-10-31", condition: Y,
    bugs: [117851],
-   desc: "finally sorts out <tt>/join</tt>, and adds double-clicking to >" +
+   desc: "finally sorts out <tt>/join</tt>, and adds double-clicking to " +
     "join a channel from the Join Channel dialog. The context menus have " +
     "been tidied up, saving space for longer nicknames. Logging now works " +
     "again for channels, networks and users with characters that don't work " +
