@@ -51,7 +51,8 @@ var motifs = {
     "who is saying what.",
     "output-redmoz": "Red and orange, mozilla star in background.",
     "output-silver": "Variation on light motif.",
-    "output-silver-gecko": "Variation on light motif, with gecko background image."
+    "output-silver-gecko": "Variation on light motif, with gecko background image.",
+    "output-sunshine": "A yellow theme maded to match the new emoticons"
 }
 
 function writeMotifs()
