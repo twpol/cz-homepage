@@ -1,7 +1,7 @@
 var revs =
 [
   {id: "0.9.64g", date: "2004-09-05", condition: Y,
-   bugs: [240254],
+   bugs: [255449,255137,240254],
    desc: "fixes regressions found in <b>0.9.64f</b>, such as <tt>/kick</tt> not working, and the userlist context menu. The excessive memory usage experience by some people has also been fixed. Various smaller fixes have also been made, including CTCP TIME replies being encoded properly, /who and /cancel work properly, and other internal error handling improvements. This version adds the <tt>/links</tt>, <tt>/motd</tt> and <tt>/raw</tt> commands, and displays unknown channel user modes in the userlist (and sorts it correctly for these modes)."},
   {id: "0.9.64f", date: "2004-08-10", condition: Y,
    bugs: [234465, 240992, 253501, 253032, 185729, 180577, 108087, 235650, 
