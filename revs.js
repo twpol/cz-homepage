@@ -1,5 +1,22 @@
 var revs =
 [
+  {id: "0.9.66", date: "2004-10-20", condition: G,
+   bugs: [260633, 259197, 204942, 219896, 248746, 261270, 261696, 261711, 
+          263226, 263760, 233973, 262037],
+   desc: "fixes some bugs with URL handling, a low-level IRC prefix bug, " +
+    "and <tt>/leave</tt> for non-ASCII channels. The userlist away status " +
+    "now also makes entries italic to stand out better, and has been fixed " +
+    "to work on older Mozilla versions. <tt>/squery</tt> has also been " +
+    "fixed, and <tt>/cancel</tt> should function during the delay between " +
+    "connection attempts. <tt>/stalk</tt> now lists all your stalk words, as " +
+    "it was supposed to! The automatic <i>whois</i> data when a query view " +
+    "opens now goes to the query view instead of all over your channel " +
+    "view, and focus is put back into the input box when clicking links. " +
+    "Bugzilla Bug# links have been updated to use HTTPS by default, and " +
+    "finally we have much improved logging by separating logs by network, " +
+    "and including (configurably, of course) the current date in the log " +
+    "file name. There's also a new plugin API, but old plugins should " +
+    "continue to work."},
   {id: "0.9.65", date: "2004-09-16", condition: G,
    bugs: [234465, 255137, 235650, 246424, 249686, 240992, 174087, 246275, 
           180577, 240254, 216778, 256534, 255449, 246717, 250406, 115186, 
