@@ -1,5 +1,12 @@
 var revs =
 [
+  {id: "0.9.64", date: "2004-06-09", condition: G,
+   bugs: [230328, 127662, 185729, 226223, 226410, 231150, 235650, 238551, 
+          238716, 73257, 226408, 238612, 108087, 180577, 211461, 218070, 
+          242381, 147452],
+   desc: "contains all the fixes in <b>0.9.63</b>, <b>0.9.63a</b> and " +
+    "<b>0.9.63b</b> with some minor tweaks, and is now checked into CVS (so " +
+    "it will come with new Mozilla builds)."},
   {id: "0.9.63b", date: "2004-05-03", condition: Y,
    bugs: [242381, 147452],
    desc: "fixes starting ChatZilla from a bookmark group, /dcc-abort " +
