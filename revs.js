@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.66c", date: "2004-10-30", condition: Y,
+   bugs: [],
+   desc: "fixes a couple more regressions with <tt>/join</tt> and " +
+    "<tt>/list</tt>."},
   {id: "0.9.66b", date: "2004-10-30", condition: Y,
    bugs: [],
    desc: "fixes some regressions that crept into <b>0.9.66a</b>, and fixes " +
