@@ -2,7 +2,7 @@ var revs =
 [
   {id: "0.9.64f", date: "2004-08-10", condition: Y,
    bugs: [234465, 240992, 253501, 253032, 185729, 180577, 108087, 235650, 
-          232809, 226223],
+          232809, 226223, 174087],
    desc: "adds SSL (secure connection) support (<tt>/sslserver</tt>), " +
     "visible away status in the userlist, and encoded nicknames (thanks " +
     "to JustinArthur and Toast of #chatzilla for the first two, " +
