@@ -674,15 +674,15 @@ You may separate multiple commands with the semicolon (';') character, as
       <table>
         <tbody>
           <tr>
-            <td><b>Control</b>-<b>+</b></td>
+            <td><i>Control - +</i></td>
             <td>Make text bigger by 2pt</td>
           </tr>
           <tr>
-            <td><b>Control</b>-<b>&#151;</b></td>
+            <td><i>Control - &#150;</i></td>
             <td>Make text smaller by 2pt</td>
           </tr>
           <tr>
-            <td><b>Control</b>-<b>0</b></td>
+            <td><i>Control - 0</i></td>
             <td>Reset to browser-default</td>
           </tr>
         </tbody>
