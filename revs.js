@@ -10,7 +10,7 @@ var revs =
     "created for file transfers with progress bars, and a much easier way " +
     "to accept/decline DCC offers (you'll have to try it to see). Long lines " +
     "of text (over about 400 characters) are split automatically now, so " +
-    "long messages will get through without any loss. Tab-complection no " +
+    "long messages will get through without any loss. Tab-completion no " +
     "longer forces your text into lower-case when it only partially " +
     "matches, instead it uses the case of the first partial-match and, " +
     "finally, the 'query start' sound is no longer played when you do " +
