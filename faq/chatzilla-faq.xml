@@ -59,8 +59,20 @@
 </question>
 
 <answer>
-  Uninstall ChatZilla as described above, or reinstall Mozilla without
-  ChatZilla.
+  If you are using the Mozilla Suite, you will need to use the uninstall
+  procedure outlined above. If you are using Mozilla Firebird, use the 
+  following steps (you will need at least version 0.9.50):
+  <ol>
+  	<li>Open the Options dialog from the Tools menu.
+  	</li>
+  	<li>Select the Extensions item on the left of the dialog.
+  	</li>
+  	<li>Find and select Chatzilla in the list of extensions on the right.
+  	</li>
+  	<li>Click the Disable Extension button. If the only buttons are
+  			Settings and Enabled Extension, Chatzilla is already disabled.
+  	</li>
+  </ol>
 </answer>
 </entry>
 
