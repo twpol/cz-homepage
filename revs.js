@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.53", date: "12/07/2003", condition: Y,
+   bugs: [227139],
+   desc: "fixes the fix for mIRC color codes in recent Mozilla builds " +
+    "so you now see the background colors."},
   {id: "0.9.52", date: "12/07/2003", condition: G,
    bugs: [207949],
    desc: "fixes the button added in 0.9.51 for those that use 'Icons and " +
