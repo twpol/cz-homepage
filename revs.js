@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.57", date: "01/23/2004", condition: G,
+   bugs: [231621, 146398, 207436, 219983, 220325, 230833, 231770],
+   desc: "covers all the fixes made during 0.9.55 and 0.9.56, plus a number " +
+    "of smaller fixes (see bug list), except for the new preference window."},
   {id: "0.9.56", date: "01/15/2004", condition: Y,
    bugs: [207436],
    desc: "renames the Firebird toolbar button from 'IRC Chat' to "+
