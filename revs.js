@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.64a", date: "2004-06-10", condition: Y,
+   bugs: [245783],
+   desc: "fixes problems with recent Firefox nightly builds, including " +
+    "Firefox 0.9."},
   {id: "0.9.64", date: "2004-06-09", condition: G,
    bugs: [230328, 127662, 185729, 226223, 226410, 231150, 235650, 238551, 
           238716, 73257, 226408, 238612, 108087, 180577, 211461, 218070, 
