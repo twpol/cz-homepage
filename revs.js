@@ -1,6 +1,9 @@
 var revs =
 [
-{id: "0.9.66d", date: "2004-10-31", condition: Y,
+  {id: "0.9.66e", date: "2004-11-12", condition: Y,
+   bugs: [],
+   desc: "fixes some startup errors for various OSes where users didn't have write access to Firefox's install location, adds sorting to the channel join dialog, disabling all sound now works, log file links are now all URLs, and the <tt>/plugin-pref</tt> command has been added. The <tt>/away</tt> command now works from the client view, and away status is persisted between connects and sessions. A list of backup nicknames has been added, and nickname reclamation is now supported. Provisional XULrunner support has been added as well."},
+  {id: "0.9.66d", date: "2004-10-31", condition: Y,
    bugs: [117851],
    desc: "finally sorts out <tt>/join</tt>, and adds double-clicking to " +
     "join a channel from the Join Channel dialog. The context menus have " +
