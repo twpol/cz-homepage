@@ -31,7 +31,6 @@ body.chatzilla-body{
 
 .msg-table {
     background: inherit;
-    font-size: 10pt;
     height: 100%;
 }
 .msg-type {
@@ -45,12 +44,10 @@ body.chatzilla-body{
     background: white;
     padding: .5ex .5em;
     font-weight: bold;
-    font-size: 10pt;
 }
 .msg-user:before,
 .msg-user:after{
     font-weight: normal;
-    font-size: 10pt;
 }
 
 .msg-data {
@@ -64,8 +61,8 @@ body.chatzilla-body{
 
 .msg[important="true"] .msg-data,
 .msg[important="true"] .msg-user {
-border-width: 2px;
-font-weight: bold;
+    border-width: 2px;
+    font-weight: bold;
 }
 
 .msg[msg-type="JOIN"] .msg-data,
