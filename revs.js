@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.60d", date: "03/02/2004", condition: Y,
+   bugs: [],
+   desc: "is a <i>DCC Chat test version</i>, based on <b>0.9.60</b>. It " +
+    "contains some updated display code, and an initial implementation of " +
+    "DCC Chat (but not DCC Sent/Get). <a href='http://bugzilla.mozilla.org/" +
+    "show_bug.cgi?id=73257#c17'>More Information</a> about this build."},
   {id: "0.9.60p", date: "03/02/2004", condition: Y,
    bugs: [],
    desc: "is <b>0.9.60</b> for Firefox users (contains the new preference " +
