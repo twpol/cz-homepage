@@ -1,10 +1,10 @@
 var revs =
 [
   {id: "0.9.66e", date: "2004-11-12", condition: Y,
-   bugs: [],
+   bugs: [161205, 256854, 263468, 243181, 267477, 268260, 268901],
    desc: "fixes some startup errors for various OSes where users didn't have write access to Firefox's install location, adds sorting to the channel join dialog, disabling all sound now works, log file links are now all URLs, and the <tt>/plugin-pref</tt> command has been added. The <tt>/away</tt> command now works from the client view, and away status is persisted between connects and sessions. A list of backup nicknames has been added, and nickname reclamation is now supported. Provisional XULrunner support has been added as well."},
   {id: "0.9.66d", date: "2004-10-31", condition: Y,
-   bugs: [117851],
+   bugs: [117851, 267478],
    desc: "finally sorts out <tt>/join</tt>, and adds double-clicking to " +
     "join a channel from the Join Channel dialog. The context menus have " +
     "been tidied up, saving space for longer nicknames. Logging now works " +
@@ -15,13 +15,13 @@ var revs =
    desc: "fixes a couple more regressions with <tt>/join</tt> and " +
     "<tt>/list</tt>."},
   {id: "0.9.66b", date: "2004-10-30", condition: Y,
-   bugs: [],
+   bugs: [266541],
    desc: "fixes some regressions that crept into <b>0.9.66a</b>, and fixes " +
     "a problem with goto-url-newtab in Firefox. A new link command, " +
     "goto-url-external, has been added which launches the URL in your " +
     "default handler for that URL scheme."},
   {id: "0.9.66a", date: "2004-10-30", condition: Y,
-   bugs: [265414, 255494, 261711, 262037],
+   bugs: [107245, 265414, 255494, 261711, 262037],
    desc: "fixes the new whois code to treat the 330 code the same as the " +
     "other lines, and stops a bogus 'Unable to disable plugin " +
     "&lt;unknown&gt;' message when loading plugins with <tt>/load</tt>. A " +
