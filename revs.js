@@ -1,5 +1,8 @@
 var revs =
 [
+  {id: "0.9.59", date: "01/30/2004", condition: G,
+   bugs: [112435, 218070],
+   desc: "adds the font options properly."},
   {id: "0.9.58p", date: "01/24/2004", condition: Y,
    bugs: [112435, 218070],
    desc: "add the new preferences window, and some font options, for testing."},
