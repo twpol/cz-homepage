@@ -1,10 +1,25 @@
 var revs =
 [
+  {id: "0.9.64e", date: "2004-07-10", condition: Y,
+   bugs: [250406],
+   desc: "fixes the 'sync-headers' message coming up when you disconnect, " +
+    "adds more emoticon matching, fixes it so it no longer thinks 'BD' " +
+    "and '80' are emoticons, reduced the console spew a bit, improved the " +
+    "frame loading so new views open a little faster, fixes the message " +
+    "context menu which incorrectly had some items disabled occasionally, " +
+    "and allows proper localisation of the output window."},
   {id: "0.9.64d", date: "2004-07-06", condition: Y,
-   bugs: [249616, 249686],
-   desc: "fixes a major Pref Manager regression in <b>0.9.64c</b> which caused a whole number of issues, like preferences not taking effect until restart, and a completely broken multiline-mode. Middle-clicking a tab now hides it, and a minor bug has been fixed so half-ops get a '%' by their nickname next to the input box. The tabs no longer stretch to fill the available space, but still compress to fit them all in - using a (hopefully) better algorithm. Finally, a completely new set of emoticons have been included, thanks to Lim Chee Aun of phoenity.com."},
+   bugs: [249616, 249686, 115186],
+   desc: "fixes a major Pref Manager regression in <b>0.9.64c</b> which " +
+    "caused a whole number of issues, like preferences not taking effect " +
+    "until restart, and a completely broken multiline-mode. Middle-clicking " +
+    "a tab now hides it, and a minor bug has been fixed so half-ops get a '%' " +
+    "by their nickname next to the input box. The tabs no longer stretch to " +
+    "fill the available space, but still compress to fit them all in - using " +
+    "a (hopefully) better algorithm. Finally, a completely new set of " +
+    "emoticons have been included, thanks to Lim Chee Aun of phoenity.com."},
   {id: "0.9.64c", date: "2004-07-02", condition: Y,
-   bugs: [81978],
+   bugs: [81978, 249187, 247963],
    desc: "adds a 15 second delay to reconnecting, and speeds up joining many " +
     "channels. Support for CLIENTINFO has been improved, now including " +
     "individual command information. The tabs now act more like the " +

@@ -50,6 +50,19 @@
         scratch.
     </li>
   </ol>
+  <p/>
+  Mozilla Firefox can uninstall XPI extensions such as ChatZilla:
+  <ol>
+    <li>Open the Tools menu, select Extensions.
+    </li>
+    <li>Find the ChatZilla extension, and select it.
+    </li>
+    <li>Either click the Uninstall button, or right-click and select Uninstall.
+    </li>
+    <li>Confirm that you want to uninstall ChatZilla, then you need to restart
+        Mozilla Firefox to complete the uninstall.
+    </li>
+  </ol>
 </answer> 
 </entry>
 
@@ -63,14 +76,11 @@
   procedure outlined above. If you are using Mozilla Firefox, use the 
   following steps (you will need at least version 0.9.50):
   <ol>
-  	<li>Open the Options dialog from the Tools menu.
+  	<li>Open the Extensions dialog from the Tools menu.
   	</li>
-  	<li>Select the Extensions item on the left of the dialog.
+  	<li>Select ChatZilla from the list of Extensions.
   	</li>
-  	<li>Find and select Chatzilla in the list of extensions on the right.
-  	</li>
-  	<li>Click the Disable Extension button. If the only buttons are
-  			Settings and Enabled Extension, Chatzilla is already disabled.
+  	<li>Right-click ChatZilla, and select Disable.
   	</li>
   </ol>
 </answer>
@@ -110,7 +120,8 @@
 
 <answer>
   If you have ChatZilla 0.9.51 or newer, you can place an <b>IRC Chat</b> 
-  button on your toolbar, which will start ChatZilla.
+  button on your toolbar, which will start ChatZilla. You can also select
+  <b>ChatZilla</b> from the Tools menu.
   <p/>
   The only way to start older ChatZilla versions in Mozilla Firefox is via an 
   <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>.
@@ -230,10 +241,45 @@
 </question>
 
 <answer>
-  ChatZilla does not support DCC at the moment.  This was a limitation of
-  Mozilla itself, but the nessessary code is now there.  See bug
-  <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=73257">73275</a>
-  for the current progress in implementing DCC in ChatZilla.
+  ChatZilla currently has a basic implementation of DCC Chat and DCC File. The
+  following is a summary of the commands and how to use it, enter 
+  <tt>/help dcc</tt> into ChatZilla for more information.
+  
+  <div class="figure">
+    <table class="figure-contents" cellpadding="2px">
+      <tr>
+        <td valign="top"><code>/dcc-chat nickname</code></td>
+        <td>
+          Sends a DCC Chat offer to <tt>nickname</tt>, which they can then 
+          accept or decline.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/dcc-send nickname</code></td>
+        <td>
+          Prompts you to pick a file to send to <tt>nickname</tt>, after which
+          it sends the offer. The other user can then accept or decline this 
+          offer.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/dcc-accept</code></td>
+        <td>
+          Accepts the last DCC Chat or DCC File offer made to you. This will 
+          not work within 10 seconds of an offer arriving, during which time 
+          you may accept the offer using the slightly longer command of 
+          <tt>/dcc-accept nickname</tt>.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/dcc-decline</code></td>
+        <td>
+          Declines (refuses) the last DCC Chat or DCC File offer made to you.
+        </td>
+      </tr>
+    </table>
+      Direct Client Connection commands
+  </div>
 </answer>
 </entry>
 
@@ -550,6 +596,54 @@
       anything special with it, so you can still say "%C" by 
       typing <b>%%C</b>.</li>
   </ul>
+</answer>
+</entry>
+
+<entry id="emoticons">
+<question>
+  How do I use smilies/emoticons/faces in my text?
+</question>
+
+<answer>
+  Simple - just type out the smiley you want as you might in an e-mail, and 
+  ChatZilla will automatically display an image in it's place, just like it 
+  does for other people's messages. But what smiles/emoticons are available?
+  <p/>
+  <table width="100%">
+    <tbody>
+      <tr>
+        <td><tt><b>:-)</b></tt> - happy</td>
+        <td><tt><b>:-S</b></tt> - confused</td>
+        <td><tt><b>&gt;:-(</b></tt> - angry</td>
+      </tr><tr>
+        <td><tt><b>;-)</b></tt> - winking</td>
+        <td><tt><b>B-)</b></tt> - cool</td>
+        <td><tt><b>&gt;:-D</b></tt> - evil</td>
+      </tr><tr>
+        <td><tt><b>:-D</b></tt> - very happy/laughing</td>
+        <td><tt><b>:")</b></tt> - blushing</td><!-- " -->
+        <td><tt><b>o_O</b></tt> - dizzy</td>
+      </tr><tr>
+        <td><tt><b>X-D</b></tt> - laughing hard</td>
+        <td><tt><b>:~)</b></tt> - crying</td>
+        <td><tt><b>O_O</b></tt> - "eek", wide-eyed</td>
+      </tr><tr>
+        <td><tt><b>:-O</b></tt> - surprised</td>
+        <td><tt><b>:-|</b></tt> - flat, undecided</td>
+        <td><tt><b>:-?</b></tt> - questioning</td>
+      </tr><tr>
+        <td><tt><b>:-P</b></tt> - tongue out</td>
+        <td><tt><b>:-(</b></tt> - sad</td>
+        <td><tt><b>9_9</b></tt> - rolling eyes</td>
+      </tr>
+    </tbody>
+  </table>
+  <p/>
+  Most of the emoticons work without the nose ("-"), or with "^"/"v" 
+  replacing it. Apart from ":-)" and ";-)" the ":" may be replaced with ";" or 
+  "=" too. You can take your pick from these variations, and ChatZilla will 
+  still know which icon to use - if you want to see what someone else has
+  used, hover your mouse over the icon.
 </answer>
 </entry>
 
@@ -881,7 +975,7 @@ You may separate multiple commands with the semicolon (';') character, as
   of some sort, or just about anything else.
   For security reasons these replacement ``output windows''
   cannot be remotely located, and must instead be
-  <a href="#install-scripts">installed</a> by users.
+  <a href="#install-script">installed</a> by users.
   <p/>
   The ``outputWindowURL'' pref is used to select the output window file
   to use for a particular network, channel, or user.  See the
