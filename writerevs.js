@@ -72,6 +72,8 @@ function writeByDate(maxDelta)
     var count = 0;
     var wroteGreen = false;
     
+    calculateCumulativeBugs(revs);
+    
     for (var i in revs)
     {
         var d = new Date(revs[i].date);
@@ -105,6 +107,8 @@ function writeByDate(maxDelta)
     
 function writeRevs ()
 {
+    calculateCumulativeBugs(revs);
+    
     for (var i in revs)
         writeRev(revs[i]);
 }
@@ -129,12 +133,24 @@ function writeRev(rev)
                       "<a name='" + rev.id + "'></a>" +
                       "Revision " + id + " " + rev.desc);
 
+    if (rev.bugsCumulative || rev.bugs)
+       document.write("<p class='bugs'>");
+    
+    if (rev.bugsCumulative)
+    {
+        document.write(" [<a href='" +
+                       "http://bugzilla.mozilla.org/buglist.cgi?bug_id=" + 
+                       rev.bugsCumulative.join(",") + "' title='List of bugs " +
+                       "fixed since last green release''>" + 
+                       rev.bugsCumulative.length + " cumulative fixed bug(s)</a>]");
+    }
+    
     if (rev.bugs)
     {
-        document.write("<p class='bugs'>[<a href='" +
+        document.write(" [<a href='" +
                        "http://bugzilla.mozilla.org/buglist.cgi?bug_id=" + 
                        rev.bugs.join(",") + "'>" + 
-                       rev.bugs.length + " related bug(s)</a>]");
+                       rev.bugs.length + " fixed bug(s)</a>]");
     }
 
     document.writeln ("</td>");
@@ -145,3 +161,32 @@ function writeRev(rev)
     document.writeln ("</tr>");
 }
 
+function calculateCumulativeBugs(revs)
+{
+    var cumulative;
+    
+    for (var i = revs.length - 1; i >= 0; i--)
+    {
+        if (revs[i].condition == G)
+        {
+            cumulative = new Object();
+        }
+        else
+        {
+            if (revs[i].bugs)
+            {
+                for (var b = 0; b < revs[i].bugs.length; b++)
+                    cumulative[revs[i].bugs[b]] = 1;
+                if (keys(cumulative).length > revs[i].bugs.length)
+                    revs[i].bugsCumulative = keys(cumulative);
+            }
+        }
+    }
+}
+
+function keys(o) {
+    var rv = new Array();
+    for (var p in o)
+        rv.push(p);
+    return rv;
+}
