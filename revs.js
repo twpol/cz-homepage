@@ -1,8 +1,8 @@
 var revs =
 [
-  {id: "0.9.56", date: "01/15/2004", condition: Y,
+/*  {id: "0.9.56", date: "01/15/2004", condition: Y,
    bugs: [207436],
-   desc: "renames the Firebird toolbar button from 'IRC Chat' to 'ChatZilla', adds a menu item, and the statusbar now remembers it's state. Custom sounds have been fixed in Windows, and hopefully Linux too. The new preferences window now has tooltips (like 0.9.54f did), doesn't crop the contents on Mac OSX, is now resizable, and the preferences have been rearranged to keep the tabs better organised."},
+   desc: "renames the Firebird toolbar button from 'IRC Chat' to 'ChatZilla', adds a menu item, and the statusbar now remembers it's state. Custom sounds have been fixed in Windows, and hopefully Linux too. The new preferences window now has tooltips (like 0.9.54f did), doesn't crop the contents on Mac OSX, is now resizable, and the preferences have been rearranged to keep the tabs better organised."},*/
   {id: "0.9.55", date: "01/07/2004", condition: Y,
    bugs: [218070],
    desc: "adds the 2nd revision of the new preferences window, fixes " +
