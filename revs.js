@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.54b", date: "12/12/2003", condition: Y,
+   bugs: [109814, 116803],
+   desc: "fixes notify, and adds a network-pref for saving the list. There " +
+    "is now a preference for the number of times connections are attempted, " +
+    "and also a number of improved checks in the code, to fix a few "+
+    "theoretical bugs."},
   {id: "0.9.54a", date: "12/10/2003", condition: Y,
    bugs: [217474, 194383, 223693, 161597, 116541, 108533, 217269, 133184],
    desc: "fixes various issues, including safe channel support, better " +
