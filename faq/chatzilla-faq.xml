@@ -671,14 +671,24 @@ You may separate multiple commands with the semicolon (';') character, as
 <answer>
   <div class="floating-figure">
     <div class="figure-contents">
-    <pre>/* specifies a 12 point font for 
- * all ChatZilla messages. */
-
-body.chatzilla-body .msg {
-  font-size: 12pt !important;
-}</pre>
+      <table>
+        <tbody>
+          <tr>
+            <td><b>Control</b>-<b>+</b></td>
+            <td>Make text bigger by 2pt</td>
+          </tr>
+          <tr>
+            <td><b>Control</b>-<b>&#151;</b></td>
+            <td>Make text smaller by 2pt</td>
+          </tr>
+          <tr>
+            <td><b>Control</b>-<b>0</b></td>
+            <td>Reset to browser-default</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-   userContent.css rule for 12pt font
+    Summary of Shortcuts
   </div>
   If your fonts are way too large or way too small, it is likely a problem with
   your DPI setting.  Check your display preferences.  If you're set to use
@@ -686,10 +696,27 @@ body.chatzilla-body .msg {
   practice, it seems that "System Setting" is almost always wrong.  Fixing this
   will likely help out with web pages that specify font sizes in points, too.
   <p/>
-  If it's not a DPI thing, you can adjust your font size with a special
-  rule in <b>userContent.css</b>.  In the <tt>chrome/</tt> subdirectory of your
-  <a href="http://www.google.com/search?q=(mozilla%20OR%20Firefox)%20profile%20directory">profile directory</a>,
-  create a file called <b>userContent.css</b>, and add the text shown at the right.
+  If it's not a DPI thing, you can use the options in the menu under 
+  <tt>View</tt> &gt; <tt>Font Family and Size</tt>. The options include some
+  useful shortcuts (see table to the right) as well as the option to enter a
+  size and font name explicitly. <tt>Small</tt>, <tt>Medium</tt> and 
+  <tt>Large</tt> are based on the browser's base font size, and the three
+  font options (<tt>Serif</tt>, <tt>Sans Serif</tt> and <tt>Monospace</tt>) 
+  use the appropriate browser-configured fonts as well.
+  <p/>
+  For those less inclined to use menus, the commands <tt>/font-size</tt> and
+  <tt>/font-family</tt> provide the same functionality. The former accepts the
+  text values "default", "small", "medium", "large", "smaller" and "bigger"
+  which have the obvious meanings from the menu. The latter command accepts
+  the special names "serif", "sans-serif" and "monospace". Both accept other
+  values, either the font size in points (pt), or the font family name.
+  <p/>
+  All these options affect all views in ChatZilla. This doesn't mean you can't
+  be awkward and have different sizes or fonts on different views - just use the
+  commands described in the <a href="#prefs">preferences</a> entry, and the
+  pref names "font.size" and "font.family". For example, if you wanted to make
+  the current network use 12pt text instead of the default, you would do 
+  <tt>/network-pref font.size 12</tt>.
 </answer>
 </entry>
 
