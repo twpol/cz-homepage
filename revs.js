@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.66b", date: "2004-10-30", condition: Y,
+   bugs: [],
+   desc: "fixes some regressions that crept into <b>0.9.66a</b>, and fixes " +
+    "a problem with goto-url-newtab in Firefox. A new link command, " +
+    "goto-url-external, has been added which launches the URL in your " +
+    "default handler for that URL scheme."},
   {id: "0.9.66a", date: "2004-10-30", condition: Y,
    bugs: [265414, 255494, 261711, 262037],
    desc: "fixes the new whois code to treat the 330 code the same as the " +
