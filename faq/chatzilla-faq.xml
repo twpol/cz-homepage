@@ -1064,13 +1064,20 @@ body.chatzilla-body .msg {
 
 <answer>
   ChatZilla is written
-  entirely in <b>JavaScript</b> and <b>XUL</b> and lives in
+  entirely in <b>JavaScript</b> and <b>XUL</b> and lives in 
+  <tt>ChatZilla.jar</tt> in the Mozilla Chrome directory. You can view the 
+  source on-line using LXR:
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc">mozilla/extensions/irc/</a>.
   Most of the actual front-end code is in the
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content">xul/content/</a>
   subdirectory, and you'll find the supporting libaries in
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/js/lib/">js/lib/</a>
   subdirectory.
+  <p/>
+  If you want to change things, you're much better off using a ChatZilla 
+  plugin, then you don't need to keep re-applying your changes each time 
+  there's a new version. See <a href="#scripts">How do I script ChatZilla?</a> 
+  for more information on this.
 </answer>
 </entry>
 
