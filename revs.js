@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.54", date: "01/03/2004", condition: G,
+   bugs: [227139, 217474, 194383, 223693, 161597, 116541, 108533, 217269, 
+          133184, 109814, 116803, 123664, 227402, 115680, 176506, 112089, 
+          128304, 218421, 227144],
+   desc: "covers all the fixes made during 0.9.54a - 0.9.54f, except for " +
+    "the new preference window."},
   {id: "0.9.54f", date: "12/27/2003", condition: Y,
    bugs: [],
    desc: "really fixes the pref bug, adds editing of colorful topics " +
