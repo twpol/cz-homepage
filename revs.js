@@ -1,5 +1,21 @@
 var revs =
 [
+  {id: "0.9.68", date: "2005-04-10", condition: G,
+   bugs: [267477, 276764, 206803, 280004, 233831, 279471, 233352, 281907,
+          281649, 282495, 283017, 231211, 109790, 281706, 229807, 277588,
+          282713, 277839, 283995, 287729, 263216, 227093, 189097, 193977,
+          278763, 287387, 240111, 265573, 284149, 180574, 204411, 228962,
+          262821, 273507, 238050, 236155],
+   desc: "fixes even more bugs than the last release, including a problem " +
+    "with linking spaces, IRC numeric 464, <tt>/commands</tt> with a " +
+    "pattern, user modes appearing on any tab, and the infamous internal " +
+    "error dispatching a sync-* command when changing motif. Additions to " +
+    "this version include showing your nickname in JOIN/PART lines, a " +
+    "confirmation on quit if you are connected, the <tt>/notice</tt> " +
+    "command, <tt>disconnect-all</tt>, <tt>/reconnect</tt> and " +
+    "<tt>/reconnect-all</tt>, the ability to save the current view. " +
+    "Changing character encoding now updates the topic, and there is a " +
+    "drop-down on the nickname label to set yourself away and change nick."},
   {id: "0.9.67", date: "2005-01-07", condition: G,
    bugs: [107245, 117851, 150140, 161205, 172094, 229594, 232801, 240114, 
           241442, 243181, 255494, 256854, 257026, 261711, 262037, 262325, 

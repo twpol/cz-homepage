@@ -224,6 +224,10 @@ th {
     text-align: right;
 }
 
+code {
+    white-space: nowrap;
+}
+
 .figure { 
     background: #578253;
     color: white;
@@ -277,6 +281,24 @@ th {
     font-weight: normal;
     margin-right: 3em;
     text-align: justify;
+}
+
+.tip:before {
+    content: url(tip.gif);
+    margin-left: -20px;
+    padding-right: 5px;
+}
+
+.note:before {
+    content: url(note.gif);
+    margin-left: -20px;
+    padding-right: 5px;
+}
+
+.warning:before {
+    content: url(warning.gif);
+    margin-left: -20px;
+    padding-right: 5px;
 }
 
 .fg-white {

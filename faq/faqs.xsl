@@ -127,6 +127,42 @@
 	</xsl:element>
 </xsl:template>
 
+<xsl:template match="tip|note|warning">
+	<xsl:element name="p">
+		<xsl:attribute name="class">
+			<xsl:value-of select="local-name(.)"/>
+		</xsl:attribute>
+		<xsl:element name="strong">
+			<xsl:if test="local-name(.)='tip'">
+				<xsl:text>Tip: </xsl:text>
+			</xsl:if>
+			<xsl:if test="local-name(.)='note'">
+				<xsl:text>Note: </xsl:text>
+			</xsl:if>
+			<xsl:if test="local-name(.)='warning'">
+				<xsl:text>Warning: </xsl:text>
+			</xsl:if>
+		</xsl:element>
+		<xsl:for-each select="@*">
+			<xsl:copy/>
+		</xsl:for-each>
+		<xsl:apply-templates select="node()"/>
+	</xsl:element>
+</xsl:template>
+
+<xsl:template match="menu">
+	<xsl:element name="b">
+		<xsl:for-each select="@*">
+			<xsl:copy/>
+		</xsl:for-each>
+		<xsl:apply-templates select="node()"/>
+	</xsl:element>
+</xsl:template>
+
+<xsl:template match="submenu">
+	<xsl:text> &gt; </xsl:text>
+</xsl:template>
+
 <xsl:template match="p|ul|li|ol|b|i|tt|blockquote|strong|em|dfn|cite|abbr|kbd|dl|dd|dt|span|pre|br|img|table|tr|td|th|div|code">
 	<xsl:element name="{local-name(.)}">
 		<xsl:for-each select="@*">
@@ -135,6 +171,24 @@
 		<xsl:apply-templates select="node()"/>
 	</xsl:element>
 </xsl:template>
+
+<xsl:template match="bug">
+	<xsl:variable name="bug" select="string(.)"/>
+	<a title="{document(concat('getbug.cgi/',$bug))/bug/title}"
+			href="{concat('http://bugzilla.mozilla.org/show_bug.cgi?id=',$bug)}">
+		<xsl:text>Bug #</xsl:text>
+		<xsl:value-of select="$bug"/>
+	</a>
+</xsl:template>
+
+<xsl:template match="fixme">
+	<span class="fixme"><xsl:apply-templates/></span>
+</xsl:template>
+
+<xsl:template match="screen">
+	<pre class="screen"><xsl:apply-templates/></pre>
+</xsl:template>
+
 
 <!-- index generation -->
 
@@ -155,23 +209,6 @@
 		<xsl:call-template name="get-entry-number"/> <xsl:apply-templates select="question" mode="index"/>
 		</a>
 	</li>
-</xsl:template>
-
-<xsl:template match="bug">
-	<xsl:variable name="bug" select="string(.)"/>
-	<a title="{document(concat('getbug.cgi/',$bug))/bug/title}"
-			href="{concat('http://bugzilla.mozilla.org/show_bug.cgi?id=',$bug)}">
-		<xsl:text>Bug #</xsl:text>
-		<xsl:value-of select="$bug"/>
-	</a>
-</xsl:template>
-
-<xsl:template match="fixme">
-	<span class="fixme"><xsl:apply-templates/></span>
-</xsl:template>
-
-<xsl:template match="screen">
-	<pre class="screen"><xsl:apply-templates/></pre>
 </xsl:template>
 
 

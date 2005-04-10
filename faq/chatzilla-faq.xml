@@ -11,21 +11,22 @@
 </question>
 
 <answer>
-  ChatZilla is currently distributed with Mozilla.
-  Download the
+  ChatZilla is currently distributed with Mozilla, and is available as an
+  extension to Mozilla Firefox.
+  If you download the
   <a href="http://www.mozilla.org/releases/">latest Mozilla release</a>,
-  and select <b>Full</b> or <b>Custom</b> when installing.
+  select <b>Full</b> or <b>Custom</b> when installing to get ChatZilla.
   <p/>
-  If you're running Netscape 7.x, or already have Mozilla installed and simply
-  want to add or upgrade ChatZilla, visit the
+  If you're running Netscape 7.x, or already have Mozilla or Firefox
+  installed and simply want to add or upgrade ChatZilla, visit the
   <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development Page</a>.
+  Alternatively, some versions may be available via the
+  <a href="https://addons.update.mozilla.org/">Mozilla Update</a> site.
   <p/>
-  <p>
   On all platforms, you will need to restart your browser after installing.
   On all versions of Windows, you will need to exit the quick launch icon on
   your taskbar as well, and on <b>some</b> versions of Windows, you may need to
   restart the operating system.
-  </p>
 </answer>
 </entry>
 
@@ -35,8 +36,10 @@
 </question>
 
 <answer>
-  Mozilla does not have an uninstall feature for XPIs <i>yet</i>.  The following
-  manual uninstall procedure is provided with no warranty whatsoever:
+  Mozilla does not have an uninstall feature for XPIs <i>yet</i>, but removing
+  ChatZilla is usually possible.
+  <warning>The following manual uninstall procedure is provided with no
+  warranty whatsoever.</warning>
   <ol>
     <li>Shut down Mozilla
     </li>
@@ -51,7 +54,7 @@
     </li>
   </ol>
   <p/>
-  Mozilla Firefox can uninstall XPI extensions such as ChatZilla:
+  Mozilla Firefox can uninstall XPI extensions such as ChatZilla as follows:
   <ol>
     <li>Open the Tools menu, select Extensions.
     </li>
@@ -74,15 +77,18 @@
 <answer>
   If you are using the Mozilla Suite, you will need to use the uninstall
   procedure outlined above. If you are using Mozilla Firefox, use the 
-  following steps (you will need at least version 0.9.50):
+  following steps:
   <ol>
-  	<li>Open the Extensions dialog from the Tools menu.
-  	</li>
-  	<li>Select ChatZilla from the list of Extensions.
-  	</li>
-  	<li>Right-click ChatZilla, and select Disable.
-  	</li>
+    <li>Open the Extensions dialog from the Tools menu.
+    </li>
+    <li>Select ChatZilla from the list of Extensions.
+    </li>
+    <li>Right-click ChatZilla, and select Disable.
+    </li>
+    <li>Restart Mozilla Firefox to actually disable ChatZilla.
+    </li>
   </ol>
+  <note>This procedure is only supported on Mozilla Firefox 0.9 and above.</note>
 </answer>
 </entry>
 
@@ -91,43 +97,38 @@
 <section id="start">
 <title>Getting Started</title>
 
-<entry id="start-moz">
+<entry id="start-cz">
 <question>
   How do I start ChatZilla?
 </question>
 
 <answer>
-  <ol>
-    <li>You can start ChatZilla from the <b><u>W</u>indow-&gt;IRC Chat</b> 
-      menu in the Mozilla Suite, and with the <b>IRC Chat</b> button you can
-      place on Mozilla Firefox's toolbar.
+  <ul>
+    <li>You can start ChatZilla from <menu>Window<submenu/>IRC Chat</menu> 
+      in the Mozilla Suite, and from <menu>Tools<submenu/>ChatZilla</menu>
+      in Mozilla Firefox.
+    </li>
+    <li>In Mozilla Firefox, you can also place an <b>ChatZilla</b> button on
+      your toolbar.
     </li>
     <li>You can also start the browser with the <tt>-chat</tt> command line
       option.  This will launch ChatZilla instead of a browser front end.
     </li>
-    <li>You can type an <tt>irc</tt> in the URL bar. Type just <tt>irc:</tt>
-      to launch ChatZilla and connect to default channels.  Note that you 
-      can bookmark this URL, and file it wherever it to make sense to you.
+    <li>You can type an IRC URL in the URL bar. Type just <tt>irc:</tt>
+      to launch ChatZilla and connect to your default channels.  Note that 
+      you can bookmark this URL, and file it wherever it to make sense to you.
     </li>
-  </ol>
-</answer>
-</entry>
-
-<entry id="start-fb">
-<question>
-  How do I start ChatZilla in Mozilla Firefox?
-</question>
-
-<answer>
-  If you have ChatZilla 0.9.51 or newer, you can place an <b>IRC Chat</b> 
-  button on your toolbar, which will start ChatZilla. You can also select
-  <b>ChatZilla</b> from the Tools menu.
-  <p/>
-  The only way to start older ChatZilla versions in Mozilla Firefox is via an 
-  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>.
-  Type "irc:" in the url bar to launch ChatZilla and connect to your default
-  channels.  You may want to file a bookmark in your personal toolbar to
-  make this easier.
+    <li>Of course, you can use any IRC URL to start ChatZilla and make it
+      connect to the specified location, however, the default channels will
+      not be joined for anything other than <tt>irc:</tt>.
+    </li>
+  </ul>
+  <note>In some rare occasions, a bug in the Mozilla Firefox extension
+  manager will disable the ChatZilla extension right after installing, even
+  though the item does not show disabled in the list. If you can not start
+  ChatZilla as described above (for example, you may get a message saying the
+  IRC protocol is not registered), try disabling ChatZilla, restarting Firefox,
+  re-enabled ChatZilla, and restarting Firefox again.</note>
 </answer>
 </entry>
 
@@ -137,26 +138,101 @@
 </question>
 
 <answer>
-  Type <tt>/server irc.servername.com</tt>.  You may also pass a port and
-  server password to the /server command.  See <tt>/help server</tt> for
-  more information.
+  <a name="server"></a>
+  <div class="figure">
+    <table class="figure-contents" cellpadding="2px">
+      <tr>
+        <td valign="top"><code>/server irc.example.com</code></td>
+        <td>
+          Connects to the server <tt>irc.example.com:6667</tt>.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/server irc.example.com 6668</code></td>
+        <td>
+          Connects to the server <tt>irc.example.com:6668</tt>.
+        </td>
+      </tr>
+      <tr>
+        <td valign="top"><code>/sslserver irc.example.com 6669</code></td>
+        <td>
+          Connects to the server <tt>irc.example.com:6669</tt> using a
+          secure connection (SSL).
+        </td>
+      </tr>
+    </table>
+      Commands to connect to a server
+  </div>
+  ChatZilla allows you to be connected to multiple servers at once, so unlike
+  some other clients, <tt>/server</tt> will <b>not disconnect you</b> from
+  your current server.  You can manually do that with the <tt>/disconnect</tt>
+  command.
   <p/>
-  ChatZilla allows you to be connected to multiple servers, so unlike some
-  other clients, <tt>/server</tt> will not disconnect you from your current
-  server.  You can manually do that with the <tt>/disconnect</tt> command.
-  <p/>
+  <a name="network"></a>
   ChatZilla comes preset with a few popular irc networks.  Use the
   <tt>/networks</tt> command to list the available networks.  You may click
-  on a network name or use the <tt>/attach</tt> command to connect to a network
+  on a network name or use the <tt>/network</tt> command to connect to a network
   by name.
   <p/>
   <a name="attach"></a>
-  The <tt>/attach</tt> command accepts an
+  The more general <tt>/attach</tt> command accepts an
   <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>
   as a parameter.  You may omit the <tt>irc://</tt> prefix, however.  This
   can be used to connect to a network and channel with a single command,
   such as <tt>/attach moznet/chatzilla</tt>, or
   <tt>/attach moznet/killer,isnick</tt>.
+</answer>
+</entry>
+
+<entry id="connect-issues">
+<question>
+  What do I do if I get an error connecting?
+</question>
+<answer>
+  Firstly, it depends on the error.  The most common reasons are the wrong
+  address for the server, or a firewall mis-configuration.  The following list
+  will hopefully cover the error you have, but if you are getting a different
+  error try to connect to <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a>
+  on <a href="irc://irc.mozilla.org/">irc.mozilla.org</a> and we'll help you
+  resolve the problem.
+  <ul>
+    <li><tt>Unknown host ``irc.example.com'' connecting to
+      irc://irc.example.com/ (irc.example.com:6667).</tt><br/>
+      This error means that ChatZilla could not find a physical address for the
+      name given.  It is most likely that the server name specified it not
+      correct, although it could be a problem with the DNS configuration for
+      the server's host or a local DNS problem.  Try going to the website for
+      the server or network, if you can find one, and check that the name you
+      used is correct.
+    </li>
+    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
+      timed out.</tt><br/>
+      This error means that the server's name was turned into a physical
+      address, but nothing responded when that address was contacted.  A
+      firewall blocking the connection is the usual cause of this error; try
+      temporarily disabling your firewall, if you have one, to see if that
+      helps.  If you have no firewall, or disabling it does not help, the
+      IRC server is probably down.
+    </li>
+    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
+      refused.</tt><br/>
+      This error means that the server <i>was</i> found, but it did not wish
+      to let you connect.  This could be because the wrong port (6667 in this
+      example) was used; verify that the server is not on a different port
+      (especially if you are trying to connect using SSL) and try again.  This
+      error could also mean that the server is having a temporary technical
+      problem.
+    </li>
+    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
+      reset.</tt><br/>
+      This error means that ChatZilla was able to connect to the server
+      initially, but the connection was then severed by the remote server.
+      This is usually nothing to do with either end of the connection directly,
+      but instead a link between you and the server; possible causes include
+      a reset or reboot of your DSL router, or a local network configuration
+      change.
+    </li>
+  </ul>
 </answer>
 </entry>
 
@@ -166,11 +242,12 @@
 </question>
 
 <answer>
-  Once you have connected to a server, you can join a channel by typing
-  <tt>/join</tt>, followed by the channel name.  For example, if you want to
-  join <tt>#worldchat</tt> on <tt>undernet</tt>, you would first connect
-  to undernet with the <a href="#server">server</a> or
-  <a href="#attach">attach</a> command, then type <tt>/join #worldchat</tt>.
+  Once you have <a href="#connect">connected to a server</a>, you can join a
+  channel by typing <tt>/join</tt> followed by the channel name.  For example,
+  if you want to join <tt>#worldchat</tt> on <tt>undernet</tt>, you would
+  first connect to undernet with the <a href="#network"><tt>/network</tt></a>,
+  <a href="#server"><tt>/server</tt></a> or <a href="#attach"><tt>/attach</tt></a>
+  command (e.g. <tt>/attach undernet</tt>), then type <tt>/join #worldchat</tt>.
   <p/>
   If you omit the channel prefix, ChatZilla will prepend a "#" automaticaly.
   <p/>
@@ -184,12 +261,20 @@
 </question>
 
 <answer>
+  Use <menu>File<submenu/>Join Channel</menu> to open a dialog that will
+  list all channels on the current network.  You can join an existing channel
+  or create a new channel from this dialog, filter channels by name, topic, and
+  exclude channels with more, or less, than a certain number of users.  On
+  large networks, however, this dialog may have more difficulty in operating
+  (coping with 200,000 channels is not easy).
+  <note>This dialog was added in ChatZilla <b>0.9.67</b>.</note>
   The <code>/list</code> command can be used to fetch a list of all channels on
   the current network.  On large networks, however, this may take a very long
   time.  On some networks, you'll be kicked off with a message like ``Excess
   Flood'' for doing this.  Adding to the confusion, some networks recognize
   extended <code>/list</code> options for filtering based on number of
-  users in a channel, etc.
+  users in a channel, etc. (if you need such features, try the join dialog
+  mentioned above).
   <p/>
   ChatZilla also offers an <code>/rlist</code> command, which can be used to
   filter the result list based on the channel name, regardless of the
@@ -217,8 +302,13 @@
 </question>
 
 <answer>
-  To disconnect from a single server without exiting ChatZilla, select any
-  tab associated with the network in question and type <tt>/disconnect</tt>.
+  To disconnect from a single network without exiting ChatZilla, right-click a
+  tab from the network and select the disconnect option, or switch to a view
+  on the network and use the option in the <menu>File</menu> menu.  You can also
+  type <tt>/disconnect</tt> on any view associated with the network.
+  <p/>
+  <tip>To disconnect from all networks without exiting ChatZilla, type
+  <tt>/disconnect-all</tt>.</tip>
 </answer>
 </entry>
 
@@ -289,11 +379,11 @@
 </question>
 
 <answer>
-  ChatZilla allows you to select character sets at multiple levels.  The default
-  character set used by ChatZilla is UTF-8, and it is recommended that you leave
-  this setting wherever possible.  This default avoids a number of unsolvable 
-  problems, such as how to know what encoding has been used for particular 
-  channel names without proir knowledge.
+  ChatZilla allows you to select character encodings at multiple levels.  The
+  default character encoding used by ChatZilla is UTF-8, and it is recommended
+  that you leave this setting wherever possible.  This default avoids a number
+  of unsolvable problems, such as how to know what encoding has been used for
+  particular  channel names without proir knowledge.
   
   <p/>
   An unfortunate problem with the way IRC works is that international (and 
@@ -308,32 +398,38 @@
   unexpected characters (for example, Japanese characters in a Danish channel)
   then it is likely that ChatZilla is not using the same charset as the other
   client.  The table below lists the charset commands available in ChatZilla.
-  Each of these commands takes a case-insensitive character set name as a
-  parameter.  If a character set is not provided, these commands will display
-  the current setting.  If you pass a dash ("-") as the character set name,
-  the setting will revert to the default character set.
+  Each of these commands takes a case-insensitive character encoding name as a
+  parameter.  If a character encoding is not provided, these commands will
+  display the current setting.  If you pass a dash ("-") as the character
+  encoding name, the setting will revert to the default character encoding.
+  
+  <p/>
+  The most common character encoding is probably ISO-8859-15, since this is what
+  mIRC uses normally (it can also do Shift-JIS for Japanese). If you are unsure,
+  or other members of the channel are clueless, try using ISO-8859-15 first
+  (type <tt>/charset ISO-8859-15</tt> on the channel view).
 
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
       <tr>
         <td valign="top"><code>/default-charset</code></td>
         <td>
-          Selects the default character set for all networks, channels, and
-          users.  This charset is used when no other more specific charset 
+          Selects the default character encoding for all networks, channels,
+          and users.  This charset is used when no other more specific charset 
           preference has been set.
         </td>
       </tr>
       <tr>
         <td valign="top"><code>/charset</code></td>
         <td>
-          Selects the character set for the current view, and works from all 
-          views.  When changing the network charset all channels and query
+          Selects the character encoding for the current view, and works from
+          all views.  When changing the network charset all channels and query
           views will inherit the value unless it is set on the specific
           channel or query views.
         </td>
       </tr>
     </table>
-      Character set commands.
+      Character encoding commands.
   </div>
 </answer>
 </entry>
@@ -383,8 +479,8 @@
 <section id="basic-usage">
 <title>Basic Usage</title>
 
-<entry>
-<question id="nick-complete">
+<entry id="nick-complete">
+<question>
   Does ChatZilla have nickname completion?
 </question>
 
@@ -393,20 +489,18 @@
   <b>tab</b> key.
   <p/>
   If the name is not unique, ChatZilla will append any characters that it
-  has in common with other matching nicknames.
-  <p/>
-  If you press <b>tab</b> twice, quickly, then ChatZilla will display all
-  matching nicknames.
+  has in common with other matching nicknames.  If you press <b>tab</b> twice,
+  quickly, then ChatZilla will display all matching nicknames.
   <p/>
   From network and query views, you can tab complete on any nickname in
   any channel on the same network.  From channel views, only users in the
-  same channel will be included in the tab complete operation.
-  <p/>
-  In addition to nicknames, you can tab complete any channel you are on
-  (or have been on) on the same network.  If you attempt to tab complete
-  only the character "#", ChatZilla will assume you meant the current
-  channel.
-  <p/>
+  same channel will be included in the tab completion.  In addition to
+  nicknames, you can tab complete any channel you are on (or have been on) on
+  the same network.
+  
+  <tip>To complete the current channel name, type only the character "#",
+  press the <b>tab</b> key, and ChatZilla will expand it.</tip>
+  
   There is a default tab completion for channel tabs.  If you press
   <b>tab</b> on an empty line, ChatZilla will match the last person to
   trigger your <a href="#stalk">stalk</a> function.
@@ -439,8 +533,8 @@
 </answer>
 </entry>
 
-<entry>
-<question id="cmd-complete">
+<entry id="cmd-complete">
+<question>
   Does ChatZilla have command completion?
 </question>
 
@@ -449,15 +543,15 @@
   first word of the text, and the first character is a forward slash ("/"),
   then ChatZilla will automatically match against commands, instead of
   users or channels.
-  <p/>
-  You don't actually need to type the entire command name, however.  ChatZilla
+  
+  <tip>You don't actually need to type the entire command name - ChatZilla
   will allow you to shorten the command just enough to make the name
-  unique.
+  unique.</tip>
 </answer>
 </entry>
 
-<entry>
-<question id="copy">
+<entry id="copy">
+<question>
   Why do some messages appear in the network tab?
 </question>
 
@@ -469,29 +563,28 @@
   message to the network tab makes sure you don't miss anything important.  It's
   also a quick way to catch up after being away for a while.
   <p/>
-  The <b>View</b>-&gt;<b>Copy Important Messages</b> menu item can be used to
-  disable this feature.
+  The <menu>View<submenu/>Copy Important Messages</menu> menu item can be used
+  to disable this feature.
 </answer>
 </entry>
 
-<entry>
-<question id="timestamp">
+<entry id="timestamps">
+<question>
   Where are the timestamps?
 </question>
   
 <answer>
-  If you have ChatZilla 0.9.54c or newer, you can have timestamps in the main
-  chat view. If you have turned them off, you can turn them on by setting the 
-  <tt>timestamps</tt> preferences to <tt>true</tt>. See the entry on 
-  <a href="#prefs">tweaking the preferences</a> for how to do this globally, 
-  or per network, channel or even query view.
+  Use <menu>View<submenu/>Show Timestamps</menu> to toggle timestamps globally,
+  or turn them on by setting the <tt>timestamps</tt> preferences to
+  <tt>true</tt>. See the entry on <a href="#prefs">tweaking the preferences</a>
+  for how to do this per network, channel or even query view.
   <p/>
   Timestamps also appear in the statusbar when you mouse over messages.
 </answer>
 </entry>
 
-<entry>
-<question id="stalk">
+<entry id="stalk">
+<question>
   What is a stalk list?
 </question>
 
@@ -506,15 +599,16 @@
         copied to its associated network view.
     </li>
     <li>The channel's tab label will turn red, if it's not already the
-        current tab.  
+        current tab.
     </li>
     <li>ChatZilla may beep, or play a .wav file.  You can adjust this setting
-        through the <tt>stalkBeep</tt> preference.  
+        through the preferences window.
     </li>
     <li>The ChatZilla window may try to get your attention.  On some platforms
         this is done by flashing an application icon, on others the window
-        may come to the front.  You can adjust this setting with the
-        <tt>notify.aggressive</tt> pref.
+        may come to the front.  You can adjust this setting through the
+        preferences window, or direclty with the <tt>notify.aggressive</tt>
+        preference.
     </li>
   </ul>
   By default, your nickname is the only entry in your stalk list.
@@ -527,15 +621,15 @@
 </question>
 
 <answer>
-  From the ChatZilla preferences dialog, select the <b>Startup</b> group, add
-  a new channel to join at startup, and specify the channel name as
-  <tt>channelname?key=keyvalue</tt>.  So, if you wanted to join <tt>#cia</tt>
-  with the key <tt>tenet</tt> at startup, you would specify the channel name as
-  <tt>cia?key=tenent</tt>.
-  <p/>
-  <b>Warning</b>: This information is stored as plain text in your preferences
+  From the ChatZilla preferences dialog, select <b>Global Settings</b>, then
+  the <b>Startup</b> tab, add a new channel to the autoconnect list, and
+  specify the channel name as <tt>channelname?key=keyvalue</tt>.  So, if you
+  wanted to join <tt>#cia</tt> with the key <tt>tenet</tt> at startup, you
+  would specify the channel name as <tt>cia?key=tenent</tt>.
+  
+  <warning>This information is stored as plain text in your preferences
   file.  Anyone with access to your machine will be able to read it.  Do not
-  use this method to autojoin if this concerns.
+  use this method to autojoin if this concerns.</warning>
 </answer>
 </entry>
 
@@ -590,7 +684,7 @@
     <li><b>%B</b> - toggle bold</li>
     <li><b>%R</b> - swaps foreground and background colors</li>
     <li><b>%O</b> - reverts colors to defaults</li>
-    <li><b>%C</b> - sets the text color</li>
+    <li><b>%C</b> - sets the text color, e.g. <b>%C4</b> for red text</li>
     <li><b>%%</b> - putting two percent characters before <b>U</b>,
       <b>B</b>, <b>R</b>, <b>O</b> or <b>C</b> stops ChatZilla doing
       anything special with it, so you can still say "%C" by 
@@ -639,11 +733,12 @@
     </tbody>
   </table>
   <p/>
-  Most of the emoticons work without the nose ("-"), or with "^"/"v" 
-  replacing it. Apart from ":-)" and ";-)" the ":" may be replaced with ";" or 
-  "=" too. You can take your pick from these variations, and ChatZilla will 
-  still know which icon to use - if you want to see what someone else has
-  used, hover your mouse over the icon.
+  Most of the emoticons work without the nose (<tt>-</tt>), or with
+  <tt>^</tt> or <tt>v</tt> replacing it. Apart from <tt>:-)</tt> and
+  <tt>;-)</tt> the <tt>:</tt> may be replaced with <tt>;</tt> or <tt>=</tt>
+  too. You can take your pick from these variations, and ChatZilla will still
+  know which icon to use - if you want to see what someone else has used,
+  hover your mouse over the icon.
 </answer>
 </entry>
 
@@ -651,8 +746,8 @@
 
 <section id="customizing">
 <title>Customizing ChatZilla</title>
-<entry>
-<question id="nick">
+<entry id="nick">
+<question>
   How do I set my nickname?
 </question>
 
@@ -661,6 +756,10 @@
   a nickname.  If you would like to change it later, use the <tt>/nick</tt>
   command.  ChatZilla automatically remembers your last nickname for
   each network you connect to.
+  
+  <note>In ChatZilla <b>0.9.67</b> and later, when you connect to a network and
+  someone else is using your nickname, ChatZilla automatically reclaims it when
+  they leave or change nick, but only for the first 6 minutes.</note>
 </answer>
 </entry>
 
@@ -686,20 +785,20 @@
 <answer>
   Each network has an ``autoperform'' preference which consists of a list
   of standard ChatZilla commands.  You can modify this preference with
-  the <tt>/network-pref</tt> command, see the example below.  Be aware
-  that if you're using this to automatically ``auth'' yourself with a bot or
-  service, that your password will be stored in <b>plain text</b> in your
-  preferences file.
-  <p/>
+  the preferences window, and the <tt>/network-pref</tt> command, see the
+  example below.
+  
+  <warning>If you're using this to automatically ``auth'' yourself with a bot
+  or service, remember that your password will be stored in <b>plain text</b>
+  in your preferences file.</warning>
+  
   Autoperform commands are executed when ChatZilla successfully logs in to
   a network, regardless of how the connection was initiated.  The commands are
   executed before attempting to join any ``Open at Startup'' channels, and
   before attempting to re-join any existing tabs associated with that network.
-  <p/>
-  <b>This preference was introduced in
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla 0.9.41</a>.
-  It will not work on older versions.</b>
-  <p/>
+  
+  <note>This preference was added in ChatZilla <b>0.9.41</b>.</note>
+  
   <div class="figure">
     <div class="figure-contents">
 To send a message to a user whenever you connect to EFNet, first select any
@@ -751,9 +850,9 @@ You may separate multiple commands with the semicolon (';') character, as
   or <tt>/channel-pref autoRejoin true</tt> to turn it on only for the 
   current channel (see <a href="#prefs">tweaking the preferecnes</a> for more
   details).
-  <p/>
-  You may want to be careful on which channels you enable this, as some bots
-  and channel operators will ban people who auto-rejoin when kicked.
+  
+  <warning>Be careful on which channels you enable this, as some bots
+  and channel operators will ban people who auto-rejoin when kicked.</warning>
 </answer>
 </entry>
 
@@ -791,7 +890,7 @@ You may separate multiple commands with the semicolon (';') character, as
   will likely help out with web pages that specify font sizes in points, too.
   <p/>
   If it's not a DPI thing, you can use the options in the menu under 
-  <tt>View</tt> &gt; <tt>Font Family and Size</tt>. The options include some
+  <menu>View<submenu/>Font Family and Size</menu>. The options include some
   useful shortcuts (see table to the right) as well as the option to enter a
   size and font name explicitly. <tt>Small</tt>, <tt>Medium</tt> and 
   <tt>Large</tt> are based on the browser's base font size, and the three
@@ -819,8 +918,7 @@ You may separate multiple commands with the semicolon (';') character, as
   How do I change the color scheme of the message window?
 </question>
 <answer>
-  From the <b>View</b> menu, open the <b>Color Scheme</b> submenu.  ChatZilla
-  comes
+  From the <menu>View<submenu/>Color Scheme</menu> menu.  ChatZilla comes
   with three color schemes, known as "motifs".  <b>Default Motif</b> uses your
   default fore and background colors, and specifies no colors of its own.
   <b>Dark Motif</b> is a dark background on white text, with some appropriate
@@ -860,7 +958,7 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-	The timestamp format is controlled by the <tt>timestampFormat</tt> 
+  The timestamp format is controlled by the <tt>timestampFormat</tt> 
   preference, which you can set globally, per network, or even individually 
   on channels and query views (see <a href="#prefs">tweaking the 
   preferences</a>).
@@ -868,25 +966,25 @@ You may separate multiple commands with the semicolon (';') character, as
   The format string is displayed literally, except for the following 6 
   substrings, which get replaced as follows:
   <ul>
-  	<li><b>%y</b> - 4 digit year.
-  	</li>
-  	<li><b>%m</b> - month number (1 - 12).
-  	</li>
-  	<li><b>%d</b> - day of the month.
-  	</li>
-  	<li><b>%h</b> - hour, in 24-hour format.
-  	</li>
-  	<li><b>%n</b> - minutes.
-  	</li>
-  	<li><b>%s</b> - seconds.
-  	</li>
+    <li><b>%y</b> - 4 digit year.
+    </li>
+    <li><b>%m</b> - month number (1 - 12).
+    </li>
+    <li><b>%d</b> - day of the month.
+    </li>
+    <li><b>%h</b> - hour, in 24-hour format.
+    </li>
+    <li><b>%n</b> - minutes.
+    </li>
+    <li><b>%s</b> - seconds.
+    </li>
  </ul>
 </answer>
 </entry>
 
 <entry id="multiple-motifs">
 <question>
-  Can I use different motifs for different channels?
+  Can I use different color schemes for different channels?
 </question>
 
 <answer>
@@ -1037,6 +1135,11 @@ You may separate multiple commands with the semicolon (';') character, as
       <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/locale/en-US/chatzilla.properties">chatzilla.properties</a>.
     </li>
   </ul>
+  
+  <tip>If you find yourself stuck, drop in on
+  <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> - there are a number
+  of people in there who have experimented with scripting, and may well be able
+  to help directly, or give good pointers to learning yourself.</tip>
 </answer>
 </entry>
 
@@ -1067,16 +1170,21 @@ You may separate multiple commands with the semicolon (';') character, as
 
 <answer>
   There are two ways.  The first, and easiest, is to use the prefs dialog.
-  Select <b>Edit</b>-&gt;<b>Preferences</b>, ChatZilla preferences will be displayed
-  under the ChatZilla group.  Unfortunately, there are a few bugs in the pref
-  panel.  Some settings, like the text transformation prefs, do not take
-  effect until ChatZilla has been restarted.
+  <ul>
+    <li><menu>Edit<submenu/>ChatZilla Preferences</menu> (Mozilla Suite, all
+      platforms)</li>
+    <li><menu>Edit<submenu/>Preferences</menu> (Mozilla Firefox, Linux)</li>
+    <li><menu>Tools<submenu/>Options</menu> (Mozilla Firefox, other
+      platforms)</li>
+  </ul>
+  
+  <note>Some settings, like the text transformation prefs, do not take
+  effect until ChatZilla has been restarted.</note>
+  
+  If you want more control, want access to "hidden" prefs, use the
+  <tt>/pref</tt> command, or one of the variants.  Type <tt>/pref</tt> to
+  list all of the global preferences.
   <p/>
-  If you want more control, want access to "hidden" prefs, or want to set
-  network, channel, or user specific preferences, use the <tt>/pref</tt>
-  command, or
-  one of the variants.  Type <tt>/pref</tt> to list all of the global
-  preferences.
   You may provide a pref name, or just the first few letters of a pref name, to
   see the current value of matching preferences.  To change a preference, type
   <tt>/pref pref-name new-value</tt>.  To edit a preference for a specific
