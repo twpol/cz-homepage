@@ -1,5 +1,8 @@
 var revs =
 [
+  {id: "0.9.68a", date: "2005-04-11", condition: Y,
+   bugs: [],
+   desc: "fixes an issue with the away popup marker in certain themes."},
   {id: "0.9.68", date: "2005-04-10", condition: G,
    bugs: [267477, 276764, 206803, 280004, 233831, 279471, 233352, 281907,
           281649, 282495, 283017, 231211, 109790, 281706, 229807, 277588,
