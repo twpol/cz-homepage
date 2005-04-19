@@ -1,5 +1,5 @@
 body {
-    XXXbackground-color: #e8e5e3;
+    /*background-color: #e8e5e3;*/
     background-color: #edeef2;
     color: black;
     margin: 0px;
@@ -43,7 +43,7 @@ body {
 
 #footer {
     background-color: #e8e5e3;
-    color: #grey;
+    color: grey;
     padding: 3px;
     border-top: 1px grey solid;
     margin-left: 5px;
@@ -79,7 +79,7 @@ body {
 
 #body a {
     text-decoration: none;
-    XXXcolor: #454396;
+    /*color: #454396;*/
     font-weight: bold;
     color: #1a1aef;
 }
