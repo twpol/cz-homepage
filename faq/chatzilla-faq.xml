@@ -375,7 +375,7 @@
 
 <entry id="charset">
 <question>
-  How do I select a character set? (and why can't other user's read my text?)
+  How do I select a character set? (and why can't other users read my text?)
 </question>
 
 <answer>
@@ -700,7 +700,7 @@
 
 <answer>
   Simple - just type out the smiley you want as you might in an e-mail, and 
-  ChatZilla will automatically display an image in it's place, just like it 
+  ChatZilla will automatically display an image in its place, just like it 
   does for other people's messages. But what smiles/emoticons are available?
   <p/>
   <table width="100%">
