@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.68.2", date: "2005-05-14", condition: Y,
+   bugs: [207195, 281172],
+   desc: "fixes some problems with character encodings in DCC Chat, makes " +
+    "DCC File transfers use proper SI units, and finally adds " +
+    "'conference mode' which lets you hide joins and parts in large channels."},
   {id: "0.9.68a", date: "2005-04-11", condition: Y,
    bugs: [],
    desc: "fixes an issue with the away popup marker in certain themes."},
