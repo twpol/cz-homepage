@@ -1,10 +1,10 @@
 var revs =
 [
-  {id: "0.9.68.3", date: "2005-05-15", condition: Y,
+  /*id: "0.9.68.3", date: "2005-05-15", condition: Y,
    bugs: [],
    desc: "fixes a problem with DCC file transfers introduced in 0.9.68.2, " +
     "a bug that only occurs for really small files, plus welcome messages " +
-    "from IRC Serivces now always go to the right channel view."},
+    "from IRC Serivces now always go to the right channel view."*/
   {id: "0.9.68.2", date: "2005-05-14", condition: Y,
    bugs: [207195, 281172],
    desc: "fixes some problems with character encodings in DCC Chat, makes " +
