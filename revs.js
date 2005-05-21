@@ -1,7 +1,12 @@
 var revs =
 [
+  {id: "0.9.68.5", date: "2005-05-21", condition: Y,
+   bugs: [293664, 293596],
+   desc: "fixes the pref window from the previous revision, a problem " +
+    "when using both <tt>/server</tt> and <tt>/sslserver</tt> on the same " +
+    "host/port, and improves the URL linking a bit."},
   {id: "0.9.68.4", date: "2005-05-21", condition: Y,
-   bugs: [274300],
+   bugs: [274300, 294192],
    desc: "stops hooks being able to break the event flow, adds a saved list " +
     "of away messages, and adds a warning if an incompatible locale is " +
     "selected."},
