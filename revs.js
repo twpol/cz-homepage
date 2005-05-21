@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.68.4", date: "2005-05-21", condition: Y,
+   bugs: [274300],
+   desc: "stops hooks being able to break the event flow, adds a saved list " +
+    "of away messages, and adds a warning if an incompatible locale is " +
+    "selected."},
   {id: "0.9.68.3", date: "2005-05-15", condition: Y,
    bugs: [],
    desc: "fixes a problem with DCC file transfers introduced in 0.9.68.2, " +
