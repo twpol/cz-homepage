@@ -199,8 +199,8 @@
     <li><tt>Unknown host ``irc.example.com'' connecting to
       irc://irc.example.com/ (irc.example.com:6667).</tt><br/>
       This error means that ChatZilla could not find a physical address for the
-      name given.  It is most likely that the server name specified it not
-      correct, although it could be a problem with the DNS configuration for
+      name given.  It is most likely that the <b>server name specified is not
+      correct</b>, although it could be a problem with the DNS configuration for
       the server's host or a local DNS problem.  Try going to the website for
       the server or network, if you can find one, and check that the name you
       used is correct.
@@ -209,8 +209,8 @@
       timed out.</tt><br/>
       This error means that the server's name was turned into a physical
       address, but nothing responded when that address was contacted.  A
-      firewall blocking the connection is the usual cause of this error; try
-      temporarily disabling your firewall, if you have one, to see if that
+      <b>firewall blocking the connection</b> is the usual cause of this error;
+      try temporarily disabling your firewall, if you have one, to see if that
       helps.  If you have no firewall, or disabling it does not help, the
       IRC server is probably down.
     </li>
@@ -226,7 +226,7 @@
     <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
       reset.</tt><br/>
       This error means that ChatZilla was able to connect to the server
-      initially, but the connection was then severed by the remote server.
+      initially, but the connection was then <b>severed by the remote server</b>.
       This is usually nothing to do with either end of the connection directly,
       but instead a link between you and the server; possible causes include
       a reset or reboot of your DSL router, or a local network configuration
@@ -249,7 +249,8 @@
   <a href="#server"><tt>/server</tt></a> or <a href="#attach"><tt>/attach</tt></a>
   command (e.g. <tt>/attach undernet</tt>), then type <tt>/join #worldchat</tt>.
   <p/>
-  If you omit the channel prefix, ChatZilla will prepend a "#" automaticaly.
+  If you omit the channel prefix, ChatZilla will prepend a "<tt>#</tt>"
+  automatically.
   <p/>
   The command <tt>/j</tt> comes predefined as an alias for <tt>/join</tt>.
 </answer>
@@ -261,13 +262,16 @@
 </question>
 
 <answer>
-  Use <menu>File<submenu/>Join Channel</menu> to open a dialog that will
+  Use <menu>File<submenu/>Join channel...</menu> to open a dialog that will
   list all channels on the current network.  You can join an existing channel
   or create a new channel from this dialog, filter channels by name, topic, and
   exclude channels with more, or less, than a certain number of users.  On
   large networks, however, this dialog may have more difficulty in operating
   (coping with 200,000 channels is not easy).
-  <note>This dialog was added in ChatZilla <b>0.9.67</b>.</note>
+
+  <note>This dialog was added in ChatZilla <b>0.9.67</b> and is not available
+  in earlier versions.</note>
+
   The <code>/list</code> command can be used to fetch a list of all channels on
   the current network.  On large networks, however, this may take a very long
   time.  On some networks, you'll be kicked off with a message like ``Excess
@@ -304,8 +308,9 @@
 <answer>
   To disconnect from a single network without exiting ChatZilla, right-click a
   tab from the network and select the disconnect option, or switch to a view
-  on the network and use the option in the <menu>File</menu> menu.  You can also
-  type <tt>/disconnect</tt> on any view associated with the network.
+  on the network and use the <menu>File<submenu/>Disconnect From</menu> menu
+  item.  You can also type <tt>/disconnect</tt> on any view associated with
+  the network.
   <p/>
   <tip>To disconnect from all networks without exiting ChatZilla, type
   <tt>/disconnect-all</tt>.</tip>
@@ -318,10 +323,18 @@
 </question>
 
 <answer>
-  You can't.  The way IRC works, your IP address is distributed to every
-  user you communicate with.  Depending on where you hang out, and who your
-  enemies are, this may or may not be a problem.  In practice, it's not a
+  In general you can't.  The way IRC works, your IP address is distributed to
+  every user you communicate with.  Depending on where you hang out, and who
+  your enemies are, this may or may not be a problem.  In practice, it's not a
   problem for most normal users.
+  <p/>
+  However, an increasing number of servers are supporting a user mode
+  "<tt>x</tt>" which hides your hostname (and thus your IP) from other users
+  (IRC Operators can still see your real host, however). You can start using
+  this user mode by adding "<tt>x</tt>" to the Usermode box on the General tab
+  in preferences, either in <b>Global Settings</b>, or for individual servers.
+  <note>Remember that not all servers support this. Ones that don't will
+  simply ignore it, so don't worry about adding it if you're not sure.</note>
 </answer>
 </entry>
 
@@ -334,6 +347,10 @@
   ChatZilla currently has a basic implementation of DCC Chat and DCC File. The
   following is a summary of the commands and how to use it, enter 
   <tt>/help dcc</tt> into ChatZilla for more information.
+  
+  <note>A couple of commonly requested DCC features are Resume and Reverse
+  support.  ChatZilla currently does <b>not</b> support either of these, but
+  they are both planned for a version in the future.</note>
   
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
@@ -385,7 +402,11 @@
   of unsolvable problems, such as how to know what encoding has been used for
   particular  channel names without proir knowledge.
   
-  <p/>
+  <tip>The most common character encoding is ISO-8859-15, since this is what
+  mIRC uses normally (it can also do Shift-JIS for Japanese). If you are
+  unsure, or other members of the channel are clueless, try using ISO-8859-15
+  first (type <tt>/charset ISO-8859-15</tt> on the channel view).</tip>
+  
   An unfortunate problem with the way IRC works is that international (and 
   most non-US-ASCII) characters cannot be sent without encoding them.  The 
   problem is that there are many, many different character encodings 
@@ -397,17 +418,11 @@
   If text is showing up with a lot of question-marks (?) or completely 
   unexpected characters (for example, Japanese characters in a Danish channel)
   then it is likely that ChatZilla is not using the same charset as the other
-  client.  The table below lists the charset commands available in ChatZilla.
+  client(s).  The table below lists the charset commands available in ChatZilla.
   Each of these commands takes a case-insensitive character encoding name as a
   parameter.  If a character encoding is not provided, these commands will
   display the current setting.  If you pass a dash ("-") as the character
   encoding name, the setting will revert to the default character encoding.
-  
-  <p/>
-  The most common character encoding is probably ISO-8859-15, since this is what
-  mIRC uses normally (it can also do Shift-JIS for Japanese). If you are unsure,
-  or other members of the channel are clueless, try using ISO-8859-15 first
-  (type <tt>/charset ISO-8859-15</tt> on the channel view).
 
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
@@ -547,6 +562,11 @@
   <tip>You don't actually need to type the entire command name - ChatZilla
   will allow you to shorten the command just enough to make the name
   unique.</tip>
+  
+  <warning>Some servers and websites suggest you use <tt>/cs</tt> instead of
+  <tt>/msg ChanServ</tt>. Please note that this does <b>not</b> work in
+  ChatZilla, because there is a command <tt>/css</tt> which ChatZilla matches
+  (since <tt>/cs</tt> is <b>not</b> a standard IRC command).</warning>
 </answer>
 </entry>
 
@@ -575,9 +595,8 @@
   
 <answer>
   Use <menu>View<submenu/>Show Timestamps</menu> to toggle timestamps globally,
-  or turn them on by setting the <tt>timestamps</tt> preferences to
-  <tt>true</tt>. See the entry on <a href="#prefs">tweaking the preferences</a>
-  for how to do this per network, channel or even query view.
+  or turn them on by setting the Timestamps options on the Appearance tab in
+  preferences, either in <b>Global Settings</b>, or on any other view.
   <p/>
   Timestamps also appear in the statusbar when you mouse over messages.
 </answer>
@@ -607,11 +626,13 @@
     <li>The ChatZilla window may try to get your attention.  On some platforms
         this is done by flashing an application icon, on others the window
         may come to the front.  You can adjust this setting through the
-        preferences window, or direclty with the <tt>notify.aggressive</tt>
-        preference.
+        preferences window in <b>Global Settings</b>, on the <b>Global</b> tab,
+        using the Aggressive notify option.
     </li>
   </ul>
-  By default, your nickname is the only entry in your stalk list.
+  By default, your nickname is the only entry in your stalk list. You can
+  add other words to your stalk list from the <b>Lists</b> tab in <b>Globall
+  Settings</b>, in preferences.
 </answer>
 </entry>
 
@@ -624,8 +645,14 @@
   From the ChatZilla preferences dialog, select <b>Global Settings</b>, then
   the <b>Startup</b> tab, add a new channel to the autoconnect list, and
   specify the channel name as <tt>channelname?key=keyvalue</tt>.  So, if you
-  wanted to join <tt>#cia</tt> with the key <tt>tenet</tt> at startup, you
-  would specify the channel name as <tt>cia?key=tenent</tt>.
+  wanted to join <tt>#cia</tt> on the Mozilla network with the key
+  <tt>tenet</tt> at startup, you would specify the item as
+  <tt>irc://moznet/cia?key=tenent</tt>.
+  
+  <note>You can find out more about
+  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc:
+  URLs</a>, which includes how to specify a server password, and how to prompt
+  for passwords/keys instead of storing them directly.</note>
   
   <warning>This information is stored as plain text in your preferences
   file.  Anyone with access to your machine will be able to read it.  Do not
@@ -645,12 +672,12 @@
   making sure the channel(s) you want to use colors with don't mind, 
   as some channels will kick and possibly ban people who use colors.
   <p/>
-  <code>/pref outgoing.colorCodes true</code>
+  Simply do <code>/pref outgoing.colorCodes true</code> to enable entering
+  colors. This setting is saved, so you will only need to do it once.
   <p/>
-  This setting is saved, so you will only need to do it once. To actually 
-  insert colors, bold or underline, you need to enter <tt>%</tt> into the
-  input box, then you will get a little popup window reminding you what to
-  do. Here is a summary:
+  To actually  insert colors, bold or underline, you need to enter <tt>%</tt>
+  into the input box, then you will get a little popup window reminding you
+  what to do. Here is a summary:
   <div class="floating-figure">
     <div class="figure-contents">
       <table>
@@ -739,6 +766,35 @@
   too. You can take your pick from these variations, and ChatZilla will still
   know which icon to use - if you want to see what someone else has used,
   hover your mouse over the icon.
+</answer>
+</entry>
+
+<entry id="inatab">
+<question>
+  How do I load ChatZilla in a tab?
+</question>
+
+<answer>
+  Easy! Just enter <tt>chrome://chatzilla/content/</tt> into the location bar.
+  
+  <warning>There are some big problems with running ChatZilla in a tab, and most
+  are not things we can do anything about. We therefore do not support running
+  ChatZilla in a tab, and below is a list of what is known to break.</warning>
+  
+  <ul>
+    <li>Right-clicking the chat area shows the browser's context menu instead
+      of ChatZilla's.</li>
+    <li>Clicking an <tt>irc:</tt> URL in the chat area will open a separate
+      <b>ChatZilla window</b>. This problem <i>might</i> be fixable, but it
+      could well be harder to fix than the final point.</li>
+    <li>Clicking web links in the chat area will usually <b>replace ChatZilla
+      with the webpage</b>. If you try to open the link in a new tab or
+      window (either from the context menu or using a modifier key), it should
+      leave ChatZilla unaffected.</li>
+    <li>Clicking an <tt>irc:</tt> URL from a webpage will also open a separate
+      <b>ChatZilla window</b>, instead of loading it in the ChatZilla running
+      in a tab. This is the only problem we believe we can fix.</li>
+  </ul>
 </answer>
 </entry>
 
@@ -1379,7 +1435,7 @@ You may separate multiple commands with the semicolon (';') character, as
         <a href="http://bugzilla.mozilla.org/query.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">search</a> for a particular bug on the list.
     </li>
     <li>If you can't find a duplicate, then please
-      <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Browser&amp;version=Trunk&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
+      <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Other%20Applications&amp;version=Trunk&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
     </li>
   </ol>
 </answer>
