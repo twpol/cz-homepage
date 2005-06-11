@@ -232,7 +232,32 @@
       a reset or reboot of your DSL router, or a local network configuration
       change.
     </li>
+    <li><tt>ERROR Closing Link: irc.example.com (Install IdentD)</tt><br/>
+      This message, sometimes worded differently (but will always mention
+      "ident" or "identd"), means that the server you tried to connect to
+      requires a <a href="#ident">special identification service</a>.
+    </li>
   </ul>
+</answer>
+</entry>
+
+<entry id="ident">
+<question>
+  How do I enable 'ident'?
+</question>
+
+<answer>
+  Some servers will require you to be running an "ident server" to connect to
+  them, even though this service is only useful if you run a multi-user
+  computer (where many people can connect and share a single computer).
+  
+  <tip>Some networks only have a few servers that require ident. Trying
+    specific servers may let you connect without ident.</tip>
+  <p/>
+  ChatZilla does not have any ident server. If, however, you are required to
+  have such a service to connect to a particular server, you should simply
+  install a standalone ident client (which can be found via
+  <a href="http://www.google.com/search?q=ident+server">Google</a>).
 </answer>
 </entry>
 
@@ -646,7 +671,7 @@
   the <b>Startup</b> tab, add a new channel to the autoconnect list, and
   specify the channel name as <tt>channelname?key=keyvalue</tt>.  So, if you
   wanted to join <tt>#cia</tt> on the Mozilla network with the key
-  <tt>tenet</tt> at startup, you would specify the item as
+  <tt>tenent</tt> at startup, you would specify the item as
   <tt>irc://moznet/cia?key=tenent</tt>.
   
   <note>You can find out more about
