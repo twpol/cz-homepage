@@ -54,7 +54,8 @@ var motifs = {
     "output-silver-gecko": "Variation on light motif, with gecko background image.",
     "output-sunshine": "A yellow motif made to match the new emoticons in ChatZilla, by Robin M.",
     "output-bug-triage": "A theme to put you in the mood for bugday, by Robin M.",
-    "output-summer-sky": "A theme to reflect on the days of bygone summers.  Includes matching emoticons, by Robin M."
+    "output-summer-sky": "A theme to reflect on the days of bygone summers.  Includes matching emoticons, by Robin M.",
+    "output-trioptimum": "A Trioptimum (from <a href='http://www.sshock2.com/'>System Shock</a>) theme, by <a href='http://www.strangebedfellows.schwarzsilber.de/index.php?topic=66.msg124#msg124'>Kolya</a>."
 }
 
 function writeMotifs()
