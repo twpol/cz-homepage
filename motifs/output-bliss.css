@@ -1,0 +1,369 @@
+/* -*- Mode: Text; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
+ * ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Chatzilla.
+ *
+ * The Initial Developer of the Original Code is
+ * New Dimensions Consulting, Inc.
+ * Portions created by the Initial Developer are Copyright (C) 1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Robin Monks, robin@spreadfirefox.com, original author
+ *   Lucian Marin, http://www.customize.org/details/37853, Bliss Background,
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/*
+ *  A claming motif looking out over a pristine plain.
+ *  Also makes minimal use of bold fonts and has a maximum size of 800x600.
+ *  see output-base.css for motifing details.
+ */
+
+@import url(chrome://chatzilla/content/output-base.css);
+
+body.chatzilla-body {               /* The topmost container in the ChatZilla */
+             /* output window.  */
+    background-image: url("plain.jpg");
+    background-color: #6D8EB9;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+
+}
+
+a.chatzilla-link {
+    font-style: italic;
+    color: blue;
+}
+
+.header-outer {
+    background-color: #7C99E2;
+    border: solid 1px blue;
+    -moz-opacity: 0.9;
+    width: 98%;
+    margin:10px;
+    margin-left:8px;
+    -moz-border-radius: 17px;
+}
+
+.header {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 0px #FDAD06 solid;
+
+
+}
+.header a.chatzilla-link {
+    font-style: normal;
+    color: white;
+}
+.header .label{
+  color:white;
+  font-weight: normal;
+}
+
+#splash {
+    color: #FFFFFF;
+}
+
+#usr-descnodes,
+#ch-topicnodes {
+  color: #FFFFFF;
+}
+
+[condition] {
+    font-weight: bold;
+}
+
+[condition="red"] {
+    color: red;
+}
+
+[condition="yellow"] {
+    color: orange;
+}
+
+[condition="green"] {
+    color: #008080;
+}
+
+.msg[msg-type="PRIVMSG"] .msg-data,
+.msg[msg-type="ACTION"] .msg-data {
+    background-color: #FFFFFF;
+    -moz-opacity: 0.5;
+}
+
+.msg[msg-type="HELLO"] .msg-data a.chatzilla-link {
+    color: blue;
+}
+
+.msg[msg-type="JOIN"] .msg-data a.chatzilla-link{
+    font-weight: bold;
+    color: #004000;
+}
+.msg[msg-type="PART"] .msg-data a.chatzilla-link {
+    font-weight: bold;
+    color: #11c411;
+}
+
+.msg[msg-type="ERROR"] .msg-data a.chatzilla-link {
+    font-weight: bold;
+    color: white;
+}
+
+.msg[msg-type="KICK"] .msg-data a.chatzilla-link {
+    color: #aa0d08;
+}
+
+.msg[msg-type="NOTICE"] .msg-data a.chatzilla-link {
+    color: #d64444;
+}
+
+.msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
+    color: #c46907;
+}
+
+.chatzilla-rheet {
+    color: #e25e00 !important;
+}
+
+.chatzilla-highlight[name="Slate"] {
+    color: black;
+    background: #b8c4e0;
+    -moz-opacity: 0.5;
+}
+
+.chatzilla-highlight[name="Plum"] {
+    color: black;
+    background: #ddb8d0;
+    -moz-opacity: 0.5;
+}
+
+.chatzilla-highlight[name="Brown"] {
+    color: black;
+    background: #ffbf77;
+    -moz-opacity: 0.5;
+}
+
+.msg-type {                                 /* .msg-type = message type       */
+    color: #000000;                         /* indicator                      */
+    font-weight: bold;
+}
+
+.msg .msg-data {    /* Default message */
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-opacity: 0.6;
+    background: white;
+}
+
+.msg-user a.chatzilla-link,
+.msg-user {                                 /* msg-user = nickname portion of */
+    color: white !important;
+    -moz-border-radius: 5px 5px 5px 5px;                /* a message (channel and query   */
+    background: green;
+//    font-weight: bold;
+    -moz-opacity: 0.7;
+}
+
+.msg[mark="even"] .msg-data {               /* use even/odd marks to create a */
+    color: #555555;
+    -moz-border-radius: 5px 5px 5px 5px;                    /* subtle brightness change when  */
+}                                           /* the speaker changes.           */
+.msg[mark="odd"] .msg-data {               /* use even/odd marks to create a */
+    color: #000000;
+    -moz-border-radius: 5px 5px 5px 5px;                     /* subtle brightness change when  */
+}                                           /* the speaker changes.           */
+
+.msg[msg-type="JOIN"] .msg-data{
+    color: #008040;
+    background-color: #B7DD71;
+    -moz-border-radius: 5px 5px 5px 5px;
+    /*border: thin darkblue solid;*/
+    -moz-opacity: 0.5;
+}
+.msg[msg-type="PART"] .msg-data {
+    color: #D3A005;
+    background-color: #FFF791;
+    -moz-border-radius: 5px 5px 5px 5px;
+    /*border: thin darkblue solid;*/
+    -moz-opacity: 0.7;
+}
+
+.msg[msg-type="QUIT"] .msg-data {
+    background: #fff196;
+    color: #ff8d02;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-opacity: 0.6;
+}
+
+.msg[msg-type="311"] .msg-data,
+.msg[msg-type="307"] .msg-data,
+.msg[msg-type="319"] .msg-data,
+.msg[msg-type="312"] .msg-data,
+.msg[msg-type="317"] .msg-data,
+.msg[msg-type="671"] .msg-data,
+.msg[msg-type="318"] .msg-data {
+    color: black;
+    background: yellow;
+    -moz-opacity: 0.6;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+
+.msg[msg-type="HELLO"] .msg-data {
+    background: #8D9B2F;
+    color: white;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-opacity: 0.5;
+}
+
+.msg[msg-type="ERROR"] .msg-data {
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-opacity: 0.6;
+    background: #a8221e;
+    color: white;
+}
+
+.msg[msg-type="USAGE"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.6;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="HELP"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.5;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="INFO"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.7;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="DCC"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.8;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="STATUS"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.8;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="TOPIC"] .msg-data {
+    color: black;
+    background: white;
+    -moz-opacity: 0.7;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="EVAL-IN"] .msg-data {
+    color: white;
+    background: black;
+    -moz-opacity: 0.6;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="EVAL-OUT"] .msg-data {
+    color: white;
+    background: black;
+    -moz-opacity: 0.4;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="ACTION"] .msg-data {
+    color: black;
+    font-style: italic;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="NICK"] .msg-data {
+    color: #4e8387;
+    background-color: #d5e9ea;
+    -moz-opacity: 0.5;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+.msg[msg-type="NOTICE"] .msg-data {
+    color: #ae4141;
+    font-weight: bold;
+    background:#FF9595;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -moz-opacity: 0.5;
+}
+
+.msg[msg-type="MODE"] .msg-data {
+    color: #2709ed;
+    font-weight: bold;
+    -moz-border-radius: 5px 5px 5px 5px;
+    background:#FF9595;
+    -moz-opacity: 0.5;
+}
+
+.msg[msg-type="KICK"] .msg-data {
+    color: #ff1a0a;
+    background: #ffdbcc;
+    -moz-opacity: 0.5;
+    font-weight: bold;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+/* important="true" means that the message has text from your /stalk list in
+ * it, has your nickname in it, or was spoken by someone in your /stalk list.
+ */
+.msg[important="true"] .msg-user {
+    background: blue;
+    -moz-opacity: 1.0;
+    -moz-border-radius: 5px 0px 0px 5px;
+}
+
+.msg[important="true"] .msg-data {
+    background: #FEEDA8;
+    -moz-opacity: 0.5;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+
+
+/* :before and :after pseudoclasses form the decorations around nicknames.     */
+.msg-user:before,
+.msg-user:after {
+    color: yellow;
+}
+
+.msg[msg-user$="ME!"] .msg-user:before,         /* the decoration around MY   */
+.msg[msg-user$="ME!"] .msg-user:after {         /* nick                       */
+    color: orange;
+}
