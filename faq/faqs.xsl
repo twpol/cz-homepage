@@ -181,6 +181,16 @@
 	</a>
 </xsl:template>
 
+<xsl:template match="input">
+	<div class="input-header">Input</div>
+	<div class="input"><xsl:apply-templates/></div>
+</xsl:template>
+
+<xsl:template match="output">
+	<div class="output-header">Output</div>
+	<div class="output"><xsl:apply-templates/></div>
+</xsl:template>
+
 <xsl:template match="fixme">
 	<span class="fixme"><xsl:apply-templates/></span>
 </xsl:template>

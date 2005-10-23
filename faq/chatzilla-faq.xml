@@ -11,22 +11,33 @@
 </question>
 
 <answer>
-  ChatZilla is currently distributed with Mozilla, and is available as an
-  extension to Mozilla Firefox.
-  If you download the
-  <a href="http://www.mozilla.org/releases/">latest Mozilla release</a>,
-  select <b>Full</b> or <b>Custom</b> when installing to get ChatZilla.
-  <p/>
-  If you're running Netscape 7.x, or already have Mozilla or Firefox
-  installed and simply want to add or upgrade ChatZilla, visit the
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development Page</a>.
-  Alternatively, some versions may be available via the
-  <a href="https://addons.update.mozilla.org/">Mozilla Update</a> site.
-  <p/>
-  On all platforms, you will need to restart your browser after installing.
-  On all versions of Windows, you will need to exit the quick launch icon on
-  your taskbar as well, and on <b>some</b> versions of Windows, you may need to
-  restart the operating system.
+  <p>ChatZilla is currently distributed as part of the Mozilla Suite, the
+    SeaMonkey Suite, and is available as an extension for Mozilla Firefox.
+  </p>
+  <tip><a href="https://addons.mozilla.org/extensions/moreinfo.php?id=16">Get
+    ChatZilla here</a>, for Mozilla, SeaMonkey and Firefox.
+  </tip>
+  <ul>
+    <li>If you download the
+      <a href="http://www.mozilla.org/releases/">latest Mozilla release</a> or
+      the <a href="http://www.mozilla.org/projects/seamonkey/">latest SeaMonkey
+      release</a>, you must select <b>Full</b> or <b>Custom</b> when installing
+      to get ChatZilla.
+    </li>
+    <li>If you use Mozilla Firefox, or wish to add ChatZilla to your existing
+      Mozilla or SeaMonkey install, you can install the latest version from the
+      <a href="https://addons.mozilla.org/extensions/moreinfo.php?id=16">Mozilla
+      Update site</a>.  Current and older versions may be found on the
+      <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development
+      page</a>, too.
+    </li>
+  </ul>
+  <note>On all platforms, you will need to restart your browser after
+    installing. If you are using the Quick Launch feature of Mozilla or
+    SeaMonkey, you will need to exit the quick launch icon on your taskbar as
+    well, and on <i>some</i> systems, you may need to restart the operating
+    system.
+  </note>
 </answer>
 </entry>
 
@@ -36,27 +47,10 @@
 </question>
 
 <answer>
-  Mozilla does not have an uninstall feature for XPIs <i>yet</i>, but removing
-  ChatZilla is usually possible.
-  <warning>The following manual uninstall procedure is provided with no
-  warranty whatsoever.</warning>
+  <p>Mozilla Firefox can uninstall extensions such as ChatZilla as follows:
+  </p>
   <ol>
-    <li>Shut down Mozilla
-    </li>
-    <li>Rename the files <tt>components/chatzilla-service.js</tt>
-        and <tt>chrome/chatzilla.jar</tt> to something else.
-    </li>
-    <li>Run <tt>regchrome</tt>
-    </li>
-    <li>If Mozilla starts up fine, everything worked, otherwise, unrename
-        everything and give up, or delete the installation and start from
-        scratch.
-    </li>
-  </ol>
-  <p/>
-  Mozilla Firefox can uninstall XPI extensions such as ChatZilla as follows:
-  <ol>
-    <li>Open the Tools menu, select Extensions.
+    <li>Open <menu>Tools<submenu/>Extensions</menu>.
     </li>
     <li>Find the ChatZilla extension, and select it.
     </li>
@@ -64,6 +58,26 @@
     </li>
     <li>Confirm that you want to uninstall ChatZilla, then you need to restart
         Mozilla Firefox to complete the uninstall.
+    </li>
+  </ol>
+  <p>Mozilla and SeaMonkey do not have an uninstall feature for XPIs, but
+    removing ChatZilla is usually possible.
+  </p>
+  <warning>The following manual uninstall procedure is provided with no
+    warranty whatsoever.
+  </warning>
+  <ol>
+    <li>Shut down Mozilla or SeaMonkey.
+    </li>
+    <li>Find (in the application install directory) and rename the files
+      <tt>components/chatzilla-service.js</tt>
+      and <tt>chrome/chatzilla.jar</tt> to something else.
+    </li>
+    <li>Run <tt>regchrome</tt>.
+    </li>
+    <li>If Mozilla starts up fine, everything worked, otherwise, unrename
+      everything and give up, or delete the installation and start from
+      scratch.
     </li>
   </ol>
 </answer> 
@@ -75,11 +89,12 @@
 </question>
 
 <answer>
-  If you are using the Mozilla Suite, you will need to use the uninstall
-  procedure outlined above. If you are using Mozilla Firefox, use the 
-  following steps:
+  <p>If you are using the Mozilla Suite or SeaMonkey, you will need to use the
+    uninstall procedure outlined above. If you are using Mozilla Firefox, you
+    can disable the ChatZilla extension using the following steps:
+  </p>
   <ol>
-    <li>Open the Extensions dialog from the Tools menu.
+    <li>Open <menu>Tools<submenu/>Extensions</menu>.
     </li>
     <li>Select ChatZilla from the list of Extensions.
     </li>
@@ -88,7 +103,6 @@
     <li>Restart Mozilla Firefox to actually disable ChatZilla.
     </li>
   </ol>
-  <note>This procedure is only supported on Mozilla Firefox 0.9 and above.</note>
 </answer>
 </entry>
 
@@ -104,9 +118,9 @@
 
 <answer>
   <ul>
-    <li>You can start ChatZilla from <menu>Window<submenu/>IRC Chat</menu> 
-      in the Mozilla Suite, and from <menu>Tools<submenu/>ChatZilla</menu>
-      in Mozilla Firefox.
+    <li>In Mozilla Suite or SeaMonkey, <menu>Window<submenu/>IRC Chat</menu>.
+    </li>
+    <li>In Mozilla Firefox, <menu>Tools<submenu/>ChatZilla</menu>.
     </li>
     <li>In Mozilla Firefox, you can also place an <b>ChatZilla</b> button on
       your toolbar.
@@ -115,8 +129,10 @@
       option.  This will launch ChatZilla instead of a browser front end.
     </li>
     <li>You can type an IRC URL in the URL bar. Type just <tt>irc:</tt>
-      to launch ChatZilla and connect to your default channels.  Note that 
-      you can bookmark this URL, and file it wherever it to make sense to you.
+      to launch ChatZilla and connect to your default channels.
+      <tip>You can bookmark this URL, and file it wherever it makes sense
+        to you.
+      </tip>
     </li>
     <li>Of course, you can use any IRC URL to start ChatZilla and make it
       connect to the specified location, however, the default channels will
@@ -124,63 +140,63 @@
     </li>
   </ul>
   <note>In some rare occasions, a bug in the Mozilla Firefox extension
-  manager will disable the ChatZilla extension right after installing, even
-  though the item does not show disabled in the list. If you can not start
-  ChatZilla as described above (for example, you may get a message saying the
-  IRC protocol is not registered), try disabling ChatZilla, restarting Firefox,
-  re-enabled ChatZilla, and restarting Firefox again.</note>
+    manager will disable the ChatZilla extension right after installing, even
+    though the item does not show disabled in the list. If you can not start
+    ChatZilla as described above (for example, you may get a message saying the
+    IRC protocol is not registered), try disabling ChatZilla, restarting
+    Firefox, re-enabled ChatZilla, and restarting Firefox again.
+  </note>
 </answer>
 </entry>
 
 <entry id="connect">
 <question>
-  How do I connect to a server?
+  How do I connect to a network or server?
 </question>
 
 <answer>
-  <a name="server"></a>
-  <div class="figure">
-    <table class="figure-contents" cellpadding="2px">
-      <tr>
-        <td valign="top"><code>/server irc.example.com</code></td>
-        <td>
-          Connects to the server <tt>irc.example.com:6667</tt>.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top"><code>/server irc.example.com 6668</code></td>
-        <td>
-          Connects to the server <tt>irc.example.com:6668</tt>.
-        </td>
-      </tr>
-      <tr>
-        <td valign="top"><code>/sslserver irc.example.com 6669</code></td>
-        <td>
-          Connects to the server <tt>irc.example.com:6669</tt> using a
-          secure connection (SSL).
-        </td>
-      </tr>
-    </table>
-      Commands to connect to a server
-  </div>
-  ChatZilla allows you to be connected to multiple servers at once, so unlike
-  some other clients, <tt>/server</tt> will <b>not disconnect you</b> from
-  your current server.  You can manually do that with the <tt>/disconnect</tt>
-  command.
-  <p/>
   <a name="network"></a>
-  ChatZilla comes preset with a few popular irc networks.  Use the
-  <tt>/networks</tt> command to list the available networks.  You may click
-  on a network name or use the <tt>/network</tt> command to connect to a network
-  by name.
-  <p/>
+  <p>ChatZilla comes preset with a selection of popular IRC networks, which
+    can be listed via the <tt>/networks</tt> command. The network names can be
+    clicked to connect to them, or the <tt>/network</tt> command can be used.
+  </p>
+  <tip>ChatZilla allows you to be connected to multiple servers at once, so,
+    unlike some other clients, connecting to a new network or server will not
+    disconnect you from your current network or server.  You can manually do
+    that with the <tt>/disconnect</tt> command.
+  </tip>
+  <input>/networks</input>
+  <output>
+    Available networks are [dalnet, efnet, freenode, hybridnet, moznet,
+    quakenet, serenia, slashnet, undernet, webbnet].
+  </output>
+  <input>/network moznet</input>
+  <output>
+    Network view for moznet opened.<br/>
+    Attempting to connect to moznet. Use /cancel to abort.<br/>
+    Connecting to irc://moznet/ (irc://irc.mozilla.org/), attempt 1 of 5...<br/>
+    <i>Messages about connecting, and the "message of the day" (MOTD).</i><br/>
+    End of /MOTD command.
+  </output>
+  <a name="server"></a>
+  <p>There is no reason you have to use only the networks provided by
+    ChatZilla - you can connect to any IRC server you like using the
+    <tt>/server</tt> command. For example, other ways to connect to the
+    Mozilla IRC Network are (the last one uses a secure connection):
+  </p>
+  <input>
+    /server irc.mozilla.org<br/>
+    /server irc.mozilla.org 6667<br/>
+    /sslserver irc.mozilla.org 6697
+  </input>
   <a name="attach"></a>
-  The more general <tt>/attach</tt> command accepts an
-  <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>
-  as a parameter.  You may omit the <tt>irc://</tt> prefix, however.  This
-  can be used to connect to a network and channel with a single command,
-  such as <tt>/attach moznet/chatzilla</tt>, or
-  <tt>/attach moznet/killer,isnick</tt>.
+  <p>The more general <tt>/attach</tt> command accepts an
+    <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/irc-urls.html">irc: URL</a>
+    as a parameter.  You may omit the <tt>irc://</tt> prefix, however.  This
+    can be used to connect to a network and channel with a single command,
+    such as <tt>/attach moznet/chatzilla</tt>, or
+    <tt>/attach moznet/killer,isnick</tt>.
+  </p>
 </answer>
 </entry>
 
@@ -189,53 +205,55 @@
   What do I do if I get an error connecting?
 </question>
 <answer>
-  Firstly, it depends on the error.  The most common reasons are the wrong
-  address for the server, or a firewall mis-configuration.  The following list
-  will hopefully cover the error you have, but if you are getting a different
-  error try to connect to <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a>
-  on <a href="irc://irc.mozilla.org/">irc.mozilla.org</a> and we'll help you
-  resolve the problem.
+  <p>First, don't panic. It all depends on the error.  The most common reasons
+    are the wrong address for the server, or a firewall mis-configuration.
+    The following list will hopefully cover the error you have, but if you
+    are getting a different error try to connect to
+    <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> on
+    <a href="irc://irc.mozilla.org/">irc.mozilla.org</a> and we'll help you
+    resolve the problem.
+  </p>
   <ul>
-    <li><tt>Unknown host ``irc.example.com'' connecting to
-      irc://irc.example.com/ (irc.example.com:6667).</tt><br/>
-      This error means that ChatZilla could not find a physical address for the
-      name given.  It is most likely that the <b>server name specified is not
-      correct</b>, although it could be a problem with the DNS configuration for
-      the server's host or a local DNS problem.  Try going to the website for
-      the server or network, if you can find one, and check that the name you
-      used is correct.
+    <li><output>Unknown host ``irc.example.com'' connecting to irc://irc.example.com/ (irc.example.com:6667).</output>
+      <p>This error means that ChatZilla could not find the physical server for
+        the name given.  It is most likely that the <b>server name specified is
+        not correct</b>, although it could be a problem with the DNS
+        configuration for the server's host or a local DNS problem.  Try going
+        to the website for the server or network, if you can find one, and
+        check that the name you used is correct.
+      </p>
     </li>
-    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
-      timed out.</tt><br/>
-      This error means that the server's name was turned into a physical
-      address, but nothing responded when that address was contacted.  A
-      <b>firewall blocking the connection</b> is the usual cause of this error;
-      try temporarily disabling your firewall, if you have one, to see if that
-      helps.  If you have no firewall, or disabling it does not help, the
-      IRC server is probably down.
+    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) timed out.</output>
+      <p>This error means that the server's address was found, but it did not
+        respond when contacted.  A <b>firewall blocking the connection</b> is
+        the usual cause of this error; try temporarily disabling your firewall,
+        if you have one, to see if that helps.  If you have no firewall, or
+        disabling it does not help, the IRC server is probably down.
+      </p>
     </li>
-    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
-      refused.</tt><br/>
-      This error means that the server <i>was</i> found, but it did not wish
-      to let you connect.  This could be because the wrong port (6667 in this
-      example) was used; verify that the server is not on a different port
-      (especially if you are trying to connect using SSL) and try again.  This
-      error could also mean that the server is having a temporary technical
-      problem.
+    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) refused.</output>
+      <p>This error means that the server <i>was</i> found, but it did not wish
+        to let you connect.  This could be because the wrong port (6667 in this
+        example) was used; verify that the server is not on a different port
+        (especially if you are trying to connect using SSL) and try again.  This
+        error could also mean that the server is having a temporary technical
+        problem.
+      </p>
     </li>
-    <li><tt>Connection to irc://irc.example.com/ (irc.example.com:6667)
-      reset.</tt><br/>
-      This error means that ChatZilla was able to connect to the server
-      initially, but the connection was then <b>severed by the remote server</b>.
-      This is usually nothing to do with either end of the connection directly,
-      but instead a link between you and the server; possible causes include
-      a reset or reboot of your DSL router, or a local network configuration
-      change.
+    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) reset.</output>
+      <p>This error means that ChatZilla was able to connect to the server
+        initially, but the connection was then <b>severed by the remote server</b>.
+        This is usually nothing to do with either end of the connection directly,
+        but instead a link between you and the server; possible causes include
+        a reset or reboot of your DSL router, or a local network configuration
+        change.
+      </p>
     </li>
-    <li><tt>ERROR Closing Link: irc.example.com (Install IdentD)</tt><br/>
-      This message, sometimes worded differently (but will always mention
-      "ident" or "identd"), means that the server you tried to connect to
-      requires a <a href="#ident">special identification service</a>.
+    <li><output>ERROR Closing Link: irc.example.com (Install IdentD)</output>
+      <p>This message, sometimes worded differently (but will always mentioning
+        "ident" or "identd"), means that the server you tried to connect to
+        requires a <a href="#ident">special identification service</a>.
+      </p>
     </li>
   </ul>
 </answer>
@@ -247,17 +265,18 @@
 </question>
 
 <answer>
-  Some servers will require you to be running an "ident server" to connect to
-  them, even though this service is only useful if you run a multi-user
-  computer (where many people can connect and share a single computer).
-  
+  <p>Some servers will require you to be running an "ident server" to connect
+    to them, even though this service is only useful if you run a multi-user
+    computer (where many people can connect and share a single computer).
+  </p>
+  <p>ChatZilla does not have any ident server. If, however, you are required
+    to have such a service to connect to a particular server, you can simply
+    install a standalone ident client (which can be found via
+    <a href="http://www.google.com/search?q=ident+server">Google</a>).
+  </p>
   <tip>Some networks only have a few servers that require ident. Trying
-    specific servers may let you connect without ident.</tip>
-  <p/>
-  ChatZilla does not have any ident server. If, however, you are required to
-  have such a service to connect to a particular server, you should simply
-  install a standalone ident client (which can be found via
-  <a href="http://www.google.com/search?q=ident+server">Google</a>).
+    specific servers may let you connect without ident.
+  </tip>
 </answer>
 </entry>
 
@@ -267,17 +286,27 @@
 </question>
 
 <answer>
-  Once you have <a href="#connect">connected to a server</a>, you can join a
-  channel by typing <tt>/join</tt> followed by the channel name.  For example,
-  if you want to join <tt>#worldchat</tt> on <tt>undernet</tt>, you would
-  first connect to undernet with the <a href="#network"><tt>/network</tt></a>,
-  <a href="#server"><tt>/server</tt></a> or <a href="#attach"><tt>/attach</tt></a>
-  command (e.g. <tt>/attach undernet</tt>), then type <tt>/join #worldchat</tt>.
-  <p/>
-  If you omit the channel prefix, ChatZilla will prepend a "<tt>#</tt>"
-  automatically.
-  <p/>
-  The command <tt>/j</tt> comes predefined as an alias for <tt>/join</tt>.
+  <p>Once you have <a href="#connect">connected to a server</a>, you can join a
+    channel by using the <tt>/join</tt> command.  For example, if you have
+    connected to <a href="irc://irc.mozilla.org/">MozNet</a>, you can join the
+    ChatZilla channel.
+  </p>
+  <input>
+    /join #chatzilla
+  </input>
+  <output>
+    Channel view for #chatzilla opened.<br/>
+    YOU (NickName) have joined #chatzilla<br/>
+    Topic for #chatzilla is "<b>ChatZilla -- LATEST VERSION</b> is 0.9.68.5.1"<br/>
+    Topic for #chatzilla was set by Somebody on 22 September 2005 16:37:05
+  </output>
+  <tip>Unsure what channels there are on a particular server? Just connect, and
+    select <menu>File<submenu/>Join Channel...</menu> and browse through the
+    <a href="#list">list of channels</a>.
+  </tip>
+  <tip>The command <tt>/j</tt> is an alias (shortcut) for <tt>/join</tt>. The
+    "<tt>#</tt>" is also optional.
+  </tip>
 </answer>
 </entry>
 
@@ -291,8 +320,8 @@
   list all channels on the current network.  You can join an existing channel
   or create a new channel from this dialog, filter channels by name, topic, and
   exclude channels with more, or less, than a certain number of users.  On
-  large networks, however, this dialog may have more difficulty in operating
-  (coping with 200,000 channels is not easy).
+  large networks, however, this dialog may have difficulty operating (20,000
+  channels is about its limit, due to limitations in JavaScript).
 
   <note>This dialog was added in ChatZilla <b>0.9.67</b> and is not available
   in earlier versions.</note>
@@ -331,14 +360,15 @@
 </question>
 
 <answer>
-  To disconnect from a single network without exiting ChatZilla, right-click a
-  tab from the network and select the disconnect option, or switch to a view
-  on the network and use the <menu>File<submenu/>Disconnect From</menu> menu
-  item.  You can also type <tt>/disconnect</tt> on any view associated with
-  the network.
-  <p/>
+  <p>To disconnect from a single network without exiting ChatZilla, right-click
+    a tab from the network and select the <menu>Disconnect From</menu> option,
+    or switch to a view on the network and use the
+    <menu>File<submenu/>Disconnect From</menu> menu item.  You can also type
+    <tt>/disconnect</tt> on any view associated with the network.
+  </p>
   <tip>To disconnect from all networks without exiting ChatZilla, type
-  <tt>/disconnect-all</tt>.</tip>
+    <tt>/disconnect-all</tt>.
+  </tip>
 </answer>
 </entry>
 
@@ -348,18 +378,20 @@
 </question>
 
 <answer>
-  In general you can't.  The way IRC works, your IP address is distributed to
-  every user you communicate with.  Depending on where you hang out, and who
-  your enemies are, this may or may not be a problem.  In practice, it's not a
-  problem for most normal users.
-  <p/>
-  However, an increasing number of servers are supporting a user mode
-  "<tt>x</tt>" which hides your hostname (and thus your IP) from other users
-  (IRC Operators can still see your real host, however). You can start using
-  this user mode by adding "<tt>x</tt>" to the Usermode box on the General tab
-  in preferences, either in <b>Global Settings</b>, or for individual servers.
+  <p>In general you can't.  The way IRC works, your IP address is distributed to
+    every user you communicate with.  Depending on where you hang out, and who
+    your enemies are, this may or may not be a problem.  In practice, it's not a
+    problem for most normal users.
+  </p>
+  <p>However, an increasing number of servers are supporting a user mode
+    "<tt>x</tt>" which hides your hostname (and thus your IP) from other users
+    (IRC Operators can still see your real host, however). You can start using
+    this user mode by adding "<tt>x</tt>" to the Usermode box on the General tab
+    in preferences, either in <b>Global Settings</b>, or for individual servers.
+  </p>
   <note>Remember that not all servers support this. Ones that don't will
-  simply ignore it, so don't worry about adding it if you're not sure.</note>
+    simply ignore it, so don't worry about adding it if you're not sure.
+  </note>
 </answer>
 </entry>
 
@@ -369,14 +401,14 @@
 </question>
 
 <answer>
-  ChatZilla currently has a basic implementation of DCC Chat and DCC File. The
-  following is a summary of the commands and how to use it, enter 
-  <tt>/help dcc</tt> into ChatZilla for more information.
-  
+  <p>ChatZilla currently has a basic implementation of DCC Chat and DCC File.
+    The following is a summary of the commands and how to use it, enter 
+    <tt>/help dcc</tt> into ChatZilla for more information.
+  </p>
   <note>A couple of commonly requested DCC features are Resume and Reverse
-  support.  ChatZilla currently does <b>not</b> support either of these, but
-  they are both planned for a version in the future.</note>
-  
+    support.  ChatZilla currently does <b>not</b> support either of these,
+    but they are both planned for a version in the future.
+  </note>
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
       <tr>
@@ -421,34 +453,34 @@
 </question>
 
 <answer>
-  ChatZilla allows you to select character encodings at multiple levels.  The
-  default character encoding used by ChatZilla is UTF-8, and it is recommended
-  that you leave this setting wherever possible.  This default avoids a number
-  of unsolvable problems, such as how to know what encoding has been used for
-  particular  channel names without proir knowledge.
-  
+  <p>ChatZilla allows you to select character encodings at multiple levels.
+    The default character encoding used by ChatZilla is UTF-8, and it is
+    recommended that you leave this setting wherever possible.  This default
+    avoids a number of unsolvable problems, such as how to know what encoding
+    has been used for particular channel names without proir knowledge.
+  </p>
   <tip>The most common character encoding is ISO-8859-15, since this is what
-  mIRC uses normally (it can also do Shift-JIS for Japanese). If you are
-  unsure, or other members of the channel are clueless, try using ISO-8859-15
-  first (type <tt>/charset ISO-8859-15</tt> on the channel view).</tip>
-  
-  An unfortunate problem with the way IRC works is that international (and 
-  most non-US-ASCII) characters cannot be sent without encoding them.  The 
-  problem is that there are many, many different character encodings 
-  available, and different systems and programs use different ones.  To help 
-  alleviate this problem, ChatZilla supports many different character 
-  encodings, and lets you select the right one for each channel and server.
-  
-  <p/>
-  If text is showing up with a lot of question-marks (?) or completely 
-  unexpected characters (for example, Japanese characters in a Danish channel)
-  then it is likely that ChatZilla is not using the same charset as the other
-  client(s).  The table below lists the charset commands available in ChatZilla.
-  Each of these commands takes a case-insensitive character encoding name as a
-  parameter.  If a character encoding is not provided, these commands will
-  display the current setting.  If you pass a dash ("-") as the character
-  encoding name, the setting will revert to the default character encoding.
-
+    mIRC normally uses (it can also do Shift-JIS for Japanese). If you are
+    unsure, or other members of the channel are clueless, try using ISO-8859-15
+    first (type <tt>/charset ISO-8859-15</tt> on the channel view).
+  </tip>
+  <p>An unfortunate problem with the way IRC works is that international (and
+    most non-US-ASCII) characters cannot be sent without encoding them.  The
+    problem is that there are many, many different character encodings
+    available, and different systems and programs use different ones.  To help
+    alleviate this problem, ChatZilla supports many different character
+    encodings, and lets you select the right one for each channel and server.
+  </p>
+  <p>If text is showing up with a lot of question-marks (?) or completely
+    unexpected characters (for example, Japanese characters in a Danish channel)
+    then it is likely that ChatZilla is not using the same charset as the other
+    client(s).  The table below lists the charset commands available in
+    ChatZilla. Each of these commands takes a case-insensitive character
+    encoding name as a parameter.  If a character encoding is not provided,
+    these commands will display the current setting.  If you pass a dash ("-")
+    as the character encoding name, the setting will revert to the default
+    character encoding.
+  </p>
   <div class="figure">
     <table class="figure-contents" cellpadding="2px">
       <tr>
@@ -808,17 +840,26 @@
   
   <ul>
     <li>Right-clicking the chat area shows the browser's context menu instead
-      of ChatZilla's.</li>
+      of ChatZilla's.
+    </li>
     <li>Clicking an <tt>irc:</tt> URL in the chat area will open a separate
       <b>ChatZilla window</b>. This problem <i>might</i> be fixable, but it
-      could well be harder to fix than the final point.</li>
+      could well be harder to fix than the final point.
+    </li>
     <li>Clicking web links in the chat area will usually <b>replace ChatZilla
       with the webpage</b>. If you try to open the link in a new tab or
       window (either from the context menu or using a modifier key), it should
-      leave ChatZilla unaffected.</li>
+      leave ChatZilla unaffected.
+    </li>
     <li>Clicking an <tt>irc:</tt> URL from a webpage will also open a separate
       <b>ChatZilla window</b>, instead of loading it in the ChatZilla running
-      in a tab. This is the only problem we believe we can fix.</li>
+      in a tab. This is the only problem we believe we can fix.
+    </li>
+    <li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=286651">Bug
+      286651</a> is attempting to remove the special permission extensions get
+      when loaded in a tab, which would basically be the end of this working
+      at all.
+    </li>
   </ul>
 </answer>
 </entry>
@@ -1019,6 +1060,92 @@ You may separate multiple commands with the semicolon (';') character, as
 </answer>
 </entry>
 
+<entry id="alias">
+<question>
+  How do I use aliases? (or make new commands)
+</question>
+
+<answer>
+  ChatZilla has some extensive <a href="#scripts">scripting</a> support,
+  however, not everyone wants or needs so much power. Aliases provide this
+  "watered down" power, by letting you quickly and simply create a new command
+  that performs a set of other commands (which may themselves be aliases).
+  <p/>
+  In its simplest form, an alias is simply renaming a command and fixing some
+  parameters:
+  <div class="figure">
+    <div class="figure-contents">
+      <tt class="indent">/alias moz attach moznet</tt>
+    </div>
+    Creates a simple alias called "moz" to connect to MozNet. Running
+    <tt>/moz</tt> will execute the alias.
+  </div>
+  <p/>
+  You can run multiple commands by separating them with semi-colons (<tt>;</tt>):
+  <div class="figure">
+    <div class="figure-contents">
+      <tt class="indent">/alias mychannels join #chatzilla; join #venkman;
+        join #xul; join #js</tt>
+    </div>
+    Creates a multi-command alias called "mychannels". Running
+    <tt>/mychannels</tt> will join "#chatzilla", "#venkman", "#xul" and "#js"
+    on the current network.
+  </div>
+  <p/>
+  Often, you want to shorten a command - or run a collection of commands -
+  using some variable input. Aliases can use as many parameters as you like,
+  and may be referenced using <tt>$(param key)</tt> notation. There are a few
+  different parameter keys available:
+  <div class="figure">
+    <table class="figure-contents" width="100%">
+      <tr>
+        <th>Syntax</th>
+        <th>Explanation</th>
+      </tr><tr>
+        <td><tt>$(N)</tt></td>
+        <td>Gets the parameter at position N, with 1 being the first. The parameter is required to run the alias.</td>
+      </tr><tr>
+        <td><tt>$(N+)</tt></td>
+        <td>Gets the parameter at position N, and all those following it. Only parameter N is required.</td>
+      </tr><tr>
+        <td><tt>$(M-N)</tt></td>
+        <td>Gets parameter M through N, inclusive. All parameters from M to N, inclusive, are required.</td>
+      </tr><tr>
+        <td><tt>$(all)</tt></td>
+        <td>Gets all parameters. This is similar to <tt>$(1+)</tt>, but does not require any parameters.</td>
+      </tr><tr>
+        <td><tt>$(recip)</tt></td>
+        <td>Gets the name of the target of the alias. This is the name of the view running the alias, e.g. channel name.</td>
+      </tr><tr>
+        <td><tt>$(nick)</tt></td>
+        <td>Gets the user's current nickname.</td>
+      </tr>
+    </table>
+  </div>
+  <p/>
+  For this example, the command will use IRC Services "NickServ" to reclaim
+  your registered nickname. When run, it ghosts the nickname (a feature of
+  NickServ which kicks them off the server if you know their password -
+  useful when you've just had to reconnect and your old self is still
+  there), changes to your normal nickname, and identifies with NickServ.
+  The first parameter is your normal nickname, and the second is the password
+  for that nickname.
+  <div class="figure">
+    <div class="figure-contents">
+      <tt class="indent">/alias reclaim msg nickserv ghost $(1) $(2); nick
+        $(1); msg nickserv identify $(2)</tt>
+    </div>
+    Creates a command alias called "reclaim" which requires two parameters.
+  </div>
+  <p/>
+  At their most complicated, you can use JavaScript in aliases via the
+  <tt>/eval</tt> command. These are easily harmful to ChatZilla if you get
+  anything wrong (and sometimes even if you don't!), so we advise you join
+  <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> if you need any
+  help with this.
+</answer>
+</entry>
+
 <entry id="faces-motif">
 <question>
   How do I show faces in ChatZilla?
@@ -1145,30 +1272,35 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-  Yes.  By replacing the HTML file
-  ChatZilla displays messages in, you can make an unlimited number of
-  customizations for the output window.
-  Because the output window has access to all
-  of Mozilla, including XPCOM, it can do anything ChatZilla can.  This includes
-  redisplaying information scraped from the web, state stored in a bot
-  of some sort, or just about anything else.
-  For security reasons these replacement ``output windows''
-  cannot be remotely located, and must instead be
-  <a href="#install-script">installed</a> by users.
-  <p/>
-  The ``outputWindowURL'' pref is used to select the output window file
-  to use for a particular network, channel, or user.  See the
-  default
-  <a href="view-source:http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.html">output-window.html</a>
-  and
-  <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.js">output-window.js</a>
-  for more clues.
-  <p/>
-  This hasn't gotten much use as of yet, but the basic idea is to make your
-  own <b>output-window.html</b>, but use the stock <b>output-window.js</b>.
-  JavaScript
-  customizations should go in a new .js file, included in a &lt;script&gt;
-  tag in your custom output-window.html.
+  <warning>There are currently permission problems relating to custom output
+    windows, which involve granting special permissions to all local files and
+    including some extra code in the output window itself. Unless you are
+    really intimate with codebase principals and their use in Mozilla, it is
+    advised you don't try to do this.
+  </warning>
+  <p>Yes.  By replacing the HTML file ChatZilla displays messages in, you can
+    make an unlimited number of customizations for the output window. Because
+    the output window has access to all of Mozilla, including XPCOM, it can
+    do anything ChatZilla can.  This includes redisplaying information
+    scraped from the web, state stored in a bot of some sort, or just about
+    anything else. For security reasons these replacement ``output windows''
+    cannot be remotely located, and must instead be
+    <a href="#install-script">installed</a> by users.
+  </p>
+  <p>The ``outputWindowURL'' pref is used to select the output window file
+    to use for a particular network, channel, or user.  See the
+    default
+    <a href="view-source:http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.html">output-window.html</a>
+    and
+    <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content/output-window.js">output-window.js</a>
+    for more clues.
+  </p>
+  <p>This hasn't gotten much use as of yet, but the basic idea is to make your
+    own <b>output-window.html</b>, but use the stock <b>output-window.js</b>.
+    JavaScript
+    customizations should go in a new .js file, included in a &lt;script&gt;
+    tag in your custom output-window.html.
+  </p>
 </answer>
 </entry>
 
@@ -1229,18 +1361,44 @@ You may separate multiple commands with the semicolon (';') character, as
   How do I install a third party script in ChatZilla?
 </question>
 <answer>
-  ChatZilla searches all subdirectories in your
-  <tt>&lt;profile-path&gt;/chatzilla/scripts</tt> directory for files named
-  <tt>init.js</tt>.  Any files found there are loaded at startup.  To install
-  a script that someone else wrote, just copy it into a file called
-  <tt>init.js</tt> in a new subdirectory of <tt>chatzilla/scripts</tt>.  To
-  find out where <tt>&lt;profile-path&gt;</tt> is on your system, type
-  <tt>/pref profilePath</tt>.
-  <p/>
-  ChatZilla will also load <tt>chatzilla/scripts/init.js</tt> at startup, if
-  it exists.  It is recommended that you use this for one-off, personal 
-  scripts, or for any script that might need to make sure it is the first one
-  loaded.
+  <ol>
+    <li>Firstly, you must find out where ChatZilla looks for scripts. This can
+      be done as follows:
+      <input>
+        /pref profilePath
+      </input>
+      <output>
+        Preference profilePath is "C:\Documents and Settings\James\Application Data\Mozilla\ChatZilla\Profiles\w58z18i7.default\chatzilla".
+      </output>
+      <note>If the above command outputs an empty value, you will need to do
+        <tt>/pref profilePath -</tt> instead, to fix it.
+      </note>
+    </li>
+    <li>Go into the directory displayed by ChatZilla, then into the
+      <tt>scripts</tt> subdirectory. This is where ChatZilla looks for scripts
+      to load when starting.
+    </li>
+    <li>Create a new subdirectory for the script - name it something related
+      to the script. ChatZilla doesn't care what you call it.
+    </li>
+    <li>Save the script into this new subdirectory. If the script came with
+      multiple files, put them all in here. Make sure that a file called
+      <tt>init.js</tt> exists, or ChatZilla wont load the script!
+    </li>
+    <li>Restart ChatZilla.
+    </li>
+  </ol>
+  <tip>If you're having problems getting a script to load, it may be having
+    errors during initialization.  To check this, open the client view with the
+    <code>/client</code> command, then tick <menu>View<submenu/>Open This
+    Tab At Startup</menu>, and restart ChatZilla. Any errors that occur
+    loading scripts during startup will be displayed on this new view.
+  </tip>
+  <note>ChatZilla will also load <tt>chatzilla/scripts/init.js</tt> at startup,
+    if it exists.  It is recommended that you use this for one-off, personal
+    scripts, or for any script that might need to make sure it is the first
+    one loaded.
+  </note>
 </answer>
 </entry>
 

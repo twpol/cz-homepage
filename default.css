@@ -301,6 +301,22 @@ code {
     padding-right: 5px;
 }
 
+.input-header, .output-header {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.input, .output {
+    margin: 0px;
+    border: 1px black solid;
+    text-align: left;
+    background: white;
+    color: black;
+    font-family: "lucida console", monospace;
+    font-size: smaller;
+    font-weight: normal;
+}
+
 .fg-white {
 	color: white;
 }

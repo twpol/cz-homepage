@@ -140,7 +140,7 @@ function writeRev(rev)
     {
         document.write(" [<a href='" +
                        "http://bugzilla.mozilla.org/buglist.cgi?bug_id=" + 
-                       rev.bugsCumulative.join(",") + "' title='List of bugs " +
+                       rev.bugsCumulative.sort().join(",") + "' title='List of bugs " +
                        "fixed since last green release''>" + 
                        rev.bugsCumulative.length + " cumulative fixed bug(s)</a>]");
     }
@@ -149,7 +149,7 @@ function writeRev(rev)
     {
         document.write(" [<a href='" +
                        "http://bugzilla.mozilla.org/buglist.cgi?bug_id=" + 
-                       rev.bugs.join(",") + "'>" + 
+                       rev.bugs.sort().join(",") + "'>" + 
                        rev.bugs.length + " fixed bug(s)</a>]");
     }
 
