@@ -1,5 +1,81 @@
 var revs =
 [
+  {id: "0.9.69", date: "2005-12-04", condition: Y,
+   bugs: [40974, 107300, 114322, 144037, 131604, 134814, 143963, 180574, 193977, 204411, 207195, 228962, 236155, 237473, 238050, 241442, 250072, 256928, 257026, 257206, 262821, 272882, 273507, 278698, 278900, 281172, 281886, 283521, 291233, 291504, 294816, 295040, 296679, 296702, 297417, 297796, 299454, 299458, 299460, 299521, 300622, 301514, 302907, 303805, 304312, 304350, 304507, 305014, 305360, 305663, 306108, 306482, 307923, 313146, 313201, 313213, 313802, 314230, 314273, 315455, 316224, 316225, 318336],
+   desc: "saves the ignore list, auto-joins channels that initially failed when invited, and has improved connecting logic. There is also a security indicator in the statusbar, a default quit message preference, and -chat works with Firefox again. Many new commands, including <tt>/ban</tt> and <tt>/unban</tt> have been added, as well as fixes for existing commands like <tt>/whois</tt> not working with international nicknames properly. There are many, many other changes - check out the list of bugs if you are interested."},
+   /*
+   - Basic code to save the network's ignore list between sessions. No UI yet.
+   - try connecting forever, with growing backoff
+   - Auto-join channel on invite, if previously attempted manual join
+   
+   - Show security status in statusbar with certificate access
+   - Add default quit message preference
+   - Add code to handle new command-line service stuff from toolkit.
+   
+   - Use real button for nickname
+   - Update topic when charset is changed
+   - Let plugins specify stringbundle to use for their prefs, and hide the built-in enabled pref
+   - Add /ban and /unban commands
+   - Hack around bug with :empty selector
+   - Fix multiline splitter working incorrectly
+   - Fix /whois on international nicknames
+   - Fix connecting with a nickname containing ^, [ or ] on certain servers
+   - Stop F-keys triggering default actions when switching tabs
+   - Show old nickname when prompting for a new one
+   - Use contract ID instead of class ID for connection
+   - Speed up DCC, and fix bug with really small files (<1KB)
+   - Update version-grabbing information for Firefox and SeaMonkey
+   - Display links LTR even in RTL content
+   - Resolve hostnames to IPs async
+   - Get proper version information when running in XULRunner
+   - Suggest /knock command when failing to join channel
+   - Fix case bug in ignore code for certain servers
+   - Hack around bug in <tabs> element and focus changes
+   - Default nickname to that of the local user name
+   - Don't force saving preferences on every change
+   - Use numeric sort codes for userlist to fix backwards sorting in Estonian locale.
+   - Add pref for collapsing actions, and make different message types not collapse unless the motif asks for it.
+   - Only add 'eval' to command list manually if it is not already in the list (Mozilla 1.0 will pretend it doesn't exist).
+   - Support parameters to the -chat command-line flag to work around loading bugs in Mozilla and Firefox.
+   - Support FreeBSD in XPI generation script.
+   - Hide big scary XPCOM errors from poor little users.
+   - Add /userhost, /userip, /time commands, update /name and /desc commands.
+   - Adjust IRC URL parsing to not accept whitespace and to accept all valid channel names (in theory!).
+   - Add basic CTCP "finger" support.
+   - Force async DNS callback onto the main thread, because the DOM sucks.
+   - Make Menu Manager handler oncommand event so that repeatgenerated items get the correct context information.
+   - Redirect notices starting with [#channel] to that channel's view, if it exists
+   - Speed up ChatZilla's response to messages when not 'busy', and also make the main event loop resiliant to exceptions.
+   - Rehome channel and user objects before running auto-perform commands. Also allow for / prefixing auto-perform commands.
+   - Install ChatZilla icon when running in XULRunner.
+   - Tell broken tabbox code to not play games with focus, handle keyboard-driven tab changes, and make sure tabs squash when there's too many.
+   - Add conference mode (hides joins/parts/nicks/quits in large channels).
+   - ChatZilla should use SI units for DCC transfers
+   - Fix strict warning in utils.js
+   - STEP_TIMEOUT causes too much GC's.
+   - Scrollbars of maximized window should be flush with screen edge
+   - URL Logger Exclude URL logging for topics
+   - outputFilters should receive message destination as a parameter
+   - check for XBL focusing hidden tab
+   - The Chatzilla nick dialog displays in the wrong location
+   - tab switching via command+option arrows
+   - Make ChatZilla complain to the user if Mozilla/Firefox has selected a bad locale, so they stand a chance of fixing it.
+   - Clean up and re-word some command and preference help text.
+   - Add DCC preferences, and some Unicode-awareness in DCC Chat.
+   - Make makexpi.sh use 'safeCommand' to handle errors consitently.
+   - Allow /find word to do a search automatically for the word rather than open the dialog. Does not work on toolkit (because toolkit sucks).
+   - Add /oper command.
+   - Add /mode command with basic validation.
+   - Remember selected users when chaning channel views.
+   - Save text when switching between input modes.
+   - Add linking-fu for Bugzilla alias names.
+   - Various updates to the use of __proto__ and obj.hasOwnProperty to fix /leave and /part when you join two channels with the same Unicode representation (possible when they use different charsets).
+   - Use type=chrome <browser> in FF 1.4+/XULRunner to escape XPCNativeWrappers. Also bump the XPI compat level for Firefox to 1.6.
+   - Update colours to match mIRC even more, and make reversing colours not assume anything about the defaults.
+   - ChatZilla doesn't display messages if you ignore
+   - Make /cancel stop a /list output from displaying any more items.
+   - Save a list of away messages to the chatzilla profile using the new serializer
+   */
   {id: "0.9.68.5", date: "2005-05-21", condition: Y,
    bugs: [293664, 293596],
    desc: "fixes the pref window from the previous revision, a problem " +
