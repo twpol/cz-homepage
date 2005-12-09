@@ -864,6 +864,30 @@
 </answer>
 </entry>
 
+<entry>
+<question>
+  Why are my tabs sometimes colored red, green or blue?
+</question>
+<answer>
+  The different colors indicate different degrees of activity.
+  <ul>
+    <li><strong>Black:</strong> There is no new activity. A tab will go back to
+        this state when you focus it.
+    </li>
+    <li><strong>Blue:</strong> The channel changed in some way. This is usually
+        caused by people joining or leaving, a mode change or a topic change.
+    </li>
+    <li><strong>Green:</strong> A message appeared on the tab. The message
+        can be a normal chat message, an action, or a notice. Messages sent
+        <strong>just</strong> to you will color the tab red instead.
+    </li>
+    <li><strong>Red:</strong> Someone used your name or something on your
+        <a href="#stalk">stalk</a> list in a message on that tab, or someone
+        sent a message to you specifically.
+    </li>
+  </ul>
+</answer>
+</entry>
 </section>
 
 <section id="customizing">
