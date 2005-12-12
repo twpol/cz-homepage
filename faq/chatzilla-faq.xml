@@ -833,9 +833,9 @@
 
 <answer>
   <warning>If you have Firefox 1.5, you will <b>not</b> be able to load
-    ChatZilla in a tab. Versions prior to 0.9.68.5.1 and those after will
-    all display a blank chat area. This is due to security changes in
-    Firefox, which we are currently not in a position to circumvent.
+    ChatZilla in a tab. ChatZilla versions prior to 0.9.68.5.1 and those
+    after will all display a blank chat area. This is due to security changes
+    in Firefox, which we are currently not in a position to circumvent.
   </warning>
   
   <note>We do not support running ChatZilla in a tab.</note>
