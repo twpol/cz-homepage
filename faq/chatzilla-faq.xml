@@ -832,11 +832,21 @@
 </question>
 
 <answer>
-  Easy! Just enter <tt>chrome://chatzilla/content/</tt> into the location bar.
+  <warning>If you have Firefox 1.5, you will <b>not</b> be able to load
+    ChatZilla in a tab. Versions prior to 0.9.68.5.1 and those after will
+    all display a blank chat area. This is due to security changes in
+    Firefox, which we are currently not in a position to circumvent.
+  </warning>
   
-  <warning>There are some big problems with running ChatZilla in a tab, and most
-  are not things we can do anything about. We therefore do not support running
-  ChatZilla in a tab, and below is a list of what is known to break.</warning>
+  <note>We do not support running ChatZilla in a tab.</note>
+  
+  To try anyway, enter <tt>chrome://chatzilla/content/</tt> into the location
+  bar.
+  
+  <warning>Even if it displays the chat area, there are some big problems
+    with running ChatZilla in a tab, and most are not things we can do
+    anything about. Below is a list of what is known to break.
+  </warning>
   
   <ul>
     <li>Right-clicking the chat area shows the browser's context menu instead
