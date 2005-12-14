@@ -659,6 +659,30 @@
 </answer>
 </entry>
 
+<entry id="conf-mode">
+<question>
+  Why do some/all channels not show JOIN, PART, QUIT or nick change messages?
+</question>
+
+<answer>
+  The most likely reason is that ChatZilla has automatically enabled
+  "Conference Mode" on these channels, which occurs when the number of users
+  exceeds a configurable limit (default is 150 in current versions).
+  <p/>
+  To check or change the limit, open the ChatZilla preferences window, and check
+  the <b>Appearance</b> tab - it is labeled "Conference Mode limit". You can set
+  this limit globally (select <b>Global Settings</b> on the left), for a single
+  network (select the network), or individual channels.
+  <p/>
+  Conference Mode is automatically enabled and disabled as the number of users
+  changes, but only when the count is at least 10 above or below the configured
+  value (to prevent it changing too often on channels near the limit). You can use
+  any limit you like, including the special value <b>0</b> for <i>never hiding</i>
+  join, part, quit and nick change messages, and <b>1</b> for <i>always
+  hiding</i> them.
+</answer>
+</entry>
+
 <entry id="stalk">
 <question>
   What is a stalk list?
@@ -688,7 +712,7 @@
     </li>
   </ul>
   By default, your nickname is the only entry in your stalk list. You can
-  add other words to your stalk list from the <b>Lists</b> tab in <b>Globall
+  add other words to your stalk list from the <b>Lists</b> tab in <b>Global
   Settings</b>, in preferences.
 </answer>
 </entry>
