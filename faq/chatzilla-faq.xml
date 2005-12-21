@@ -241,12 +241,23 @@
       </p>
     </li>
     <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) reset.</output>
-      <p>This error means that ChatZilla was able to connect to the server
-        initially, but the connection was then <b>severed by the remote server</b>.
-        This is usually nothing to do with either end of the connection directly,
-        but instead a link between you and the server; possible causes include
-        a reset or reboot of your DSL router, or a local network configuration
-        change.
+      <p>This error means that ChatZilla was able to open the connection
+        initially, but the connection was then <b>closed unexpectedly</b>.
+        The most likely reason for this is that your anti-virus software or,
+        less often, firewall software is configured to block IRC (some
+        programs are blocking it by default these days).
+        <b>McAfee Anti-Virus</b> is known to do this and you will need to
+        unblock the IRC ports to use any IRC client; you can do this from the
+        "Access Protection" area in the "VirusScan Console" by disabling the
+        rules for ports 6666-6669. Consult your anti-virus program's
+        documentation for instructions on how to do this for other anti-virus
+        programs.
+      </p>
+      <p>Although less common, any computer between you and the server can
+        cause this error, so it could just be a reset or reboot of your DSL
+        router, or a local network configuration change.  In these cases,
+        the error should only be temporary, and you will be able to try to
+        connect again in a few seconds (ChatZilla should retry for you).
       </p>
     </li>
     <li><output>ERROR Closing Link: irc.example.com (Install IdentD)</output>
