@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.69.2", date: "2006-01-11", condition: Y,
+   bugs: [114742, 232053, 278763, 282680, 291723, 300610, 305360, 317435,
+          321448],
+   desc: "fixes <tt>/kick-ban</tt> with IP addresses, displays more modes in the header bar, adds some new commands (<tt>/knock</tt>, <tt>/map</tt> and <tt>/stats</tt>), and makes the default quit message configurable per-network. There is also a new option to move the userlist to the right-hand side, and you can now drag a user from the userlist to copy their nickname."},
   {id: "0.9.69.1", date: "2005-12-16", condition: G,
    bugs: [123258, 263185, 289135, 318859, 319009, 319066, 319589, 319821],
    desc: "fixes issues when changing tabs, a small bug in " +
