@@ -315,9 +315,13 @@
     select <menu>File<submenu/>Join Channel...</menu> and browse through the
     <a href="#list">list of channels</a>.
   </tip>
-  <tip>The command <tt>/j</tt> is an alias (shortcut) for <tt>/join</tt>. The
-    "<tt>#</tt>" is also optional.
-  </tip>
+  <tip>The command <tt>/j</tt> is an alias (shortcut) for <tt>/join</tt>.</tip>
+  <p>If you omit a channel type prefix (e.g. <tt>#</tt>, <tt>&amp;</tt>,
+    <tt>+</tt> or <tt>!</tt>) ChatZilla will prepend the network's default
+    prefix. This is usually <tt>#</tt>, but can vary. If you'd like to check,
+    run the <tt>/supports</tt> command and see what character is listed first
+    for "Supported channel types:".
+  </p>
 </answer>
 </entry>
 
