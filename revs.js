@@ -1,5 +1,9 @@
 var revs =
 [
+  {id: "0.9.70", date: "2006-01-23", condition: G,
+   bugs: [252104, 257728, 317435, 320103],
+   desc: "fixes dragging the userlist scrollbar and some strict JS warnings, " +
+    "plus renames some options to make more sense."},
   {id: "0.9.69.3", date: "2006-01-13", condition: Y,
    bugs: [],
    desc: "fixes a bug in the startup ping code where it would accidentally " +
