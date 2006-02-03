@@ -70,6 +70,10 @@ var pages =
         "faq/index.html": {
             title: "ChatZilla Frequently Asked Questions",
             toplevel: "../"
+        },
+        "localization.html": {
+            title: "Localizing ChatZilla",
+            toplevel: ""
         }
     };
 
