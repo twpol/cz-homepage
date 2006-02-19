@@ -21,14 +21,29 @@
     <h2>Welcome</h2>
     <div class="bodytext">
       <p>
-      ChatZilla is a cross platform messaging client that combines 
-      Internet Relay Chat (IRC) with existing web standards like JavaScript,
-      HTML, and CSS.  If you don't know any of this stuff don't worry, you
-      don't have to.  ChatZilla is easy to use.  For more information, please
-      read the <a href="faq/chatzilla-faq.html">FAQ</a>.
+        ChatZilla is a cross platform messaging client that combines 
+        Internet Relay Chat (IRC) with existing web standards like JavaScript,
+        HTML, and CSS.  If you don't know any of this stuff don't worry, you
+        don't have to.  ChatZilla is easy to use.  For more information, please
+        read the <a href="faq/chatzilla-faq.html">FAQ</a>.
+      </p>
     </div>
 
     <h2>News</h2>
+
+    <div class="newsitem">
+      <b>February 9, 2006</b>
+    <ul>
+      <li>
+        This is just a heads-up for those of you that use the
+        latest-and-greatest SeaMonkey or Firefox builds (usually called
+        "nightly builds") - a change in the HTML parser rendered ChatZilla
+        rather broken. We've already fixed the code, but until a new official
+        release is out, you'll need to <a href="#nightly">fetch a nightly
+        ChatZilla build</a>.
+      </li>
+    </ul>
+    </div>
 
     <div class="newsitem">
       <b>January 11, 2006</b>
@@ -43,6 +58,7 @@
         Firefox 1.5.0.1), and are making good headway with the second one.
         These are both Firefox (Gecko) bugs, but they only affect us seriously,
         which is why we get to do all the hard work!
+      </li>
       <li>
         The other news is that starting with ChatZilla 0.9.69.2, 1% of all new
         users will be asked to enabled a "startup ping", which will send the
@@ -55,23 +71,7 @@
         and how long they take to upgrade to the newest release. We should
         also be able to estimate the number of active users, which is much
         more useful that the simple "download count" we currently have.
-    </ul>
-    </div>
-
-    <div class="newsitem">
-      <b>October 30, 2004</b>
-    <ul>
-      <li>
-        <b>ChatZilla 0.9.66</b> includes a new version of the ChatZilla
-        plugin API - you can find more details in the 
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=262037">bug 
-        report</a>.
-      <li>
-        <b>ChatZilla 0.9.66a</b> features a new channel list dialog, 
-        accessible from File > Join Channel, Ctrl-J, or <tt>/join</tt>. The
-        dialog lets you search for channels containing certain text in their
-        name or topic, as well as minimum and maximum user filters. Get the
-        <a href="#revisions">latest version</a> to try it out.
+      </li>
     </ul>
     </div>
 
@@ -80,17 +80,21 @@
     </div>
 
     <h2>Download</h2>
+    <p>
       Click on one of the the "install" links below to install or upgrade
       ChatZilla.  Please note:
+    </p>
     <ul>
       <li>
         ChatZilla does not work on "native" Mozilla embeddings such as
         <a href="http://galeon.sourceforge.net/">Galeon</a> and
         <a href="http://kmeleon.sourceforge.net/">K-Meleon</a>.  Same goes for
         <a href="http://www.google.com/search?num=50&hl=en&lr=&ie=ISO-8859-1&q=%22blue+screen+of+death%22&btnG=Google+Search">Internet Explorer</a>.
+      </li>
       <li>
         Depending on how you installed Mozilla, you may need to log in as
         <tt>root</tt> or <tt>Administrator</tt>.      
+      </li>
       <li>
         ChatZilla is also available in 
         <a href="http://www.softcatala.org/projectes/mozilla/#chatzilla">Catalan</a>,
@@ -100,7 +104,13 @@
 	<a href="http://www.erweiterungen.de/">German</a> and
 	<a href="http://www.sirarthur.info/firefox/">Portuguese</a>	
         localizations.  These localizations have not been tested by the ChatZilla developers.
-	Use them at your own risk.
+        Use them at your own risk.
+      </li>
+      <li id="nightly">
+        <a href="http://twpol.dyndns.org/mozilla/chatzilla/nightly/">ChatZilla
+        nightly builds</a> are available, but please note that these use the
+        very latest code, and may not work right.
+      </li>
     </ul>
     
     <p style="clear: both;">
