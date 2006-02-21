@@ -1,5 +1,13 @@
 var revs =
 [
+  {id: "0.9.71", date: "2006-02-21", condition: G,
+   bugs: [224503, 325500, 319628, 223766, 291105, 40879, 292014, 326523,
+          322259, 327710, 323237, 327806],
+   desc: "fixes problems on the latest nightly Firefox builds, and adds " +
+    "clickable Talkback links, an ident server, auto-accept for DCC file " +
+    "transfers, basic support for Flock, and a completely revised menu " +
+    "layout. Also, preference changes are no longer lost if Mozilla or " +
+    "Firefox crash after the change."},
   {id: "0.9.70", date: "2006-01-23", condition: G,
    bugs: [252104, 257728, 317435, 320103],
    desc: "fixes dragging the userlist scrollbar and some strict JS warnings, " +
