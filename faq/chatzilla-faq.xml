@@ -280,11 +280,18 @@
     to them, even though this service is only useful if you run a multi-user
     computer (where many people can connect and share a single computer).
   </p>
-  <p>ChatZilla does not have any ident server. If, however, you are required
-    to have such a service to connect to a particular server, you can simply
-    install a standalone ident client (which can be found via
-    <a href="http://www.google.com/search?q=ident+server">Google</a>).
+  <p>In ChatZilla 0.9.71 and later, you can check the "Enable Identification
+    Server during connection process" box in Preferences, or enter the command
+    <kbd>/network-pref identd.enabled true</kbd> to enable ChatZilla's ident
+    server for the current network.
   </p>
+  <note>Ident servers listen on TCP port 113. This may mean you need to
+    open/forward this port on any NAT devices or firewalls you use.
+  </note>
+  <note>On some operating systems, such as Linux and Mac OS X, ident servers
+    must instead run as part of the system. You should consult your system's
+    documentation for more information.
+  </note>
   <tip>Some networks only have a few servers that require ident. Trying
     specific servers may let you connect without ident.
   </tip>
@@ -312,7 +319,7 @@
     Topic for #chatzilla was set by Somebody on 22 September 2005 16:37:05
   </output>
   <tip>Unsure what channels there are on a particular server? Just connect, and
-    select <menu>File<submenu/>Join Channel...</menu> and browse through the
+    select <menu>IRC<submenu/>Join Channel...</menu> and browse through the
     <a href="#list">list of channels</a>.
   </tip>
   <tip>The command <tt>/j</tt> is an alias (shortcut) for <tt>/join</tt>.</tip>
@@ -331,7 +338,7 @@
 </question>
 
 <answer>
-  Use <menu>File<submenu/>Join channel...</menu> to open a dialog that will
+  Use <menu>IRC<submenu/>Join channel...</menu> to open a dialog that will
   list all channels on the current network.  You can join an existing channel
   or create a new channel from this dialog, filter channels by name, topic, and
   exclude channels with more, or less, than a certain number of users.  On
@@ -378,7 +385,7 @@
   <p>To disconnect from a single network without exiting ChatZilla, right-click
     a tab from the network and select the <menu>Disconnect From</menu> option,
     or switch to a view on the network and use the
-    <menu>File<submenu/>Disconnect From</menu> menu item.  You can also type
+    <menu>IRC<submenu/>Disconnect From</menu> menu item.  You can also type
     <tt>/disconnect</tt> on any view associated with the network.
   </p>
   <tip>To disconnect from all networks without exiting ChatZilla, type
@@ -456,6 +463,15 @@
           Declines (refuses) the last DCC Chat or DCC File offer made to you.
         </td>
       </tr>
+      <tr>
+        <td valign="top"><code>/dcc-accept-list</code>,
+          <code>/dcc-accept-list-add</code>,
+          <code>/dcc-accept-list-remove</code></td>
+        <td>
+          Manages the DCC auto-accept list. DCC Chat or DCC File offers from
+          users on this list will be automatically accepted.
+        </td>
+      </tr>
     </table>
       Direct Client Connection commands
   </div>
@@ -472,7 +488,7 @@
     The default character encoding used by ChatZilla is UTF-8, and it is
     recommended that you leave this setting wherever possible.  This default
     avoids a number of unsolvable problems, such as how to know what encoding
-    has been used for particular channel names without proir knowledge.
+    has been used for particular channel names without prior knowledge.
   </p>
   <tip>The most common character encoding is ISO-8859-15, since this is what
     mIRC normally uses (it can also do Shift-JIS for Japanese). If you are
@@ -1040,10 +1056,10 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-  By default, ChatZilla will no try to rejoin a channel if you are kicked 
+  By default, ChatZilla will not try to rejoin a channel if you are kicked 
   from it. You can turn this on globally using <tt>/pref autoRejoin true</tt>,
   or <tt>/channel-pref autoRejoin true</tt> to turn it on only for the 
-  current channel (see <a href="#prefs">tweaking the preferecnes</a> for more
+  current channel (see <a href="#prefs">tweaking the preferences</a> for more
   details).
   
   <warning>Be careful on which channels you enable this, as some bots
@@ -1318,7 +1334,7 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-  If you have a bit of cgi-enabled server space and some spare bandwith, you
+  If you have a bit of cgi-enabled server space and some spare bandwidth, you
   might try using the scripts located in
   <a href="http://www.hacksrus.com/~ginda/chatzilla/facesrv/">chatzilla/facesrv/</a>
   on hacksrus.  In that tarball, you'll find three scripts:
@@ -1463,7 +1479,7 @@ You may separate multiple commands with the semicolon (';') character, as
   </ol>
   <tip>If you're having problems getting a script to load, it may be having
     errors during initialization.  To check this, open the client view with the
-    <code>/client</code> command, then tick <menu>View<submenu/>Open This
+    <code>/client</code> command, then tick <menu>IRC<submenu/>Open This
     Tab At Startup</menu>, and restart ChatZilla. Any errors that occur
     loading scripts during startup will be displayed on this new view.
   </tip>
@@ -1481,19 +1497,10 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-  There are two ways.  The first, and easiest, is to use the prefs dialog.
-  <ul>
-    <li><menu>Edit<submenu/>ChatZilla Preferences</menu> (Mozilla Suite, all
-      platforms)</li>
-    <li><menu>Edit<submenu/>Preferences</menu> (Mozilla Firefox, Linux)</li>
-    <li><menu>Tools<submenu/>Options</menu> (Mozilla Firefox, other
-      platforms)</li>
-  </ul>
+  There are two ways.  The first, and easiest, is to use the prefs dialog,
+  accessible from <menu>ChatZilla<submenu/>Preferences</menu>.
   
-  <note>Some settings, like the text transformation prefs, do not take
-  effect until ChatZilla has been restarted.</note>
-  
-  If you want more control, want access to "hidden" prefs, use the
+  If you want more control, and access to "hidden" prefs, use the
   <tt>/pref</tt> command, or one of the variants.  Type <tt>/pref</tt> to
   list all of the global preferences.
   <p/>
@@ -1667,7 +1674,7 @@ You may separate multiple commands with the semicolon (';') character, as
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc">mozilla/extensions/irc/</a>.
   Most of the actual front-end code is in the
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/xul/content">xul/content/</a>
-  subdirectory, and you'll find the supporting libaries in
+  subdirectory, and you'll find the supporting libraries in
   <a href="http://lxr.mozilla.org/mozilla/source/extensions/irc/js/lib/">js/lib/</a>
   subdirectory.
   <p/>
