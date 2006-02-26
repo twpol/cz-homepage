@@ -434,7 +434,7 @@ var revs =
   {id: "0.9.41", date: "2003-10-15", condition: Y,
    bugs: [217750],
    desc: "adds an ``" +
-   "<a href='http://www.hacksrus.com/~ginda/chatzilla/faq/#autoperform'>autoperform</a>" +
+   "<a href='http://chatzilla.hacksrus.com/faq/#autoperform'>autoperform</a>" +
    "'' pref to networks that can be used to " +
    "execute arbitrary ChatZilla commands when you connect to a network. " +
    "These autoperform commands will be executed <b>before</b> any of your " +
@@ -729,7 +729,7 @@ var revs =
   desc: "adds some accesskeys to the pref panels, makes literal " +
   "tab characters show up as four spaces, and allows nesting " +
   "of the ``smart formatting'' characters.  See the " +
-  "<a href='http://www.hacksrus.com/~ginda/chatzilla/screenshots/jsirc-20030221.gif'>screenshot</a> " +
+  "<a href='http://chatzilla.hacksrus.com/screenshots/jsirc-20030221.gif'>screenshot</a> " +
   "if you're not sure what that means."},
   {id: "0.8.22", date: "2003-02-16", condition: Y,
   bugs: [190210, 190777, 190568, 191910, 190532, 124638, 191500],

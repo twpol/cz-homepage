@@ -98,7 +98,7 @@ var footer =
 "  <tr id='footer'>" +
 "    <td>" +
 "      Want to make a " +
-"      <a href='http://www.hacksrus.com/~ginda/chatzilla/donate.html'>" +
+"      <a href='http://chatzilla.hacksrus.com/donate.html'>" +
 "      Donation</a>?" +
 "    </td>" +
 "    <td nowrap align='right'>" +

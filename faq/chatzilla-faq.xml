@@ -28,7 +28,7 @@
       Mozilla or SeaMonkey install, you can install the latest version from the
       <a href="https://addons.mozilla.org/extensions/moreinfo.php?id=16">Mozilla
       Update site</a>.  Current and older versions may be found on the
-      <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development
+      <a href="http://chatzilla.hacksrus.com/">ChatZilla Development
       page</a>, too.
     </li>
   </ul>
@@ -1244,7 +1244,7 @@ You may separate multiple commands with the semicolon (';') character, as
   There is a motif available that displays pictures next to the nicknames
   of many of the moznet people.  You can find information on
   how to use this motif at the
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/faces.pl">moznet faces</a>
+  <a href="http://chatzilla.hacksrus.com/faces.pl">moznet faces</a>
   page on hacksrus.
 </answer>
 </entry>
@@ -1315,12 +1315,12 @@ You may separate multiple commands with the semicolon (';') character, as
   <a href="http://academ.hvcc.edu/~kantopet/css/index.php?page=css+attr+selectors&amp;parent=css+syntax">CSS attribute selectors</a>.
   <p/>
   Read the comment at the top of
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-base.css">output-base.css</a>
+  <a href="http://chatzilla.hacksrus.com/motifs/output-base.css">output-base.css</a>
   for more information.  Once you've got a handle on that, check out the source
   for the
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-dark.css">Dark</a>
+  <a href="http://chatzilla.hacksrus.com/motifs/output-dark.css">Dark</a>
   and 
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-light.css">Light</a>
+  <a href="http://chatzilla.hacksrus.com/motifs/output-light.css">Light</a>
   motifs (pay particular attention to the way they import the base motif.)
    The
   <a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/style.html">Stylin' ChatZilla</a>
@@ -1336,7 +1336,7 @@ You may separate multiple commands with the semicolon (';') character, as
 <answer>
   If you have a bit of cgi-enabled server space and some spare bandwidth, you
   might try using the scripts located in
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/facesrv/">chatzilla/facesrv/</a>
+  <a href="http://chatzilla.hacksrus.com/facesrv/">chatzilla/facesrv/</a>
   on hacksrus.  In that tarball, you'll find three scripts:
   <ul>
     <li><tt>makefaces.pl</tt> creates three faces motifs
@@ -1406,7 +1406,7 @@ You may separate multiple commands with the semicolon (';') character, as
   There are a number of convenience functions for adding new commands, new
   menus, or just hooking existing events.  While these techniques have yet
   to be well documented, there are a number of samples available.  The
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/scripts/sample/init.js">sample plugin</a>
+  <a href="http://chatzilla.hacksrus.com/scripts/sample/init.js">sample plugin</a>
   shows the basics of how to define new commands and place them in menus.
   <p/>
   The application framework that ChatZilla is built on was originally developed
@@ -1525,12 +1525,12 @@ You may separate multiple commands with the semicolon (';') character, as
 
 <answer>
   The
-   <a href="http://www.hacksrus.com/~ginda/chatzilla/faces.pl">faces motifs</a>
+   <a href="http://chatzilla.hacksrus.com/faces.pl">faces motifs</a>
   are nothing more than css files.  They work just like any other
   <a href="#make-motif">motif</a>, except they insert images before certain
   nicknames.  Those images are located on a web server, along with the CSS
   files.  If your CSS-fu is strong, you may want to take a look at the
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/output-default-faces.css">source</a>.  
+  <a href="http://chatzilla.hacksrus.com/motifs/output-default-faces.css">source</a>.  
 </answer>
 </entry>
 
@@ -1548,15 +1548,15 @@ You may separate multiple commands with the semicolon (';') character, as
     </li>
     <li>
       The
-      <a href="http://www.hacksrus.com/~ginda/chatzilla/">ChatZilla Development Page</a>
+      <a href="http://chatzilla.hacksrus.com/">ChatZilla Development Page</a>
       contains installable development versions of ChatZilla, and provides
       up-to-the-minute information about ChatZilla development.
     </li>
     <li>
       The
-      <a href="http://www.hacksrus.com/~ginda/chatzilla/faq/chatzilla-faq.html">Official ChatZilla FAQ</a>
+      <a href="http://chatzilla.hacksrus.com/faq/chatzilla-faq.html">Official ChatZilla FAQ</a>
       is what you're reading right now.  You can also get it in
-      <a href="http://www.hacksrus.com/~ginda/chatzilla/faq/chatzilla-faq.xml">XML format</a>
+      <a href="http://chatzilla.hacksrus.com/faq/chatzilla-faq.xml">XML format</a>
     </li>
     <li>
       Moztips maintains an
@@ -1621,7 +1621,7 @@ You may separate multiple commands with the semicolon (';') character, as
 
 <answer>
   The
-  <a href="http://www.hacksrus.com/~ginda/chatzilla/motifs/">motifs directory on hacksrus.com</a>
+  <a href="http://chatzilla.hacksrus.com/motifs/">motifs directory on hacksrus.com</a>
   has a number of alternate motifs, in addition to the stock motifs.  You can 
   use these motifs by dragging the <code>.css</code> file onto ChatZilla's
   message window,
@@ -1641,7 +1641,7 @@ You may separate multiple commands with the semicolon (';') character, as
 </question>
 
 <answer>
-  Yes, &lt;<a href="http://www.hacksrus.com/~ginda/chatzilla/screenshots/?M=D">http://www.hacksrus.com/~ginda/chatzilla/screenshots/</a>&gt;
+  Yes, &lt;<a href="http://chatzilla.hacksrus.com/screenshots/?M=D">http://chatzilla.hacksrus.com/screenshots/</a>&gt;
 </answer>
 </entry>
 
@@ -1692,7 +1692,7 @@ You may separate multiple commands with the semicolon (';') character, as
 
 <answer>
   A guide has been written on this matter. It can be found
-  <a href="http://hacksrus.com/~ginda/chatzilla/localization.html">here</a>.
+  <a href="http://chatzilla.hacksrus.com/localization.html">here</a>.
 </answer>
 </entry>
 
