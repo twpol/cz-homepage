@@ -1,5 +1,16 @@
 var revs =
 [
+  {id: "0.9.72", date: "2006-03-05", condition: G,
+   bugs: [40974, 277520, 288844, 292428, 312931, 317001, 325457, 329038,
+          329274],
+   desc: "fixes channel join errors appearing on the wrong view, missing " +
+    "information in the DCC chat header, and adds the away options menu to " +
+    "the main menu, as well as supressing the quit confirmation when using " +
+    "the <tt>/quit</tt> command or the menu. Also, images and symbols have " +
+    "been added for +q (admin) and +q (founder) modes on supported servers " +
+    "to improve the appearance of said modes. Lastly, logging now switches " +
+    "to a new file when the date changes even when ChatZilla is kept open " +
+    "across the change."},
   {id: "0.9.71", date: "2006-02-21", condition: G,
    bugs: [224503, 325500, 319628, 223766, 291105, 40879, 292014, 326523,
           322259, 327710, 323237, 327806],
