@@ -7,7 +7,7 @@ var revs =
     "information in the DCC chat header, and adds the away options menu to " +
     "the main menu, as well as supressing the quit confirmation when using " +
     "the <tt>/quit</tt> command or the menu. Also, images and symbols have " +
-    "been added for +q (admin) and +q (founder) modes on supported servers " +
+    "been added for +a (admin) and +q (founder) modes on supported servers " +
     "to improve the appearance of said modes. Lastly, logging now switches " +
     "to a new file when the date changes even when ChatZilla is kept open " +
     "across the change."},
