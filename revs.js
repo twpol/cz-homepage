@@ -1,5 +1,13 @@
 var revs =
 [
+  {id: "0.9.73", date: "2006-04-21", condition: G,
+   bugs: [27807, 307774, 326523, 329356, 329440, 329702, 330164, 330826,
+          332652],
+   desc: "fixes a key conflict in Firefox's Tools menu, getBanMask now works " +
+    "even when the client doesn't know the user's hostname, the multi-line " +
+    "input opens when dragging/pasting multi-line text, and ban lists are " +
+    "now formatted neatly. Also added is the back-end work for supporting " +
+    "customizing the network list."},
   {id: "0.9.72", date: "2006-03-05", condition: G,
    bugs: [40974, 277520, 288844, 292428, 312931, 317001, 325457, 329038,
           329274],
