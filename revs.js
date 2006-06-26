@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.74", date: "2006-06-25", condition: G,
+   bugs: [239505, 298673, 329560, 332532, 337168, 340014],
+   desc: "fixes a small leak with plugins, stops ChatZilla locking files " +
+    "sent with DCC forever, hides the logging messages when the date " +
+    "changes, reconnects to the current server before trying the next one " +
+    "and allows multiple parameters to <tt>/who</tt>."},
   {id: "0.9.73", date: "2006-04-21", condition: G,
    bugs: [27807, 307774, 326523, 329356, 329440, 329702, 330164, 330826,
           332652],
