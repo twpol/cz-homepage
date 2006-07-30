@@ -1,5 +1,13 @@
 var revs =
 [
+  {id: "0.9.75", date: "2006-07-30", condition: G,
+   bugs: [87394, 269739, 323786, 330990, 333097, 338710, 342852, 343195,
+          343902],
+   desc: "fixes double password prompts for some URLs, displays server-set " +
+    "channel mode changes, and prevents recursive aliases from hanging. " +
+    "Additions include Ctrl-Enter to send lines starting with <tt>/</tt>, " +
+    "connection retries don't use seconds for long waits, and HTTP proxy " +
+    "support."},
   {id: "0.9.74", date: "2006-06-25", condition: G,
    bugs: [239505, 298673, 329560, 332532, 337168, 340014],
    desc: "fixes a small leak with plugins, stops ChatZilla locking files " +
