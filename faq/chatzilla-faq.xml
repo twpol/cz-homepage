@@ -200,6 +200,39 @@
 </answer>
 </entry>
 
+<entry id="proxy">
+<question>
+  How do I use a proxy with ChatZilla?
+</question>
+<answer>
+  <p>ChatZilla will work automatically with most configurations as it runs
+    with your browser's networking configuration. There are four main
+    configurations you can use:
+  </p>
+  <ul>
+    <li><strong>SOCKS v4/v5 proxy:</strong> simply configure your browser's
+      SOCKS proxy setting. ChatZilla will use this proxy by default.
+    </li>
+    <li><strong>HTTP proxy:</strong> make sure your browser has an HTTP proxy
+      configured, and then set "http" as the <em>Proxy Type</em>.
+    </li>
+    <li><strong>Force no proxy:</strong> if you have a SOCKS proxy in the
+      browser for something else and don't want ChatZilla to use it, set
+      "none" as the <em>Proxy Type</em>.
+    </li>
+    <li><strong>No proxy at all:</strong> with no SOCKS proxy set in your
+      browser, ChatZilla will by default use direct connections. This is the
+      normal mode of operation as is set by leaving <em>Proxy Type</em> empty.
+    </li>
+  </ul>
+  <p>The <em>Proxy Type</em> setting is found in ChatZilla's Preferences
+    window, on the General tab in the Connection group. It exists both for
+    Global Settings and for each network. It is only available in
+    <b>ChatZilla 0.9.75</b> and later.
+  </p>
+</answer>
+</entry>
+
 <entry id="connect-issues">
 <question>
   What do I do if I get an error connecting?
