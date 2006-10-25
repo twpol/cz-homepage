@@ -273,13 +273,23 @@
         problem.
       </p>
     </li>
+    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) closed.</output>
+      <p>This error means that the connection was closed before it could be
+        properly connected. The most likely reason for this is that your
+        anti-virus software or firewall software is configured to block IRC.
+      </p>
+      <p><b>ZoneAlarm Internet Security</b> is known to block IRC like this;
+        you can fix this by going to IMSecurity &gt; Settings &gt; Advanced
+        and un-ticking the "Block IRC" option.
+      </p>
+    </li>
     <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) reset.</output>
       <p>This error means that ChatZilla was able to open the connection
-        initially, but the connection was then <b>closed unexpectedly</b>.
-        The most likely reason for this is that your anti-virus software or,
-        less often, firewall software is configured to block IRC (some
-        programs are blocking it by default these days).
-        <b>McAfee Anti-Virus</b> is known to do this and you will need to
+        initially, but the connection was then closed unexpectedly.
+        The most likely reason for this is that your anti-virus software or
+        firewall software is configured to block IRC.
+      </p>
+      <p><b>McAfee Anti-Virus</b> is known to do this and you will need to
         unblock the IRC ports to use any IRC client; you can do this from the
         "Access Protection" area in the "VirusScan Console" by disabling the
         rules for ports 6666-6669. Consult your anti-virus program's
