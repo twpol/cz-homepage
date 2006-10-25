@@ -258,10 +258,10 @@
     </li>
     <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) timed out.</output>
       <p>This error means that the server's address was found, but it did not
-        respond when contacted.  A <b>firewall blocking the connection</b> is
-        the usual cause of this error; try temporarily disabling your firewall,
-        if you have one, to see if that helps.  If you have no firewall, or
-        disabling it does not help, the IRC server is probably down.
+        respond when contacted.  A possible reason for this is that your
+        anti-virus software or firewall software is configured to block IRC.
+        If you have no firewall, or disabling it does not help, the IRC server
+        is probably down.
       </p>
     </li>
     <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) refused.</output>
@@ -275,7 +275,7 @@
     </li>
     <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) closed.</output>
       <p>This error means that the connection was closed before it could be
-        properly connected. The most likely reason for this is that your
+        properly connected.  The most likely reason for this is that your
         anti-virus software or firewall software is configured to block IRC.
       </p>
       <p><b>ZoneAlarm Internet Security</b> is known to block IRC like this;
