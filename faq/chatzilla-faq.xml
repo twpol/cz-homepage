@@ -405,19 +405,36 @@
 </answer>
 </entry>
 
-<!-- 
-
 <entry id="lights">
 <question>
-  What do the lights mean in the user list?
+  What do the symbols/blobs in the user list mean?
 </question>
-
 <answer>
-  
+  The blobs are supposed to resemble lights. They indicate each user's status
+  in the channel.
+  <ul>
+    <li><strong>No symbol/black</strong>: Normal - the user has no special
+        status.
+    </li>
+    <li><strong>+/grey</strong>: Voice - the user can talk in the channel when
+        it is moderated. Often used to mark people as trusted without giving
+        them power.
+    </li>
+    <li><strong>%/blue</strong>: Halfop - the user has the power to moderate the
+        channel, change the topic, etc., but cannot kick other halfops nor
+        higher-ranking users, nor can he/she create new ops/halfops. Not all
+        servers support halfops.
+    </li>
+    <li><strong>@/green</strong>: Op - the user can grant/revoke op/halfop/voice
+        status, and change other channel settings, depending on the server.
+    </li>
+    <li><strong>&amp;/foo</strong> and <strong>~/bar</strong>: Channel
+        Admin/Founder - ranks above op, usually assigned by network services.
+        Their exact behaviour varies depending on server.
+    </li>
+  </ul>
 </answer>
 </entry>
-
--->
 
 <entry id="disconnect">
 <question>
