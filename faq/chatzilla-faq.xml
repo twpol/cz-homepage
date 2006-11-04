@@ -428,7 +428,7 @@
     <li><strong>@/green</strong>: Op - the user can grant/revoke op/halfop/voice
         status, and change other channel settings, depending on the server.
     </li>
-    <li><strong>&amp;/foo</strong> and <strong>~/bar</strong>: Channel
+    <li><strong>&amp;/orange</strong> and <strong>~/purple</strong>: Channel
         Admin/Founder - ranks above op, usually assigned by network services.
         Their exact behaviour varies depending on server.
     </li>
