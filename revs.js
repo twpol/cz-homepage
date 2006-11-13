@@ -1,5 +1,15 @@
 var revs =
 [
+  {id: "0.9.76", date: "2006-11-12", condition: G,
+   bugs: [331047, 331653, 332879, 318422, 342988, 207195, 346793, 344641,
+          347483, 329440, 343249, 350400, 350402, 351215, 353506, 343298,
+          358611, 356680, 340232, 358422, 342640, 359637, 360192, 347420],
+   desc: "fixes errors with notices prior to connecting, a few JavaScript " +
+    "strict warnings, some infrequent leaks, and the 'You need to be an " +
+    "operator' error on joining. Other improvements include only showing " +
+    "away messages once per user (for a unique away message), adding " +
+    "autoscroll support for SeaMonkey, correct logging for multi-line " +
+    "pastes and a much improved timestamp format system (strftime)."},
   {id: "0.9.75", date: "2006-07-30", condition: G,
    bugs: [87394, 269739, 323786, 330990, 333097, 338710, 342852, 343195,
           343902],
