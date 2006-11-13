@@ -158,7 +158,7 @@
   <a name="network"></a>
   <p>ChatZilla comes preset with a selection of popular IRC networks, which
     can be listed via the <tt>/networks</tt> command. The network names can be
-    clicked to connect to them, or the <tt>/network</tt> command can be used.
+    clicked to connect to them, or the <tt>/attach</tt> command can be used.
   </p>
   <tip>ChatZilla allows you to be connected to multiple servers at once, so,
     unlike some other clients, connecting to a new network or server will not
@@ -170,7 +170,7 @@
     Available networks are [dalnet, efnet, freenode, hybridnet, moznet,
     quakenet, serenia, slashnet, undernet, webbnet].
   </output>
-  <input>/network moznet</input>
+  <input>/attach moznet</input>
   <output>
     Network view for moznet opened.<br/>
     Attempting to connect to moznet. Use /cancel to abort.<br/>
