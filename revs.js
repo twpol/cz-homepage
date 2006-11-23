@@ -1,5 +1,10 @@
 var revs =
 [
+  {id: "0.9.77", date: "2006-11-23", condition: G,
+   bugs: [345315, 109993, 361284, 359758, 361657],
+   desc: "fixes a bug when toggling timestamps, anchors the scroll position " +
+    "better when new messages arrive, and fixes a DOM error on development " +
+    "versions of Firefox."},
   {id: "0.9.76", date: "2006-11-12", condition: G,
    bugs: [331047, 331653, 332879, 318422, 342988, 207195, 346793, 344641,
           347483, 329440, 343249, 350400, 350402, 351215, 353506, 343298,
