@@ -1,5 +1,21 @@
 var revs =
 [
+  {id: "0.9.78", date: "2007-04-03", condition: G,
+   bugs: [237538, 166929, 359592, 338073, 348215, 348216, 332588, 123970,
+          333570, 361145, 326873, 342988, 363276, 363141, 135926, 227366,
+          349137, 232817, 235169, 361914, 288844, 363965, 340177, 367903,
+          353183, 369694, 370760, 371067, 372102, 371109, 371877, 367712,
+          367506, 265847, 371956, 361445, 372262, 372874, 374977, 374679,
+          375109, 3757047],
+   desc: "fixes some cosmetic bugs with the Join Channel dialog, the " +
+    "<tt>/oper</tt> command, text not always sending with DCC Chat and " +
+    "many small issues with the text munger (inline styles). In addition, " +
+    "the Switch Text Direction shortcut has been updated to match Firefox " +
+    "(again), and the tab switching shortcuts likewise now match the host " +
+    "application (Firefox, Mozilla). The statusbar now includes an " +
+    "online/offline icon, like in SeaMonkey. Finally, in Firefox versions " +
+    "that support it (2.0.0.2 and up), spell-checking has been added to " +
+    "the input box."},
   {id: "0.9.77", date: "2006-11-23", condition: G,
    bugs: [345315, 109993, 361284, 359758, 361657],
    desc: "fixes a bug when toggling timestamps, anchors the scroll position " +
