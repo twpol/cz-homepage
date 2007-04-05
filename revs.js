@@ -1,5 +1,11 @@
 var revs =
 [
+  {id: "0.9.78.1", date: "2007-04-05", condition: G,
+   bugs: [376343, 376413, 376423],
+   desc: "fixes a couple of regressions in text display in the last " +
+         "release: formatting preferences now apply fine again, mIRC " +
+         "colors are displayed properly, and the URL linkifier has also " +
+         "been improved."},
   {id: "0.9.78", date: "2007-04-03", condition: G,
    bugs: [237538, 166929, 359592, 338073, 348215, 348216, 332588, 123970,
           333570, 361145, 326873, 342988, 363276, 363141, 135926, 227366,
