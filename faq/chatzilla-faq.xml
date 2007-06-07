@@ -247,7 +247,7 @@
     resolve the problem.
   </p>
   <ul>
-    <li><output>Unknown host ``irc.example.com'' connecting to irc://irc.example.com/ (irc.example.com:6667).</output>
+    <li><a name="connection.unknown.host"><output>Unknown host ``irc.example.com'' connecting to irc://irc.example.com/ (irc.example.com:6667).</output></a>
       <p>This error means that ChatZilla could not find the physical server for
         the name given.  It is most likely that the <b>server name specified is
         not correct</b>, although it could be a problem with the DNS
@@ -256,7 +256,7 @@
         check that the name you used is correct.
       </p>
     </li>
-    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) timed out.</output>
+    <li><a name="connection.timeout"><output>Connection to irc://irc.example.com/ (irc.example.com:6667) timed out.</output></a>
       <p>This error means that the server's address was found, but it did not
         respond when contacted.  A possible reason for this is that your
         anti-virus software or firewall software is configured to block IRC.
@@ -264,7 +264,7 @@
         is probably down.
       </p>
     </li>
-    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) refused.</output>
+    <li><a name="connection.refused"><output>Connection to irc://irc.example.com/ (irc.example.com:6667) refused.</output></a>
       <p>This error means that the server <i>was</i> found, but it did not wish
         to let you connect.  This could be because the wrong port (6667 in this
         example) was used; verify that the server is not on a different port
@@ -273,7 +273,7 @@
         problem.
       </p>
     </li>
-    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) closed.</output>
+    <li><a name="connection.closed"><output>Connection to irc://irc.example.com/ (irc.example.com:6667) closed.</output></a>
       <p>This error means that the connection was closed before it could be
         properly connected.  The most likely reason for this is that your
         anti-virus software or firewall software is configured to block IRC.
@@ -283,7 +283,7 @@
         and un-ticking the "Block IRC" option.
       </p>
     </li>
-    <li><output>Connection to irc://irc.example.com/ (irc.example.com:6667) reset.</output>
+    <li><a name="connection.reset"><output>Connection to irc://irc.example.com/ (irc.example.com:6667) reset.</output></a>
       <p>This error means that ChatZilla was able to open the connection
         initially, but the connection was then closed unexpectedly.
         The most likely reason for this is that your anti-virus software or
