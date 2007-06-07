@@ -43,9 +43,9 @@ body {
 
 #footer {
     background-color: #e8e5e3;
-    color: grey;
+    color: gray;
     padding: 3px;
-    border-top: 1px grey solid;
+    border-top: 1px gray solid;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -88,7 +88,7 @@ body {
     color: #1a1aef;
 }
 
-#body a:link:hover {
+#body a:link:hover,
 #body a:visited:hover {
     text-decoration: underline;
 }
@@ -215,7 +215,7 @@ th {
 
 .motif-name {
     font-weight: bold;
-    color: grey;
+    color: gray;
 }
 
 #motif-list {
