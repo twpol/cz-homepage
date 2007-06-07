@@ -77,14 +77,14 @@ body {
     margin-left: 1em;
 }
 
-#body a {
+#body a:link {
     text-decoration: none;
     /*color: #454396;*/
     font-weight: bold;
     color: #1a1aef;
 }
 
-#body a:hover {
+#body a:link:hover {
     text-decoration: underline;
 }
 
