@@ -713,8 +713,10 @@
   
   <warning>Some servers and websites suggest you use <tt>/cs</tt> instead of
   <tt>/msg ChanServ</tt>. Please note that this does <b>not</b> work in
-  ChatZilla, because there is a command <tt>/css</tt> which ChatZilla matches
-  (since <tt>/cs</tt> is <b>not</b> a standard IRC command).</warning>
+  ChatZilla versions <b>before 0.9.79</b>, because they support the
+  <tt>/css</tt> command which ChatZilla matches (since <tt>/cs</tt> is
+  <b>not</b> a standard IRC command). In ChatZilla 0.9.79, the <tt>/css</tt>
+  command was removed, as it was just an alias for <tt>/motif</tt>.</warning>
 </answer>
 </entry>
 
