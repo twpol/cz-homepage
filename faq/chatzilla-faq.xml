@@ -83,6 +83,22 @@
 </answer> 
 </entry>
 
+<entry id=update-in-seamonkey">
+<question>
+  How do I update ChatZilla to a different version in SeaMonkey on Linux/BSD?
+</question>
+<answer>
+  <p>In SeaMonkey, ChatZilla will need to update some files which are in the
+  application directory (usually this is <tt>/usr/local/seamonkey</tt>). This
+  directory is normally only writable by root, which will cause problems if you
+  run SeaMonkey normally. You are advised to <strong>temporarily</strong> make
+  yourself the owner of this directory (for example using the <tt>chown</tt>
+  tool) and then run SeaMonkey normally, install the update, restart SeaMonkey,
+  and check everything works. After making sure everything is OK, make sure you
+  set root to be the owner of the installation directory again.</p>
+</answer>
+</entry>
+
 <entry id="default-ircurls">
 <question>
   How do I make irc: urls work with my default IRC client instead of ChatZilla?
