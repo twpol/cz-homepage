@@ -1,5 +1,19 @@
 var revs =
 [
+  {id: "0.9.79", date: "2007-11-12", condition: G,
+   bugs: [376866, 354957, 364086, 369539, 203264, 383638, 360683, 385939,
+          389682, 394614, 377614, 379128, 351078, 376290, 389025, 383033,
+          380204, 348647, 383639, 396418, 375825, 365972, 381648, 376728,
+          383589],
+   desc: "fixes errors with the <tt>/rlist</tt> command, automatically " +
+         "joining channels with a \"/\" in them, and counting users not " +
+         "in the channel in the user count (e.g. ChanServ), as well as " +
+         "many others. New features include links to the FAQ in connection " +
+         "errors, inline \"cancel\" option when connecting, accepting " +
+         "motif URLs which don't end in \".css\", hiding DCC file " +
+         "transfers and high visibility of the F6 focus change. Also " +
+         "important is the addition of WAI-ARIA attributes to much of the " +
+         "output, increasing the accessibility of ChatZilla."},
   {id: "0.9.78.1", date: "2007-04-05", condition: G,
    bugs: [376343, 376413, 376423],
    desc: "fixes a couple of regressions in text display in the last " +
