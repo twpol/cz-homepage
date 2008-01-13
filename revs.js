@@ -1,5 +1,17 @@
 var revs =
 [
+  {id: "0.9.80", date: "2008-01-13", condition: G,
+   bugs: [194913, 271989, 315913, 343865, 347456, 350996, 379087, 382085,
+          386222, 388155, 393367, 396156, 402533, 403690, 406786, 406944,
+          407490, 407529, 408357, 408527, 408596, 409535, 410107, 410974,
+          411013, 411016],
+   desc: "fixes <tt>/cancel</tt> when doing a <tt>/list</tt>, some errors " +
+         "handling color codes near URLs, issues with nickname reclaiming " +
+         "while away and some incorrect messages when reconnecting. New " +
+         "features include a rewritten userlist, which performs better, " +
+         "linking of 'bug X comment Y' in addition to 'bug X', auto-away " +
+         "when for you're idle, display of WALLOPS and mode prefixed " +
+         "messages, and drag-and-drop rearranging of tabs."},
   {id: "0.9.79", date: "2007-11-12", condition: G,
    bugs: [376866, 354957, 364086, 369539, 203264, 383638, 360683, 385939,
           389682, 394614, 377614, 379128, 351078, 376290, 389025, 383033,
