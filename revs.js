@@ -1,5 +1,16 @@
 var revs =
 [
+  {id: "0.9.81", date: "2008-02-16", condition: G,
+   bugs: [242068, 303631, 334168, 364789, 370319, 386145, 403749, 406957,
+          412246, 412310, 412316, 412851, 412887, 413125, 413131, 414387,
+          415082, 416668],
+   desc: "fixes <tt>/ban</tt> not working, hiding tabs no longer breaks " +
+         "everything on Firefox 3, <tt>/names</tt> doesn't cause duplicates " +
+         "in the userlist, <tt>-chat</tt> command line option works much " +
+         "better in XULRunner, and emoticons are more accessible to screen " +
+         "readers. Additionally, pressing Enter in the join channel dialog " +
+         "now works, IRC URL handling has improved support for international " +
+         "characters, and IRCX ONJOIN messages are now displayed."},
   {id: "0.9.80", date: "2008-01-13", condition: G,
    bugs: [194913, 271989, 315913, 343865, 347456, 350996, 379087, 382085,
           386222, 388155, 393367, 396156, 402533, 403690, 406786, 406944,
