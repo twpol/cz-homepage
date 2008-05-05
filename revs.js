@@ -1,5 +1,21 @@
 var revs =
 [
+  {id: "0.9.82", date: "2008-04-04", condition: G,
+   bugs: [299472, 349268, 361283, 410377, 410948, 410962, 415006, 417319,
+          418722, 418798, 420231, 420635, 422060, 423011, 423644, 424506,
+          428811, 430977, 431706, 431859],
+   desc: "fixes views missing from the preferences window, ensures the " +
+         "'Browse' button in the preferences works in all cases, reduces " +
+         "infinite nickname retries to just 3 (plus user-set choices) and " +
+         "fixes a few cases where nicknames with spaces were sent as-is. " +
+         "The userlist has new images for both 'symbols' and 'non-symbols' " +
+         "modes, improving readability on dark userlists (which the dark " +
+         "motif now includes). Aria support has been updated for Firefox 3 " +
+         "and compatibility with Songbird is improved. Changing to an " +
+         "invalid nickname doesn't save until the server accepts it, " +
+         "'User commands' has been added to private message view tabs and " +
+         "<tt>/voice</tt> and co. now accept <tt>*</tt> to apply to all " +
+         "users in the channel."},
   {id: "0.9.81", date: "2008-02-16", condition: G,
    bugs: [242068, 303631, 334168, 364789, 370319, 386145, 403749, 406957,
           412246, 412310, 412316, 412851, 412887, 413125, 413131, 414387,
