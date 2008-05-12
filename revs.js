@@ -1,5 +1,14 @@
 var revs =
 [
+  {id: "0.9.82.1", date: "2008-05-12", condition: G,
+   bugs: [432216, 432235, 432418, 432482, 432818, 432831],
+   desc: "fixes three regressions found in 0.9.82: the preferences window " +
+         "doesn't save when used from Firefox's Addons window, " +
+         "talking/actions don't work in DCC Chat and the userlist is often " +
+         "unreadable on Mac when using the dark motif. Additionally, " +
+         "moving the tab of a channel called '#' is now fixed. The columns " +
+         "in the Join Channel dialog are now resizable and double-clicking " +
+         "the userlist starts a private chat with the user."},
   {id: "0.9.82", date: "2008-05-04", condition: G,
    bugs: [299472, 349268, 361283, 410377, 410948, 410962, 415006, 417319,
           418722, 418798, 420231, 420635, 422060, 423011, 423644, 424506,
