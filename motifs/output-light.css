@@ -1,27 +1,40 @@
 /* -*- Mode: Text; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
- * The contents of this file are subject to the Mozilla Public
- * License Version 1.1 (the "License"); you may not use this file
- * except in compliance with the License. You may obtain a copy of
- * the License at http://www.mozilla.org/MPL/
+ * ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
- * Software distributed under the License is distributed on an "AS
- * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
- * implied. See the License for the specific language governing
- * rights and limitations under the License.
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
  *
  * The Original Code is Chatzilla.
  *
- * The Initial Developer of the Original Code is New Dimensions Consulting,
- * Inc. Portions created by New Dimensions Consulting, Inc. are
- * Copyright (C) 1999 New Dimenstions Consulting, Inc. All
- * Rights Reserved.
+ * The Initial Developer of the Original Code is
+ * New Dimensions Consulting, Inc.
+ * Portions created by the Initial Developer are Copyright (C) 1999
+ * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *  Robert Ginda, rginda@ndcico.com, original author
- * 
- * Styles for output window
+ *   Robert Ginda, rginda@ndcico.com, original author
  *
- */
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
 
 /* 
  *  a light background/dark text version of the output window.
@@ -36,13 +49,18 @@ body.chatzilla-body {               /* The topmost container in the ChatZilla */
 }
 
 a.chatzilla-link {
-    color: #333023;
+    font-weight: bold;
+    color: #342ecc;
+}
+
+.header-outer {
+    background-color: #d1d0ea;
 }
 
 .header {
     color: darkslategrey;
     background-color: #EEEEEE;
-/*    -moz-opacity: 0.9;*/
+/*    opacity: 0.9;*/
     border: 1px #777499 solid;
     -moz-border-radius: 7px;
 }
@@ -54,6 +72,10 @@ a.chatzilla-link {
 #usr-descnodes,
 #ch-topicnodes {
     color: black;
+}
+
+.progress-fg {
+    background-color: darkslategrey;
 }
 
 [condition] {
@@ -78,7 +100,7 @@ a.chatzilla-link {
 }
 
 .msg[msg-type="HELLO"] .msg-data a.chatzilla-link {
-    color: #ffe8b5;
+    color: #d7d9dd;
 }
 
 .msg[msg-type="JOIN"] .msg-data a.chatzilla-link,
@@ -87,7 +109,8 @@ a.chatzilla-link {
     color: #11c411;
 }
 
-.msg[msg-type="ERROR"] .msg-data a.chatzilla-link {
+.msg[msg-type="ERROR"] .msg-data a.chatzilla-link,
+.msg[msg-type="DISCONNECT"] .msg-data a.chatzilla-link {
     font-weight: bold;
     color: white;
 }
@@ -97,7 +120,7 @@ a.chatzilla-link {
 }
 
 .msg[msg-type="NOTICE"] .msg-data a.chatzilla-link {
-    color: #451ccc;
+    color: #d64444;
 }
 
 .msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
@@ -155,13 +178,14 @@ a.chatzilla-link {
 }
 
 .msg[msg-type="HELLO"] .msg-data {
-    background: #ff7020;
+    background: #1342a5;
     color: white;
     -moz-border-radius: 5px 5px 5px 5px;
     font-weight: bold;
 }
 
-.msg[msg-type="ERROR"] .msg-data {
+.msg[msg-type="ERROR"] .msg-data,
+.msg[msg-type="DISCONNECT"] .msg-data {
     -moz-border-radius: 5px 5px 5px 5px;
     background: #a8221e;
     color: white;
@@ -183,7 +207,7 @@ a.chatzilla-link {
 }
 
 .msg[msg-type="NOTICE"] .msg-data {
-    color: #6331ed;
+    color: #ae4141;
     font-weight: bold;
 }
 
@@ -218,7 +242,7 @@ a.chatzilla-link {
     color: #777499;
 }
 
-.msg[msg-user$="ME!"] .msg-user:before,          /* the decoration around MY   */
-.msg[msg-user$="ME!"] .msg-user:after {          /* nick                       */
+.msg[msg-user$="ME!"] .msg-user:before,         /* the decoration around MY   */
+.msg[msg-user$="ME!"] .msg-user:after {         /* nick                       */
     color: #843c6c;
 }
