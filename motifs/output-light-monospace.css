@@ -1,4 +1,4 @@
-@import url(chrome://chatzilla/skin/output-light.css);
+@import url(output-light.css);
 
 .msg {
   font-family: monospace;

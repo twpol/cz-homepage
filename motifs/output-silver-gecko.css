@@ -25,7 +25,7 @@
  *
  */
 
-@import url("chrome://chatzilla/content/output-base.css");
+@import url(output-base.css);
 
 body.chatzilla-body{
     background: #ccc fixed center no-repeat url("gecko.png");

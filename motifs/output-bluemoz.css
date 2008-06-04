@@ -28,7 +28,7 @@
  *  see output-base.css for details. 
  */
 
-@import url(chrome://chatzilla/content/output-base.css);
+@import url(output-base.css);
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: black;         /* output window. */

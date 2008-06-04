@@ -43,7 +43,7 @@
  *  see output-base.css for motifing details.
  */
 
-@import url(chrome://chatzilla/content/output-base.css);
+@import url(output-base.css);
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
              /* output window.  */
