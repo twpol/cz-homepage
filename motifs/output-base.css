@@ -1,1 +1,1 @@
-@include url(chrome://chatzilla/content/output-base.css);
+@import url(chrome://chatzilla/content/output-base.css);
