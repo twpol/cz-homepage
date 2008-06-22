@@ -1,5 +1,18 @@
 var revs =
 [
+  {id: "0.9.83", date: "2008-06-22", condition: G,
+   bugs: [374887, 399450, 416749, 417196, 419230, 432482, 433703, 434086,
+          435602, 435772, 435891, 436780, 436871, 437184, 437375, 437855,
+          439374],
+   desc: "fixes a few URL and linking issues, online motifs in Firefox 3, " +
+         "inline CTCPs causing messages to get lost and some cases which " +
+         "were not being wrapped correctly. The command dispatcher now " +
+         "calls before/after hooks consistently even when errors occur and " +
+         "knows which commands are activated by the mouse. Some startup " +
+         "checks have been adjusted to stop Firefox 3 launching Java, the " +
+         "topic editor is now less keen to lose changes and copied " +
+         "important messages now jump to the message in channel when " +
+         "clicking the [#channel] link."},
   {id: "0.9.82.1", date: "2008-05-12", condition: G,
    bugs: [432216, 432235, 432418, 432482, 432818, 432831],
    desc: "fixes three regressions found in 0.9.82: the preferences window " +
