@@ -12,6 +12,7 @@
     <title>ChatZilla FAQ</title>
     <link rel="stylesheet" title="non-dynamic"
           href="../default.css" type="text/css"/>
+    <link rel="icon" type="image/png" href="../favicon.png"/>
     <script src="../site.js"></script>
   </head>
 
