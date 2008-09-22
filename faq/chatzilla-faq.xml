@@ -426,27 +426,36 @@
   What do the symbols/blobs in the user list mean?
 </question>
 <answer>
-  The blobs are supposed to resemble lights. They indicate each user's status
-  in the channel.
+  The symbols or blobs to the left of each user in the userlist indicate their
+  respective status within the channel. Available levels, from most powerful
+  to least powerful are:
   <ul>
-    <li><strong>No symbol/black</strong>: Normal - the user has no special
-        status.
+    <li><img src="images/founder-symbol.png"/>/<img src="images/founder-graphic.png"/>:
+        Founder - ultimate power. Can do anything to the channel and
+        those within it. Usually represents the user who registered the
+        channel. <em>Only certain networks support founders</em>.
     </li>
-    <li><strong>+/grey</strong>: Voice - the user can talk in the channel when
-        it is moderated. Often used to mark people as trusted without giving
-        them power.
+    <li><img src="images/admin-symbol.png"/>/<img src="images/admin-graphic.png"/>:
+        Admin - a normal operator, but protected from being kicked by
+        anyone except the founder. <em>Only certain networks support admins</em>.
     </li>
-    <li><strong>%/blue</strong>: Halfop - the user has the power to moderate the
-        channel, change the topic, etc., but cannot kick other halfops nor
-        higher-ranking users, nor can he/she create new ops/halfops. Not all
-        servers support halfops.
+    <li><img src="images/op-symbol.png"/>/<img src="images/op-graphic.png"/>:
+        Operator (op) - the user can grant and revoke operator, half-operator
+        and voice status, change the topic and kick other users.
     </li>
-    <li><strong>@/green</strong>: Op - the user can grant/revoke op/halfop/voice
-        status, and change other channel settings, depending on the server.
+    <li><img src="images/halfop-symbol.png"/>/<img src="images/halfop-graphic.png"/>:
+        Half-operator (half-op) - the user has the power to moderate the
+        channel, change the topic and kick people, but cannot kick other
+        half-operators nor higher-ranking users, nor can he/she create new
+        operators/half-operators. <em>Only certain networks support
+        half-operators</em>.
     </li>
-    <li><strong>&amp;/orange</strong> and <strong>~/purple</strong>: Channel
-        Admin/Founder - ranks above op, usually assigned by network services.
-        Their exact behaviour varies depending on server.
+    <li><img src="images/voice-symbol.png"/>/<img src="images/voice-graphic.png"/>:
+        Voice - the user can talk in the channel when it is moderated. Often
+        used to mark people as trusted/helpful without giving them any power.
+    </li>
+    <li><img src="images/no-symbol.png"/>/<img src="images/no-graphic.png"/>:
+        Normal - the user has no special status.
     </li>
   </ul>
 </answer>
