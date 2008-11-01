@@ -320,7 +320,7 @@
       </p>
     </li>
     <li><output>ERROR Closing Link: irc.example.com (Install IdentD)</output>
-      <p>This message, sometimes worded differently (but will always mentioning
+      <p>This message, sometimes worded differently (but will always mention
         "ident" or "identd"), means that the server you tried to connect to
         requires a <a href="#ident">special identification service</a>.
       </p>
