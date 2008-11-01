@@ -138,7 +138,7 @@
     </li>
     <li>In Mozilla Firefox, <menu>Tools<submenu/>ChatZilla</menu>.
     </li>
-    <li>In Mozilla Firefox, you can also place an <b>ChatZilla</b> button on
+    <li>In Mozilla Firefox, you can also place a <b>ChatZilla</b> button on
       your toolbar.
     </li>
     <li>You can also start the browser with the <tt>-chat</tt> command line
@@ -423,11 +423,11 @@
 
 <entry id="lights">
 <question>
-  What do the symbols/blobs in the user list mean?
+  What do the symbols/colored blobs in the user list mean?
 </question>
 <answer>
-  The symbols or blobs to the left of each user in the userlist indicate their
-  respective status within the channel. Available levels, from most powerful
+  The symbols or colored blobs to the left of each user in the userlist indicate
+  their respective status within the channel. Available levels, from most powerful
   to least powerful are:
   <ul>
     <li><img src="images/founder-symbol.png"/>/<img src="images/founder-graphic.png"/>:
