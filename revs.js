@@ -1,5 +1,15 @@
 var revs =
 [
+  {id: "0.9.84", date: "2008-11-16", condition: G,
+   bugs: [211272, 374887, 384694, 407526, 420589, 439336, 440579, 441221,
+          443484, 443698, 443789, 446428, 447816, 448715, 464917],
+   desc: "fixes find results appearing under the header, nickname reclaiming " +
+         "not trying the original nickname on a second disconnect, not being " +
+         "able to reorder DCC tabs and auto-perform not working with " +
+         "bitlbee. The CEIP code no longer throws an error on first-start " +
+         "and no longer logs logger:stop events incorrectly. " +
+         "Command+Shift+[/] now change tabs on Mac and we've added a new " +
+         "about dialog box."},
   {id: "0.9.83", date: "2008-06-22", condition: G,
    bugs: [374887, 399450, 416749, 417196, 419230, 432482, 433703, 434086,
           435602, 435772, 435891, 436780, 436871, 437184, 437375, 437855,
