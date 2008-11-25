@@ -36,23 +36,10 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-/* 
- *  a dark background/light text version of the output window.
- *  see output-base.css for details. 
- */
-
-
-
-/*
-to do
-
-|Unterschied zwischen even odd vergrößern
-|can't be changed: topic hat schwarzen background
-|normale posts sind auf dem triop-logo-highlight nicht mehr lesbar (high entfernen? vernachlässigen?)
-FROM heller
-
-
-*/
+/* *****************************************************
+This is the "Trioptimum" Motif for the ChatZilla IRC-client 
+by Kolya      http://www.strangebedfellows.de
+****************************************************** */
 
 
 
@@ -60,11 +47,11 @@ FROM heller
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: black;              /* output window. */
-    color: #4489CB;
-	background-image: url(triop.png);
+    color: #67abe5;
+	  background-image: url(triop.png);
     background-position: top right;
     background-repeat: no-repeat;
-    background-attachment: fixed; 	
+    background-attachment: fixed; 
 }
 
 a.chatzilla-link {
@@ -76,47 +63,37 @@ a.chatzilla-link:visited {
 }
 
 
-/*
-.header-outer {
-    background-color: black;
-}
-*/
-
-
 .header {
-    color: lightslategrey;
-/*    opacity: 0.9;  causes memory leak? */
-    -moz-border-radius: 5px;
-    border-bottom: 1px #2E5576 solid;
-    border-right: 1px #3B6C96 solid;
-    border-left: 1px silver solid;
-    border-top: 1px silver solid;
-    background: #051E34;
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
-.progress-fg {
-    background-color: silver;
-}
-
-.value {
     color: silver;
+    opacity: 0.8;
+    border: 0px;
+    background: #021526;
+    padding:1em 1em 0.2em 1em;
+    margin:-0.5em; 
+    
+    
 }
+#ch-topicnodes
+{ color: white; }
+
+
+#user-list-box treechildren {
+    background: #000;
+    color: #FFFFFF !important;
+}
+
+
+
 
 #splash {
 	font-size:xx-large;
 	font-style:italic;
 	font-variant:small-caps;
-    color: #3B90D8;
+    color: #3a73a6;
     letter-spacing:0.3em;
     text-decoration:overline underline;
 }
 
-#usr-descnodes,
-#ch-topicnodes {
-    color: white;
-}
 
 [condition] {
     font-weight: bold;
@@ -134,95 +111,83 @@ a.chatzilla-link:visited {
     color: green;
 }
 
-.chatzilla-rheet {
-    color: magenta !important;
-}
+.chatzilla-rheet 
+{	color: magenta !important; }
 
-.chatzilla-highlight[name="Slate"] {
-    color: white;
-    background: #15272d;
-}
 
-.chatzilla-highlight[name="Plum"] {
-    color: white;
-    background: #442144;
-}
-
-.chatzilla-highlight[name="Brown"] {
-    color: white;
-    background: #562a14;
-}
-
-.msg-type {                                 /* .msg-type = message type       */
-    color: silver;                           /* indicator                      */
+/* .msg-type = message type indicator  */
+.msg-type {             
+    color: silver;                          
     font-weight: bold;
 }
 
-.msg-user a.chatzilla-link,{                                 
-    color: white !important;                
-}                                           
 
+.msg-timestamp 
+{
+	-moz-border-radius: 3px 3px 0 0;
+    color: silver;
+    font-size: 0.6em;
+	background: #0f304d;
 
-
-/* msg-user = nickname portion of */
-/* a message (channel and query   */
-/* views)                         */
-.msg-user {
-	-moz-border-radius: 0px 5px 5px 0px;
-    border-bottom: 1px #2E5576 solid;
-    border-right: 1px #3B6C96 solid;
-    border-top: 1px #57A0DE solid;
-    background: #051E34;
-    padding-left: 1em;
-    padding-right: 1em;
 }
+
+
+
+/* use even/odd marks to create a subtle brightness change when the speaker changes.*/
+.msg[mark="even"] .msg-user {
+	-moz-border-radius: 3px 3px 0 0;
+    border: 0px;
+    background: #163a59;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.msg[mark="odd"] .msg-user {
+	-moz-border-radius: 3px 3px 0 0;
+    border: 0px;
+    background: #0f304d;
+	padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.msg-user a.chatzilla-link 
+{	color: white !important; }
 .msg-user:before,
 .msg-user:after {
     color: silver;
 }
+.msg[mark="even"] .msg-data 
+{	color: #6aaeea; }											
+.msg[mark="odd"] .msg-data 
+{	color: #4c89be; } 
 
-.msg[mark="even"] .msg-data {                /* use even/odd marks to create a */
-    color: #6DBCFF;                           /* subtle brightness change when  */
-}											/* the speaker changes.           */
-.msg[mark="odd"] .msg-data {                
-    color: #5093CC;
-} 
+/* ME! */
+.msg[msg-user$="ME!"] 
+{	color: silver; }
+/*
+.msg[msg-user$="ME!"] .msg-user
+{ background: #294966; }
 
-.msg[msg-type="TOPIC"] .msg-data {
-    color: white;
-}
-.msg[msg-type="TOPIC"] .msg-data a.chatzilla-link {
-    color: white;
-}
-.msg[msg-type="JOIN"] .msg-data {
-    color: white;
-}
-.msg[msg-type="PART"] .msg-data {
-    color: darkgrey;
-}
-.msg[msg-type="JOIN"] .msg-data a.chatzilla-link {
-    color: white;
-}
-.msg[msg-type="PART"] .msg-data a.chatzilla-link {
-    color: darkgrey;
-}
-.msg[msg-type="PART"] .msg-data {
-    color: darkgrey;
-}
+.msg[msg-user$="ME!"] .msg-data
+{ color: #5aa2e0; }
+*/
 
-.msg[msg-type="QUIT"] .msg-data {
-    color: darkgrey;
-}
-.msg[msg-type="QUIT"] .msg-data a.chatzilla-link {
-    color: darkgrey;
-}
-.msg[msg-type="KICK"] .msg-data {
-    color: red;
-}
-.msg[msg-type="KICK"] .msg-data a.chatzilla-link {
-    color: red;
-}
 
+.msg[msg-type="TOPIC"] .msg-data,
+.msg[msg-type="JOIN"] .msg-data,
+.msg[msg-type="JOIN"] .msg-data a.chatzilla-link 
+{ color: white; }
+
+.msg[msg-type="PART"] .msg-data,
+.msg[msg-type="PART"] .msg-data a.chatzilla-link,
+.msg[msg-type="QUIT"] .msg-data,
+.msg[msg-type="QUIT"] .msg-data a.chatzilla-link 
+{ color: darkgrey; }
+
+
+.msg[msg-type="KICK"] .msg-data,
+.msg[msg-type="KICK"] .msg-data a.chatzilla-link 
+{ color: red; }
 
 .msg[msg-type="ERROR"] .msg-data,
 .msg[msg-type="DISCONNECT"] .msg-data {
@@ -230,101 +195,81 @@ a.chatzilla-link:visited {
     color: white;
 }
 
-.msg[msg-type="HELLO"] .msg-data {
-    color: silver;
-    font-weight: bold;
-}
-.msg[msg-type="INFO"] .msg-data {
-    color: silver;
-    font-weight: bold;
-}
-.msg[msg-type="HELP"] .msg-data {
-    color: silver;
-    font-weight: bold;
-}
-.msg[msg-type="STATUS"] .msg-data {
-    color: silver;
-    font-weight: bold;
-}
+.msg[msg-type="HELLO"] .msg-data,
+.msg[msg-type="INFO"] .msg-data,
+.msg[msg-type="HELP"] .msg-data,
+.msg[msg-type="STATUS"] .msg-data,
 .msg[msg-type="USAGE"] .msg-data {
     color: silver;
     font-weight: bold;
 }
 
-.msg[msg-type="ACTION"] .msg-data {
-    color: #0FD400;
-}
 
-.msg[msg-type="NICK"] .msg-data {
-    color: silver;
+/* Actions */
+.msg[msg-type="ACTION"] .msg-user,
+.msg[msg-type="ACTION"].msg[msg-user$="ME!"] 
+{  font-style: normal; }
+ .msg[msg-type="ACTION"] .msg-data {
+	font-style: italic;
+	color: #0FD400
 }
+/* Nick change confirmation */
+.msg[msg-type="NICK"] .msg-data 
+{ 	color: silver; }
 
+/* Notices and channel mode changes */
 .msg[msg-type="NOTICE"] .msg-data,
-.msg[msg-type="MODE"] .msg-data {
-    color: #A46DFF;
-}
+.msg[msg-type="MODE"] .msg-data 
+{ color: #A46DFF; }
 
 
 
 
-/* important="true" means that the message has text from your /stalk list in
- * it, has your nickname in it, or was spoken by someone in your /stalk list.
- */
-.msg[important="true"] .msg-user {
-	-moz-border-radius: 5px;
-    background: #051E34 !important;
-    border-bottom: 1px #2E5576 solid;
-    border-right: 1px #3B6C96 solid;
-    border-left: 1px silver solid;
-    border-top: 1px silver solid;
-    padding-left: 1em;
-    padding-right: 1em;
-}
+/* important="true" means that the message has text from your /stalk list in it, 
+has your nickname in it, or was spoken by someone in your /stalk list. */
 .msg[important="true"] .msg-data {
-	-moz-border-radius: 5px;
-    background: #4F4F4F !important;
-    padding-left: 1em;
-    padding-right: 1em;
+	background: #404040 !important;
+}
+.msg[important="true"] .msg-user {
+	font-weight: normal;
 }
 
 
- 
+/******************************************************************************
+ nickname decorations OVERRIDE of output-base.css
+ ******************************************************************************/
 
-
-
-.msg[msg-user$="ME!"] .msg-user:before,
+/* :before and :after pseudoclasses form the decorations around nicknames */
+.msg-user:before {
+    content: "";
+}
+.msg-user:after {
+    content: "";
+}
+.msg[important="true"] .msg-user:before {
+    font-weight: normal;
+}
+.msg[important="true"] .msg-user:after {
+    font-weight: normal;
+}
+.msg[msg-user$="ME!"] .msg-user:before {
+    content: "";
+}
 .msg[msg-user$="ME!"] .msg-user:after {
-    color: silver;
-}
-
-.msg[msg-type="ACTION"] .msg-user:before,
-.msg[msg-type="ACTION"] .msg-user:after {
-    color: silver;
-}
-
-.msg[msg-type="NOTICE"] .msg-user:before,
-.msg[msg-type="NOTICE"] .msg-user:after {
-    color: silver;
-}
-
-/* private messages *not* in a query window */
-.msg[dest-type="IRCUser"] .msg-user:before,
-.msg[dest-type="IRCUser"] .msg-user:after {
-    color: silver;
-}
-
-.msg[msg-dest$="ME!"] .msg-user:before,
-.msg[msg-dest$="ME!"] .msg-user:after {
-    color: cyan;
+    content: "";
 }
 
 /* private messages in a query window */
-.msg[view-type="IRCUser"] .msg-user:before,
+.msg[view-type="IRCUser"] .msg-user:before {
+    content: "";
+}
 .msg[view-type="IRCUser"] .msg-user:after {
-    color: white;
+    content: "";
+}
+.msg[view-type="IRCUser"][msg-dest$="ME!"] .msg-user:before {
+    content: "";
+}
+.msg[view-type="IRCUser"][msg-dest$="ME!"] .msg-user:after {
+    content: "";
 }
 
-.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:before,
-.msg[view-type="IRCUser"][msg-user$="ME!"] .msg-user:after {
-    color: silver;
-}
