@@ -27,7 +27,7 @@
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: white;            /* output window. */
-    background-image: url(flag-seal.gif);
+    background-image: url(images/flag-seal.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,7 +56,7 @@ a.chatzilla-link:hover {
 .msg[msg-type="JOIN"] .msg-data,
 .msg[msg-type="PART"] .msg-data,
 .msg[msg-type="QUIT"] .msg-data {
-    background-image: url(clear-red.png);
+    background-image: url(images/clear-red.png);
     color: white;
     font-weight: bold;
     -moz-border-radius: 3px 3px 3px 3px;

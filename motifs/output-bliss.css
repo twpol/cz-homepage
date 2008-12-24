@@ -47,7 +47,7 @@
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
              /* output window.  */
-    background-image: url("plain.jpg");
+    background-image: url(images/plain.jpg);
     background-color: #6D8EB9;
     background-repeat: no-repeat;
     background-attachment: fixed;

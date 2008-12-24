@@ -27,12 +27,12 @@
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: #670c00;            /* output window. */
-    background-image: url(mozilla-star-dark.png);
+    background-image: url(images/mozilla-star-dark.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 /*
-    background-image: url(big-border.png);
+    background-image: url(images/big-border.png);
     background-position: top left;
     background-repeat: repeat-y;
 */

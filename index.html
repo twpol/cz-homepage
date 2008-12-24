@@ -1,132 +1,70 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head>
+<head>
     <title>ChatZilla!</title>
-
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="default.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS feed of new releases"
-        href="http://twpol.dyndns.org/mozilla/chatzilla/dev/rss">
-    <script src="writerevs.js"></script>
-    <script src="revs.js"></script>
-    <script src="site.js"></script>
-  </head>
-
-  <body>
-    <script>writeHeader();</script>
-
-    <span id="shotarea">
-      <a href="screenshots/?M=D"><img id="chatshot" src="new-chatshot.png"></a>
-    </span>
-
-    <h2>Welcome</h2>
-    <div class="bodytext">
-      <p>
-        ChatZilla is a cross platform messaging client that combines 
-        Internet Relay Chat (IRC) with existing web standards like JavaScript,
-        HTML, and CSS.  If you don't know any of this stuff don't worry, you
-        don't have to.  ChatZilla is easy to use.  For more information, please
-        read the <a href="faq">FAQ</a>.
-      </p>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="common/style/core.css"/>
+    <link rel="stylesheet" type="text/css" href="common/style/site.css"/>
+    <script type="text/javascript" src="common/script/site.js"></script>
+    <script type="text/javascript" src="common/script/writenews.js"></script>
+    <script type="text/javascript" src="common/script/news.js"></script>
+    <script type="text/javascript" src="common/script/writerevs.js"></script>
+    <script type="text/javascript" src="common/script/revs.js"></script>
+    <script type="text/javascript" src="common/script/host.js"></script>
+    <script type="text/javascript" src="common/script/download.js"></script>
+</head>
+<body>
+    <div id="header">
+        <script type="text/javascript">writeHeader();</script>
     </div>
-
-    <h2>News</h2>
-
-    <div class="newsitem">
-      <b>April 3, 2007</b>
-    <ul>
-      <li>
-        With the release of <b>ChatZilla 0.9.78</b>, many improvements have
-        been made - some subtle, some not so. Probably the first one you will
-        notice is that the old F-key tab switching shortcuts have been replaced
-        with the browser's shortcuts (Alt + number on SeaMonkey and Linux
-        Firefox, Control + number on Windows Firefox, and Command + number
-        for Mac Firefox). The online/offline icon in the statusbar will also
-        be easy to notice.
-      </li>
-      <li>
-        Less clearly visible changes include the improvements to the text
-        munger, which will now apply inline styles (like <b>*bold*</b>) with
-        more consistency. Likewise, when <a href="faq/#colors">sending of color
-        codes</a> is enabled, the respective codes (%C, %B, etc.) will not be
-        matched inside URLs, allowing them to be pasted without problems. As a
-        final subtle change, ChatZilla can once again be
-        <a href="faq/#inatab">loaded into a browser tab</a>, but this is not
-        officially supported until further work has been done.
-      </il>
-    </ul>
+    <div id="content">
+        <div class="breakout-box">
+            <div id="download-box">
+                <div id="download-no-js">
+                    <div class="breakout-box-arrow">
+                    </div>
+                    <p>
+                        <a href="https://addons.mozilla.org/addon/16">Download ChatZilla from Add-ons</a>
+                    </p>
+                    <p>
+                        ChatZilla works on the latest versions of <strong>Mozilla Firefox</strong>, <strong>SeaMonkey</strong> and the <strong>Mozilla Suite</strong>.
+                    </p>
+                </div>
+                <script type="text/javascript">fixupDownloadBox();</script>
+                <div id="download-other">
+                    <p>
+                        <a href="revisions">Other versions of ChatZilla</a>
+                    </p>
+                </div>
+            </div>
+            <!--<div id="developer-box">
+                <div class="breakout-box-arrow">
+                </div>
+                <p>
+                    <a href="getinvolved">Get Involved with ChatZilla</a>
+                </p>
+                <p>
+                    Want to help? There are plenty of ways to get involved with ChatZilla, including writing documentation, testing changes and writing code.
+                </p>
+            </div>-->
+        </div>
+        <p id="intro">
+            ChatZilla is a clean, easy to use and highly extensible Internet Relay Chat (IRC) client, built on the Mozilla platform, which provides all the usual features: multiple servers, a built-in list of standard networks, easy searching and sorting of available channels, logging, and DCC chat and file transfers, plus easy customization with JavaScript plug-ins and CSS styling.
+        </p>
+        <h2>Latest News</h2>
+        <script type="text/javascript">writeLatestNews();</script>
+        <noscript>
+            <p>
+                <strong>This website requires JavaScript to be enabled. Please enable it and reload.</strong>
+            </p>
+        </noscript>
+        <p>
+            <a href="news">More news...</a>
+        </p>
     </div>
-
-    <div class="newsitem">
-      <b>February 9, 2006</b>
-    <ul>
-      <li>
-        This is just a heads-up for those of you that use the
-        latest-and-greatest SeaMonkey or Firefox builds (usually called
-        "nightly builds") - a change in the HTML parser rendered ChatZilla
-        rather broken. We've already fixed the code, but until a new official
-        release is out, you'll need to <a href="#nightly">fetch a nightly
-        ChatZilla build</a>.
-      </li>
-    </ul>
+    <div id="footer">
+        <script type="text/javascript">writeFooter();</script>
     </div>
-
-    <div class="newsitem">
-      <a href="oldnews.html">Older News...</a>
-    </div>
-
-    <h2>Download</h2>
-    <p>
-      Click on one of the the "install" links below to install or upgrade
-      ChatZilla.  Please note:
-    </p>
-    <ul>
-      <li>
-        ChatZilla does not work on "native" Mozilla embeddings such as
-        <a href="http://galeon.sourceforge.net/">Galeon</a> and
-        <a href="http://kmeleon.sourceforge.net/">K-Meleon</a>.  Same goes for
-        <a href="http://www.google.com/search?num=50&hl=en&lr=&ie=ISO-8859-1&q=%22blue+screen+of+death%22&btnG=Google+Search">Internet Explorer</a>.
-      </li>
-      <li>
-        Depending on how you installed Mozilla, you may need to log in as
-        <tt>root</tt> or <tt>Administrator</tt>.      
-      </li>
-      <li>
-        ChatZilla is also available in 
-        <a href="http://www.softcatala.org/projectes/mozilla/#chatzilla">Catalan</a>,
-        <a href="http://frenchmozilla.sf.net/cz/">French</a>,
-        <a href="http://www.erweiterungen.de/">German</a>,
-        <a href="http://www.extenzilla.org/show_ext.php?id=51">Italian</a>,
-        <a href="http://mozillapl.org/baza_rozszerzen/oddzielne_moduly/chatzilla">Polish</a>,
-        <a href="http://www.sirarthur.info/firefox/">Portuguese</a>,
-        <a href="http://forum.mozilla-russia.org/viewtopic.php?id=5935">Russian</a> and
-        <a href="http://nave.escomposlinux.org/productos/extensiones/chatzilla/">Spanish</a>
-        localizations.  These localizations have not been tested by the ChatZilla developers.
-        Use them at your own risk.
-      </li>
-      <li id="nightly">
-        <a href="http://twpol.dyndns.org/mozilla/chatzilla/nightly/">ChatZilla
-        nightly builds</a> are available, but please note that these use the
-        very latest code, and may not work right.
-      </li>
-    </ul>
-    
-    <p style="clear: both;">
-    <table class="rev-table" id="revisions">
-      <tr>
-        <th>revision</th>
-        <th>description</th>
-        <th>install</th>
-      </tr>
-      
-      <script>writeByDate(ONE_WEEK);</script>
-      <noscript>
-        <tr><th colspan="6">Sorry, JavaScript is required to view the
-            revision table</th></tr>
-      </noscript>
-    </table>
-
-    <script>writeFooter();</script>
-
-  </body>
+</body>
 </html>

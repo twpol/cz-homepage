@@ -45,7 +45,7 @@
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
              /* output window.  */
-    background-image: url("cloudbg.photodesk.iconbar.com.jpg");
+    background-image: url("images/cloudbg.photodesk.iconbar.com.jpg");
     background-color: #000000;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -61,7 +61,7 @@ a.chatzilla-link {
 
 .header-outer {
     background-color: #7C99E2;
-        background-image: url("cloudbg.photodesk.iconbar.com.jpg");
+        background-image: url("images/cloudbg.photodesk.iconbar.com.jpg");
     border-bottom: solid 1px blue;
  //   -moz-opacity: 0.6;
 }
@@ -292,121 +292,4 @@ a.chatzilla-link {
 .msg[msg-user$="ME!"] .msg-user:before,         /* the decoration around MY   */
 .msg[msg-user$="ME!"] .msg-user:after {         /* nick                       */
     color: #008080;
-}
-
-
-
-/* smiley faces */
-.chatzilla-emote-txt {              /* emoticon text inside                    */
-    display: none;
-}
-
-.chatzilla-emote:after {            /* empty span to attach :after images to   */
-    margin-left: 3px;
-    margin-right: 3px;
-    content: url(whiteset/question.gif);
-}
-
-.chatzilla-emote[type="face-alien"]:after {
-    content: url(whiteset/alien.gif);
-}
-
-.chatzilla-emote[type="face-angry"]:after {
-    content: url(whiteset/angry.gif);
-}
-
-.chatzilla-emote[type="face-arrow"]:after {
-    content: url(chrome://chatzilla/skin/images/face-arrow.png);
-}
-
-.chatzilla-emote[type="face-cry"]:after {
-    content: url(whiteset/cry.gif);
-}
-
-.chatzilla-emote[type="face-confused"]:after {
-    content: url(whiteset/confused.gif);
-}
-
-.chatzilla-emote[type="face-cool"]:after {
-    content: url(whiteset/cool.gif);
-}
-
-.chatzilla-emote[type="face-dizzy"]:after {
-    content: url(whiteset/dizzy.gif);
-}
-
-.chatzilla-emote[type="face-dizzy-back"]:after {
-    content: url(whiteset/dizzy.gif);
-}
-
-.chatzilla-emote[type="face-eek"]:after {
-    content: url(whiteset/eek.gif);
-}
-
-.chatzilla-emote[type="face-evil"]:after {
-    content: url(whiteset/evil.gif);
-}
-
-.chatzilla-emote[type="face-exclaim"]:after {
-    content: url(whiteset/suprise.gif);
-}
-
-.chatzilla-emote[type="face-idea"]:after {
-    content: url(chrome://chatzilla/skin/images/face-idea.png);
-}
-
-.chatzilla-emote[type="face-laugh"]:after {
-    content: url(whiteset/laugh.gif);
-}
-
-.chatzilla-emote[type="face-lol"]:after {
-    content: url(whiteset/lol.gif);
-}
-
-.chatzilla-emote[type="face-mrgreen"]:after {
-    content: url(chrome://chatzilla/skin/images/face-mrgreen.png);
-}
-
-.chatzilla-emote[type="face-normal"]:after {
-    content: url(whiteset/normal.gif);
-}
-
-.chatzilla-emote[type="face-question"]:after {
-    content: url(whiteset/question.gif);
-}
-
-.chatzilla-emote[type="face-razz"]:after {
-    content: url(chrome://chatzilla/skin/images/face-razz.png);
-}
-
-.chatzilla-emote[type="face-red"]:after {
-    content: url(whiteset/red.gif);
-}
-
-.chatzilla-emote[type="face-rofl"]:after {
-    content: url(whiteset/rolf.gif);
-}
-
-.chatzilla-emote[type="face-rolleyes"]:after {
-    content: url(whiteset/rolleyes.gif);
-}
-
-.chatzilla-emote[type="face-sad"]:after {
-    content: url(whiteset/sad.gif);
-}
-
-.chatzilla-emote[type="face-smile"]:after {
-    content: url(whiteset/smile.gif);
-}
-
-.chatzilla-emote[type="face-surprised"]:after {
-    content: url(whiteset/suprise.gif);
-}
-
-.chatzilla-emote[type="face-tongue"]:after {
-    content: url(whiteset/tounge.png);
-}
-
-.chatzilla-emote[type="face-wink"]:after {
-    content: url(whiteset/wink.gif);
 }

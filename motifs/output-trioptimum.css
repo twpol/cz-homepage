@@ -48,7 +48,7 @@ by Kolya      http://www.strangebedfellows.de
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: black;              /* output window. */
     color: #67abe5;
-	  background-image: url(triop.png);
+	  background-image: url(images/triop.png);
     background-position: top right;
     background-repeat: no-repeat;
     background-attachment: fixed; 

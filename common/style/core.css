@@ -1,0 +1,84 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#header {
+	height: 3em;
+	padding: 0.5em;
+}
+
+#header h1 {
+	float: left;
+	margin: 0;
+}
+
+#header .nav {
+	padding-left: 10em;
+}
+
+#header ul {
+	margin: 0;
+}
+
+#header .sections {
+	text-align: right;
+}
+
+#header li {
+	display: inline;
+	margin: 0 0.5em;
+}
+
+#header .breadcrumbs {
+	margin-left: 0em;
+	padding-top: 1em;
+	padding-left: 0em;
+}
+
+#header .breadcrumbs li {
+	margin: 0 0.25em;
+}
+
+#content {
+	padding: 0.5em;
+}
+
+.breakout-box {
+	float: right;
+}
+
+.breakout-box-arrow {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.revision {
+	margin-top: 0.5em;
+	padding: 0.25em;
+}
+
+.rev-image-green,
+.rev-image-yellow,
+.rev-image-red {
+	float: left;
+	margin-right: 0.5em;
+	width: 16px;
+	height: 17px;
+}
+
+.rev-image-green {
+	background: url(../image/rev-green.png) no-repeat 0% 0%;
+}
+
+.rev-image-yellow {
+	background: url(../image/rev-yellow.png) no-repeat 0% 0%;
+}
+
+.rev-image-red {
+	background: url(../image/rev-red.png) no-repeat 0% 0%;
+}
+
+.footnote {
+	font-size: 75%;
+}

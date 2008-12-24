@@ -1,0 +1,198 @@
+body {
+	font-family: sans-serif;
+	background: #CCC;
+}
+
+#header {
+	background: url(../image/banner-bg.png) repeat-x 0% 100% #88F;
+	color: #FFF;
+	border-bottom: 2px solid #00B;
+}
+
+#header .logo {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header li :link {
+	color: #FFF;
+}
+
+#header li :active {
+	color: #F00;
+}
+
+#header li :visited {
+	color: #DDD;
+}
+
+#content {
+	background: #FFF;
+	color: #000;
+}
+
+#footer {
+	background: #CCC;
+	color: #000;
+	border-top: 2px solid #888;
+}
+
+.breakout-box {
+	width: 45%;
+}
+
+.breakout-box p {
+	margin: 0 0 0 60px;
+}
+
+#download-box {
+	margin: 0.5em;
+	border: 2px solid #0B0;
+	background: #8F8;
+	padding: 0.5em;
+}
+
+#download-box .breakout-box-arrow {
+	background: url(../image/download-arrow.png) no-repeat 0% 0%;
+	width: 50px;
+	height: 50px;
+	margin-right: 0em;
+}
+
+#download-other {
+	font-size: 75%;
+}
+
+#developer-box {
+	margin: 0.5em;
+	border: 2px solid #BB0;
+	background: #FF8;
+	padding: 0.5em;
+}
+
+.revision {
+	border: 1px solid #000;
+}
+
+.rev-green {
+	background: #8F8;
+	color: #000;
+}
+
+.rev-yellow {
+	background: #FF8;
+	color: #000;
+}
+
+.rev-red {
+	background: #F88;
+	color: #000;
+}
+
+.rev-id {
+	float: left;
+	width: 5em;
+}
+
+.rev-date {
+	float: left;
+	width: 6em;
+}
+
+.rev-size {
+	float: left;
+	width: 4em;
+}
+
+.rev-bugs {
+	float: left;
+	width: 6em;
+}
+
+.rev-install {
+	float: right;
+}
+
+.rev-install span {
+	font-weight: bold;
+}
+
+.rev-desc {
+	clear: both;
+}
+
+#motif-browser {
+	width: 100%;
+}
+
+#motif-browser h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#motif-more {
+	float:right;
+	margin-right: 1em;
+}
+
+#motif-list {
+	overflow: auto;
+}
+
+#motif-list .motif {
+	display: block;
+	border: 1px solid #FFF;
+	background: #FFF;
+	cursor: pointer;
+	padding: 0.1em 0.2em;
+}
+
+#motif-list .motif:hover {
+	border: 1px solid #DFDFFF;
+	background: #F8F8FF;
+}
+
+#motif-list .motif-selected {
+	border: 1px solid #CFCFFF;
+	background: #F0F0FF;
+}
+
+#motif-list .motif-selected:hover {
+	border: 1px solid #AFAFFF;
+	background: #E8E8FF;
+}
+
+#motif-list .motif-name {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+#motif-list .motif-desc {
+	display: block;
+	font-size: 75%;
+}
+
+#motif-browser-log {
+	width: 100%;
+}
+
+#dontate-table {
+	width: 90%;
+}
+
+#donate-table th {
+	border: 1px solid #00B;
+	background: url(../image/banner-bg.png) repeat-x 0% 100% #88F;
+	color: #FFF;
+}
+
+#donate-table th,
+#donate-table td {
+	vertical-align: top;
+	width: 50%;
+}
+
+#donate-table td {
+	padding-bottom: 1em;
+}

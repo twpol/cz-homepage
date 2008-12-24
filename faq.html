@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>ChatZilla FAQ</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="common/style/core.css"/>
+	<link rel="stylesheet" type="text/css" href="common/style/site.css"/>
+	<link rel="stylesheet" type="text/css" href="common/style/faq.css"/>
+	<script type="text/javascript" src="common/script/site.js">//</script>
+</head>
+<body>
+	<a name="top"/>
+	<div id="header">
+		<script type="text/javascript">writeHeader();</script>
+	</div>
+	<div id="content">
+		<div class="contents-list">
+			<!-- Contents list -->
+			<h3><a href="#section_install">1. Installing ChatZilla</a></h3>
+			<ul>
+				<li><a href="#install">1.1. How do I install ChatZilla?</a></li>
+				<li><a href="#install-linux">1.2. How do I install or update ChatZilla in SeaMonkey on Linux/BSD? </a></li>
+				<li><a href="#uninstall">1.3. How do I uninstall ChatZilla?</a></li>
+				<li><a href="#default-ircurls">1.4. How do I make irc: URLs open my default IRC client instead of ChatZilla?</a></li>
+			</ul>
+			<h3><a href="#section_getting-started">2. Getting Started</a></h3>
+			<ul>
+				<li><a href="#start-cz">2.1. How do I start ChatZilla?</a></li>
+				<li><a href="#connect">2.2. How do I connect to an IRC network or server?</a></li>
+				<li><a href="#connect-issues">2.3. What do I do if I get an error connecting?</a></li>
+				<li><a href="#proxy">2.4. How do I use ChatZilla with a proxy?</a></li>
+				<li><a href="#bouncer">2.5. How do I use ChatZilla with a bouncer?</a></li>
+				<li><a href="#ident">2.6. How do I enable 'ident'?</a></li>
+				<li><a href="#join">2.7. How do I join a channel?</a></li>
+				<li><a href="#list">2.8. How do I list the available channels?</a></li>
+				<li><a href="#userlist">2.9. What do the symbols/colored blobs in the userlist mean?</a></li>
+				<li><a href="#hide-ip">2.10. How can I hide my IP address?</a></li>
+				<li><a href="#charset">2.11. How do I select a character set? Why can't other users read my text?</a></li>
+			</ul>
+			<h3><a href="#section_basic-usage">3. Basic Usage</a></h3>
+			<ul>
+				<li><a href="#complete">3.1. Does ChatZilla have nickname, channel or command completion?</a></li>
+				<li><a href="#dcc">3.2. How do I use DCC for file transfer and chat?</a></li>
+				<li><a href="#conf-mode">3.3. Hiding and showing joins, parts, quits and nickname changes? Why are they not showing up?</a></li>
+				<li><a href="#stalk">3.4. What is a stalk list?</a></li>
+				<li><a href="#colors">3.5. How do I use color, bold or underline in my text?</a></li>
+				<li><a href="#emoticons">3.6. How do I use emoticons/smilies/faces in my text?</a></li>
+				<li><a href="#inatab">3.7. How do I load ChatZilla in a tab?</a></li>
+				<li><a href="#3.8">3.8. Why are my tabs sometimes colored red, green or blue?</a></li>
+			</ul>
+			<h3><a href="#section4">4. Customizing ChatZilla</a></h3>
+			<ul>
+				<li><a href="#autoperform">4.1. How do I automatically perform commands when connecting?</a></li>
+				<li><a href="#motifs">4.2. How do I change the appearance of the message area?</a></li>
+				<li><a href="#make-motifs">4.3. How do I make my own motif to change the appearance of the message area?</a></li>
+				<li><a href="#alias">4.4. How do I create new commands or use aliases?</a></li>
+				<li><a href="#scripts">4.5. How do I write scripts?</a></li>
+				<li><a href="#install-script">4.6. How do I install scripts?</a></li>
+			</ul>
+			<h3><a href="#section5">5. Documentation and Resources</a></h3>
+			<ul>
+				<li><a href="#irc">5.1. Is there an IRC channel for ChatZilla?</a></li>
+				<li><a href="#source">5.2. Where is the source code for ChatZilla?</a></li>
+				<li><a href="#localization">5.3. How do I make a localized version of ChatZilla?</a></li>
+				<li><a href="#report-but">5.4. What do I do if I find a bug in ChatZilla?</a></li>
+			</ul>
+		</div>
+		
+		<!-- Main content -->
+		<h3 class="faq-section"><a name="section1"/><a name="section_install"/>1. Installing ChatZilla</h3>
+		<dl class="faq-entry">
+			<dt>
+				<a name="install">1.1. How do I install ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla is <a href="https://addons.mozilla.org/addon/16">available from the Mozilla Add-ons site</a> as an extension for <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a> and is an optional component during installation for the <a href="http://www.mozilla.org/products/mozilla1.x/">Mozilla Suite</a> and <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a>.
+        </p>
+		<p>
+          If you have downloaded the <em>Mozilla Suite</em> or <em>SeaMonkey</em>, you can install ChatZilla by selecting the <strong>Full</strong> or <strong>Custom</strong> options when installing. If you didn't do this, you can <a href="https://addons.mozilla.org/addon/16">install the extension</a> normally.
+        </p>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          On <em>all</em> platforms, you will need to restart your browser after installing - this includes exiting the Quick Launch feature. On <em>some</em> platforms, you may need to restart the Operating System.
+        </div>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong><em>Mozilla Suite</em> and <em>SeaMonkey</em> users will need <a href="#install_linux">write permissions to the install location</a> of their browser for installation to succeed.
+        </div>
+			</dd>
+			<dt>
+				<a name="install-linux">1.2. How do I install or update ChatZilla in SeaMonkey on Linux/BSD? </a>
+			</dt>
+			<dd>
+		<p>
+          In <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a>, installing and updating ChatZilla will need to update some files which are in the application directory (usually <tt>/usr/local/seamonkey</tt>). This directory is normally only writable by the user "root", which will prevent the installation or update for succeeding. You are advised to temporarily make yourself the owner of this directory (e.g. using <tt>chown</tt>) and then run <em>SeaMonkey</em> normally, install the update, restart <em>SeaMonkey</em>, and check everything works. After making sure everything is OK, make sure you set "root" to be the owner of the installation directory again.
+        </p>
+			</dd>
+			<dt>
+				<a name="uninstall">1.3. How do I uninstall ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          In <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>, ChatZilla can be uninstalled as follows:
+        </p><ol><li><em>Mozilla Firefox 1.5 and earlier</em>: Select the menu <span class="menu"><span class="menuitem">Tools</span><span class="menuarrow">►</span><span class="menuitem">Extensions</span></span>.<br/><em>Mozilla Firefox 2.0 and later</em>: Select the menu <span class="menu"><span class="menuitem">Tools</span><span class="menuarrow">►</span><span class="menuitem">Add-ons</span></span>.
+          </li><li>Select ChatZilla in the list.</li><li>
+            Either click the <span class="button">Uninstall</span> button or right-click and select the menu <span class="menu"><span class="menuitem">Uninstall</span></span>.
+          </li><li>Confirm the uninstall operation.</li><li>
+            Restart <em>Mozilla Firefox</em> to complete.
+          </li></ol>
+		<p><a href="http://www.mozilla.org/products/mozilla1.x/">Mozilla Suite</a> and <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a> do not have an uninstall feature for extensions, but removing ChatZilla is usually possible.
+        </p>
+				<div class="warning"><img class="icon" src="common/image/faq-warning.png"/><strong>Warning: </strong>
+          The following manual uninstall procedure is provided with no warranty whatsoever.
+        </div><ol><li>
+            Shut down the <em>Mozilla Suite</em> or <em>SeaMonkey</em>.
+          </li><li>
+            Find (in the application's install location) and rename the files <tt>components/chatzilla-service.js</tt> and <tt>chrome/chatzilla.jar</tt> to something else.
+          </li><li>
+            Run <tt>regchrome</tt>.
+          </li><li>
+            If <em>Mozilla Suite</em>/<em>SeaMonkey</em> starts up fine, everything worked, otherwise, undo the rename everything and give up, or delete the installation and start from scratch.
+          </li></ol>
+			</dd>
+			<dt>
+				<a name="default-ircurls">1.4. How do I make irc: URLs open my default IRC client instead of ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          If you are using the <a href="http://www.mozilla.org/products/mozilla1.x/">Mozilla Suite</a> or <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a>, you will need to use the <a href="#uninstall">uninstall procedure</a>. For <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>, you can disable the ChatZilla extension as follows:
+        </p><ol><li><em>Mozilla Firefox 1.5 and earlier</em>: Select the menu <span class="menu"><span class="menuitem">Tools</span><span class="menuarrow">►</span><span class="menuitem">Extensions</span></span>.<br/><em>Mozilla Firefox 2.0 and later</em>: Select the menu <span class="menu"><span class="menuitem">Tools</span><span class="menuarrow">►</span><span class="menuitem">Add-ons</span></span>.
+          </li><li>Select ChatZilla in the list.</li><li>
+            Right-click and select the menu <span class="menu"><span class="menuitem">Disable</span></span>.
+          </li><li>
+            Restart <em>Mozilla Firefox</em> to complete.
+          </li></ol>
+			</dd>
+		</dl>
+		<h3 class="faq-section"><a name="section2"/><a name="section_getting-started"/>2. Getting Started</h3>
+		<dl class="faq-entry">
+			<dt>
+				<a name="start-cz">2.1. How do I start ChatZilla?</a>
+			</dt>
+			<dd><ul><li><a href="http://www.mozilla.org/products/mozilla1.x/">Mozilla Suite</a> and <a href="http://www.mozilla.org/projects/seamonkey/">SeaMonkey</a>: Select the menu <span class="menu"><span class="menuitem">Window</span><span class="menuarrow">►</span><span class="menuitem">IRC Chat</span></span>.
+          </li><li><a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>: Select the menu <span class="menu"><span class="menuitem">Tools</span><span class="menuarrow">►</span><span class="menuitem">ChatZilla</span></span>.
+          </li><li><em>Mozilla Firefox</em>: Place the ChatZilla toolbar button on the main toolbar.
+          </li><li>
+            Start <em>Mozilla Firefox</em>, <em>Mozilla Suite</em> or <em>SeaMonkey</em> with the <tt>-chat</tt> command-line option.
+          </li><li>
+            Enter an IRC URL into the location bar (e.g. <tt>irc:</tt>).
+          </li></ul>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          In some rare cases a bug in the <em>Mozilla Firefox</em> extension manager will disable the ChatZilla extension right after installing, even though the item does not show as disabled in the extensions list. If you can not start ChatZilla as described above (e.g. you get a message saying "irc is not a registered protocol"), try disabling ChatZilla, restarting <em>Mozilla Firefox</em>, re-enabling ChatZilla, and restarting <em>Mozilla Firefox</em> again.
+        </div>
+			</dd>
+			<dt>
+				<a name="connect">2.2. How do I connect to an IRC network or server?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla comes with a selection of popular IRC networks which can be displayed using the <span class="command">/networks</span> command. Connecting to one of these networks is as simple as clicking the network's name in the list or using the <span class="command">/attach</span> command (e.g. <span class="command">/attach moznet</span> to connect to the "moznet" network).
+        </p>
+		<p>
+          Connecting to a network or server not listed is easy as well, with the <span class="command">/attach</span>, <span class="command">/server</span> and <span class="command">/sslserver</span> commands. The examples below connect to the imaginary server "irc.example.org" using the normal port:
+        </p>
+				<p class="screen">
+          /attach irc.example.org<br/>
+          /attach irc://irc.example.org<br/>
+          /attach irc://irc.example.org:6667<br/>
+          /server irc.example.org<br/>
+          /server irc.example.org 6667
+        </p>
+		<p>
+          To connect to the imaginary server "irc.example.org" using a secure (SSL) port:
+        </p>
+				<p class="screen">
+          /attach ircs://irc.example.org:6697<br/>
+          /sslserver irc.example.org 6697
+        </p>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          Remember to check which port number the server is running on, especially for secure (SSL) connections. The defaults are 6667 and 9999 for normal and secure, respectively.
+        </div>
+			</dd>
+			<dt>
+				<a name="connect-issues">2.3. What do I do if I get an error connecting?</a>
+			</dt>
+			<dd>
+		<p>
+          Don't panic - it all depends on the error. We have covered the most common errors and causes in the list below, but if you are getting a different error or you can't solve the problem, you can join us in the <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> (<a href="ircs://irc.mozilla.org:6697/chatzilla">secure</a>) support channel and we'll do our best to help you. If you can't even connect to #chatzilla, please <a href="#newsgroup">post to the newsgroup</a> instead.
+        </p><a name="connection.unknown.host"/>
+				<p class="screen">
+          Unknown host ``irc.example.com'' connecting to irc://irc.example.com/ (irc.example.com:6667).
+        </p><ul><li><strong>Check DNS settings</strong> Can you get to other IRC servers or websites? If not, you might need to adjust your DNS settings or your ISP's DNS servers might be experiencing problems.
+          </li><li><strong>Check the server name</strong>. Are you sure the name is correct? Check with the network's website if you can.
+          </li></ul><a name="connection.timeout"/>
+				<p class="screen">
+          Connection to irc://irc.example.com/ (irc.example.com:6667) timed out.
+        </p><ul><li><strong>Check anti-virus and firewall settings</strong>. Your anti-virus or firewall could be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+          </li></ul><a name="connection.refused"/>
+				<p class="screen">
+          Connection to irc://irc.example.com/ (irc.example.com:6667) refused.
+        </p><ul><li><strong>Check the server port</strong>. Make sure you are attempting to connect on the correct port (6667 in the example above).
+          </li></ul><a name="connection.closed"/>
+				<p class="screen">
+          Connection to irc://irc.example.com/ (irc.example.com:6667) closed.
+        </p><ul><li><strong>Check ZoneAlarm Internet Security settings</strong>. If you have ZoneAlarm Internet Security installed, make sure the "Block IRC" option in "IMSecurity" &gt; "Settings" &gt; "Advanced" is not selected.
+          </li><li><strong>Check anti-virus and firewall settings</strong>. Even if your anti-virus and firewall are not listed above, they could still be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+          </li></ul><a name="connection.reset"/>
+				<p class="screen">
+          Connection to irc://irc.example.com/ (irc.example.com:6667) reset.
+        </p><ul><li><strong>Check McAfee Anti-Virus settings</strong>. If you have McAfee Anti-Virus installed, make sure the rules for ports 6666 - 6669 in "VirusScan Console" &gt; "Access Protection" are disabled.
+          </li><li><strong>Check anti-virus and firewall settings</strong>. Even if your anti-virus and firewall are not listed above, they could still be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+          </li></ul>
+				<p class="screen">
+          ERROR Closing Link: irc.example.com (Install IdentD)
+        </p><ul><li><strong>Check IdentD settings</strong>. The server is requiring you to enable the <a href="#ident">identification service</a> (IdentD).
+          </li><li><strong>Check gateway/router/NAT settings</strong>. If you already have an <a href="#ident">identification service</a> running, check to make sure computers on the internet can contact it. This usually means allowing inbound connections to TCP port 113 in your firewall, and forwarding the same port in your gateway, router or NAT device.
+          </li></ul>
+			</dd>
+			<dt>
+				<a name="proxy">2.4. How do I use ChatZilla with a proxy?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla will work automatically with most proxy configurations, as it runs with your browser's networking configuration. However, you can override this using the <em>Proxy Type</em> setting, found in ChatZilla's Preferences window, on the General tab, in the Connection group. It exists both for Global Settings and for each network.
+        </p>
+		<p>
+          There are three settings you can use for <em>Proxy Type</em>:
+        </p><ul><li><em>empty</em> (default): ChatZilla will use the browser's SOCKS proxy, if there is one configured, otherwise it will use direct connections.
+          </li><li><strong>http</strong>: ChatZilla will use the browser's HTTP proxy.
+          </li><li><strong>none</strong>: ChatZilla will use direct connections.
+          </li></ul>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          ChatZilla currently does not support proxies which require authentication.
+        </div>
+			</dd>
+			<dt>
+				<a name="bouncer">2.5. How do I use ChatZilla with a bouncer?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla will work with most bouncers fine; however, it should be remembered that due to the special position within the connection that bouncers sit, sometimes things don't always work as they should.
+        </p>
+		<p>
+          Connecting to a bouncer is simple:
+        </p><ol><li><span class="command">/server localhost 12345</span> - replace "12345" with the correct local port for your bouncer.
+          </li><li><span class="command">/pass mypassword</span> - replace "mypassword" with the password required for your bouncer. Skip this step if your bouncer doesn't need a password.
+          </li></ol>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          Some bouncers will tell you to use the <span class="command">/quote PASS</span> command. This does not usually work in ChatZilla because the bouncer hasn't completed the connection at this point; use the <span class="command">/pass</span> command instead, which also works for many other clients.
+        </div>
+			</dd>
+			<dt>
+				<a name="ident">2.6. How do I enable 'ident'?</a>
+			</dt>
+			<dd>
+		<p>
+          Some networks or servers will require you to be running an "identification server" (IdentD) to connect to them, even though this service is only useful if you run a multi-user computer (where many people can connect and share a single computer).
+        </p><ul><li><strong>Windows</strong>: You can enable this service in ChatZilla in the Preferences by selecting "Enable Identification Server during connection process" for networks and Global Settings, on the General tab, in the Connection group.
+          </li><li><strong>Linux, Mac</strong>: You must use the system-provided identification server (usually called "identd") as these OSes prevent normal programs from providing their own.
+          </li></ul>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          The idententification service runs on TCP port 113 and this will need to be opened in your firewall (incomming) and forwarded by any NAT device as appropriate.
+        </div>
+			</dd>
+			<dt>
+				<a name="join">2.7. How do I join a channel?</a>
+			</dt>
+			<dd>
+		<p>
+          You can <a href="#list_channels">browse</a> and join existing channels on a network by <a href="#connect">connecting</a> and then selecting the menu <span class="menu"><span class="menuitem">IRC</span><span class="menuarrow">►</span><span class="menuitem">Join channel...</span></span>.
+        </p>
+		<p>
+          If you already know the channel name you wish to connect to, the <span class="command">/join</span> command may be used once connected to the appropriate network (e.g. <span class="command">/join #chatzilla</span>).
+        </p>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          If you omit the channel prefix (<tt>#</tt>, <tt>&amp;</tt>, <tt>+</tt> or <tt>!</tt>) ChatZilla will prepend the network's default prefix, usually <tt>#</tt>.
+        </div>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          If you wish to connect to a network or server and join a channel there in one go, you can use the <span class="command">/attach</span> command (e.g. <span class="command">/attach irc.mozilla.org/chatzilla</span> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
+        </div>
+			</dd>
+			<dt>
+				<a name="list">2.8. How do I list the available channels?</a>
+			</dt>
+			<dd>
+		<p>
+          To list the channels on a network or server, select the menu <span class="menu"><span class="menuitem">IRC</span><span class="menuarrow">►</span><span class="menuitem">Join channel...</span></span>. The dialog will list all the channels with sorting by name, user count and topic, as well as searching and filtering.
+        </p>
+				<div class="warning"><img class="icon" src="common/image/faq-warning.png"/><strong>Warning: </strong>
+          The Join Channel dialog cannot cope with large networks, like Quakenet, which have well over 10,000 channels.
+        </div>
+		<p>
+          The <span class="command">/list</span> command can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
+        </p>
+		<p>
+          The <span class="command">/rlist</span> command can be used to display the channels like <span class="command">/list</span>, but additionally filter them using a Regular Expression on the topic (e.g. <span class="command">/rlist chatzilla</span> will list channels with "chatzilla" in their topic, case-insensitively).
+        </p>
+			</dd>
+			<dt>
+				<a name="userlist">2.9. What do the symbols/colored blobs in the userlist mean?</a>
+			</dt>
+			<dd>
+		<p>
+          The different symbols and colored blobs to the left of each user in the userlist indicate their respective status within the channel. Available levels, from most powerful to least are:
+        </p><ul><li><img src="common/image/userlist-founder-symbol.png"/>/<img src="common/image/userlist-founder-graphic.png"/> - <strong>Founder</strong> - ultimate power. Can do anything to the channel and those within it. Usually represents the user who registered the channel. <em>Only certain networks support founders.</em></li><li><img src="common/image/userlist-admin-symbol.png"/>/<img src="common/image/userlist-admin-graphic.png"/> - <strong>Admin</strong> - a normal operator, but protected from being kicked by anyone except the founder. <em>Only certain networks support founders.</em></li><li><img src="common/image/userlist-op-symbol.png"/>/<img src="common/image/userlist-op-graphic.png"/> - <strong>Operator (op)</strong> - the user can grant and revoke operator, half-operator and voice status, change the topic and kick other users.
+          </li><li><img src="common/image/userlist-halfop-symbol.png"/>/<img src="common/image/userlist-halfop-graphic.png"/> - <strong>Half-operator (half-op)</strong> - the user has the power to moderate the channel, change the topic and kick people, but cannot kick other half-operators nor higher-ranking users, nor can he/she create new operators/half-operators. <em>Only certain networks support founders.</em></li><li><img src="common/image/userlist-voice-symbol.png"/>/<img src="common/image/userlist-voice-graphic.png"/> - <strong>Voice</strong> - the user can talk in the channel when it is moderated. Often used to mark people as trusted/helpful without giving them any power.
+          </li><li><img src="common/image/userlist-no-symbol.png"/>/<img src="common/image/userlist-no-graphic.png"/> - <strong>Normal</strong> - the user has no special status.
+          </li></ul>
+			</dd>
+			<dt>
+				<a name="hide-ip">2.10. How can I hide my IP address?</a>
+			</dt>
+			<dd>
+		<p>
+          In general, you can't. The way IRC works, your IP address is distributed to every user you communicate with. Depending on where you hang out, and who your enemies are, this may or may not be a problem. In practice, it's not a problem for most users.
+        </p>
+		<p>
+          However, an increasing number of servers are supporting a user mode "x" which hides your hostname (and thus your IP) from other users (IRC Operators can still see your real host). You can start using this user mode by adding "x" to the "Usermode" box on the General tab in preferences, either in Global Settings, or for individual networks.
+        </p>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          Remember that not all servers support this. Ones that don't will simply ignore it, so don't worry about adding it if you're not sure.
+        </div>
+			</dd>
+			<dt>
+				<a name="charset">2.11. How do I select a character set? Why can't other users read my text?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla allows you to select character encodings at multiple levels. The default character encoding used by ChatZilla is UTF-8 and it is recommended that you leave this setting wherever possible. This default avoids a number of unsolvable problems, such as how to know what encoding has been used for particular channel names without prior knowledge.
+        </p>
+		<p>
+          If text is showing up with a lot of question-marks (?) or completely unexpected characters (for example, Japanese characters in a Danish channel) then it is likely that ChatZilla is not using the same character encoding as the other clients. All the clients must be using the same or very similar character encodings to exchange text successfully.
+        </p>
+		<p>
+          To view the character encoding being used on the current view (network, channel or user), use the <span class="command">/charset</span> command. The character encoding can be changed using the same command (e.g. <span class="command">/charset ISO-8859-15</span> to switch to the "ISO-8859-15" character encoding).
+        </p>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          Some common character encodings sometimes used by other clients are:
+          <table class="left-align"><tr><th>English </th><td><tt>ISO-8859-15</tt></td></tr><tr><th>Hebrew  </th><td><tt>ISO-8859-8-I</tt></td></tr><tr><th>Japanese</th><td><tt>ISO-2022-jp</tt></td></tr><tr><th>Russian </th><td><tt>Windows-1251</tt></td></tr></table></div>
+			</dd>
+		</dl>
+		<h3 class="faq-section"><a name="section3"/><a name="section_basic-usage"/>3. Basic Usage</h3>
+		<dl class="faq-entry">
+			<dt>
+				<a name="complete">3.1. Does ChatZilla have nickname, channel or command completion?</a>
+			</dt>
+			<dd>
+		<p>
+          Yes! In all cases, you type the start of the nickname, channel or command, and hit <em>tab</em>. ChatZilla will expand it as much as possible, based on the matches available. If the text you entered is unique to the start of one item, ChatZilla will complete the entire thing; otherwise, the longest common prefix of all matches will be used. A second <em>tab</em> in quick succession will display the list of matches.
+        </p><ul><li>
+            Nickname completion will match any user in the current channel, or all users in all open channels on the current network when used in other views.
+          </li><li>
+            Channel completion will match any open channel on the current network.
+          </li><li>
+            Command completion will match any standard commands and any additional aliases defined when used at the start of the input box, with the first character being the command character, "/".
+          </li></ul>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          On a channel view, enter just "#" and press <em>tab</em> to get the current channel name immediately.
+        </div>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          On a channel view, press <em>tab</em> when the input box is empty to complete to the name of the last person in that channel to trigger your <a href="#stalk">stalk function</a> - useful for replying to messages addressed to you.
+        </div>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          You can shorten command names as much as you like - so long as they are unique - without having to use <em>tab</em> to expand them.
+        </div>
+			</dd>
+			<dt>
+				<a name="dcc">3.2. How do I use DCC for file transfer and chat?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla includes basic support for the DCC chat and DCC file transfer systems. Use the <span class="command">/help dcc</span> to get information on each DCC-related command.
+        </p>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+          ChatZilla currently does not support DCC <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=285630">resume</a> or reverse.
+        </div>
+			</dd>
+			<dt>
+				<a name="conf-mode">3.3. Hiding and showing joins, parts, quits and nickname changes? Why are they not showing up?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla calls this feature <em>Conference Mode</em> and it will hide all join, part, quit and nickname change messages when it is enabled. By default, this occurs only in channels with more than 150 users.
+        </p>
+		<p>
+          The <em>Conference Mode</em> limit can be set on the Appearance tab in preferences for Global Settings, an entire network, or for a single channel.
+        </p>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          You can set the limit to 0 to <em>never</em> or 1 to <em>always</em> hide join, part, quit and nickname change messages.
+        </div>
+			</dd>
+			<dt>
+				<a name="stalk">3.4. What is a stalk list?</a>
+			</dt>
+			<dd>
+		<p>
+          A stalk list is a list of words and nicknames that you want ChatZilla to consider important. A message containing an important word or from an important nickname is treated differently. For example:
+        </p><ul><li>The message will appear different, perhaps bold or with a border, in the message area.</li><li>
+            If the menu <span class="menu"><span class="menuitem">View</span><span class="menuarrow">►</span><span class="menuitem">Copy Important Messages</span></span> is checked, the message is copied into the network view.
+          </li><li>The channel's tab will turn red instead of the usual green.</li><li>A "beep" or other configured sound will play.</li><li>The ChatZilla window will flash if it is not the focused window.</li></ul>
+		<p>
+          Your nickname is always in the stalk list. Other words and nicknames can be added from the Lists tab in preferences, in Global Settings.
+        </p>
+			</dd>
+			<dt>
+				<a name="colors">3.5. How do I use color, bold or underline in my text?</a>
+			</dt>
+			<dd>
+		<p>
+          Before you can input any colors, bold or underline in ChatZilla, you must enable this feature. To do so, select the "Enable sending color codes" option, in Global Settings, on the Global tab, in ChatZilla's Preferences window. You can also use the command <span class="command">/pref outgoing.colorCodes true</span>. This only needs to be done once.
+        </p>
+		<p>
+          Entering color, bold and underline is as simple as typing the appropriate few characters - which always start with a percent ("%"):
+        </p><ul><li><strong>%O</strong> - resets all colors, bold and underline.
+          </li><li><strong>%B</strong> - toggle bold.
+          </li><li><strong>%U</strong> - toggle underline.
+          </li><li><strong>%R</strong> - swaps foreground and background colors.
+          </li><li><strong>
+              %C<em>number</em></strong> - sets the foreground color.
+          </li><li><strong>
+              %C<em>number</em>,<em>number</em></strong> - sets the foreground and background colors.
+          </li><li><strong>%%</strong> - inserts the next character literally, if it is one of O, B, U, R or C.
+          </li></ul>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          Always use two-digit numbers to avoid problems when following a color code with other numbers. For example, to style "42" in red, use <tt>%C0442</tt>.
+        </div>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          Color Chart
+          <table><tbody><tr><td style="background: #FFFFFF; color: #000000;">00</td><td style="background: #000000; color: #FFFFFF;">01</td><td style="background: #00007F; color: #FFFFFF;">02</td><td style="background: #009300; color: #FFFFFF;">03</td><td style="background: #FF0000; color: #FFFFFF;">04</td><td style="background: #7F0000; color: #FFFFFF;">05</td><td style="background: #9C009C; color: #FFFFFF;">06</td><td style="background: #FC7F00; color: #FFFFFF;">07</td></tr><tr><td style="background: #FFFF00; color: #000000;">08</td><td style="background: #00FC00; color: #000000;">09</td><td style="background: #009393; color: #000000;">10</td><td style="background: #00FFFF; color: #000000;">11</td><td style="background: #0000FC; color: #000000;">12</td><td style="background: #FF00FF; color: #000000;">13</td><td style="background: #7F7F7F; color: #000000;">14</td><td style="background: #D2D2D2; color: #000000;">15</td></tr></tbody></table></div>
+			</dd>
+			<dt>
+				<a name="emoticons">3.6. How do I use emoticons/smilies/faces in my text?</a>
+			</dt>
+			<dd>
+		<p>
+          Simple - just type them out as you would in an e-mail, and ChatZilla will automatically display an image in its place for any it recognises. Here is what is available:
+        </p><table><tbody><tr><td><img src="common/image/face-smile.png"/></td><td><tt>:-)</tt></td><td>happy</td><td><img src="common/image/face-red.png"/></td><td><tt>:")</tt></td><td>blushing</td><td><img src="common/image/face-question.png"/></td><td><tt>:-?</tt></td><td>questioning</td></tr><tr><td><img src="common/image/face-wink.png"/></td><td><tt>;-)</tt></td><td>winking</td><td><img src="common/image/face-tongue.png"/></td><td><tt>:-P</tt></td><td>tongue out</td><td><img src="common/image/face-rolleyes.png"/></td><td><tt>9_9</tt></td><td>rolling eyes</td></tr><tr><td><img src="common/image/face-laugh.png"/></td><td><tt>:-D</tt></td><td>laughing</td><td><img src="common/image/face-normal.png"/></td><td><tt>:-|</tt></td><td>flat, undecided</td><td><img src="common/image/face-dizzy.png"/></td><td><tt>o_O</tt></td><td>dizzy</td></tr><tr><td><img src="common/image/face-lol.png"/></td><td><tt>:-DD</tt></td><td>laughing more</td><td><img src="common/image/face-confused.png"/></td><td><tt>:-S</tt></td><td>confused</td><td><img src="common/image/face-eek.png"/></td><td><tt>O_O</tt></td><td>"eek", wide-eyed</td></tr><tr><td><img src="common/image/face-rofl.png"/></td><td><tt>X-D</tt></td><td>laughing hard</td><td><img src="common/image/face-sad.png"/></td><td><tt>:-(</tt></td><td>sad</td><td><img src="common/image/face-angry.png"/></td><td><tt>&gt;:-(</tt></td><td>angry</td></tr><tr><td><img src="common/image/face-surprised.png"/></td><td><tt>:-O</tt></td><td>surprised</td><td><img src="common/image/face-cry.png"/></td><td><tt>:~(</tt></td><td>crying</td><td><img src="common/image/face-evil.png"/></td><td><tt>&gt;:-D</tt></td><td>evil</td></tr><tr><td><img src="common/image/face-cool.png"/></td><td><tt>B-)</tt></td><td>cool</td><td colspan="6"><em>And one more that you'll have to find yourself...</em></td></tr></tbody></table>
+		<p>
+          Most of the emoticons work without the nose (<tt>-</tt>) or with a <tt>^</tt> or <tt>v</tt> replacing it. Apart from <tt>:-)</tt> and <tt>;-)</tt>, the eyes (<tt>:</tt>) may be replaced with <tt>;</tt> or <tt>=</tt> too.
+        </p>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          To find out what text someone else used to create an emoticon, just hover your mouse over it for a second.
+        </div>
+			</dd>
+			<dt>
+				<a name="inatab">3.7. How do I load ChatZilla in a tab?</a>
+			</dt>
+			<dd>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>We do not support running ChatZilla in a tab.</div>
+		<p>
+          To try anyway, enter <tt>chrome://chatzilla/content/</tt> into the location bar.
+        </p>
+				<div class="warning"><img class="icon" src="common/image/faq-warning.png"/><strong>Warning: </strong>
+          There are some problems with running ChatZilla in a tab and most are things we can do nothing about. Below is a list of what is known to break.
+        </div><ul><li>
+            Right-clicking the chat area shows the browser's context menu instead of ChatZilla's.
+          </li><li>
+            Clicking an <tt>irc:</tt> URL in the chat area will open a <strong>separate ChatZilla window</strong>. This problem <em>might</em> be fixable, but it could well be harder to fix than the final point.
+          </li><li>
+            Clicking web links in the chat area will usually <strong>replace ChatZilla with the webpage</strong>. If you try to open the link in a new tab or window (either from the context menu or using a modifier key), it should leave ChatZilla unaffected.
+          </li><li>
+            Clicking an <tt>irc:</tt> URL from a webpage will also open a <strong>separate ChatZilla window</strong>, instead of loading it in the ChatZilla running in a tab. This is the only problem we believe we can fix.
+          </li><li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=286651">Bug 286651</a> is attempting to remove the special permission extensions get when loaded in a tab, which would basically be the end of this working at all.
+          </li></ul>
+			</dd>
+			<dt>
+				<a name="3.8">3.8. Why are my tabs sometimes colored red, green or blue?</a>
+			</dt>
+			<dd>
+		<p>
+          The different colors indicate different degrees of activity.
+        </p><ul><li><strong>Black:</strong> There is no new activity. A tab will go back to this state when you focus it.
+          </li><li><strong>Blue:</strong> The channel changed in some way. This is usually caused by people joining or leaving, a mode change or a topic change.
+          </li><li><strong>Green:</strong> A message appeared on the tab. The message can be a normal chat message, an action, or a notice. Messages sent <em>just</em> to you will color the tab red instead.
+          </li><li><strong>Red:</strong> Someone used your name or something on your <a href="#stalk">stalk list</a> in a message on that tab, or someone sent a message to you specifically.
+          </li></ul>
+			</dd>
+		</dl>
+		<h3 class="faq-section"><a name="section4"/>4. Customizing ChatZilla</h3>
+		<dl class="faq-entry">
+			<dt>
+				<a name="autoperform">4.1. How do I automatically perform commands when connecting?</a>
+			</dt>
+			<dd>
+		<p>
+          There is an "auto-perform" preference, which can be set on the Lists tab for each network in ChatZilla's Preferences, listing commands to run when connecting. Any commands, including custom aliases, can be used here - they will all run as if typed into the network's view directly.
+        </p>
+				<div class="warning"><img class="icon" src="common/image/faq-warning.png"/><strong>Warning: </strong>
+          This preference, like all the others, is saved to your hard disk in <strong>plain text</strong>. If you use auto-perform to identify or authenticate yourself with services or bots, remember this.
+        </div>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          If you're happy with the above warning, you can identify yourself with the popular IRC Service NickServ by adding an auto-perform entry of <tt>/msg NickServ IDENTIFY secret</tt> (where "<tt>secret</tt>" is your password).
+        </div>
+			</dd>
+			<dt>
+				<a name="motifs">4.2. How do I change the appearance of the message area?</a>
+			</dt>
+			<dd>
+		<p>
+          There are a number of ways to change the appearance of the message area:
+        </p><ul><li>
+            The menu <span class="menu"><span class="menuitem">View</span><span class="menuarrow">►</span><span class="menuitem">Font Family and Size</span></span> lets you change the size of text and which font is used for most messages.
+          </li><li>
+            The menu <span class="menu"><span class="menuitem">View</span><span class="menuarrow">►</span><span class="menuitem">Color Scheme</span></span> lets you switch between some built-in <em>motifs</em> - files which describe how to display the messages.
+          </li><li>
+            Browse the <a href="motifs">motifs available on this website</a>. When you've selected one you like, simply drag the name from the list onto ChatZilla.
+          </li><li>
+            The ChatZilla Preferences let you configure the font family, font size and motif globally, per-network and per-channel, should you wish to vary the appearance between views.
+          </li></ul>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          You can change the font size using the same <tt>Control+Plus</tt> and <tt>Control+Minus</tt> shortcuts as web browsers.
+        </div>
+			</dd>
+			<dt>
+				<a name="make-motifs">4.3. How do I make my own motif to change the appearance of the message area?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla motifs are nothing more than <em>Cascading Style Sheets</em> (CSS) which are applied to the HTML used to display the messages. The messages are layed out using a standard HTML table with a variety of attributes, mostly set on the rows and a few on the individual cells. There are a few ways to learn motifs:
+        </p><ul><li>
+            Use DOM Inspector to look at the HTML structure created by ChatZilla.
+          </li><li>
+            Read one of the <a href="motifs/output-light.css">existing motifs</a> and match up the CSS to what you see.
+          </li><li>
+            Read (and even save and experiment locally with) the <a href="motifs/log">motif preview log</a>, onto which motifs are applied for the website's preview.
+          </li></ul>
+			</dd>
+			<dt>
+				<a name="alias">4.4. How do I create new commands or use aliases?</a>
+			</dt>
+			<dd>
+		<p>
+          To create simple groups of commands or pre-fill arguments to existing commands, aliases can be used. Aliases can call any command you can enter in the input box, and will replace certain sequences with values provided by you or ChatZilla; they cannot, however, make decisions or use loops - full <a href="#scripts">scripting</a> will have to be used for that.
+        </p>
+		<p>
+          In its simplest form, an alias is just a short name for an existing set of commands and arguments. For example, to create the alias <span class="command">/moz</span> which executes the command <span class="command">/attach moznet</span>, you'd add <tt>moz = attach moznet</tt> to the "Command aliases" list, on the Lists tab, for Global Settings, in ChatZilla's Preferences.
+        </p>
+		<p>
+          To make an alias execute more than one command, separate them with semi-colons (<tt>;</tt>). For example, to configure an alias <span class="command">/mychannels</span> to join some channels, add <tt>mychannels = join #chatzilla; join #venkman; join #xul; join #js</tt> in the preferences.
+        </p>
+		<p>
+          There are a few replacements parameters you can use in an alias, each of which gets replaced before the commands are executed.
+        </p><ul><li><strong>$(N)</strong> - Gets the Nth argument passed to the alias. The alias requires at least N arguments.
+          </li><li><strong>$(N+)</strong> - Gets the Nth argument passed to the alias and all those following it. The alias requires at least N arguments.
+          </li><li><strong>$(M-N)</strong> - Gets the Mth through to Nth argument (inclusive) passed to the alias. The alias requires at least N arguments.
+          </li><li><strong>$(all)</strong> - Gets all the arguments passed to the alias. The alias does not require any arguments.
+          </li><li><strong>$(recip)</strong> - Gets the name of the target of the alias. This is the name of the view the alias is run on, e.g. channel name.
+          </li><li><strong>$(nick)</strong> - Gets your current nickname.
+          </li></ul>
+		<p>
+          For example, if you wished to create an alias to reclaim your nickname via the NickServ IRC Service, you could use the following alias. It requires two arguments - the nickname to reclaim and the password for it, e.g. <span class="command">/reclaim TARGET_NICKNAME PASSWORD</span>.
+        </p><tt>
+          reclaim = msg NickServ GHOST $(1) $(2); nick $(1); msg NickServ IDENTIFY $(2)
+        </tt>
+			</dd>
+			<dt>
+				<a name="scripts">4.5. How do I write scripts?</a>
+			</dt>
+			<dd>
+		<p>
+          ChatZilla is entirely written in JavaScript, and so are its scripts. Scripts can be loaded at startup, or manually at any time, and reloaded while running. As the scripts have direct access to ChatZilla's code, they can do pretty much anything and everything ChatZilla could do.
+        </p>
+		<p>
+          Getting started can be tricky, as there is limited information currently available to help, but here's a few pointers:
+        </p><ul><li>
+            The <a href="../scripts/sample/init.js">sample plugin</a> covers some of the basics.
+          </li><li>
+            For a list of default menus in ChatZilla, see <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/xul/content/menus.js">menus.js</a>.
+          </li><li>
+            For examples of the default commands, see <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/xul/content/commands.js">commands.js</a>.
+          </li><li>
+            Default preferences are defined in <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/xul/content/prefs.js">prefs.js</a>.
+          </li><li>
+            You can search the Internet for "ChatZilla scripts" or "ChatZilla tutorials" to find various other resources contributed by those who could.
+          </li></ul>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          You can always join us in <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> to ask for scripting help. We wont write your scripts for you, but we'll answer specific questions and point you in the right direction when we can.
+        </div>
+			</dd>
+			<dt>
+				<a name="install-script">4.6. How do I install scripts?</a>
+			</dt>
+			<dd><ol><li>
+            Find out where ChatZilla looks for scripts:
+            
+				<h4 class="screen-label">Input:</h4>
+				<p class="screen">
+              /pref profilePath
+            </p>
+				<h4 class="screen-label">Output:</h4>
+				<p class="screen">
+              Preference profilePath is "C:\Documents and Settings\James\Application Data\Mozilla\ChatZilla\Profiles\w58z18i7.default\chatzilla".
+            </p>
+				<div class="note"><img class="icon" src="common/image/faq-note.png"/><strong>Note: </strong>
+              If the preference shows empty, use the command <span class="command">/pref profilePath -</span> to fix it.
+            </div></li><li>
+            Open the directory given in step 1 and find the <tt>scripts</tt> subdirectory. This is where ChatZilla looks for scripts by default.
+          </li><li>
+            Inside <tt>scripts</tt>, create a new directory for the script you wish to install. You can name it anything you like, but ideally ensure you will know which script it is in the future.
+          </li><li>
+            Save the script into the new subdirectory you created in step 3. Make sure all the files go in here. If there isn't a file called <tt>init.js</tt>, something is missing!
+          </li><li>
+            Restart ChatZilla.
+          </li></ol>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          If you're having problems with a script not loading, make sure it isn't reporting any errors. To do this, use the command <span class="command">/client</span> to open the client view, ensure the menu <span class="menu"><span class="menuitem">IRC</span><span class="menuarrow">►</span><span class="menuitem">Open This Tab at Startup</span></span> is checked and restart ChatZilla. Any errors will be displayed on the client view.
+        </div>
+			</dd>
+		</dl>
+		<h3 class="faq-section"><a name="section5"/>5. Documentation and Resources</h3>
+		<dl class="faq-entry">
+			<dt>
+				<a name="irc">5.1. Is there an IRC channel for ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          Of course there is! <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> on <a href="irc://irc.mozilla.org">irc.mozilla.org</a>.
+        </p>
+				<div class="tip"><img class="icon" src="common/image/faq-tip.png"/><strong>Tip: </strong>
+          If you have a question or problem you wish to get help with, please just ask it - don't wait for someone else to talk! A lot of people idle in #chatzilla and wont say anything until someone asks a question, but also don't expect an immediate answer, we're not always at our computers or able to offer help to every problem.
+        </div>
+			</dd>
+			<dt>
+				<a name="source">5.2. Where is the source code for ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          All the source code lives in Mozilla's CVS repository, under <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/">mozilla/extensions/irc/</a>. The libraries are mostly in <tt>js/lib/</tt> and the front-end is mostly in <tt>xul/content/</tt>.
+        </p>
+			</dd>
+			<dt>
+				<a name="localization">5.3. How do I make a localized version of ChatZilla?</a>
+			</dt>
+			<dd>
+		<p>
+          See the <a href="localization">localization guide</a> for instructions.
+        </p>
+			</dd>
+			<dt>
+				<a name="report-but">5.4. What do I do if I find a bug in ChatZilla?</a>
+			</dt>
+			<dd><ol><li>
+            Search for duplicates. You can scan the <a href="http://bugzilla.mozilla.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">entire ChatZilla bug list</a> or <a href="http://bugzilla.mozilla.org/query.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=ChatZilla">search</a> for a particular bug on the list.
+          </li><li>
+            If you can't find a duplicate, then please <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Other%20Applications&amp;version=Trunk&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
+          </li></ol>
+			</dd>
+		</dl>
+	</div>
+	<div id="footer">
+		<script type="text/javascript">writeFooter();</script>
+	</div>
+</body>
+</html>

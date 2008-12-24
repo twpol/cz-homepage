@@ -1,4 +1,2 @@
 xslt:: 
-	xsltproc faq/chatzilla-faq.xml > faq/chatzilla-faq.html;
-
-
+	xsltproc faq.xml > faq.html;

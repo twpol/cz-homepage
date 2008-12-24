@@ -6,7 +6,7 @@
  *  see output-base.css for motifing details.
  */
 @import url(output-base.css);
-body.chatzilla-body {background-image: url(ant.png);background-color: #676767;background-repeat: no-repeat;background-attachment: fixed;background-position: bottom right;color: black;}
+body.chatzilla-body {background-image: url(images/ant.png);background-color: #676767;background-repeat: no-repeat;background-attachment: fixed;background-position: bottom right;color: black;}
 a.chatzilla-link {font-weight: bold;color: #C66300;}
 .header-outer {background-color: #000000;border-bottom: solid 2px white;}
 .header {color: #FFFFFF;background-color: #000000;}

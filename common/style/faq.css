@@ -1,0 +1,70 @@
+p, div.tip, div.note, div.warning {
+	margin: 1em 0;
+}
+
+.faq-entry dt {
+	margin: 1em 0;
+	font-weight: bold;
+}
+
+.menu, .button, .command, .screen {
+	font-family: monospace;
+}
+
+.menu {
+}
+
+.menuitem {
+	border: 1px solid #CCC;
+	background: #EEE;
+	padding: 0 0.1em;
+}
+
+.menuarrow {
+	padding: 0 0.2em;
+}
+
+.button {
+	border-top: 2px solid #EEE;
+	border-left: 2px solid #EEE;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	background: #CCC;
+	color: #000;
+	padding: 0 0.1em;
+}
+
+.screen {
+	border: 1px solid black;
+	background: white;
+	color: black;
+	padding: 0.1em;
+}
+
+.screen-label {
+	font-weight: bold;
+	font-style: italic;
+	margin: 0;
+}
+
+div.tip, div.note, div.warning {
+	border: 2px solid #CCC;
+	padding: 0.2em;
+	min-height: 25px;
+	height: auto;
+}
+/* for IE/5 though IE/6 */
+/*\*/
+* html div.tip, * html div.note, * html div.warning {
+	height: 25px;
+}
+/**/
+
+div.tip .icon, div.note .icon, div.warning .icon {
+	float: left;
+	padding-right: 0.2em;
+}
+
+table.left-align th, table.left-align td {
+	text-align: left;
+}

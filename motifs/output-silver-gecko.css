@@ -28,7 +28,7 @@
 @import url(output-base.css);
 
 body.chatzilla-body{
-    background: #ccc fixed center no-repeat url("gecko.png");
+    background: #ccc fixed center no-repeat url("images/gecko.png");
 
 }
 
@@ -46,7 +46,7 @@ body.chatzilla-body{
     -moz-border-radius: 5px;
     background-color: white;
     /*this seems to make the users name disappear, so I'm disabling it for now..*/
-    /* background: white fixed center no-repeat url("gecko.png"); */
+    /* background: white fixed center no-repeat url("images/gecko.png"); */
     padding: .5ex .5em;
     font-weight: bold;
 }
@@ -60,7 +60,7 @@ body.chatzilla-body{
     text-align: left;
     vertical-align: middle;
     border: thin #44f solid;
-    background: white fixed center no-repeat url("gecko.png");
+    background: white fixed center no-repeat url("images/gecko.png");
     -moz-border-radius: 5px;
     padding: .5ex 1em;
 }
@@ -74,7 +74,7 @@ body.chatzilla-body{
 .msg[msg-type="JOIN"] .msg-data,
 .msg[msg-type="QUIT"] .msg-data,
 .msg[msg-type="PART"] .msg-data {
-    background: #f74 fixed center no-repeat url("gecko.png");
+    background: #f74 fixed center no-repeat url("images/gecko.png");
 
     color: black;
     -moz-border-radius: 5px;

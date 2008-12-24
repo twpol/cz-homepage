@@ -32,7 +32,7 @@
 
 body.chatzilla-body {               /* The topmost container in the ChatZilla */
     background: black;         /* output window. */
-    background-image: url(mozilla-star-dblue.gif);
+    background-image: url(images/mozilla-star-dblue.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ data,
 .msg-type,
 .msg-user
 .msg-table {
-    background-image: url(mozilla-bask-dblue.jpg);
+    background-image: url(images/mozilla-bask-dblue.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -166,7 +166,7 @@ data,
     -moz-border-radius: 3px;
     border: 1px #444444 solid;
     background: #111111;
-    background-image: url(mozilla-star-lblue.gif);
+    background-image: url(images/mozilla-star-lblue.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
