@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="common/style/faq.xsl" type="text/xml"?>
+<?xml-stylesheet href="../common/style/faq.xsl" type="text/xml"?>
 
 <faq xml:lang="en">
   <links>
