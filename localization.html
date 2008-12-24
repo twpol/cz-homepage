@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Localization Guide - ChatZilla!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="common/style/core.css" />
+    <link rel="stylesheet" type="text/css" href="common/style/site.css" />
+    <script type="text/javascript" src="common/script/site.js"></script>
+</head>
+<body>
+    <div id="header">
+        <script type="text/javascript">writeHeader();</script>
+    </div>
+    <div id="content">
+        <h2>Localizing ChatZilla</h2>
+        <p>
+            So, you want to try and localize ChatZilla? Good on you! This page is here to try and give you an idea how to go about things. If you have questions, or just trouble getting things to work at all, feel free to drop by on <a href="irc://irc.mozilla.org/chatzilla">#chatzilla on moznet</a> and ask.
+        </p>
+        <h2>What this page is</h2>
+        <p>
+            This page aims to give you an idea of the easiest way to build a localization xpi for ChatZilla. It requires some setting up on Windows and Mac OS X platforms, but should be (nearly) painless on a *nix system. Even on Windows and Mac, the effort will be worth it in the end (unless you enjoy manually constructing your jar and xpi files every time something changes).
+        </p>
+        <h2>What this page is not</h2>
+        <p>
+            This page does NOT provide all-out guides to CVS, Bash, or language problems (wording choices etcetera). It also doesn't apply to localizing the SeaMonkey Suite - if you want help with that, <a href="http://www.mozilla.org/projects/l10n/">the l10n information pages</a> may be of more assistance to you.
+        </p>
+        <h2>Requirements for the method described below.</h2>
+        <ul>
+            <li><strong>Windows</strong>:<br>
+                This is probably worst of them all. You need to get <a href="http://www.cygwin.com">Cygwin</a>. Install at least the following packages when presented with the horribly badly done list in its installer:
+                <ul>
+                    <li>coreutils</li>
+                    <li>cvs</li>
+                    <li>sed</li>
+                    <li>perl (optionally, you can not install this and use ActiveState perl instead)</li>
+                    <li>zip</li>
+                    <li>bash</li>
+                </ul>
+                Now, hopefully, you're setup after installing all this. Hopefully.
+            </li>
+            <li><strong>Mac</strong>:<br>
+                You'll need to install <a href="http://fink.sourceforge.net/download/index.php">fink</a>.<br>
+                Using fink from the command line, install the <tt>cvs</tt> package. If everything went alright during the original install, the <tt>perl</tt>, <tt>sed</tt>, <tt>bash</tt> and <tt>zip</tt> packages were already installed.
+            </li>
+            <li><strong>Linux/Unix</strong>:<br>
+                Simple, you need to get the following packages from your distribution:
+                <ul>
+                    <li>cvs</li>
+                    <li>perl</li>
+                    <li>bash</li>
+                    <li>sed</li>
+                    <li>zip</li>
+                </ul>
+                Since all of those come pre-installed with most distributions, you're probably done already.
+            </li>
+        </ul>
+        <h2>Step 1: Checkout the source</h2>
+        <p>
+            First things first: make sure you have everything listed in the requirements above, and open a terminal:
+        </p>
+        <ul>
+            <li>On <strong>Windows</strong>:<br>
+                <br>
+                <tt>Start &gt; Run &gt; Type 'cmd' in the box and hit Return</tt>
+                <br>
+                <br>
+            </li>
+            <li>On <strong>Mac</strong>:<br>
+                <br>
+                <tt>Applications &gt; Utilities &gt; Terminal</tt><br>
+                <br>
+            </li>
+            <li>On <strong>Linux/Unix</strong> you should be so familiar with terminals that I need not explain it here.</li>
+        </ul>
+        <p>
+            Once you have opened a terminal, set the CVSROOT environment variable to the mozilla cvs repository. Commands to do so are listed below:
+        </p>
+        <ul>
+            <li>On <strong>Windows</strong>:<br>
+                <br>
+                <kbd>set CVSROOT=:pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot</kbd>
+                <br>
+                <br>
+            </li>
+            <li>
+                On <strong>Mac</strong> and <strong>Linux/Unix</strong>:<br>
+                <br>
+                <kbd>CVSROOT=:pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot</kbd><br>
+                <br>
+                (Note that I'm assuming you're running a bash shell. On Mac, you will be running that unless you changed preferences. On Linux/Unix, you might need to start bash from your ash/tcsh/something-else shell)
+            </li>
+        </ul>
+        <p>
+            Now you can checkout the ChatZilla source. Navigate to a folder where you want to store your localization work using the '<kbd>cd</kbd>' command. Then execute the following command:<br>
+            <br>
+            <kbd>cvs co mozilla/extensions/irc</kbd><br>
+            <br>
+            This will get you the ChatZilla source. You'll see lots of filenames flashing by, and after a (hopefully short) while it will be done. Now, to actually build ChatZilla, you need some other files as well. These are not part of the source, but they are required to get the build script to work properly. To get those files, use the following command:
+            <br>
+            <br>
+            <kbd>cvs co mozilla/config</kbd><br>
+            <br>
+            Now you have all the source code you need, so let's get going!
+        </p>
+        <h2>Step 2: Making a locale directory</h2>
+        <p>
+            To get started on your localization, you'll want to copy the contents of the 'en-US' directory in <tt>mozilla/extensions/irc/xul/locale</tt> into a new subdirectory there. The new subdirectory should be named after the locale you're writing a localization for. Examples are <tt>de-DE</tt> for German, or <tt>fr-FR</tt> for French.</p>
+        <h2>Step 3: Localize all the files in your new directory.</h2>
+        <p>
+            The single chatzilla.properties file and all the .dtd files will need to be localized in order for your localization to be complete. The chatzilla.properties file is probably hardest, because it is so big. To get things right, there are a couple of things you need to watch out for:</p>
+        <ul>
+            <li><strong>NEVER</strong> localize the cmd.&lt;something&gt;.params strings. These are for internal use, translating them will prevent the use of those commands! You can, however, translate the cmd.&lt;something&gt;.help strings. These will prove useful to users when they are unsure what a command is about. </li>
+            <li>Do <strong>NOT</strong> change the locale.version string. This too is for internal use. For more information, please refer to the comment at the top of the chatzilla.properties file. </li>
+            <li>Keep up with changes in ChatZilla. There should be new releases every now and then. Lingering in #chatzilla on moznet when on IRC is probably the best way of getting an idea when these are going to happen. We will release from the code in CVS (you know, where you got your source code from) every now and then. It would be wise to archive releases you have made yourself, and keep up with development on CVS. Silver (James Ross) has made a <a href="http://twpol.dyndns.org/mozilla/chatzilla/nightly">nifty page</a> which will list any locale changes made to the ChatZilla code. </li>
+        </ul>
+        <h2>Step 4: Prepare installation files for your locale package</h2>
+        <p>
+            To actually make a locale package, you'll have to do some more things. If you look in the <tt>mozilla/extensions/irc/xpi/locale-resources/</tt> directory, you'll notice a bunch of install files that you need to copy to a new subdirectory based on your locale. If you were localizing ChatZilla into French, you'd copy the files to the directory<br>
+            <br>
+            <tt>mozilla/extensions/irc/xpi/locale-resources/fr-FR/</tt><br>
+            <br>
+            <strong>After</strong> copying these files, you should edit them as described in the comments at the top of the files. <strong>Make sure to change the UUID in install.rdf</strong>. Also note that you should change this UUID once, but keep it the same afterwards - otherwise updates to your localization won't install properly.<br>
+            UUID generators may be found in any of the following places:
+        </p>
+        <ul>
+            <li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=94551F58-484F-4A8C-BB39-ADB270833AFC&displaylang=en">Microsoft guidgen.exe utility</a> </li>
+            <li><a href="http://kruithof.xs4all.nl/uuid/uuidgen">Web-based UUID generator</a> </li>
+            <li>For the Linux people, your package managing software usually knows about 'libuuid', 'libuuid1' or 'e2fsprogs', which will install a utility called 'uuidgen'. That will do the job fine as well. </li>
+            <li>On moznet, the following command will also give you a uuid:<br>
+                <kbd>/msg firebot uuid</kbd></li>
+            <li>Microsoft Visual Studio also ships with a uuidgen utility.</li>
+        </ul>
+        <h2>Step 5: Make a locale package</h2>
+        <p>
+            When you're done localizing, or just want to try if things work, you can build a localized xpi file of ChatZilla by opening a terminal in the <tt>mozilla/extensions/irc/xpi</tt> directory in the source code, and using the following command:<br>
+            <br>
+            <kbd>bash makelocalexpi.sh ab-CD</kbd><br>
+            <br>
+            where 'ab-CD' is of course the locale code for the localization you did, and the name of the directory in which your localization is saved. If all goes well, you should see a bunch of messages appear in your terminal (but no errors), and a chatzilla-&lt;locale&gt;-&lt;version&gt;.xpi file should have been created in the <tt>mozilla/extensions/irc/xpi</tt> directory.<br>
+            <br>
+            This xpi file installs <strong>only</strong> your localization - that means that users will have to have installed the ChatZilla code from the website. It will also mean that this package could, theoretically, also be used by SeaMonkey users to localize their pre-installed ChatZilla.
+        </p>
+    </div>
+    <div id="footer">
+        <script type="text/javascript">writeFooter();</script>
+    </div>
+</body>
+</html>
