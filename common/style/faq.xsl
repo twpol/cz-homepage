@@ -24,17 +24,17 @@
   <xsl:text>&#10;	</xsl:text>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <xsl:text>&#10;	</xsl:text>
-  <link rel="icon" type="image/png" href="favicon.png"></link>
+  <link rel="icon" type="image/png" href="../favicon.png"></link>
   <xsl:text>&#10;	</xsl:text>
-  <link rel="stylesheet" type="text/css" href="common/style/core.css"></link>
+  <link rel="stylesheet" type="text/css" href="../common/style/core.css"></link>
   <xsl:text>&#10;	</xsl:text>
-  <link rel="stylesheet" type="text/css" href="common/style/site.css"></link>
+  <link rel="stylesheet" type="text/css" href="../common/style/site.css"></link>
 	<xsl:text>&#10;	</xsl:text>
-	<link rel="stylesheet" type="text/css" href="common/style/faq.css"></link>
+	<link rel="stylesheet" type="text/css" href="../common/style/faq.css"></link>
 	<!--<xsl:text>&#10;	</xsl:text>-->
 	<!--<meta http-equiv="refresh" content="15"></meta>-->
 	<xsl:text>&#10;	</xsl:text>
-	<script type="text/javascript" src="common/script/site.js">//</script>
+	<script type="text/javascript" src="../common/script/site.js">//</script>
 	<xsl:text>&#10;</xsl:text>
 </head>
 <xsl:text>&#10;</xsl:text>
@@ -282,7 +282,7 @@
 			<xsl:element name="img">
 				<xsl:attribute name="class">icon</xsl:attribute>
 				<xsl:attribute name="src">
-					<xsl:text>common/image/faq-</xsl:text>
+					<xsl:text>../common/image/faq-</xsl:text>
 					<xsl:value-of select="local-name(.)"/>
 					<xsl:text>.png</xsl:text>
 				</xsl:attribute>
@@ -358,7 +358,7 @@
 	<xsl:template match="image">
 		<xsl:element name="img">
 			<xsl:attribute name="src">
-				<xsl:text>common/image/</xsl:text>
+				<xsl:text>../common/image/</xsl:text>
 				<xsl:value-of select="@name"/>
 				<xsl:text>.png</xsl:text>
 			</xsl:attribute>

@@ -856,7 +856,7 @@
             </menu> lets you switch between some built-in <em>motifs</em> - files which describe how to display the messages.
           </li>
           <li>
-            Browse the <a href="motifs">motifs available on this website</a>. When you've selected one you like, simply drag the name from the list onto ChatZilla.
+            Browse the <a href="../motifs">motifs available on this website</a>. When you've selected one you like, simply drag the name from the list onto ChatZilla.
           </li>
           <li>
             The ChatZilla Preferences let you configure the font family, font size and motif globally, per-network and per-channel, should you wish to vary the appearance between views.
@@ -879,10 +879,10 @@
             Use DOM Inspector to look at the HTML structure created by ChatZilla.
           </li>
           <li>
-            Read one of the <a href="motifs/output-light.css">existing motifs</a> and match up the CSS to what you see.
+            Read one of the <a href="../motifs/output-light.css">existing motifs</a> and match up the CSS to what you see.
           </li>
           <li>
-            Read (and even save and experiment locally with) the <a href="motifs/log">motif preview log</a>, onto which motifs are applied for the website's preview.
+            Read (and even save and experiment locally with) the <a href="../motifs/log">motif preview log</a>, onto which motifs are applied for the website's preview.
           </li>
         </ul>
       </answer>
