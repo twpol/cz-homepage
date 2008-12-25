@@ -321,7 +321,7 @@
       <question>How do I join a channel?</question>
       <answer>
         <p>
-          You can <a href="#list_channels">browse</a> and join existing channels on a network by <a href="#connect">connecting</a> and then selecting the menu <menu name="IRC">
+          You can <a href="#list">browse</a> and join existing channels on a network by <a href="#connect">connecting</a> and then selecting the menu <menu name="IRC">
             <menu name="Join channel..."/>
           </menu>.
         </p>
@@ -1017,12 +1017,28 @@
       </answer>
     </entry>
 
+    <entry id="newsgroup">
+      <question>Is there a newsgroup/forum for ChatZilla?</question>
+      <answer>
+        <p>
+          There is a newsgroup, <a href="news://news.mozilla.org/mozilla.dev.apps.chatzilla">mozilla.dev.apps.chatzilla</a>. There isn't much traffic there normally, but you are welcome to post questions and ask for information or help there if you don't want to stay in <a href="#irc">#chatzilla</a> for a bit or the issue isn't that urgent.
+        </p>
+      </answer>
+    </entry>
+
     <entry id="source">
       <question>Where is the source code for ChatZilla?</question>
       <answer>
         <p>
           All the source code lives in Mozilla's CVS repository, under <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/">mozilla/extensions/irc/</a>. The libraries are mostly in <file>js/lib/</file> and the front-end is mostly in <file>xul/content/</file>.
         </p>
+        <p>
+          To work on the source code, you need a local copy; the following commands will check out the code using the standard CVS tool:
+        </p>
+        <screen>
+          cvs -d :pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot login<br/>
+          cvs -d :pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot checkout mozilla/extensions/irc<br/>
+        </screen>
       </answer>
     </entry>
 
@@ -1035,7 +1051,7 @@
       </answer>
     </entry>
 
-    <entry id="report-but">
+    <entry id="report-bug">
       <question>What do I do if I find a bug in ChatZilla?</question>
       <answer>
         <ol>
@@ -1046,6 +1062,15 @@
             If you can't find a duplicate, then please <a href="http://bugzilla.mozilla.org/enter_bug.cgi?product=Other%20Applications&amp;version=Trunk&amp;component=ChatZilla&amp;rep_platform=PC&amp;op_sys=All">file a bug</a>.
           </li>
         </ol>
+      </answer>
+    </entry>
+
+    <entry id="add-question">
+      <question>How do I submit new questions for the FAQ?</question>
+      <answer>
+        <p>
+          This is usually best discussed in <a href="#irc">#chatzilla</a>, but <a href="#newsgroup">posting to the newsgroup</a> or <a href="#report-bug">filing a bug</a> is good too.
+        </p>
       </answer>
     </entry>
   </section>

@@ -595,7 +595,7 @@ var revs =
   {id: "0.9.41", date: "2003-10-15", condition: Y,
    bugs: [217750],
    desc: "adds an ``" +
-   "<a href='" + linkBase + "faq#autoperform'>autoperform</a>" +
+   "<a href='" + linkBase + "faq/#autoperform'>autoperform</a>" +
    "'' pref to networks that can be used to " +
    "execute arbitrary ChatZilla commands when you connect to a network. " +
    "These autoperform commands will be executed <b>before</b> any of your " +
