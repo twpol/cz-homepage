@@ -61,6 +61,7 @@ foreach my $news (@news) {
 			<title>ChatZilla News</title>
 			<pubDate>$dateStr</pubDate>
 			<description>$date: $desc</description>
+			<guid>${linkBase}news#$dateStr</guid>
 			<link>${linkBase}</link>
 		</item>
 RSSITEM
