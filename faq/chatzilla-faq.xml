@@ -55,7 +55,7 @@
           </li>
           <li>Select ChatZilla in the list.</li>
           <li>
-            Either click the <button name="Uninstall"/> button or right-click and select the menu <menu name="Uninstall"/>.
+            Either click the button <button name="Uninstall"/> or right-click and select the menu <menu name="Uninstall"/>.
           </li>
           <li>Confirm the uninstall operation.</li>
           <li>
@@ -149,10 +149,10 @@
       <question>How do I connect to an IRC network or server?</question>
       <answer>
         <p>
-          ChatZilla comes with a selection of popular IRC networks which can be displayed using the <command name="networks"/> command. Connecting to one of these networks is as simple as clicking the network's name in the list or using the <command name="attach"/> command (e.g. <command name="attach"> moznet</command> to connect to the "moznet" network).
+          ChatZilla comes with a selection of popular IRC networks which can be displayed using the command <command name="networks"/>. Connecting to one of these networks is as simple as clicking the network's name in the list or using the command <command name="attach"/> (e.g. the command <command name="attach"> moznet</command> will connect to the "moznet" network).
         </p>
         <p>
-          Connecting to a network or server not listed is easy as well, with the <command name="attach"/>, <command name="server"/> and <command name="sslserver"/> commands. The examples below connect to the imaginary server "irc.example.org" using the normal port:
+          Connecting to a network or server not listed is easy as well, with the commands <command name="attach"/>, <command name="server"/> and <command name="sslserver"/>. The examples below connect to the imaginary server "irc.example.org" using the normal port:
         </p>
         <screen>
           /attach irc.example.org<br/>
@@ -186,7 +186,7 @@
         </screen>
         <ul>
           <li>
-            <strong>Check DNS settings</strong> Can you get to other IRC servers or websites? If not, you might need to adjust your DNS settings or your ISP's DNS servers might be experiencing problems.
+            <strong>Check DNS settings</strong>. Can you get to other IRC servers or websites? If not, you might need to adjust your DNS settings or your ISP's DNS servers might be experiencing problems.
           </li>
           <li>
             <strong>Check the server name</strong>. Are you sure the name is correct? Check with the network's website if you can.
@@ -292,7 +292,7 @@
           </li>
         </ol>
         <note>
-          Some bouncers will tell you to use the <command>quote PASS</command> command. This does not usually work in ChatZilla because the bouncer hasn't completed the connection at this point; use the <command>pass</command> command instead, which also works for many other clients.
+          Some bouncers will tell you to use the command <command>quote PASS</command>. This does not usually work in ChatZilla because the bouncer hasn't completed the connection at this point; use the command <command>pass</command> instead, which also works for many other clients.
         </note>
       </answer>
     </entry>
@@ -326,13 +326,13 @@
           </menu>.
         </p>
         <p>
-          If you already know the channel name you wish to connect to, the <command>join</command> command may be used once connected to the appropriate network (e.g. <command>join #chatzilla</command>).
+          If you already know the channel name you wish to connect to, the command <command>join</command> may be used once connected to the appropriate network (e.g. <command>join #chatzilla</command>).
         </p>
         <note>
           If you omit the channel prefix (<input>#</input>, <input>&amp;</input>, <input>+</input> or <input>!</input>) ChatZilla will prepend the network's default prefix, usually <input>#</input>.
         </note>
         <tip>
-          If you wish to connect to a network or server and join a channel there in one go, you can use the <command>attach</command> command (e.g. <command>attach irc.mozilla.org/chatzilla</command> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
+          If you wish to connect to a network or server and join a channel there in one go, you can use the command <command>attach</command> (e.g. the command <command>attach irc.mozilla.org/chatzilla</command> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
         </tip>
       </answer>
     </entry>
@@ -349,10 +349,10 @@
           The Join Channel dialog cannot cope with large networks, like Quakenet, which have well over 10,000 channels.
         </warning>
         <p>
-          The <command>list</command> command can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
+          The command <command>list</command> can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
         </p>
         <p>
-          The <command>rlist</command> command can be used to display the channels like <command>list</command>, but additionally filter them using a Regular Expression on the topic (e.g. <command>rlist chatzilla</command> will list channels with "chatzilla" in their topic, case-insensitively).
+          The command <command>rlist</command> can be used to display the channels like <command>list</command>, but additionally filter them using a Regular Expression on the topic (e.g. the command <command>rlist chatzilla</command> will list channels with "chatzilla" in their topic, case-insensitively).
         </p>
       </answer>
     </entry>
@@ -361,23 +361,23 @@
       <question>What do the symbols/colored blobs in the userlist mean?</question>
       <answer>
         <p>
-          The different symbols and colored blobs to the left of each user in the userlist indicate their respective status within the channel. Available levels, from most powerful to least are:
+          The different symbols and colored blobs to the left of each user in the userlist indicate their respective status within the channel. Available levels, from most to least powerful are:
         </p>
         <ul>
           <li>
             <image name="userlist-founder-symbol"/>/<image name="userlist-founder-graphic"/> - <strong>Founder</strong> - ultimate power. Can do anything to the channel and those within it. Usually represents the user who registered the channel. <em>Only certain networks support founders.</em>
           </li>
           <li>
-            <image name="userlist-admin-symbol"  />/<image name="userlist-admin-graphic"  /> - <strong>Admin</strong> - a normal operator, but protected from being kicked by anyone except the founder. <em>Only certain networks support founders.</em>
+            <image name="userlist-admin-symbol"  />/<image name="userlist-admin-graphic"  /> - <strong>Admin</strong> - a normal operator, but protected from being kicked by anyone except the founder. <em>Only certain networks support admins.</em>
           </li>
           <li>
-            <image name="userlist-op-symbol"     />/<image name="userlist-op-graphic"     /> - <strong>Operator (op)</strong> - the user can grant and revoke operator, half-operator and voice status, change the topic and kick other users.
+            <image name="userlist-op-symbol"     />/<image name="userlist-op-graphic"     /> - <strong>Operator (op)</strong> - the user can grant and revoke operator, half-operator and voice status, change the topic, kick other users and generally control the channel.
           </li>
           <li>
-            <image name="userlist-halfop-symbol" />/<image name="userlist-halfop-graphic" /> - <strong>Half-operator (half-op)</strong> - the user has the power to moderate the channel, change the topic and kick people, but cannot kick other half-operators nor higher-ranking users, nor can he/she create new operators/half-operators. <em>Only certain networks support founders.</em>
+            <image name="userlist-halfop-symbol" />/<image name="userlist-halfop-graphic" /> - <strong>Half-operator (half-op)</strong> - the user has the power to moderate the channel, change the topic and kick people, but cannot kick other half-operators nor higher-ranking users, nor can he/she create new operators/half-operators. <em>Only certain networks support half-operators.</em>
           </li>
           <li>
-            <image name="userlist-voice-symbol"  />/<image name="userlist-voice-graphic"  /> - <strong>Voice</strong> - the user can talk in the channel when it is moderated. Often used to mark people as trusted/helpful without giving them any power.
+            <image name="userlist-voice-symbol"  />/<image name="userlist-voice-graphic"  /> - <strong>Voice</strong> - the user can talk in the channel when it is moderated. Often used to mark people as trusted or helpful without giving them any real power.
           </li>
           <li>
             <image name="userlist-no-symbol"     />/<image name="userlist-no-graphic"     /> - <strong>Normal</strong> - the user has no special status.
@@ -411,7 +411,7 @@
           If text is showing up with a lot of question-marks (?) or completely unexpected characters (for example, Japanese characters in a Danish channel) then it is likely that ChatZilla is not using the same character encoding as the other clients. All the clients must be using the same or very similar character encodings to exchange text successfully.
         </p>
         <p>
-          To view the character encoding being used on the current view (network, channel or user), use the <command>charset</command> command. The character encoding can be changed using the same command (e.g. <command>charset ISO-8859-15</command> to switch to the "ISO-8859-15" character encoding).
+          To view the character encoding being used on the current view (network, channel or user), use the command <command>charset</command>. The character encoding can be changed using the same command (e.g. the command <command>charset ISO-8859-15</command> will switch to the "ISO-8859-15" character encoding).
         </p>
         <tip>
           Some common character encodings sometimes used by other clients are:
@@ -482,7 +482,7 @@
       <question>How do I use DCC for file transfer and chat?</question>
       <answer>
         <p>
-          ChatZilla includes basic support for the DCC chat and DCC file transfer systems. Use the <command>help dcc</command> to get information on each DCC-related command.
+          ChatZilla includes basic support for the DCC chat and DCC file transfer systems. Use the command <command>help dcc</command> to get information on each DCC-related command.
         </p>
         <note>
           ChatZilla currently does not support DCC <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=285630">resume</a> or reverse.
