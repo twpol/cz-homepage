@@ -37,37 +37,45 @@ body {
 	border-top: 2px solid #888;
 }
 
-.breakout-box {
+.breakout-container {
 	width: 45%;
+}
+
+.breakout-box {
+	margin: 0.5em;
+	border: 2px solid #0B0;
+	padding: 0.5em;
 }
 
 .breakout-box p {
 	margin: 0 0 0 60px;
 }
 
-#download-box {
-	margin: 0.5em;
-	border: 2px solid #0B0;
+.breakout-box-arrow {
+	width: 50px;
+	height: 50px;
+	margin-right: 0em;
+}
+
+#download-box,
+#localized-box {
 	background: #8F8;
-	padding: 0.5em;
 }
 
 #download-box .breakout-box-arrow {
 	background: url(../image/download-arrow.png) no-repeat 0% 0%;
-	width: 50px;
-	height: 50px;
-	margin-right: 0em;
 }
 
 #download-other {
 	font-size: 75%;
 }
 
+#localized-box .breakout-box-arrow {
+	background: url(../image/localized-arrow.png) no-repeat 0% 0%;
+}
+
 #developer-box {
-	margin: 0.5em;
-	border: 2px solid #BB0;
 	background: #FF8;
-	padding: 0.5em;
 }
 
 .revision {

@@ -24,7 +24,7 @@
           On <em>all</em> platforms, you will need to restart your browser after installing - this includes exiting the Quick Launch feature. On <em>some</em> platforms, you may need to restart the Operating System.
         </note>
         <note>
-          <link key="moz"/> and <link key="sm"/> users will need <a href="#install_linux">write permissions to the install location</a> of their browser for installation to succeed.
+          <link key="moz"/> and <link key="sm"/> users will need <a faq="install_linux">write permissions to the install location</a> of their browser for installation to succeed.
         </note>
       </answer>
     </entry>
@@ -178,7 +178,7 @@
       <question>What do I do if I get an error connecting?</question>
       <answer>
         <p>
-          Don't panic - it all depends on the error. We have covered the most common errors and causes in the list below, but if you are getting a different error or you can't solve the problem, you can join us in the <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> (<a href="ircs://irc.mozilla.org:6697/chatzilla">secure</a>) support channel and we'll do our best to help you. If you can't even connect to #chatzilla, please <a href="#newsgroup">post to the newsgroup</a> instead.
+          Don't panic - it all depends on the error. We have covered the most common errors and causes in the list below, but if you are getting a different error or you can't solve the problem, you can join us in the <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> (<a href="ircs://irc.mozilla.org:6697/chatzilla">secure</a>) support channel and we'll do our best to help you. If you can't even connect to #chatzilla, please <a faq="newsgroup">post to the newsgroup</a> instead.
         </p>
         <a name="connection.unknown.host"/>
         <screen>
@@ -321,7 +321,7 @@
       <question>How do I join a channel?</question>
       <answer>
         <p>
-          You can <a href="#list">browse</a> and join existing channels on a network by <a href="#connect">connecting</a> and then selecting the menu <menu name="IRC">
+          You can <a faq="list">browse</a> and join existing channels on a network by <a faq="connect">connecting</a> and then selecting the menu <menu name="IRC">
             <menu name="Join channel..."/>
           </menu>.
         </p>
@@ -470,7 +470,7 @@
           On a channel view, enter just "#" and press <em>tab</em> to get the current channel name immediately.
         </tip>
         <tip>
-          On a channel view, press <em>tab</em> when the input box is empty to complete to the name of the last person in that channel to trigger your <a href="#stalk">stalk function</a> - useful for replying to messages addressed to you.
+          On a channel view, press <em>tab</em> when the input box is empty to complete to the name of the last person in that channel to trigger your <a faq="stalk">stalk function</a> - useful for replying to messages addressed to you.
         </tip>
         <tip>
           You can shorten command names as much as you like - so long as they are unique - without having to use <em>tab</em> to expand them.
@@ -813,7 +813,7 @@
             <strong>Green:</strong> A message appeared on the tab. The message can be a normal chat message, an action, or a notice. Messages sent <em>just</em> to you will color the tab red instead.
           </li>
           <li>
-            <strong>Red:</strong> Someone used your name or something on your <a href="#stalk">stalk list</a> in a message on that tab, or someone sent a message to you specifically.
+            <strong>Red:</strong> Someone used your name or something on your <a faq="stalk">stalk list</a> in a message on that tab, or someone sent a message to you specifically.
           </li>
         </ul>
       </answer>
@@ -892,7 +892,7 @@
       <question>How do I create new commands or use aliases?</question>
       <answer>
         <p>
-          To create simple groups of commands or pre-fill arguments to existing commands, aliases can be used. Aliases can call any command you can enter in the input box, and will replace certain sequences with values provided by you or ChatZilla; they cannot, however, make decisions or use loops - full <a href="#scripts">scripting</a> will have to be used for that.
+          To create simple groups of commands or pre-fill arguments to existing commands, aliases can be used. Aliases can call any command you can enter in the input box, and will replace certain sequences with values provided by you or ChatZilla; they cannot, however, make decisions or use loops - full <a faq="scripts">scripting</a> will have to be used for that.
         </p>
         <p>
           In its simplest form, an alias is just a short name for an existing set of commands and arguments. For example, to create the alias <command>moz</command> which executes the command <command>attach moznet</command>, you'd add <input>moz = attach moznet</input> to the "Command aliases" list, on the Lists tab, for Global Settings, in ChatZilla's Preferences.
@@ -1021,7 +1021,7 @@
       <question>Is there a newsgroup/forum for ChatZilla?</question>
       <answer>
         <p>
-          There is a newsgroup, <a href="news://news.mozilla.org/mozilla.dev.apps.chatzilla">mozilla.dev.apps.chatzilla</a>. There isn't much traffic there normally, but you are welcome to post questions and ask for information or help there if you don't want to stay in <a href="#irc">#chatzilla</a> for a bit or the issue isn't that urgent.
+          There is a newsgroup, <a href="news://news.mozilla.org/mozilla.dev.apps.chatzilla">mozilla.dev.apps.chatzilla</a>. There isn't much traffic there normally, but you are welcome to post questions and ask for information or help there if you don't want to stay in <a faq="irc">#chatzilla</a> for a bit or the issue isn't that urgent.
         </p>
       </answer>
     </entry>
@@ -1046,7 +1046,7 @@
       <question>How do I make a localized version of ChatZilla?</question>
       <answer>
         <p>
-          See the <a href="localization">localization guide</a> for instructions.
+          See the <a href="../localization">localization guide</a> for instructions.
         </p>
       </answer>
     </entry>
@@ -1069,7 +1069,7 @@
       <question>How do I submit new questions for the FAQ?</question>
       <answer>
         <p>
-          This is usually best discussed in <a href="#irc">#chatzilla</a>, but <a href="#newsgroup">posting to the newsgroup</a> or <a href="#report-bug">filing a bug</a> is good too.
+          This is usually best discussed in <a faq="irc">#chatzilla</a>, but <a faq="newsgroup">posting to the newsgroup</a> or <a faq="report-bug">filing a bug</a> is good too.
         </p>
       </answer>
     </entry>
