@@ -969,34 +969,31 @@
       <answer>
         <ol>
           <li>
-            Find out where ChatZilla looks for scripts:
+            Find out where ChatZilla stores and looks for various files:
             <screen label="Input:">
               /pref profilePath
             </screen>
-            <screen label="Output:">
-              Preference profilePath is "C:\Documents and Settings\James\Application Data\Mozilla\ChatZilla\Profiles\w58z18i7.default\chatzilla".
+            <screen label="Example output:">
+              Preference profilePath is "C:\Users\James\AppData\Roaming\Mozilla\Firefox\Profiles\o4oNOdO6.default\chatzilla".
             </screen>
-            <note>
-              If the preference shows empty, use the command <command>pref profilePath -</command> to fix it.
-            </note>
           </li>
           <li>
-            Open the directory given in step 1 and find the <file>scripts</file> subdirectory. This is where ChatZilla looks for scripts by default.
+            Open the directory displayed by the command in step 1 and find the subdirectory <file>scripts</file>. This is where ChatZilla looks for scripts by default.
           </li>
           <li>
-            Inside <file>scripts</file>, create a new directory for the script you wish to install. You can name it anything you like, but ideally ensure you will know which script it is in the future.
+            Inside the subdirectory <file>scripts</file>, create a new subdirectory for the script you wish to install. You can name it anything you like, but ideally ensure you will know which script it is in the future.
           </li>
           <li>
-            Save the script into the new subdirectory you created in step 3. Make sure all the files go in here. If there isn't a file called <file>init.js</file>, something is missing!
+            Save the script into the new subdirectory you created in step 3. Make sure all the files go into the new subdirectory - if there isn't a file called <file>init.js</file>, something is missing!
           </li>
           <li>
             Restart ChatZilla.
           </li>
         </ol>
         <tip>
-          If you're having problems with a script not loading, make sure it isn't reporting any errors. To do this, use the command <command>client</command> to open the client view, ensure the menu <menu name="IRC">
+          If you're having problems with a script not loading, make sure it isn't reporting any errors. To do this, use the command <command>client</command> to open the client view and ensure the menu <menu name="IRC">
             <menu name="Open This Tab at Startup"></menu>
-          </menu> is checked and restart ChatZilla. Any errors will be displayed on the client view.
+          </menu> is checked; then restart ChatZilla. Any errors will be displayed on the client view.
         </tip>
       </answer>
     </entry>
@@ -1012,7 +1009,7 @@
           Of course there is! <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> on <a href="irc://irc.mozilla.org">irc.mozilla.org</a>.
         </p>
         <tip>
-          If you have a question or problem you wish to get help with, please just ask it - don't wait for someone else to talk! A lot of people idle in #chatzilla and wont say anything until someone asks a question, but also don't expect an immediate answer, we're not always at our computers or able to offer help to every problem.
+          If you have a question or problem you wish to get help with, please just ask it - don't wait for someone else to talk! A lot of people idle in #chatzilla and wont say anything until someone asks a question; equally, don't expect an immediate answer, as we're not always at our computers or able to offer help to every problem.
         </tip>
       </answer>
     </entry>
