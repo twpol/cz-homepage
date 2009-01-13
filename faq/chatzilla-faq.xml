@@ -278,21 +278,20 @@
       <question>How do I use ChatZilla with a bouncer?</question>
       <answer>
         <p>
-          ChatZilla will work with most bouncers fine; however, it should be remembered that due to the special position within the connection that bouncers sit, sometimes things don't always work as they should.
+          ChatZilla will work with most bouncers without any special setup. To connect to a bouncer running on your own computer (<input>localhost</input>), on port <input>12345</input>, using password <input>secret</input>:
         </p>
-        <p>
-          Connecting to a bouncer is simple:
-        </p>
-        <ol>
-          <li>
-            <command>server localhost 12345</command> - replace "12345" with the correct local port for your bouncer.
-          </li>
-          <li>
-            <command>pass mypassword</command> - replace "mypassword" with the password required for your bouncer. Skip this step if your bouncer doesn't need a password.
-          </li>
-        </ol>
+        <screen>
+          /server localhost 12345<br/>
+          /pass secret<br/>
+        </screen>
+        <tip>
+          If the bouncer uses a secure (SSL) connection, use the command <command>sslserver</command> instead of <command>server</command>.
+        </tip>
+        <tip>
+          If the bouncer uses usernames as well as passwords for authentication, use the command <command>name</command> to set the username to use on the next connection attempt.
+        </tip>
         <note>
-          Some bouncers will tell you to use the command <command>quote PASS</command>. This does not usually work in ChatZilla because the bouncer hasn't completed the connection at this point; use the command <command>pass</command> instead, which also works for many other clients.
+          Some bouncers will tell you to use the command <command>quote PASS</command>. This is the same as the command <command>pass</command> in ChatZilla - you can use either.
         </note>
       </answer>
     </entry>
