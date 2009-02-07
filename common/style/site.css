@@ -4,7 +4,7 @@ body {
 }
 
 #header {
-	background: url(../image/banner-bg.png) repeat-x 0% 100% #88F;
+	background: #88F;
 	color: #FFF;
 	border-bottom: 2px solid #00B;
 }
@@ -191,7 +191,7 @@ body {
 
 #donate-table th {
 	border: 1px solid #00B;
-	background: url(../image/banner-bg.png) repeat-x 0% 100% #88F;
+	background: #88F;
 	color: #FFF;
 }
 
