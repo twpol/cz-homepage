@@ -72,6 +72,6 @@ var motifs = [
     }, {
       name: "Trioptimum",
       file: "output-trioptimum.css",
-      desc: "A Trioptimum (from <a href='http://www.sshock2.com/'>System Shock</a>) theme, by <a href='http://www.strangebedfellows.schwarzsilber.de/index.php?topic=66.msg124#msg124'>Kolya</a>."
+      desc: "A Trioptimum (from <a href='http://www.sshock2.com/'>System Shock</a>) theme, by <a href='http://www.strangebedfellows.de/index.php/topic,125.msg248.html'>Kolya</a>."
     }
 ];
