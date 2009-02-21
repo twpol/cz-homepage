@@ -43,38 +43,39 @@ body {
 
 .breakout-box {
 	margin: 0.5em;
-	border: 2px solid #0B0;
+	border: 0.15em solid black;
 	padding: 0.5em;
 }
 
 .breakout-box p {
-	margin: 0 0 0 60px;
+	margin: 0;
 }
 
-.breakout-box-arrow {
-	width: 50px;
-	height: 50px;
-	margin-right: 0em;
+#download-box, #localized-box, #developer-box {
+	padding-left: 1.0em;
+	min-height: 50px;
 }
 
-#download-box,
-#localized-box {
-	background: #8F8;
+#download-box p, #localized-box p, #developer-box p {
+	margin-left: 50px;
 }
 
-#download-box .breakout-box-arrow {
-	background: url(../image/download-arrow.png) no-repeat 0% 0%;
+#download-box {
+	border-color: #0B0;
+	background: url(../image/download-arrow.png) no-repeat 0.5em 0.5em #8F8;
 }
 
 #download-other {
 	font-size: 75%;
 }
 
-#localized-box .breakout-box-arrow {
-	background: url(../image/localized-arrow.png) no-repeat 0% 0%;
+#localized-box {
+	border-color: #0B0;
+	background: url(../image/localized-arrow.png) no-repeat 0.5em 0.5em #8F8;
 }
 
 #developer-box {
+	border-color: #BB0;
 	background: #FF8;
 }
 
