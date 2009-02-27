@@ -6,7 +6,7 @@
 	
 	<xsl:param name="version" select="'dinamica'"/>
 	
-	<xsl:output method="xml"
+	<xsl:output method="html"
 			doctype-public="-//W3C//DTD HTML 4.01//EN"
 			doctype-system="http://www.w3.org/TR/html4/strict.dtd"
       omit-xml-declaration="yes"
