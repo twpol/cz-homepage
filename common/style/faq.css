@@ -68,3 +68,7 @@ div.tip .icon, div.note .icon, div.warning .icon {
 table.left-align th, table.left-align td {
 	text-align: left;
 }
+
+#footer {
+	margin-bottom: 100%;
+}

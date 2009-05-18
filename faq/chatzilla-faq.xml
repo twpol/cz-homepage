@@ -115,7 +115,7 @@
   <section id="getting-started">
     <title>Getting Started</title>
 
-    <entry id="start-cz">
+    <entry id="start">
       <question>How do I start ChatZilla?</question>
       <answer>
         <ul>
@@ -149,24 +149,25 @@
       <question>How do I connect to an IRC network or server?</question>
       <answer>
         <p>
-          ChatZilla comes with a selection of popular IRC networks which can be displayed using the command <command name="networks"/>. Connecting to one of these networks is as simple as clicking the network's name in the list or using the command <command name="attach"/> (e.g. the command <command name="attach"> moznet</command> will connect to the "moznet" network).
-        </p>
-        <p>
-          Connecting to a network or server not listed is easy as well, with the commands <command name="attach"/>, <command name="server"/> and <command name="sslserver"/>. The examples below connect to the imaginary server "irc.example.org" using the normal port:
+          Connect to any IRC server with the command <command name="attach"/>. For example (2nd are 3rd include the password "secret"):
         </p>
         <screen>
           /attach irc.example.org<br/>
-          /attach irc://irc.example.org<br/>
-          /attach irc://irc.example.org:6667<br/>
-          /server irc.example.org<br/>
-          /server irc.example.org 6667
+          /attach irc.example.org:6667/?pass=secret<br/>
+          /attach ircs://irc.example.org:6697/?pass=secret<br/>
         </screen>
         <p>
-          To connect to the imaginary server "irc.example.org" using a secure (SSL) port:
+          ChatZilla also has a selection of IRC networks, displayed by the command <command name="networks"/>. Simply click the network's name in the list or use the command <command name="attach"/> to connect (e.g. the command <command name="attach"> moznet</command> will connect to the "moznet" network).
+        </p>
+        <p>
+          If you prefer not to use the URL-style of the command <command name="attach"/>, you can also use the commands <command name="server"/> and <command name="sslserver"/>:
         </p>
         <screen>
-          /attach ircs://irc.example.org:6697<br/>
-          /sslserver irc.example.org 6697
+          /server irc.example.org<br/>
+          /server irc.example.org 6667<br/>
+          /server irc.example.org 6667 secret<br/>
+          /sslserver irc.example.org 6697<br/>
+          /sslserver irc.example.org 6697 secret<br/>
         </screen>
         <tip>
           Remember to check which port number the server is running on, especially for secure (SSL) connections. The defaults are 6667 and 9999 for normal and secure, respectively.
@@ -175,21 +176,21 @@
     </entry>
 
     <entry id="connect-issues">
-      <question>What do I do if I get an error connecting?</question>
+      <question>What if I get an error connecting?</question>
       <answer>
         <p>
-          Don't panic - it all depends on the error. We have covered the most common errors and causes in the list below, but if you are getting a different error or you can't solve the problem, you can join us in the <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> (<a href="ircs://irc.mozilla.org:6697/chatzilla">secure</a>) support channel and we'll do our best to help you. If you can't even connect to #chatzilla, please <a faq="newsgroup">post to the newsgroup</a> instead.
+          Don't panic - it all depends on the error. We have covered the most common errors and possible causes in the list below, but if you are getting a different error or you can't solve the problem, you can join us in <a faq="irc">our IRC channel</a> and we'll do our best to help you. If you can't even connect there, please <a faq="newsgroup">post to the newsgroup</a> instead.
         </p>
         <a name="connection.unknown.host"/>
         <screen>
-          Unknown host ``irc.example.com'' connecting to irc://irc.example.com/ (irc.example.com:6667).
+          Unknown host &#x201C;irc.example.com&#x201D; connecting to irc://irc.example.com/ (irc.example.com:6667).
         </screen>
         <ul>
           <li>
-            <strong>Check DNS settings</strong>. Can you get to other IRC servers or websites? If not, you might need to adjust your DNS settings or your ISP's DNS servers might be experiencing problems.
+            <strong>Check DNS settings.</strong> Can you get to other IRC servers or websites? If not, you might need to adjust your DNS settings or your ISP's DNS servers might be experiencing problems.
           </li>
           <li>
-            <strong>Check the server name</strong>. Are you sure the name is correct? Check with the network's website if you can.
+            <strong>Check the server name.</strong> Make sure you are attempting to connect to the correct server. Check with the network's website if you can.
           </li>
         </ul>
         <a name="connection.timeout"/>
@@ -198,7 +199,7 @@
         </screen>
         <ul>
           <li>
-            <strong>Check anti-virus and firewall settings</strong>. Your anti-virus or firewall could be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+            <strong>Check anti-virus and firewall settings.</strong> Your anti-virus or firewall could be responsible for this error. Check to make sure they are not blocking "IRC" or "TCP port 6667 outgoing".
           </li>
         </ul>
         <a name="connection.refused"/>
@@ -207,7 +208,10 @@
         </screen>
         <ul>
           <li>
-            <strong>Check the server port</strong>. Make sure you are attempting to connect on the correct port (6667 in the example above).
+            <strong>Check the server port.</strong> Make sure you are attempting to connect on the correct port (6667 in the example above). Check with the network's website if you can.
+          </li>
+          <li>
+            <strong>Check anti-virus and firewall settings.</strong> Your anti-virus or firewall could be responsible for this error. Check to make sure they are not blocking "IRC" or "TCP port 6667 outgoing".
           </li>
         </ul>
         <a name="connection.closed"/>
@@ -216,10 +220,10 @@
         </screen>
         <ul>
           <li>
-            <strong>Check ZoneAlarm Internet Security settings</strong>. If you have ZoneAlarm Internet Security installed, make sure the "Block IRC" option in "IMSecurity" > "Settings" > "Advanced" is not selected.
+            <strong>Check ZoneAlarm Internet Security settings.</strong> If you have ZoneAlarm Internet Security installed, make sure the "Block IRC" option in "IMSecurity" > "Settings" > "Advanced" is not selected.
           </li>
           <li>
-            <strong>Check anti-virus and firewall settings</strong>. Even if your anti-virus and firewall are not listed above, they could still be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+            <strong>Check anti-virus and firewall settings.</strong> Your anti-virus or firewall could be responsible for this error. Check to make sure they are not blocking "IRC" or "TCP port 6667 outgoing".
           </li>
         </ul>
         <a name="connection.reset"/>
@@ -228,10 +232,10 @@
         </screen>
         <ul>
           <li>
-            <strong>Check McAfee Anti-Virus settings</strong>. If you have McAfee Anti-Virus installed, make sure the rules for ports 6666 - 6669 in "VirusScan Console" > "Access Protection" are disabled.
+            <strong>Check McAfee Anti-Virus settings.</strong> If you have McAfee Anti-Virus installed, make sure the rules for ports 6666 - 6669 in "VirusScan Console" > "Access Protection" are disabled.
           </li>
           <li>
-            <strong>Check anti-virus and firewall settings</strong>. Even if your anti-virus and firewall are not listed above, they could still be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
+            <strong>Check anti-virus and firewall settings.</strong> Even if your anti-virus and firewall are not listed above, they could still be responsible for this error. Check to make sure they are not blocking IRC or port 6667.
           </li>
         </ul>
         <screen>
@@ -239,59 +243,55 @@
         </screen>
         <ul>
           <li>
-            <strong>Check IdentD settings</strong>. The server is requiring you to enable the <a faq="ident">identification service</a> (IdentD).
+            <strong>Check IdentD settings.</strong> The server is requiring you to enable the <a faq="ident">identification service</a> (IdentD).
           </li>
           <li>
-            <strong>Check gateway/router/NAT settings</strong>. If you already have an <a faq="ident">identification service</a> running, check to make sure computers on the internet can contact it. This usually means allowing inbound connections to TCP port 113 in your firewall, and forwarding the same port in your gateway, router or NAT device.
+            <strong>Check gateway/router/NAT settings.</strong> If you already have an <a faq="ident">identification service</a> running, check to make sure computers on the internet can contact it. This usually means allowing inbound connections to TCP port 113 in your firewall, and forwarding the same port in your gateway, router or NAT device.
           </li>
         </ul>
       </answer>
     </entry>
 
     <entry id="proxy">
-      <question>How do I use ChatZilla with a proxy?</question>
+      <question>How do I connect with a proxy?</question>
       <answer>
         <p>
-          ChatZilla will work automatically with most proxy configurations, as it runs with your browser's networking configuration. However, you can override this using the <em>Proxy Type</em> setting, found in ChatZilla's Preferences window, on the General tab, in the Connection group. It exists both for Global Settings and for each network.
-        </p>
-        <p>
-          There are three settings you can use for <em>Proxy Type</em>:
+          ChatZilla automatically uses your browser's SOCKS proxy. You can override this by setting the <em>Proxy Type</em> preference:
         </p>
         <ul>
           <li>
-            <em>empty</em> (default): ChatZilla will use the browser's SOCKS proxy, if there is one configured, otherwise it will use direct connections.
+            <strong>none</strong>: Force direct connection.
           </li>
           <li>
-            <strong>http</strong>: ChatZilla will use the browser's HTTP proxy.
+            <strong>http</strong>: Force HTTP proxy.
           </li>
           <li>
-            <strong>none</strong>: ChatZilla will use direct connections.
+            <em>empty</em> (default): SOCKS proxy if set, otherwise direct connection.
           </li>
         </ul>
         <note>
-          ChatZilla currently does not support proxies which require authentication.
+          Proxies which require authentication are not supported.
         </note>
+        <tip>
+          The <em>Proxy Type</em> preference can be found in both Global Settings and individual networks, on the General tab, in the Connection group.
+        </tip>
       </answer>
     </entry>
 
     <entry id="bouncer">
-      <question>How do I use ChatZilla with a bouncer?</question>
+      <question>How do I connect with a bouncer?</question>
       <answer>
         <p>
-          ChatZilla will work with most bouncers without any special setup. To connect to a bouncer running on your own computer (<input>localhost</input>), on port <input>12345</input>, using password <input>secret</input>:
+          To connect to a bouncer running on "<input>irc.example.com</input>", port <input>12345</input>, with password "<input>secret</input>", use the command:
         </p>
         <screen>
-          /server localhost 12345<br/>
-          /pass secret<br/>
+          /server irc.example.com 12345 secret<br/>
         </screen>
         <tip>
-          If the bouncer uses a secure (SSL) connection, use the command <command>sslserver</command> instead of <command>server</command>.
-        </tip>
-        <tip>
-          If the bouncer uses usernames as well as passwords for authentication, use the command <command>name</command> to set the username to use on the next connection attempt.
+          If the bouncer requires a specific username as well as passwords for authentication, use the command <command name="name"/> to set the username to use on the next connection attempt.
         </tip>
         <note>
-          Some bouncers will tell you to use the command <command>quote PASS</command>. This is the same as the command <command>pass</command> in ChatZilla - you can use either.
+          If the bouncer uses a secure (SSL) connection, use the command <command name="sslserver"/> instead.
         </note>
       </answer>
     </entry>
@@ -316,31 +316,57 @@
       </answer>
     </entry>
 
+    <entry id="password">
+      <question>How do I connect to a server or join a channel that requires a password?</question>
+      <answer>
+        <p>
+          There are examples for <a faq="connect">connecting to servers with the password "secret"</a> and <a faq="join">joining channels with the key (password) "surprise"</a> elsehwere in this FAQ.
+        </p>
+        <p>
+          The following examples show a range of combinations of providing a server password ("secret"), joining a channel, and providing a channel key ("surprise"):
+        </p>
+        <screen>
+          /attach irc.example.org<br/>
+          /attach irc.example.org/?pass=secret<br/>
+          /attach irc.example.org/channel<br/>
+          /attach irc.example.org/channel?key=surprise<br/>
+          /attach irc.example.org/channel?pass=secret&amp;key=surprise<br/>
+        </screen>
+        <tip>
+          The command <command name="attach"/> accepts IRC URLs - without the "<input>irc://</input>" prefix - so all the above examples can be turned into complete URLs by adding "<input>irc://</input>" to the start. For example, <input>irc://irc.example.org/channel?key=surprise</input>.
+        </tip>
+      </answer>
+    </entry>
+
     <entry id="join">
       <question>How do I join a channel?</question>
       <answer>
         <p>
-          You can <a faq="list">browse</a> and join existing channels on a network by <a faq="connect">connecting</a> and then selecting the menu <menu name="IRC">
+          If you know the channel name you wish to connect to, use the command <command name="join"/> from the correct network. For example (2nd includes channel key (password) "surprise"):
+        </p>
+        <screen>
+          /join #example<br/>
+          /join #example surprise<br/>
+        </screen>
+        <p>
+          You can also <a faq="list">browse and join existing channels</a> on a network by <a faq="connect">connecting</a> and then selecting the menu <menu name="IRC">
             <menu name="Join channel..."/>
           </menu>.
-        </p>
-        <p>
-          If you already know the channel name you wish to connect to, the command <command>join</command> may be used once connected to the appropriate network (e.g. <command>join #chatzilla</command>).
         </p>
         <note>
           If you omit the channel prefix (<input>#</input>, <input>&amp;</input>, <input>+</input> or <input>!</input>) ChatZilla will prepend the network's default prefix, usually <input>#</input>.
         </note>
         <tip>
-          If you wish to connect to a network or server and join a channel there in one go, you can use the command <command>attach</command> (e.g. the command <command>attach irc.mozilla.org/chatzilla</command> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
+          If you wish to connect to a network or server and join a channel there in one go, you can use the command <command name="attach"/> (e.g. the command <command>attach irc.mozilla.org/chatzilla</command> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
         </tip>
       </answer>
     </entry>
 
     <entry id="list">
-      <question>How do I list the available channels?</question>
+      <question>How do I list the channels on a network?</question>
       <answer>
         <p>
-          To list the channels on a network or server, select the menu <menu name="IRC">
+          To list all the public channels on a network or server, select the menu <menu name="IRC">
             <menu name="Join channel..."/>
           </menu>. The dialog will list all the channels with sorting by name, user count and topic, as well as searching and filtering.
         </p>
@@ -348,11 +374,30 @@
           The Join Channel dialog cannot cope with large networks, like Quakenet, which have well over 10,000 channels.
         </warning>
         <p>
-          The command <command>list</command> can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
+          The command <command name="list"/> can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
         </p>
         <p>
-          The command <command>rlist</command> can be used to display the channels like <command>list</command>, but additionally filter them using a Regular Expression on the topic (e.g. the command <command>rlist chatzilla</command> will list channels with "chatzilla" in their topic, case-insensitively).
+          The command <command name="rlist"/> can be used to display the channels like <command name="list"/>, but additionally filter them using a Regular Expression on the topic (e.g. the command <command>rlist chatzilla</command> will list channels with "chatzilla" in their topic, case-insensitively).
         </p>
+      </answer>
+    </entry>
+
+    <entry id="find-channel">
+      <question>How do I find the channel I want?</question>
+      <answer>
+        <p>
+          IRC is made up of multiple, disjoint networks, so finding the channel you want can be challenging. As a result, there are entire websites dedicated to finding channels. Here are some popular sites:
+        </p>
+        <ul>
+          <li><a href="http://irc.netsplit.de">Netsplit</a></li>
+          <li><a href="http://searchirc.com">SearchIRC</a></li>
+        </ul>
+        <p>
+          Once you've found the channel you want, <a faq="connect">connect to the network or server</a> it is hosted on, and then <a faq="join">join the channel</a>.
+        </p>
+        <tip>
+          You can connect to a server and join a channel with a single <command name="attach"/> command. For example, <command>attach irc.mozilla.org/chatzilla</command> will connect to "irc.mozilla.org" and join the "#chatzilla" channel.
+        </tip>
       </answer>
     </entry>
 
@@ -958,7 +1003,7 @@
           </li>
         </ul>
         <tip>
-          You can always join us in <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> to ask for scripting help. We wont write your scripts for you, but we'll answer specific questions and point you in the right direction when we can.
+          You can always join us in <a faq="irc">our IRC channel</a> to ask for scripting help. We won't write your scripts for you, but we'll answer specific questions and point you in the right direction when we can.
         </tip>
       </answer>
     </entry>
@@ -1008,7 +1053,7 @@
           Of course there is! <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> on <a href="irc://irc.mozilla.org">irc.mozilla.org</a>.
         </p>
         <tip>
-          If you have a question or problem you wish to get help with, please just ask it - don't wait for someone else to talk! A lot of people idle in #chatzilla and wont say anything until someone asks a question; equally, don't expect an immediate answer, as we're not always at our computers or able to offer help to every problem.
+          If you have a question or problem you wish to get help with, please just ask it - don't wait for someone else to talk! A lot of people idle in #chatzilla and won't say anything until someone asks a question; equally, don't expect an immediate answer, as we're not always at our computers or able to offer help to every problem.
         </tip>
       </answer>
     </entry>
@@ -1017,7 +1062,7 @@
       <question>Is there a newsgroup/forum for ChatZilla?</question>
       <answer>
         <p>
-          There is a newsgroup, <a href="news://news.mozilla.org/mozilla.dev.apps.chatzilla">mozilla.dev.apps.chatzilla</a>. There isn't much traffic there normally, but you are welcome to post questions and ask for information or help there if you don't want to stay in <a faq="irc">#chatzilla</a> for a bit or the issue isn't that urgent.
+          There is a newsgroup, <a href="news://news.mozilla.org/mozilla.dev.apps.chatzilla">mozilla.dev.apps.chatzilla</a>. There isn't much traffic there normally, but you are welcome to post questions and ask for information or help there if you don't want to stay in <a faq="irc">our IRC channel</a> for a bit or the issue isn't that urgent.
         </p>
       </answer>
     </entry>
@@ -1065,7 +1110,7 @@
       <question>How do I submit new questions for the FAQ?</question>
       <answer>
         <p>
-          This is usually best discussed in <a faq="irc">#chatzilla</a>, but <a faq="newsgroup">posting to the newsgroup</a> or <a faq="report-bug">filing a bug</a> is good too.
+          This is usually best discussed in <a faq="irc">our IRC channel</a>, but <a faq="newsgroup">posting to the newsgroup</a> or <a faq="report-bug">filing a bug</a> is good too.
         </p>
       </answer>
     </entry>
