@@ -9,7 +9,7 @@ function fixupDownloadBox() {
 	var rev = getLatestVersion();
 	
 	// Supported host.
-	document.write("<P><A HREF=\"https://addons.mozilla.org/addon/16?src=cz-homepage-js\">Install ChatZilla " + rev.id + " from Add-ons</A></P>\n");
+	document.write("<P><A HREF=\"https://addons.mozilla.org/addon/16?src=external-cz-homepage-js\">Install ChatZilla " + rev.id + " from Add-ons</A></P>\n");
 	document.write("<P CLASS=\"footnote\">(It's only " + rev.size + "KB.)</P>\n");
 	document.write("<P>ChatZilla works on <STRONG>" + host.name + " " + host.ver + "</STRONG>.</P>\n");
 	
