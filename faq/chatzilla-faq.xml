@@ -15,10 +15,10 @@
       <question>How do I install ChatZilla?</question>
       <answer>
         <p>
-          ChatZilla is <a href="https://addons.mozilla.org/addon/16">available from the Mozilla Add-ons site</a> as an extension for <link key="ff"/> and is an optional component during installation for the <link key="moz"/> and <link key="sm"/>.
+          ChatZilla is <a href="https://addons.mozilla.org/addon/16?src=cz-faq-install">available from the Mozilla Add-ons site</a> as an extension for <link key="ff"/> and is an optional component during installation for the <link key="moz"/> and <link key="sm"/>.
         </p>
         <p>
-          If you have downloaded the <link key="moz"/> or <link key="sm"/>, you can install ChatZilla by selecting the <strong>Full</strong> or <strong>Custom</strong> options when installing. If you didn't do this, you can <a href="https://addons.mozilla.org/addon/16">install the extension</a> normally.
+          If you have downloaded the <link key="moz"/> or <link key="sm"/>, you can install ChatZilla by selecting the <strong>Full</strong> or <strong>Custom</strong> options when installing. If you didn't do this, you can <a href="https://addons.mozilla.org/addon/16?src=cz-faq-install">install the extension</a> normally.
         </p>
         <note>
           On <em>all</em> platforms, you will need to restart your browser after installing - this includes exiting the Quick Launch feature. On <em>some</em> platforms, you may need to restart the Operating System.
