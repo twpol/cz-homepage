@@ -149,7 +149,7 @@
       <question>How do I connect to an IRC network or server?</question>
       <answer>
         <p>
-          Connect to any IRC server with the command <command name="attach"/>. For example (2nd are 3rd include the password "secret"):
+          Connect to any IRC server with the command <command name="attach"/>. For example (2nd and 3rd include the password "secret"):
         </p>
         <screen>
           /attach irc.example.org<br/>
@@ -1071,15 +1071,14 @@
       <question>Where is the source code for ChatZilla?</question>
       <answer>
         <p>
-          All the source code lives in Mozilla's CVS repository, under <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/">mozilla/extensions/irc/</a>. The libraries are mostly in <file>js/lib/</file> and the front-end is mostly in <file>xul/content/</file>.
-        </p>
-        <p>
-          To work on the source code, you need a local copy; the following commands will check out the code using the standard CVS tool:
+          ChatZilla's source code is located in the <a href="http://hg.mozilla.org/chatzilla">chatzilla Mercurial repository</a>. To work with the code, a local copy is needed:
         </p>
         <screen>
-          cvs -d :pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot login<br/>
-          cvs -d :pserver:anonymous@cvs-mirror.mozilla.org:/cvsroot checkout mozilla/extensions/irc<br/>
+          hg clone http://hg.mozilla.org/chatzilla<br/>
         </screen>
+        <p>
+          Within the repository, the libraries are mostly in <file>js/lib/</file> and the front-end is mostly in <file>xul/content/</file>.
+        </p>
       </answer>
     </entry>
 

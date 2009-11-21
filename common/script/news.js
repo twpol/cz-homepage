@@ -1,5 +1,8 @@
 var news = [
 	{
+		date: new Date(2009, 10, 21), // November 21, 2009
+		text: ["ChatZilla's codebase has recently been moved into a Mercurial repository hosted by Mozilla at <a href='http://hg.mozilla.org/chatzilla'>http://hg.mozilla.org/chatzilla</a>. Anyone working against the source code should update to use this instead of the CVS directory, which will no longer be updated."]
+	}, {
 		date: new Date(2008, 11, 24), // December 11, 2008
 		text: ["It's been ages since we gave you some news so, as a little holiday surprise, here's an updated website. All the usual suspects are still here, although the FAQ has had some work done to it. We hope you like it!"]
 	}, {
