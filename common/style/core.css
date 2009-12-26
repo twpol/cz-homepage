@@ -74,6 +74,33 @@ body {
 	background: url(../image/rev-red.png) no-repeat 0% 0%;
 }
 
+.screenshot {
+	margin: 1em 0;
+}
+
+.screenshot img {
+	float: left;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+}
+
+.screenshot > .screenshot-labels {
+	float: left;
+	position: relative;
+}
+
+.screenshot > .screenshot-labels > .screenshot-label {
+	position: absolute;
+	margin-left: 0.25em;
+	margin-top: -0.5em;
+	white-space: nowrap;
+	line-height: 1em;
+}
+
+.screenshot-clear {
+	clear: left;
+}
+
 .footnote {
 	font-size: 75%;
 }

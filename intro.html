@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>ChatZilla!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="common/style/core.css"/>
+    <link rel="stylesheet" type="text/css" href="common/style/site.css"/>
+    <script type="text/javascript" src="common/script/site.js"></script>
+</head>
+<body>
+    <div id="header">
+        <script type="text/javascript">writeHeader();</script>
+    </div>
+    <div id="content">
+        <h2>Introduction to ChatZilla</h2>
+        <p>This introduction will guide you through the process of connecting to an IRC network, joining a channel, and explore a few useful parts of the interface. Before you start, you should <a href="faq/#install">install ChatZilla</a> and <a href="faq/#start">start it</a>.</p>
+        <h3>The ChatZilla Window</h3>
+        <div class="screenshot">
+            <img src="common/image/intro-1-initial-overlay.png" style="background-image: url(common/image/intro-1-initial.png);">
+            <div class="screenshot-labels">
+                <div class="screenshot-label" style="top: 38px">Menu bar</div>
+                <div class="screenshot-label" style="top: 70px">Header</div>
+                <div class="screenshot-label" style="top: 217px">Content area</div>
+                <div class="screenshot-label" style="top: 328px">Userlist</div>
+                <div class="screenshot-label" style="top: 397px">Quick network links</div>
+                <div class="screenshot-label" style="top: 448px">Tab bar</div>
+                <div class="screenshot-label" style="top: 475px">Input box</div>
+                <div class="screenshot-label" style="top: 497px">Nickname button</div>
+            </div>
+            <div class="screenshot-clear"></div>
+        </div>
+        <h3>Connecting to a Network</h3>
+        <p>There are a number of ways to <a href="faq/#connect">connect to a network</a>, but the easiest way is via the quick network links on the "*client*" tab. We're going to connect to "moznet" (the Mozilla IRC Network) but everything that follows applies to all networks.</p>
+        <p>Click the "moznet" quick network link and let the connection complete.</p>
+        <h3>Joining a Channel</h3>
+        <p>Channels are the mainstay of IRC - almost everything will happen in a channel. A channel is a chat room where anyone can speak and interact, often with a specific conversation topic you should keep within. The topic may be obvious from the channel's name (e.g. "#firefox" is very likely going to be about the <a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a> browser) but every IRC channel has an explictly set "topic" where further information may be provided by the channel operators.</p>
+        <p>To <a href="faq/#join">join a channel</a> on a network, use the "Join channel..." item in the "IRC" menu from the menu bar.</p>
+        <div class="screenshot">
+            <img src="common/image/intro-2-join-overlay.png" style="background-image: url(common/image/intro-2-join.png);">
+            <div class="screenshot-labels">
+                <div class="screenshot-label" style="top: 97px">Search box</div>
+                <div class="screenshot-label" style="top: 115px">Join the selected channel</div>
+                <div class="screenshot-label" style="top: 138px">Search box options</div>
+                <div class="screenshot-label" style="top: 166px">Only show small/large channels</div>
+                <div class="screenshot-label" style="top: 225px">Update channel list</div>
+                <div class="screenshot-label" style="top: 272px">Channel list</div>
+            </div>
+            <div class="screenshot-clear"></div>
+        </div>
+        <p>If you know which channel you want to join, just type it's name (with or without the "#" prefix) in the quick search box and press "Join". Otherwise, you can search the channel names and set topics using the quick search box. You can also limit the channels to only those with at least and/or at most a specifc number of users. Creating a new channel is easy too - just type a name into the quick search box and click "Join".</p>
+        <p>We're going to join "#firefox", so select it from the channel list and click "Join".</p>
+        <h3>Inside a Channel</h3>
+        <div class="screenshot">
+            <img src="common/image/intro-3-channel-overlay.png" style="background-image: url(common/image/intro-3-channel.png);">
+            <div class="screenshot-labels">
+                <div class="screenshot-label" style="top: 134px">Current topic</div>
+                <div class="screenshot-label" style="top: 216px">Users in the channel and their status</div>
+                <div class="screenshot-label" style="top: 422px">Chat appears here</div>
+                <div class="screenshot-label" style="top: 475px">You type chat here</div>
+            </div>
+            <div class="screenshot-clear"></div>
+        </div>
+        <p>As can be seen above, the channel's topic is visible at the top and indicates what the channel is about and related information; the users in the channel are listed to the left, with two bits of status information: their ability to administrate the channel shown by the <a href="faq/#userlist">colored blobs</a> and if they are away from their computer shown by the italic, grey text.</p>
+        <h3>Useful Menus - Tab Context Menu</h3>
+        <p>The tab context menu provides access to all the common operations for that item - be it a network or channel. The same items can be found in the content (chat) area context menu and the IRC menu in the menu bar.</p>
+        <div class="screenshot">
+            <img src="common/image/intro-4-tab-menu-overlay.png" style="background-image: url(common/image/intro-4-tab-menu.png);">
+            <div class="screenshot-labels">
+                <div class="screenshot-label" style="top: 312px">Remove all chat from the display</div>
+                <div class="screenshot-label" style="top: 334px">Remove tab but don't leave channel</div>
+                <div class="screenshot-label" style="top: 356px">Automatically open channel at startup</div>
+                <div class="screenshot-label" style="top: 384px">Leave channel and close tab</div>
+                <div class="screenshot-label" style="top: 406px">Disconnect from whole network</div>
+                <div class="screenshot-label" style="top: 434px">Display channel in right-to-left</div>
+            </div>
+            <div class="screenshot-clear"></div>
+        </div>
+        <h3>Useful Menus - Userlist Context Menu</h3>
+        <p>The userlist context menu provides access to common operations for users of a channel, plus a couple of options for the userlist itself. The same user items can be found context-sensitively in the content (chat) area context menu (right-click a line by a particular user and see their userlist menu).</p>
+        <div class="screenshot">
+            <img src="common/image/intro-5-user-menu-overlay.png" style="background-image: url(common/image/intro-5-user-menu.png);">
+            <div class="screenshot-labels">
+                <div class="screenshot-label" style="top: 151px">Channel operators sorted higher</div>
+                <div class="screenshot-label" style="top: 173px">Show symbol (@, %, +) instead of blob</div>
+                <div class="screenshot-label" style="top: 245px">Start a private conversation</div>
+                <div class="screenshot-label" style="top: 267px">Find out more about user</div>
+                <div class="screenshot-label" style="top: 289px">Check network between you and user</div>
+                <div class="screenshot-label" style="top: 311px">Get local time for user</div>
+                <div class="screenshot-label" style="top: 333px">Get client name and version for user</div>
+                <div class="screenshot-label" style="top: 361px">Start a direct, private conversation</div>
+                <div class="screenshot-label" style="top: 383px">Send a file to user</div>
+            </div>
+            <div class="screenshot-clear"></div>
+        </div>
+        <h3>Futher Reading</h3>
+        <p>The <a href="faq">FAQ</a> answers many questions poeple have when starting, configuring or customizing ChatZilla but if you need more help you can join our <a href="faq/#irc">IRC channel on moznet</a>.</p>
+    </div>
+    <div id="footer">
+        <script type="text/javascript">writeFooter();</script>
+    </div>
+</body>
+</html>

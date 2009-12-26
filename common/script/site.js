@@ -33,24 +33,29 @@ var sitePages = [
 			key: "root/news",
 			url: "news",
 			title: "News"
-        }, {
-            key: "root/donate",
-            url: "donate",
-            title: "Donate",
-            showInHeader0: true
-        }, {
-            key: "root/localization",
-            url: "localization",
-            title: "Localization Guide"
-        }, {
-            key: "root/screenshots",
-            url: "screenshots/?M=D",
-            title: "Screenshots",
-            showInHeader0: true
-        }, {
+		}, {
+			key: "root/donate",
+			url: "donate",
+			title: "Donate",
+			showInHeader0: true
+		}, {
+			key: "root/localization",
+			url: "localization",
+			title: "Localization Guide"
+		}, {
+			key: "root/screenshots",
+			url: "screenshots/?M=D",
+			title: "Screenshots",
+			showInHeader0: true
+		}, {
 			key: "root/users",
 			url: null,
 			title: "Users"
+		}, {
+			key: "root/users/intro",
+			url: "intro",
+			title: "Introduction",
+			showInHeader0: true
 		}, {
 			key: "root/users/faq",
 			url: "faq",
