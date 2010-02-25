@@ -987,7 +987,7 @@
         </p>
         <ul>
           <li>
-            The <a href="../scripts/sample/init.js">sample plugin</a> covers some of the basics.
+            The <a href="../scripts/sample/init.js">sample script</a> covers some of the basics.
           </li>
           <li>
             For a list of default menus in ChatZilla, see <a href="http://mxr.mozilla.org/mozilla/source/extensions/irc/xul/content/menus.js">menus.js</a>.
@@ -1011,33 +1011,25 @@
     <entry id="install-script">
       <question>How do I install scripts?</question>
       <answer>
-        <ol>
-          <li>
-            Find out where ChatZilla stores and looks for various files:
-            <screen label="Input:">
-              /pref profilePath
-            </screen>
-            <screen label="Example output:">
-              Preference profilePath is "C:\Users\James\AppData\Roaming\Mozilla\Firefox\Profiles\o4oNOdO6.default\chatzilla".
-            </screen>
-          </li>
-          <li>
-            Open the directory displayed by the command in step 1 and find the subdirectory <file>scripts</file>. This is where ChatZilla looks for scripts by default.
-          </li>
-          <li>
-            Inside the subdirectory <file>scripts</file>, create a new subdirectory for the script you wish to install. You can name it anything you like, but ideally ensure you will know which script it is in the future.
-          </li>
-          <li>
-            Save the script into the new subdirectory you created in step 3. Make sure all the files go into the new subdirectory - if there isn't a file called <file>init.js</file>, something is missing!
-          </li>
-          <li>
-            Restart ChatZilla.
-          </li>
-        </ol>
+        <p>
+          Select the menu <menu name="ChatZilla">
+            <menu name="Install Plugin..."/>
+          </menu>, browse to a local file or paste the URL containing the script (which must be <file>.js</file>, <file>.zip</file> or <file>.jar</file>) and click <button name="OK"/>. Information about the installation will be displayed in the chat area.
+        </p>
+        <warning>
+          All scripts have full access to both ChatZilla and your computer; do not install any script from a source you do not trust.
+        </warning>
+      </answer>
+    </entry>
+
+    <entry id="uninstall-script">
+      <question>How do I uninstall scripts?</question>
+      <answer>
+        <p>
+          Use the command <command name="list-plugins"/> to display a list of all installed scripts and their respective locations. To prevent a script from loading, rename the file indicated by the output of <command name="list-plugins"/> (usually <file>init.js</file>). To completely remove the script from your computer, delete the directory containing the file.
+        </p>
         <tip>
-          If you're having problems with a script not loading, make sure it isn't reporting any errors. To do this, use the command <command>client</command> to open the client view and ensure the menu <menu name="IRC">
-            <menu name="Open This Tab at Startup"></menu>
-          </menu> is checked; then restart ChatZilla. Any errors will be displayed on the client view.
+          Many scripts can be disabled, preventing use of their functionality, without uninstalling them. Use the command <command name="disable-plugin"/> to disable a script, specifying the <file>id</file> from the command <command name="list-plugins"/>. The command <command name="enable-plugin"/> can be used to enable a script again.
         </tip>
       </answer>
     </entry>
