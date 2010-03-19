@@ -1,0 +1,99 @@
+#content > * {
+	margin: 0.5em 0;
+}
+
+.summary-flag {
+	font-style: italic;
+}
+
+.syntax {
+	background: #E0E0E0;
+	color: #000000;
+	padding: 0.2em;
+}
+
+.syntax,
+.code .line,
+tt {
+	font-family: Consolas, monospace;
+}
+
+.syntax .keyword {
+	color: #0000CC;
+}
+
+.syntax .ident {
+}
+
+.syntax .instance,
+.syntax .argument,
+.arguments .argument {
+	font-style: italic;
+}
+
+#content table th,
+#content table td {
+	text-align: left;
+	vertical-align: top;
+}
+
+
+table.functions,
+table.prototypes,
+table.members,
+table.arguments {
+	border-collapse: collapse;
+}
+
+table.functions th,
+table.prototypes th,
+table.members th,
+table.arguments th {
+	background: #808080;
+	color: #FFFFFF;
+}
+
+table.functions th, table.functions td,
+table.prototypes th, table.prototypes td,
+table.members th, table.members td,
+table.arguments th, table.arguments td {
+	border: 1px solid #E0E0E0;
+	padding: 0.1em 0.2em;
+}
+
+
+.code {
+	background: #E0E0E0;
+	color: #000000;
+}
+
+.code .line {
+	height: 1.0em;
+}
+
+.code .line .line_number {
+	background: #FFFFFF;
+	color: #000000;
+	padding: 0.2em;
+	font-style: italic;
+}
+
+.code .line .line_code {
+	white-space: pre;
+}
+
+.code .keyword {
+	color: darkblue;
+}
+
+.code .comment {
+	color: darkgreen;
+}
+
+.code .string {
+	color: purple;
+}
+
+.code .regexp {
+	color: darkred;
+}
