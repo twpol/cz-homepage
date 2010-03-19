@@ -80,18 +80,18 @@ var sitePages = [
 			key: "root/users/revisions",
 			url: "revisions",
 			title: "All Versions of ChatZilla"
-//		}, {
-//			key: "root/developers",
-//			url: "developers",
-//			title: "Developers",
-//			showHeader: 1,
-//			showInHeader0: true
-//		}, {
-//			key: "root/developers/api",
-//			url: "developers/api",
-//			title: "API",
-//			showHeader: 1,
-//			showInHeader1: true
+		}, {
+			key: "root/developers",
+			url: "developers",
+			title: "Developers",
+			showHeader: 1,
+			showInHeader0: true
+		}, {
+			key: "root/developers/api",
+			url: "developers/api",
+			title: "API",
+			showHeader: 1,
+			showInHeader1: true
 //		}, {
 //			key: "root/developers/plugins",
 //			url: "developers/plugins",
@@ -214,7 +214,6 @@ function writeHeader() {
 	document.write("<UL CLASS=\"breadcrumbs\">");
 	
 	if (currentPage) {
-		
 		var key = currentPage.key.split("/");
 		var page;
 		while (key.length > 0) {
