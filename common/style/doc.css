@@ -6,29 +6,56 @@
 	font-style: italic;
 }
 
-.syntax {
+.syntax,
+.code {
 	background: #E0E0E0;
 	color: #000000;
-	padding: 0.2em;
+	padding: 0.2em 0.4em;
 }
 
 .syntax,
-.code .line,
+.line,
 tt {
 	font-family: Consolas, monospace;
 }
 
-.syntax .keyword {
-	color: #0000CC;
+.line {
+	min-height: 1.1em;
+	line-height: 1.1em;
 }
 
-.syntax .ident {
-}
-
-.syntax .instance,
-.syntax .argument,
-.arguments .argument {
+.line_number {
+	margin-left: -0.4em;
+	margin-right: 0.4em;
+	background: #FFFFFF;
+	color: #000000;
+	padding: 0.2em 0.4em;
 	font-style: italic;
+}
+
+.line_code {
+	white-space: pre;
+}
+
+.instance,
+.argument {
+	font-style: italic;
+}
+
+.keyword {
+	color: darkblue;
+}
+
+.comment {
+	color: darkgreen;
+}
+
+.string {
+	color: purple;
+}
+
+.regexp {
+	color: darkred;
 }
 
 #content table th,
@@ -59,41 +86,4 @@ table.members th, table.members td,
 table.arguments th, table.arguments td {
 	border: 1px solid #E0E0E0;
 	padding: 0.1em 0.2em;
-}
-
-
-.code {
-	background: #E0E0E0;
-	color: #000000;
-}
-
-.code .line {
-	height: 1.0em;
-}
-
-.code .line .line_number {
-	background: #FFFFFF;
-	color: #000000;
-	padding: 0.2em;
-	font-style: italic;
-}
-
-.code .line .line_code {
-	white-space: pre;
-}
-
-.code .keyword {
-	color: darkblue;
-}
-
-.code .comment {
-	color: darkgreen;
-}
-
-.code .string {
-	color: purple;
-}
-
-.code .regexp {
-	color: darkred;
 }
