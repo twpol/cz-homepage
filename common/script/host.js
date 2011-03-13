@@ -33,9 +33,7 @@ function detectHost() {
 			rv.moz = ary[1];
 			rv.name = "Mozilla Suite";
 			rv.ver = rv.moz;
-			if (parseInt(ary[2]) >= 1.0) {
-				rv.supported = true;
-			}
+			rv.supported = (parseInt(ary[2]) >= 1.0);
 		}
 		
 		ary = ua.match(/SeaMonkey\/(([0-9\.]+)[^ ;\)]+)/);
@@ -43,7 +41,7 @@ function detectHost() {
 			rv.sm = ary[1];
 			rv.name = "SeaMonkey";
 			rv.ver = rv.sm;
-			rv.supported = true;
+			rv.supported = (parseInt(ary[2]) >= 1.0);
 		}
 		
 		ary = ua.match(/Firefox\/(([0-9\.]+)[^ ;\)]+)/);
@@ -51,9 +49,7 @@ function detectHost() {
 			rv.ff = ary[1];
 			rv.name = "Mozilla Firefox";
 			rv.ver = rv.ff;
-			if (parseInt(ary[2]) >= 0.9) {
-				rv.supported = true;
-			}
+			rv.supported = (parseInt(ary[2]) >= 0.9);
 		}
 	}
 	

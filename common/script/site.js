@@ -43,11 +43,6 @@ var sitePages = [
 			url: "localization",
 			title: "Localization Guide"
 		}, {
-			key: "root/screenshots",
-			url: "screenshots/?M=D",
-			title: "Screenshots",
-			showInHeader0: true
-		}, {
 			key: "root/users",
 			url: null,
 			title: "Users"
@@ -55,6 +50,11 @@ var sitePages = [
 			key: "root/users/intro",
 			url: "intro",
 			title: "Introduction",
+			showInHeader0: true
+		}, {
+			key: "root/users/screenshots",
+			url: "screenshots",
+			title: "Screenshots",
 			showInHeader0: true
 		}, {
 			key: "root/users/faq",

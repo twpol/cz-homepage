@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.86.1", date: "2011-03-13", condition: G, size: 341,
+		bugs: [308324, 460463, 466184, 528548, 536016, 536251, 536414, 541647, 543050, 544469, 576745, 579271, 588067, 605001, 609885],
+		desc: "fixes Firefox 4 compatibility, jumpy tab drag-and-drop, CEIP failed uploading loop; adds DCC chat sounds and menu for stopping DCC file transfers."
+	}, {
 		id: "0.9.86", date: "2009-12-13", condition: G, size: 338,
 		bugs: [246273, 270237, 274852, 353630, 370085, 397640, 424504, 454966, 463813, 475387, 476413, 476933, 480936, 483343, 489971, 490239, 491272, 494074, 495363, 495972, 499200, 499495, 499596, 500944, 503615, 505996, 508277, 510795, 514919, 517908, 519997, 520332, 524470, 528353, 534202, 534203, 534204],
 		desc: "fixes the userlist not always re-sorting on nick changes, auto-perform not working when IDENT fails, DCC File completion 'open file' link not always working, <tt>/delete-view</tt> not disconnecting DCC Chat sessions, incorrect tooltips appearing on tabs, <tt>##channel</tt> links sometimes missing the first <tt>#</tt>, some cases of color codes not working in close proximity to colons, <tt>pass=</tt> URL argument not being sent to built-in networks and more. Improved string formatting of timestamps, logging when loaded in a tab, ordering of IRC menu items, storage of seen URLs and display of lag values. Added an install plugin menu, dialog and command, ANSI escape parsing, SSL exception adding, menu listing open and hidden views and a <tt>/delayed</tt> command."

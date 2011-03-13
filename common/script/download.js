@@ -15,11 +15,5 @@ function fixupDownloadBox() {
 	
 	// Do this last, so if anything goes wrong, the static content is still visible.
 	var noJSBox = document.getElementById("download-no-js");
-	//if (typeof noJSBox.removeChild == "function") {
-	//	while (noJSBox.lastChild) {
-	//		noJSBox.removeChild(noJSBox.lastChild);
-	//	}
-	//} else {
-		noJSBox.innerHTML = "";
-	//}
+	noJSBox.innerHTML = "";
 }
