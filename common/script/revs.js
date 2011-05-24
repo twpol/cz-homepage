@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.87", date: "2011-05-24", condition: G, size: 341,
+		bugs: [431859, 478271, 509608, 564994, 567523, 572567, 583215, 587629, 604830, 609541, 610171, 612139, 634888, 639595, 644197, 645627, 648260, 655620, 656105],
+		desc: "fixes the preferences not opening from Add-Ons or when duplicate aliases are defined, the tab drag arrow not disappearing on drop, slow channel searching, opening links not focusing the browser tab, private chat ignoring scrollback size and the missing window icon. Plugins' <tt>disable()</tt> is now called when closing ChatZilla."
+	}, {
 		id: "0.9.86.1", date: "2011-03-13", condition: G, size: 341,
 		bugs: [308324, 460463, 466184, 528548, 536016, 536251, 536414, 541647, 543050, 544469, 576745, 579271, 588067, 605001, 609885],
 		desc: "fixes Firefox 4 compatibility, jumpy tab drag-and-drop, CEIP failed uploading loop; adds DCC chat sounds and menu for stopping DCC file transfers."
