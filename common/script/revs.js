@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.88", date: "2011-12-18", condition: G, size: 342,
+		bugs: [524003, 536410, 536410, 541715, 608663, 624261, 652382, 665850, 669125, 677049],
+		desc: "fixes missing preferences menu on Mac, auto-perform not being consistently sent, problems installing certain plug-ins and improves support for bouncers and Firefox's single menu."
+	}, {
 		id: "0.9.87", date: "2011-05-24", condition: G, size: 341,
 		bugs: [431859, 478271, 509608, 564994, 567523, 572567, 583215, 587629, 604830, 609541, 610171, 612139, 634888, 639595, 644197, 645627, 648260, 655620, 656105],
 		desc: "fixes the preferences not opening from Add-Ons or when duplicate aliases are defined, the tab drag arrow not disappearing on drop, slow channel searching, opening links not focusing the browser tab, private chat ignoring scrollback size and the missing window icon. Plugins' <tt>disable()</tt> is now called when closing ChatZilla."
