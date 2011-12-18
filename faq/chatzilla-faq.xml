@@ -15,26 +15,14 @@
       <question>How do I install ChatZilla?</question>
       <answer>
         <p>
-          ChatZilla is <a href="https://addons.mozilla.org/addon/16?src=external-cz-faq-install">available from the Mozilla Add-ons site</a> as an extension for <link key="ff"/> and is an optional component during installation for the <link key="moz"/> and <link key="sm"/>.
+          ChatZilla is <a href="https://addons.mozilla.org/addon/16?src=external-cz-faq-install">available from the Mozilla Add-ons site</a> as an extension for <link key="ff"/> and is an optional component during installation for <link key="sm"/>.
         </p>
         <p>
-          If you have downloaded the <link key="moz"/> or <link key="sm"/>, you can install ChatZilla by selecting the <strong>Full</strong> or <strong>Custom</strong> options when installing. If you didn't do this, you can <a href="https://addons.mozilla.org/addon/16?src=external-cz-faq-install">install the extension</a> normally.
+          If you have downloaded <link key="sm"/>, you can install ChatZilla by selecting the <strong>Full</strong> or <strong>Custom</strong> options when installing. If you didn't do this, you can <a href="https://addons.mozilla.org/addon/16?src=external-cz-faq-install">install the extension</a> normally.
         </p>
         <note>
-          On <em>all</em> platforms, you will need to restart your browser after installing - this includes exiting the Quick Launch feature. On <em>some</em> platforms, you may need to restart the Operating System.
+          On <em>all</em> platforms, you will need to restart your browser after installing - this includes exiting the Quick Launch feature.
         </note>
-        <note>
-          <link key="moz"/> and <link key="sm"/> users will need <a faq="install_linux">write permissions to the install location</a> of their browser for installation to succeed.
-        </note>
-      </answer>
-    </entry>
-
-    <entry id="install-linux">
-      <question>How do I install or update ChatZilla in SeaMonkey on Linux/BSD? </question>
-      <answer>
-        <p>
-          In <link key="sm"/>, installing and updating ChatZilla will need to update some files which are in the application directory (usually <file>/usr/local/seamonkey</file>). This directory is normally only writable by the user "root", which will prevent the installation or update for succeeding. You are advised to temporarily make yourself the owner of this directory (e.g. using <file>chown</file>) and then run <link key="sm"/> normally, install the update, restart <link key="sm"/>, and check everything works. After making sure everything is OK, make sure you set "root" to be the owner of the installation directory again.
-        </p>
       </answer>
     </entry>
 
@@ -42,45 +30,25 @@
       <question>How do I uninstall ChatZilla?</question>
       <answer>
         <p>
-          In <link key="ff"/>, ChatZilla can be uninstalled as follows:
+          ChatZilla can be uninstalled as follows:
         </p>
         <ol>
           <li>
-            <link key="ff" suffix=" 1.5 and earlier"/>: Select the menu <menu name="Tools">
-              <menu name="Extensions"/>
-            </menu>.<br/>
-            <link key="ff" suffix=" 2.0 and later"/>: Select the menu <menu name="Tools">
+            <link key="ff"/>: Select the menu <menu name="Firefox">
               <menu name="Add-ons"/>
+            </menu>.<br/>
+            <link key="sm"/>: Select the menu <menu name="Tools">
+              <menu name="Add-on Manager"/>
             </menu>.
           </li>
+          <li>Select Extensions.</li>
           <li>Select ChatZilla in the list.</li>
           <li>
-            Either click the button <button name="Uninstall"/> or right-click and select the menu <menu name="Uninstall"/>.
+            <link key="ff"/>: Either click the button <button name="Remove"/> or right-click and select the menu <menu name="Remove"/>.<br/>
+            <link key="sm"/>: Either click the button <button name="Uninstall"/> or right-click and select the menu <menu name="Uninstall"/>.
           </li>
-          <li>Confirm the uninstall operation.</li>
-          <li>
-            Restart <link key="ff"/> to complete.
-          </li>
-        </ol>
-        <p>
-          <link key="moz"/> and <link key="sm"/> do not have an uninstall feature for extensions, but removing ChatZilla is usually possible.
-        </p>
-        <warning>
-          The following manual uninstall procedure is provided with no warranty whatsoever.
-        </warning>
-        <ol>
-          <li>
-            Shut down the <link key="moz"/> or <link key="sm"/>.
-          </li>
-          <li>
-            Find (in the application's install location) and rename the files <file>components/chatzilla-service.js</file> and <file>chrome/chatzilla.jar</file> to something else.
-          </li>
-          <li>
-            Run <file>regchrome</file>.
-          </li>
-          <li>
-            If <link key="moz"/>/<link key="sm"/> starts up fine, everything worked, otherwise, undo the rename everything and give up, or delete the installation and start from scratch.
-          </li>
+          <li>Confirm the uninstall operation if asked.</li>
+          <li>Restart to complete.</li>
         </ol>
       </answer>
     </entry>
@@ -89,24 +57,21 @@
       <question>How do I make irc: URLs open my default IRC client instead of ChatZilla?</question>
       <answer>
         <p>
-          If you are using the <link key="moz"/> or <link key="sm"/>, you will need to use the <a faq="uninstall">uninstall procedure</a>. For <link key="ff"/>, you can disable the ChatZilla extension as follows:
+          You must disable the ChatZilla extension; do this as follows:
         </p>
         <ol>
           <li>
-            <link key="ff" suffix=" 1.5 and earlier"/>: Select the menu <menu name="Tools">
-              <menu name="Extensions"/>
-            </menu>.<br/>
-            <link key="ff" suffix=" 2.0 and later"/>: Select the menu <menu name="Tools">
+            <link key="ff"/>: Select the menu <menu name="Firefox">
               <menu name="Add-ons"/>
+            </menu>.<br/>
+            <link key="sm"/>: Select the menu <menu name="Tools">
+              <menu name="Add-on Manager"/>
             </menu>.
           </li>
+          <li>Select Extensions.</li>
           <li>Select ChatZilla in the list.</li>
-          <li>
-            Right-click and select the menu <menu name="Disable"/>.
-          </li>
-          <li>
-            Restart <link key="ff"/> to complete.
-          </li>
+          <li>Either click the button <button name="Disable"/> or right-click and select the menu <menu name="Disable"/>.</li>
+          <li>Restart to complete.</li>
         </ol>
       </answer>
     </entry>
@@ -120,28 +85,23 @@
       <answer>
         <ul>
           <li>
-            <link key="moz"/> and <link key="sm"/>: Select the menu <menu name="Window">
+            <link key="ff"/>: Select the menu <menu name="Firefox">
+              <menu name="ChatZilla"/>
+            </menu>.<br/>
+          </li>
+          <li>
+            <link key="sm"/>: Select the menu <menu name="Window">
               <menu name="IRC Chat"/>
             </menu>.
           </li>
+          <li>Place the ChatZilla toolbar button on the main toolbar.</li>
           <li>
-            <link key="ff"/>: Select the menu <menu name="Tools">
-              <menu name="ChatZilla"/>
-            </menu>.
-          </li>
-          <li>
-            <link key="ff"/>: Place the ChatZilla toolbar button on the main toolbar.
-          </li>
-          <li>
-            Start <link key="ff"/>, <link key="moz"/> or <link key="sm"/> with the <commandline>-chat</commandline> command-line option.
+            Start <link key="ff"/> or <link key="sm"/> with the <commandline>-chat</commandline> command-line option.
           </li>
           <li>
             Enter an IRC URL into the location bar (e.g. <url>irc:</url>).
           </li>
         </ul>
-        <note>
-          In some rare cases a bug in the <link key="ff"/> extension manager will disable the ChatZilla extension right after installing, even though the item does not show as disabled in the extensions list. If you can not start ChatZilla as described above (e.g. you get a message saying "irc is not a registered protocol"), try disabling ChatZilla, restarting <link key="ff"/>, re-enabling ChatZilla, and restarting <link key="ff"/> again.
-        </note>
       </answer>
     </entry>
 
@@ -370,11 +330,8 @@
             <menu name="Join channel..."/>
           </menu>. The dialog will list all the channels with sorting by name, user count and topic, as well as searching and filtering.
         </p>
-        <warning>
-          The Join Channel dialog cannot cope with large networks, like Quakenet, which have well over 10,000 channels.
-        </warning>
         <p>
-          The command <command name="list"/> can be used to display all the available channels inline in ChatZilla. This can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
+          The command <command name="list"/> can also be used to display all the available channels inline in ChatZilla. However, this can take a painfully long time on large networks, and sometimes result in being kicked off for "Excess Flood".
         </p>
         <p>
           The command <command name="rlist"/> can be used to display the channels like <command name="list"/>, but additionally filter them using a Regular Expression on the topic (e.g. the command <command>rlist chatzilla</command> will list channels with "chatzilla" in their topic, case-insensitively).
@@ -1031,6 +988,45 @@
         <tip>
           Many scripts can be disabled, preventing use of their functionality, without uninstalling them. Use the command <command name="disable-plugin"/> to disable a script, specifying the <file>id</file> from the command <command name="list-plugins"/>. The command <command name="enable-plugin"/> can be used to enable a script again.
         </tip>
+      </answer>
+    </entry>
+
+    <entry id="networks">
+      <question>How do I add/remove/replace the built-in network list and their servers?</question>
+      <answer>
+        <p>
+          To make changes to the ChatZilla built-in network list, a text file called <file>networks.txt</file> describing the changes must be present in the profile directory. The profile directory is shown when executing the command <command name="pref profilePath"/>:
+        </p>
+        <screen>
+          Preference “profilePath” is “C:\Users\James\AppData\Roaming\Mozilla\ChatZilla\Profiles\random.default\chatzilla”.
+        </screen>
+        <tip>
+          You don't need to add a new network just <a faq="connect">to connect to it</a>.
+        </tip>
+        <p>
+          The text file uses a structured format that represents an array of objects, one for each network to be added, removed or replaced. Each block starts with "<file>START</file>" and ends with "<file>END</file>". Here is an example file which <em>replaces</em> the "moznet" network with a single secure server on port 6697 and <em>removes</em> the "dalnet" network.
+        </p>
+        <screen>
+START &lt;Array&gt;<br/>
+&#xA0; &#xA0; START 0<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; "name" "moznet"<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; START &lt;Array&gt; servers<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; START 0<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; "hostname" "irc.mozilla.org"<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; "port" 6697<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; "isSecure" true<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; END<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; END<br/>
+&#xA0; &#xA0; END<br/>
+&#xA0; &#xA0; START 1<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; "name" "dalnet"<br/>
+&#xA0; &#xA0; &#xA0; &#xA0; "isDeleted" true<br/>
+&#xA0; &#xA0; END<br/>
+END
+        </screen>
+        <p>
+          The network names must be in lower-case and must be formed of alphanumeric characters only. Each network may have <em>either</em> a list of servers <em>or</em> <file>"isDeleted" true</file>. The servers must have a <file>"hostname"</file> and <file>"port"</file>; if they are secure (SSL), they also need <file>"isSecure" true</file>. If a network is listed in <file>networks.txt</file> with servers, the list replaces those built-in to ChatZilla.
+        </p>
       </answer>
     </entry>
   </section>

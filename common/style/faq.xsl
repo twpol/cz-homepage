@@ -20,7 +20,7 @@
 <xsl:text>&#10;</xsl:text>
 <head>
 <xsl:text>&#10;	</xsl:text>
-	<title>ChatZilla FAQ</title>
+	<title>Frequently Asked Questions - ChatZilla</title>
   <xsl:text>&#10;	</xsl:text>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <xsl:text>&#10;	</xsl:text>

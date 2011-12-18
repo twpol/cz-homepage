@@ -1,5 +1,8 @@
 var news = [
 	{
+		date: new Date(2011, 11, 18), // December 18, 2011
+		text: ["It's been a while since the last update, but we've fixed a <A HREF='http://bugzilla.mozilla.org/buglist.cgi?bug_id=524003,536410,536410,541715,608663,624261,652382,665850,669125,677049'>bunch of bugs</A>, put <A HREF='https://github.com/twpol/cz-homepage'>the website on GitHub</A> and updated <A HREF='faq'>the FAQ</A>."]
+	}, {
 		date: new Date(2009, 11, 26), // December 26, 2009
 		text: ["An <a href='intro'>introduction to ChatZilla</a> has been added to the website, with labeled screenshots and explanations to help people get started."]
 	}, {
