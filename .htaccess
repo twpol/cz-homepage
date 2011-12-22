@@ -1,0 +1,11 @@
+AddType application/x-xpinstall xpi
+AddHandler cgi-script .pl
+Options -MultiViews
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.pl -f
+RewriteRule (.*) $1.pl [L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule (.*) $1.html [L]
