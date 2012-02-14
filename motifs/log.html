@@ -80,15 +80,16 @@
       </style>
 
       <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <title>Motifs - ChatZilla</title>
       <link rel="stylesheet" type="text/css" href="output-base-website.css">
-      <SCRIPT SRC="../common/script/common.js"></SCRIPT>
+      <script src="../common/script/common.js"></script>
       <script>
         if (document.location.search)
         {
             document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"");
             document.write(encodeURI(getQueryParam("file")));
             document.write("\">");
-            document.title = "Preview of \"" + getQueryParam("name") + "\" - Motifs - ChatZilla!";
+            document.title = "Preview of \"" + getQueryParam("name") + "\" - " + document.title;
         }
       </script>
     </head>
