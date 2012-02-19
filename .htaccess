@@ -2,17 +2,15 @@ AddType application/x-xpinstall xpi
 AddHandler cgi-script .pl
 Options -MultiViews
 
-Redirect 301 /revs.html              /revisions
-Redirect 301 /motifs.html            /motifs
-Redirect 301 /faq/chatzilla-faq.html /faq
 Redirect 301 /donate/                /donate
-Redirect 301 /news/                  /news
-Redirect 301 /news.html              /news
+Redirect 301 /faq/chatzilla-faq.html /faq
 Redirect 301 /intro/                 /intro
-Redirect 301 /intro.html             /intro
-Redirect 301 /localization.html      /localization
+Redirect 301 /news/                  /news
 
 RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.*)\.(pl|html)$ http://chatzilla.hacksrus.com/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME}.pl -f
 RewriteRule (.*) $1.pl [L]
