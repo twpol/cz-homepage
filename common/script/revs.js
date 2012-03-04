@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.88.1", date: "2012-03-04", condition: G, size: 342,
+		bugs: [719130],
+		desc: "fixes opening links when no browser window is open."
+	}, {
 		id: "0.9.88", date: "2011-12-18", condition: G, size: 342,
 		bugs: [524003, 536410, 536410, 541715, 608663, 624261, 652382, 665850, 669125, 677049],
 		desc: "fixes missing preferences menu on Mac, auto-perform not being consistently sent, problems installing certain plug-ins and improves support for bouncers and Firefox's single menu."
