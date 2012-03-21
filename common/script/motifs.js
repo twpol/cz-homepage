@@ -50,6 +50,10 @@ var motifs = [
       file: "output-mullusko.css",
       desc: "Light background, makes it slightly easier to see who is saying what."
     }, {
+      name: "Monokai",
+      file: "output-monokai.css",
+      desc: "Inspired by monokai for textmate."
+    }, {
       name: "Red Mozilla",
       file: "output-redmoz.css",
       desc: "Red and orange, mozilla star in background."
