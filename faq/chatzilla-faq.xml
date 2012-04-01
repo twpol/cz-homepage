@@ -480,13 +480,34 @@
     </entry>
 
     <entry id="dcc">
-      <question>How do I use DCC for file transfer and chat?</question>
+      <question>How do I use DCC for direct chats and file transfers?</question>
       <answer>
         <p>
-          ChatZilla includes basic support for the DCC chat and DCC file transfer systems. Use the command <command>help dcc</command> to get information on each DCC-related command.
+          ChatZilla includes basic support for the direct chat and file transfer systems.
         </p>
+        <ul>
+          <li>
+            <strong>To start a direct chat (DCC CHAT)</strong>: Right-click on a user in the userlist or chat area and select <menu name="User Commands"><menu name="Direct Chat"/></menu>. This will send the other user an offer, which they must accept to complete the connection.
+          </li>
+          <li>
+            <strong>To send a file (DCC FILE)</strong>: Right-click on a user in the userlist or chat area and select <menu name="User Commands"><menu name="Send File..."/></menu>. A file browse dialog will appear, where you must select the file to send to the other user. After this, an offer will be sent to the other user, which they must accept to start transferring the file.
+          </li>
+          <li>
+            <strong>To accept or reject an offer</strong>: When a user offers you a direct chat or file transfer, a message similar to those below will appear in the chat area. You should click "Accept" or "Decline" as desired to start or ignore the direct chat or file transfer.
+            <screen>
+              Got DCC Chat offer from “Silver” (81.108.149.194:4201) [Accept] [Decline].<br/>
+              Got DCC File Transfer offer from “Silver” (81.108.149.194:4201) of “application.ini” (289B) [Accept] [Decline].<br/>
+            </screen>
+          </li>
+          <li>
+            <strong>To check the status of DCC</strong>: At any time, the command <command>dcc-list</command> will show the current status of all active, pending and recent direct chats and file transfers. For any that are still waiting for an accept/decline decision, the options will be provided again; for any that are active, the option to "Cancel" will be provided.
+          </li>
+        </ul>
+        <tip>
+          All of the DCC action are also available as commands; see <command>help dcc</command> for a list and instructions.
+        </tip>
         <note>
-          ChatZilla currently does not support DCC <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=285630">resume</a> or reverse.
+          ChatZilla currently does not support UPnP, DCC <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=285630">resume</a> or DCC reverse. If you are behind a NAT or firewall and want to start direct chats or transfer files, you must configure a port-forward through to ChatZilla and set up the list of ports in ChatZilla's preferences, on the DCC tab in Global Settings.
         </note>
       </answer>
     </entry>
@@ -815,6 +836,50 @@
           </li>
           <li>
             <strong>Red:</strong> Someone used your name or something on your <a faq="stalk">stalk list</a> in a message on that tab, or someone sent a message to you specifically.
+          </li>
+        </ul>
+      </answer>
+    </entry>
+
+    <entry id="keyboard">
+      <question>What are some useful keyboard shortcuts?</question>
+      <answer>
+        <p>
+          ChatZilla shares a number of basic keyboard shortcuts with web browsers as well as its own for IRC. Here are some of the useful shortcut keys:
+        </p>
+        <ul>
+          <li>
+            <input>Escape</input> - focus the input box.
+          </li>
+          <li>
+            <input>F6</input>/<input>Shift+F6</input> - cycle focus through the input box, chat area and userlist.
+          </li>
+          <li>
+            <input>Page Up</input>/<input>Page Down</input> - scroll the chat area by about one screen.
+          </li>
+          <li>
+            <input>Up</input>/<input>Down</input> - scroll through recent inputs.
+          </li>
+          <li>
+            <input>Control+Tab</input>/<input>Control+Page Down</input> - switch to the next/previous tab.
+          </li>
+          <li>
+            <input>Control+Shift+Tab</input>/<input>Control+Page Up</input> - switch to the next/previous tab.
+          </li>
+          <li>
+            <input>Control+1</input>...<input>Control+8</input> - switch to tab 1 through 8.
+          </li>
+          <li>
+            <input>Control+9</input> - switch to the last tab.
+          </li>
+          <li>
+            <input>Control+Plus</input>/<input>Control+Minus</input> - make the text larger/smaller.
+          </li>
+          <li>
+            <input>Control+J</input> - join a channel.
+          </li>
+          <li>
+            <input>Control+Shift+X</input> - switch the text direction between left-to-right and right-to-left.
           </li>
         </ul>
       </answer>
