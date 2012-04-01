@@ -849,37 +849,37 @@
         </p>
         <ul>
           <li>
-            <input>Escape</input> - focus the input box.
+            <input>Escape</input> - Focus the input box.
           </li>
           <li>
-            <input>F6</input>/<input>Shift+F6</input> - cycle focus through the input box, chat area and userlist.
+            <input>F6</input>/<input>Shift+F6</input> - Cycle focus through the input box, chat area and userlist.
           </li>
           <li>
-            <input>Page Up</input>/<input>Page Down</input> - scroll the chat area by about one screen.
+            <input>Page Up</input>/<input>Page Down</input> - Scroll the chat area by about one screen.
           </li>
           <li>
-            <input>Up</input>/<input>Down</input> - scroll through recent inputs.
+            <input>Up</input>/<input>Down</input> - Scroll through recent inputs.
           </li>
           <li>
-            <input>Control+Tab</input>/<input>Control+Page Down</input> - switch to the next/previous tab.
+            <input>Control+Tab</input>/<input>Control+Page Down</input> - Switch to the next/previous tab.
           </li>
           <li>
-            <input>Control+Shift+Tab</input>/<input>Control+Page Up</input> - switch to the next/previous tab.
+            <input>Control+Shift+Tab</input>/<input>Control+Page Up</input> - Switch to the next/previous tab.
           </li>
           <li>
-            <input>Control+1</input>...<input>Control+8</input> - switch to tab 1 through 8.
+            <input>Control+1</input>...<input>Control+8</input> - Switch to tab 1 through 8.
           </li>
           <li>
-            <input>Control+9</input> - switch to the last tab.
+            <input>Control+9</input> - Switch to the last tab.
           </li>
           <li>
-            <input>Control+Plus</input>/<input>Control+Minus</input> - make the text larger/smaller.
+            <input>Control+Plus</input>/<input>Control+Minus</input> - Make the text larger/smaller.
           </li>
           <li>
-            <input>Control+J</input> - join a channel.
+            <input>Control+J</input> - Join a channel.
           </li>
           <li>
-            <input>Control+Shift+X</input> - switch the text direction between left-to-right and right-to-left.
+            <input>Control+Shift+X</input> - Switch the text direction between left-to-right and right-to-left.
           </li>
         </ul>
       </answer>
