@@ -1,6 +1,6 @@
 var revs = [
 	{
-		id: "0.9.88.2", date: "2012-04-01", condition: G, size: 342,
+		id: "0.9.88.2", date: "2012-04-01", condition: G, size: 332,
 		bugs: [736300],
 		desc: "fixes inline buttons (cancel/reconnect, DCC accept/reject, etc.) in Firefox 11 and later."
 	}, {
