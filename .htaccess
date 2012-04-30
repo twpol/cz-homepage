@@ -6,6 +6,7 @@ Redirect 301 /donate/                /donate
 Redirect 301 /faq/chatzilla-faq.html /faq
 Redirect 301 /intro/                 /intro
 Redirect 301 /news/                  /news
+Redirect 301 /revs                   /revisions
 
 RewriteEngine On
 
