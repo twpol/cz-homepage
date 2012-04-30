@@ -70,7 +70,7 @@ function updateMotifBrowser() {
 function loadMotif(index) {
 	if (index >= 0) {
 		var frame = document.getElementById("motif-browser-log");
-		frame.setAttribute("src", "log.html?file=" + URLEscape(motifs[index].file) + "&name=" + URLEscape(motifs[index].name) + "#test");
+		frame.setAttribute("src", "log?file=" + URLEscape(motifs[index].file) + "&name=" + URLEscape(motifs[index].name) + "#test");
 	} else {
 		var frame = document.getElementById("motif-browser-log");
 		frame.setAttribute("src", "log-blank.html");
