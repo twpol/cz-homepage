@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.89", date: "2012-09-19", condition: G, size: 334,
+		bugs: [435690, 450309, 459761, 520092, 554118, 615219, 682682, 736345, 748631, 749962, 749986, 755173, 765690, 789853],
+		desc: "fixes links with non-lower-case schemes, <tt>/part</tt> outside of channel views, IPv6 address literals in <tt>irc:</tt> URLs and improves history and plugin support, plus some spelling fixes."
+	}, {
 		id: "0.9.88.2", date: "2012-04-01", condition: G, size: 332,
 		bugs: [736300],
 		desc: "fixes inline buttons (cancel/reconnect, DCC accept/reject, etc.) in Firefox 11 and later."
