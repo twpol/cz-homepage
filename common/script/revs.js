@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.90", date: "2013-01-29", condition: G, size: 334,
+		bugs: [568180, 624172, 669131, 790341, 792402, 793348, 817225, 817225, 825750, 829597, 829597, 829597],
+		desc: "fixes proxy connections in Firefox 18, preferences window being empty in SeaMonkey, /delayed losing execution context, /ignore not ignoring invites, close not working on channels on disconnected networks and certain IPs not decoding properly in DCC messages. Tool-tips have been added to tabs and unhiding key-protected channels no longer prompts for the key unnecessarily."
+	}, {
 		id: "0.9.89", date: "2012-09-19", condition: G, size: 334,
 		bugs: [435690, 450309, 459761, 520092, 554118, 615219, 682682, 736345, 748631, 749962, 749986, 755173, 765690, 789853],
 		desc: "fixes links with non-lower-case schemes, <tt>/part</tt> outside of channel views, IPv6 address literals in <tt>irc:</tt> URLs and improves history and plugin support, plus some spelling fixes."
