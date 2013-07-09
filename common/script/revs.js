@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.90.1", date: "2013-07-09", condition: G, size: 336,
+		bugs: [675139, 848265, 856054, 878601, 882940, 888672],
+		desc: "fixes the userlist styling in Firefox 22, Command+Shift+[/] not switching tabs on Mac, idle-away not returning from away automatically and the userlist styling not updating when changing motifs. Adds Control+L as shortcut for <tt>/clear</tt>."
+	}, {
 		id: "0.9.90", date: "2013-01-29", condition: G, size: 334,
 		bugs: [568180, 624172, 669131, 790341, 792402, 793348, 817225, 817225, 825750, 829597, 829597, 829597],
 		desc: "fixes proxy connections in Firefox 18, preferences window being empty in SeaMonkey, /delayed losing execution context, /ignore not ignoring invites, close not working on channels on disconnected networks and certain IPs not decoding properly in DCC messages. Tool-tips have been added to tabs and unhiding key-protected channels no longer prompts for the key unnecessarily."
