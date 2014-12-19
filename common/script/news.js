@@ -1,5 +1,8 @@
 var news = [
 	{
+		date: new Date(2014, 11, 19), // December 19, 2014
+		text: ["As we come to the end of another year, we've got another small update for ChatZilla (0.9.91.1) to ensure the best compatibility with upcoming Firefox releases. We hope you enjoy it!"]
+	}, {
 		date: new Date(2011, 11, 18), // December 18, 2011
 		text: ["It's been a while since the last update, but we've fixed a <a href='http://bugzilla.mozilla.org/buglist.cgi?bug_id=524003,536410,536410,541715,608663,624261,652382,665850,669125,677049'>bunch of bugs</a>, put <a href='https://github.com/twpol/cz-homepage'>the website on GitHub</a> and updated <a href='" + linkBase + "faq'>the FAQ</a>."]
 	}, {

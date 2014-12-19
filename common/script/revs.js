@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.91.1", date: "2014-12-19", condition: G, size: 341,
+		bugs: [1108416, 1113040, 1066623, 1113707],
+		desc: "fixes a couple of issues with upcoming Firefox releases and increases compatibility with the in-development <a href='https://wiki.mozilla.org/Electrolysis'>multi-process tabs</a> feature."
+	}, {
 		id: "0.9.91", date: "2014-10-03", condition: G, size: 341,
 		bugs: [285270, 554118, 568439, 622714, 888681, 898777, 900046, 907859, 965165],
 		desc: "fixes problems with <tt>/join</tt> and <tt>/part</tt> when multiple channels are specified, saves the name of renamed tabs and adds per-view sound events and visual notifications."
