@@ -1,5 +1,9 @@
 var revs = [
 	{
+		id: "0.9.93", date: "2016-11-08", condition: G, size: 343,
+		bugs: [1030029, 1128353, 1185748, 1194674, 1210791, 1211879, 1219015, 1223210, 1229810, 1240304, 1241676, 1242269, 1246518, 1246523, 1291500, 1314457],
+		desc: "fixes offline error messages, tab styling on all platforms, script installation from GitHub, and improves compatibility with upcoming Firefox versions."
+	}, {
 		id: "0.9.92", date: "2015-08-10", condition: G, size: 342,
 		bugs: [516217, 820770, 1114797, 1116422, 1143110],
 		desc: "fixes opening URLs in some cases, plugins being cached during reloads, URLs without <tt>http://</tt> causing missing lines and improves the usability of some preference window entries."
