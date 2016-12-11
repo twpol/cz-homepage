@@ -15,83 +15,84 @@
     <div id="content">
         <h1>Localizing ChatZilla</h1>
         <p>
-            So, you want to try and localize ChatZilla? Good on you! This page is here to try and give you an idea how to go about things. If you have questions, or just trouble getting things to work at all, feel free to drop by on <a href="irc://irc.mozilla.org/chatzilla">#chatzilla on moznet</a> and ask.
-        </p>
-        <h2>What this page is</h2>
-        <p>
-            This page aims to give you an idea of the easiest way to make a language pack for ChatZilla. It doesn't require much setting up on any major platform.
-        </p>
-        <h2>What this page is not</h2>
-        <p>
-            This page does NOT provide all-out guides to Python, Mercurial, or language problems (wording choices etc.) If you need help with Mercurial, <a href="https://developer.mozilla.org/en/mercurial">check out this</a>. It also doesn't apply to localizing SeaMonkey - if you want help with that, the <a href="https://wiki.mozilla.org/SeaMonkey:Localization">Mozilla Wiki</a> is the right site for you.
+            This page explains the process for localizing ChatZilla but does not go into depth on more general issues, such as <a href="https://developer.mozilla.org/en/mercurial">using Mercurial</a> or <a href="https://wiki.mozilla.org/SeaMonkey:Localization">localizing SeaMonkey</a>. You will need <strong>basic command-line skills</strong>. If you have any questions or issues localizing ChatZilla, or just want to chat with fellow users and developers, feel free to drop by in <a href="irc://irc.mozilla.org/chatzilla">#chatzilla on moznet</a>.
         </p>
         <h2>Definitions</h2>
+        <dl>
+            <dt><var>ab-CD</var></dt><dd>This text is used to refer to the locale code for your localization. You should replace every occurance with your localization's correct code. For example, French would likely use '<samp>fr-FR</samp>'.</dd>
+        </dl>
+        <h2>Requirements</h2>
+        <ul>
+            <li><a href="http://www.python.org/">Python</a> is required for all localizations.</li>
+            <li><a href="http://mercurial.selenic.com/">Mercurial</a> may be used to easily keep up-to-date with new changes in ChatZilla, but is not required.</li>
+            <li>Optionally update the Mozilla <a href="https://wiki.mozilla.org/L10n:Teams">Localization Teams</a> so people know who's working on what.</li>
+        </ul>
+        <h2>1. Get the source code</h2>
+        <h3>With Mercurial</h3>
+        <ol>
+            <li>Open a terminal or Command Prompt.</li>
+            <li>Navigate to the folder you want to store the code using the <kbd>cd</kbd> command.</li>
+            <li>Run the command "<kbd>hg clone http://hg.mozilla.org/chatzilla</kbd>" - this will take a short while.</li>
+        </ol>
+        <h3>Without Mercurial</h3>
+        <ol>
+            <li>Download the <a href="http://hg.mozilla.org/chatzilla/archive/tip.zip">ZIP archive</a>.</li>
+            <li>Extract the files into the folder you want to store the code.</li>
+        </ol>
+        <h2>2. Make locale directory</h2>
         <p>
-            Throughout this guide, 'ab-CD' means the locale code for your localization. That means that, if you were to localize ChatZilla into French or German, you would replace it with 'fr-FR' or 'de-DE', respectively.
+            To get started on your localization, copy the <samp>locales/en-US</samp> directory to <samp>locales/<var>ab-CD</var></samp>. Remember that <var>ab-CD</var> should be named after the language code of the locale you're writing a localization for.
         </p>
-        <h2>Requirements for the method described below</h2>
+        <h2>3. Localize files</h2>
         <p>
-            On Windows, Linux, or OS X, the only required software package is <a href="http://www.python.org/">Python</a>. It is also recommended to install <a href="http://mercurial.selenic.com/">Mercurial</a> for keeping in line with development. After installing them, you will probably want to add yourself in the <a href="https://wiki.mozilla.org/L10n:Teams">Localization Teams</a> section of the Mozilla Wiki so that the l10n leads know whom to assign bugs when something is not as it should be.
-        </p>
-        <h3>1. Get the source code</h3>
-        <h4>With Mercurial</h4>
-        <p>
-            First things first: make sure you have Mercurial and Python installed, and open a terminal:
-        </p>
-        <h5>On Windows:</h5>
-            <p>Start &gt; Run &gt; Type '<kbd>cmd</kbd>' in the box and press Enter</p>
-        <h5>On Mac:</h5>
-            <p>Applications &gt; Utilities &gt; Terminal</p>
-        <h5>On Linux/Unix:</h5>
-            <p>Linux and Unix users should be so familiar with terminals that I need not explain it here.</p>
-        <p>
-            Once you have opened a terminal, navigate to a folder where you want to store your localization work using the '<kbd>cd</kbd>' command. Then execute the following command:<br>
-            <br>
-            <kbd>hg clone http://hg.mozilla.org/chatzilla</kbd><br>
-            <br>
-            This will get you the ChatZilla source. You'll see a few messages, and after a (hopefully short) while it will be done.
-        </p>
-        <h4>Without Mercurial</h4>
-        <p>
-            If you do not wish to use Mercurial for getting the source code and maintaining your localization, you can just download the ChatZilla source code <a href="http://hg.mozilla.org/chatzilla/archive/tip.zip">as a .zip archive</a>.
-        </p>
-        <h3>2. Make a locale directory</h3>
-        <p>
-            To get started on your localization, you'll want to copy the <tt>en-US</tt> directory in the <tt>locales</tt> directory into a new subdirectory there. The new subdirectory should be named after the language code of the locale you're writing a localization for.
-        </p>
-        <h3>3. Localize all the files in your new directory</h3>
-        <p>
-            The single <tt>chatzilla.properties</tt> file and all the <tt>.dtd</tt> files will need to be localized in order for your localization to be complete. The <tt>chatzilla.properties</tt> will probably take the longest time to localize because it's so big. To get things right, there are a couple of things you need to keep in mind:
+            You need to localize the following files:
         </p>
         <ul>
-            <li><strong>NEVER</strong> localize the cmd.<var>something</var>.params strings. These are for internal use, translating them will prevent the use of those commands! You can, however, translate the cmd.<var>something</var>.help strings. These will be useful to users when they are unsure of what a certain command does. </li>
-            <li>Do <strong>NOT</strong> change the locale.version string. This too is for internal use. For more information, please refer to the comment at the top of the <tt>chatzilla.properties</tt> file. </li>
-            <li>Keep up with changes in ChatZilla. There should be new releases every now and then. Lingering in #chatzilla on moznet when on IRC is probably the best way of getting an idea when these are going to happen. We will release from the code in Mercurial (you know, where you got your source code from) every now and then. It would be wise to archive releases you have made yourself, and keep up with development on Mercurial. Silver (James Ross) has made a <a href="http://twpol.dyndns.org/mozilla/chatzilla/nightly">nifty page</a> which will list any locale changes made to the ChatZilla code. </li>
+            <li><samp>locales/<var>ab-CD</var>/chrome/chatzilla.properties</samp></li>
+            <li><samp>locales/<var>ab-CD</var>/chrome/*.dtd</samp></li>
+            <li><samp>locales/<var>ab-CD</var>/defines.inc</samp></li>
         </ul>
-        <h3>4. Make a locale package</h3>
         <p>
-            When you're done localizing, or just want to try if things work, you can make a language pack for ChatZilla by opening a terminal in the <tt>xpi</tt> directory in the source code, and using the following command:<br>
-            <br>
-            <kbd>python makexpi.py ab-CD</kbd><br>
-            <br>
-            If all goes well, you will see a few messages appear in your terminal (but no errors), and a chatzilla-<var>locale</var>-<var>version</var>.xpi file will be created in the <tt>xpi</tt> directory.<br>
-            <br>
-            This xpi file installs <strong>only</strong> your localization - that means that users will have to have installed the ChatZilla code from the website. It can also be used by SeaMonkey users to localize their preinstalled ChatZilla.
+            While you are localizing these files, please remember:
         </p>
-        <h3>5. Test out your localization</h3>
+        <ul>
+            <li><strong>Do</strong> open and save all files as UTF-8 without BOM.</li>
+            <li><strong>Do</strong> localize entries of the form <samp>cmd.<em>something</em>.help</samp> as these are the command descriptions shown to the user.</li>
+            <li><strong>Do not</strong> localize entries of the form <samp>cmd.<em>something</em>.params</samp> as these are the parameters for commands, which need to match up to the code.</li>
+            <li><strong>Do not</strong> change <samp>locale.version</samp> as this is necessary to detect mismatched language packs. There are further details of this requirement in comments at the begginning of <samp>chatzilla.properties</samp>.</li>
+            <li><strong>Do</strong> keep up with new versions of ChatZilla, if you can. The <a href="https://james-ross.co.uk/mozilla/chatzilla/nightly/">ChatZilla nightly builds</a> page may be helpful, as it lists which files have changed - search for "<kbd>locales/en-US</kbd>" to find all potentially relevant changes. You are welcome to linger in <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> as well.</li>
+            <li><strong>Do</strong> keep archives/copies of localization releases you have made, in case you need to refer back to them.</li>
+        </ul>
+        <h2>4. Make locale package</h2>
         <p>
-            Open the language pack in the host application (the program you use ChatZilla in). For Firefox and SeaMonkey, the directions are the same: select 'Open File' from the 'File' menu, choose your language pack file, and restart the application.<br><br>
-            Then, open ChatZilla and check out some things:
-            <ul>
-                <li>that all strings fit in the space that they are given,</li>
-                <li>that all %S replacements work correctly,</li>
-                <li>that each accesskey is used only once in each menu, etc.; all the usual localization checks.</li>
-            </ul>
+            You can create a locale package at any time to check how things are coming along, or when you're done. Please note that this will <strong>overwrite</strong> a locale package of the same language and version.
         </p>
-        <h3>6. Start distributing your language pack</h3>
+        <ol>
+            <li>Open a terminal or Command Prompt.</li>
+            <li>Navigate to the <samp>xpi</samp> folder inside the ChatZilla code using the <kbd>cd</kbd> command.</li>
+            <li>Run the command "<kbd>python makexpi.py <var>ab-CD</var></kbd>".</li>
+        </ol>
         <p>
-            When you think you have fixed all possible bugs in your localization, you might want to consider releasing it to the public. You could ask an admin of a local Mozilla community site to upload your language pack to their server. Alternatively, you might upload it to the official <a href="https://addons.mozilla.org/">Mozilla Add-ons site</a>. Finally, you can ask the ChatZilla web admin to add a link to the site your language pack has been published on.
+            If all goes well, a <samp>xpi/chatzilla-<var>ab-CD</var>-<var>version</var>.xpi</samp> file will be created. This file installs <strong>only</strong> your localization - that means users will have to install ChatZilla separately. It can also be used by SeaMonkey users to localize their preinstalled ChatZilla.
         </p>
+        <h2>5. Test your localization</h2>
+        <ol>
+            <li>In the host application (Firefox, SeaMonkey, etc.), open the <samp>xpi/chatzilla-<var>ab-CD</var>-<var>version</var>.xpi</samp> file, e.g. from the menu "<kbd>File > Open File...</kbd>".</li>
+            <li>Restart the host application and open ChatZilla.</li>
+            <li>Check that all strings fit in the space that they are given.</li>
+            <li>Check that all <samp>%S</samp> replacements are working correctly.</li>
+            <li>Check that each accesskey is used only once in each menu.</li>
+            <li>...and all the usual localization checks.</li>
+        </ol>
+        <h2>6. Distributing your localization</h2>
+        <p>
+            When you think you have fixed all possible bugs in your localization, you might want to consider releasing it to the public.
+        </p>
+        <ul>
+            <li>You could ask an admin of a local Mozilla community site to upload your language pack to their server.</li>
+            <li>You could upload it to the official <a href="https://addons.mozilla.org/">Mozilla Add-ons site</a>.</li>
+            <li>You can ask in <a href="irc://irc.mozilla.org/chatzilla">#chatzilla</a> to have a link added to the official homepage. You can also do this by <a href="https://github.com/twpol/cz-homepage/blob/master/index.html">creating a pull request for the homepage in GitHub</a>.</li>
+        </ul>
         <h2>Appendix: Bundling your localization with SeaMonkey</h2>
         <p>
             It is possible to ship your ChatZilla localization with <a href="http://www.seamonkey-project.org/">SeaMonkey</a> for an even more complete Internet experience. Just follow these steps.
@@ -114,7 +115,7 @@
         </p>
         <h3>3. Create a bug to get the patch into Mercurial</h3>
         <p>
-            Create yourself an account on <a target="_blank" href="https://bugzilla.mozilla.org/">Mozilla's Bugzilla</a>, then <a target="_blank" href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations">file a bug</a>. 
+            Create yourself an account on <a target="_blank" href="https://bugzilla.mozilla.org/">Mozilla's Bugzilla</a>, then <a target="_blank" href="https://bugzilla.mozilla.org/enter_bug.cgi?product=Mozilla%20Localizations">file a bug</a>.
             <ul>
             <li>Choose your locale from the 'Component' menu.
             <li>In the 'Description' field, ask someone who has Mercurial access to upload the patch to Mercurial.
