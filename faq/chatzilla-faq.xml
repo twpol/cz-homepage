@@ -1098,7 +1098,7 @@ END
 
   <section>
     <title>Documentation and Resources</title>
-    
+
     <entry id="irc">
       <question>Is there an IRC channel for ChatZilla?</question>
       <answer>
@@ -1139,7 +1139,7 @@ END
       <question>How do I make a localized version of ChatZilla?</question>
       <answer>
         <p>
-          See the <a href="../localization">localization guide</a> for instructions.
+          See the <a href="../localization">localization guide</a> for instructions on how to translate ChatZilla into other languages.
         </p>
       </answer>
     </entry>
